@@ -33,6 +33,12 @@ export type Mountain = {
   summitLng: number;
   elevationM: number;
   trailheads: Trailhead[];
+  /** 인증 지점의 봉우리 이름. 산마다 정상이 여럿이라 어디로 가야 하는지 미리 알려준다. */
+  peakName?: string;
+  /** 수도권·강원·충청·전라·경상·제주 */
+  region?: string | null;
+  /** 숲나들e 원본에 값이 있는 산만 채워진다(29곳). */
+  difficulty?: string | null;
 };
 
 export type VerifyReason = 'ok' | 'low_accuracy' | 'too_far' | 'altitude_mismatch';

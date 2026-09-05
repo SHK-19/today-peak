@@ -45,6 +45,7 @@
 | 저장 | Supabase Postgres + Edge Functions | 서버 보관. Storage API는 기기 로컬이라 사용 안 함 |
 | DB 접근 | 클라이언트 → Edge Function → service role | 토스 로그인은 Supabase Auth가 아니라 `auth.uid()` 기반 RLS가 불가. anon 직접 접근 전면 차단 |
 | 산 데이터 | 정적 JSON 번들 `mountains.json` | 100개 미만, 변경 드묾 |
+| 코스·시설 데이터 (v1) | Supabase 테이블 | 무겁고 자주 바뀐다. 번들에 넣으면 수정할 때마다 재배포+검수 |
 | 위치 | `getCurrentLocation` 1회 호출 방식만 | 지속 추적·백그라운드 불필요 |
 | 재인증 | 같은 산 하루 1회 | 어뷰징 방지 |
 
@@ -67,14 +68,37 @@
 - 정상 인증과 완전히 독립. 시작을 안 눌러도 정상 인증은 동일하게 동작하고, 문구로 시작을 강요하지 않는다.
 - v0에서는 보상 없음. v1에서 SESSIONS.md 계획대로 토스 포인트 프로모션(시작 5P, 정상 10P)을 서버 지급으로 붙인다. 클라이언트에서 직접 지급하지 않는다.
 
+## 데이터 구조 3층 (2026-09-05 결정)
+정보량이 늘어도 이 경계를 지킨다. 오늘 "서버가 테스트 장소를 몰라 저장 실패"가 정본이 갈라져서 난 사고다.
+1. **인증 정본** — id, 이름, 정상 좌표, 고도, 들머리 좌표. `mountains.json` 하나에만 둔다.
+   클라이언트와 Edge Function이 **같은 파일을 import**한다. 여기서 갈라지면 판정이 어긋난다.
+2. **목록·필터용 요약** — 지역, 난이도, 국립공원 여부, 코스 수. 같은 JSON에 필드로 붙인다.
+   홈에서 서버 왕복 없이 거르기 위해서다. 산당 수십 바이트라 번들에 부담이 없다.
+3. **코스·시설 상세** — 코스별 거리·시간·고도 배열·시설·주의사항. **Supabase 테이블**.
+   산 상세에 들어갈 때만 필요하고, 이미 `mountain-stats`를 부르므로 왕복이 늘지 않는다. v1.
+
 ## 데이터 규칙
 - `mountains.json` 스키마: `{ id, name, summitLat, summitLng, elevationM, trailheads: [{ name, lat, lng }] }`. `trailheads`는 빈 배열 허용.
 - **좌표를 지어내지 않는다.** 정상·입구 모두 사용자가 제공한다. 없으면 샘플 3개(북한산·관악산·도봉산, 입구는 각 1개)로 개발하고 파일 상단 주석에 샘플임을 명시한다.
 - Supabase `stamps`: `{ id, user_id(토스 로그인 식별자), mountain_id, verified_at, distance_m, accuracy_m }`. 이 6개 컬럼만.
 - Supabase `hike_starts`: `{ id, user_id, mountain_id, trailhead_name, started_at, distance_m }`. 이 6개 컬럼만.
+- Supabase `unlinked_users`: `{ user_id, referrer, unlinked_at }`. 연결을 끊은 유저. 다시 로그인하면 `login`이 지운다.
+- Supabase `peak_suggestions`: `{ id, user_id, mountain_id, peak_name, lat, lng, accuracy_m, distance_m, suggested_at }`.
+  이용자가 "여기도 정상"이라고 직접 누른 경우에만 저장한다. **평소 인증에서는 좌표를 저장하지 않는다** —
+  개인정보처리방침의 핵심 약속이라 자동 수집으로 바꾸지 않는다. 보관 1년, 다른 이용자에게 노출 금지.
+
+## v0 범위 (2026-09-05 확정)
+스탬프 수집이 코어다. 산 정보는 "인증하러 가기 전에 필요한 최소한"까지만 넣는다.
+- 지역·난이도 필터, 고도, 대표 들머리, 코스 수(숫자만)
+- 산 카드의 획득 배지, 스탬프 컬렉션 그리드, 인증 성공 연출
+- 산행 시작 체크인, 집계 두 줄
 
 ## v0 범위 밖 (요청해도 먼저 확인할 것)
 맛집 추천, 랭킹/리더보드, 광고, 프로모션, 산별 스탬프 그래픽, 지도 렌더링, 개인 위치 표시.
+**등산 정보 앱으로 넘어가는 것들도 v1이다** — 코스 목록·코스 상세, 경사 프로파일, 시설·볼거리
+(화장실·약수터·대피소·사찰), 준비물·유의사항, 즐겨찾기, 대중교통 소요 시간.
+이유: 저 방향으로 가면 작업의 대부분이 데이터 수집이 되고 스탬프가 부가 기능처럼 보인다.
+콘솔에 등록한 "앱 내 기능" 설명도 스탬프 중심이라 크게 바뀌면 재검토 대상이다.
 
 ## 앱인토스 정책 — 개발 중 지켜야 하는 것
 - 위치 조회 전 `getPermission` → 없으면 `openPermissionDialog`. 거부 시 안내 화면.
@@ -89,7 +113,9 @@
 ## 인증·서버 구조
 - 토스 문서: 인가 코드 → 토큰 교환 → 사용자 조회는 반드시 서버에서. 클라이언트는 `appLogin()`의 `authorizationCode`만 갖는다.
 - Edge Function `login`: 토스 `generate-token` → `login-me` → `userKey`. 우리 비밀키로 서명한 세션 토큰(userKey, 만료 14일)을 반환. 토스 access/refresh token은 클라이언트에 주지 않는다.
-- Edge Function `start-hike`, `verify-summit`, `my-stamps`, `mountain-stats`: 세션 토큰 검증 → 처리. 함수 5개, 그 이상 만들지 않는다.
+- Edge Function `start-hike`, `verify-summit`, `my-stamps`, `mountain-stats`: 세션 토큰 검증 → 처리.
+- Edge Function `toss-unlink`: 토스가 부르는 연결 끊기 콜백(Basic Auth). 그 유저의 행을 지우고 `unlinked_users`에 기록해 세션 토큰을 무효화한다. 클라이언트의 `TossAuth.isIntegrated()`가 연결 해제를 반영하지 못해(2026-09-05 실기기) 검수 항목을 이 경로로 충족한다.
+- 함수 6개, 그 이상 만들지 않는다.
 - SDK `Location.timestamp`는 **초 단위**다(소수점 포함). 문서·타입 선언에 단위가 없어 실기기로 확인했다(2026-09-04). `Date.now()`(밀리초)와 비교하려면 1000을 곱한다 — `readingAgeMs`가 그 변환을 담당한다.
 - `getCurrentLocation`은 OS의 마지막 위치를 즉시 돌려줄 수 있다. 실측에서 채택된 reading이 최대 7.7초 전 값이었다. 그래서 만료 검사는 선택이 아니라 필수다.
 - 서버는 클라이언트가 보낸 reading이 `MAX_READING_AGE_MS` 안에 측정된 것인지 `timestamp`로 검사한다. 오래된 reading은 거부한다 (미리 받아둔 좌표로 나중에 인증하는 것을 막는다).

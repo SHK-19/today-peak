@@ -1,41 +1,110 @@
+import { Stamp } from '../components/Stamp.tsx';
+import type { Stamp as StampRecord } from '../lib/api.ts';
+import { formatSeoulDate } from '../lib/day.ts';
+import { groupByRegion } from '../lib/region.ts';
 import type { Mountain } from '../lib/verify.ts';
 
-export type Stamp = { mountainId: string; verifiedAt: string };
+type Props = {
+  mountains: Mountain[];
+  stamps: StampRecord[] | null;
+  failed: boolean;
+  onRetry: () => void;
+};
 
-type Props = { stamps: Stamp[]; mountains: Mountain[] };
-
-export function MyStamps({ stamps, mountains }: Props) {
-  if (stamps.length === 0) {
+// 모은 것만 보여주면 목록이지 컬렉션이 아니다. 빈 칸이 보여야 다음 목표가 생긴다.
+// 96곳을 한 판에 늘어놓으면 훑기 어려워서 권역으로 접는다.
+export function MyStamps({ mountains, stamps, failed, onRetry }: Props) {
+  if (failed) {
     return (
       <main className="screen screen-tabbed">
         <h1 className="title">내 스탬프</h1>
         <p className="notice">
-          아직 모은 스탬프가 없어요. 정상에 도착해서 인증하면 여기에 쌓여요.
+          스탬프를 불러오지 못했어요. 인터넷 연결을 확인한 뒤 다시 시도해 주세요.
         </p>
+        <div className="cta-area">
+          <button type="button" className="cta" onClick={onRetry}>
+            다시 불러오기
+          </button>
+        </div>
       </main>
     );
   }
 
+  if (stamps === null) {
+    return (
+      <main className="screen screen-tabbed">
+        <h1 className="title">내 스탬프</h1>
+        <p className="notice">스탬프를 불러오고 있어요</p>
+      </main>
+    );
+  }
+
+  const collectedAt = new Map(stamps.map((stamp) => [stamp.mountainId, stamp.verifiedAt]));
+
   return (
     <main className="screen screen-tabbed">
       <h1 className="title">내 스탬프</h1>
-      <p className="subtitle">{stamps.length}개를 모았어요</p>
+      <p className="subtitle">
+        {mountains.length}곳 중 {collectedAt.size}곳을 모았어요
+      </p>
 
-      <ul className="list">
-        {stamps.map((stamp) => {
-          const mountain = mountains.find((m) => m.id === stamp.mountainId);
-          return (
-            <li key={`${stamp.mountainId}-${stamp.verifiedAt}`}>
-              <div className="row row-static">
-                <span className="row-main">
-                  <span className="row-title">{mountain?.name ?? stamp.mountainId}</span>
-                  <span className="row-meta">{stamp.verifiedAt}</span>
-                </span>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+      <div
+        className="progress"
+        role="progressbar"
+        aria-valuenow={collectedAt.size}
+        aria-valuemin={0}
+        aria-valuemax={mountains.length}
+      >
+        <span
+          className="progress-fill"
+          style={{ width: `${(collectedAt.size / mountains.length) * 100}%` }}
+        />
+      </div>
+
+      {collectedAt.size === 0 && (
+        <p className="notice">정상에 도착해서 인증하면 여기 빈 자리가 하나씩 채워져요.</p>
+      )}
+
+      {groupByRegion(mountains).map(({ region, mountains: inRegion }) => {
+        const done = inRegion.filter((mountain) => collectedAt.has(mountain.id)).length;
+        return (
+          <section key={region} className="region">
+            <h2 className="region-title">
+              {region}
+              <span className="region-count">
+                {done} / {inRegion.length}
+              </span>
+            </h2>
+
+            <ul className="stamp-grid">
+              {inRegion.map((mountain) => {
+                const verifiedAt = collectedAt.get(mountain.id);
+                return (
+                  <li key={mountain.id} className="stamp-cell">
+                    <Stamp
+                      mountain={mountain}
+                      collected={verifiedAt !== undefined}
+                      verifiedAt={verifiedAt}
+                    />
+                    <span
+                      className={
+                        verifiedAt !== undefined ? 'stamp-name' : 'stamp-name stamp-name-empty'
+                      }
+                    >
+                      {mountain.name}
+                    </span>
+                    <span className="stamp-date">
+                      {verifiedAt === undefined
+                        ? `${mountain.elevationM}m`
+                        : formatSeoulDate(verifiedAt)}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        );
+      })}
     </main>
   );
 }
