@@ -353,6 +353,14 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
 - 릴리즈 판정: `reviewRequestDecision=ALLOWED`, `releaseDecision=WORKSPACE_TERMS_AGREEMENT_REQUIRED_FROM_OWNER`
   → 번들 검수 요청은 가능하지만 **출시하기 전에 대표관리자가 콘솔 웹에서 제휴 약관에 동의**해야 한다.
 
+### 검수 직전 (2026-09-06)
+
+- DB 테스트 행은 사용자가 SQL Editor에서 직접 지웠다(stamps·hike_starts·peak_suggestions 0건 확인).
+- 출시 후보 번들 `20260906-18`(테스트 장소 없음) 업로드·테스트 푸시 완료.
+- 스크린샷 6장을 `miniapp_update_screenshots`로 교체 → 앱정보 `IN_REVIEW`. `miniapp_get`은 승인 전까지
+  옛 이미지를 돌려준다(검토 중인 페이로드는 조회에 안 나온다).
+- 번들 검수 요청은 사용자가 콘솔 웹에서 직접 한다. 릴리즈 노트 초안은 아래.
+
 ## 백로그 — 데이터 검증 (출시 전, 사람이 확인)
 
 `node scripts/build-mountains.mjs`가 매번 같은 리포트를 낸다. 고치는 방법은 스크립트의 정상 선택 규칙에
