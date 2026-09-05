@@ -1,6 +1,7 @@
 import { Stamp } from '../components/Stamp.tsx';
 import type { Stamp as StampRecord } from '../lib/api.ts';
 import { formatSeoulDate } from '../lib/day.ts';
+import { groupByRegion } from '../lib/region.ts';
 import type { Mountain } from '../lib/verify.ts';
 
 type Props = {
@@ -11,6 +12,7 @@ type Props = {
 };
 
 // 모은 것만 보여주면 목록이지 컬렉션이 아니다. 빈 칸이 보여야 다음 목표가 생긴다.
+// 96곳을 한 판에 늘어놓으면 훑기 어려워서 권역으로 접는다.
 export function MyStamps({ mountains, stamps, failed, onRetry }: Props) {
   if (failed) {
     return (
@@ -63,26 +65,46 @@ export function MyStamps({ mountains, stamps, failed, onRetry }: Props) {
         <p className="notice">정상에 도착해서 인증하면 여기 빈 자리가 하나씩 채워져요.</p>
       )}
 
-      <ul className="stamp-grid">
-        {mountains.map((mountain) => {
-          const verifiedAt = collectedAt.get(mountain.id);
-          return (
-            <li key={mountain.id} className="stamp-cell">
-              <Stamp
-                mountain={mountain}
-                collected={verifiedAt !== undefined}
-                verifiedAt={verifiedAt}
-              />
-              <span className={verifiedAt !== undefined ? 'stamp-name' : 'stamp-name stamp-name-empty'}>
-                {mountain.name}
+      {groupByRegion(mountains).map(({ region, mountains: inRegion }) => {
+        const done = inRegion.filter((mountain) => collectedAt.has(mountain.id)).length;
+        return (
+          <section key={region} className="region">
+            <h2 className="region-title">
+              {region}
+              <span className="region-count">
+                {done} / {inRegion.length}
               </span>
-              <span className="stamp-date">
-                {verifiedAt === undefined ? `${mountain.elevationM}m` : formatSeoulDate(verifiedAt)}
-              </span>
-            </li>
-          );
-        })}
-      </ul>
+            </h2>
+
+            <ul className="stamp-grid">
+              {inRegion.map((mountain) => {
+                const verifiedAt = collectedAt.get(mountain.id);
+                return (
+                  <li key={mountain.id} className="stamp-cell">
+                    <Stamp
+                      mountain={mountain}
+                      collected={verifiedAt !== undefined}
+                      verifiedAt={verifiedAt}
+                    />
+                    <span
+                      className={
+                        verifiedAt !== undefined ? 'stamp-name' : 'stamp-name stamp-name-empty'
+                      }
+                    >
+                      {mountain.name}
+                    </span>
+                    <span className="stamp-date">
+                      {verifiedAt === undefined
+                        ? `${mountain.elevationM}m`
+                        : formatSeoulDate(verifiedAt)}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        );
+      })}
     </main>
   );
 }

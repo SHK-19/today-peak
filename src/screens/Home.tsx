@@ -8,6 +8,7 @@ import { formatDistance } from '../lib/format.ts';
 import { haversineMeters } from '../lib/geo.ts';
 import { ensureLocationPermission, readLocationOnce } from '../lib/location.ts';
 import { IS_FIELD_TEST_BUILD, MOUNTAINS } from '../lib/mountains.ts';
+import { regionsOf } from '../lib/region.ts';
 import type { Mountain } from '../lib/verify.ts';
 
 type NearbyMountain = { mountain: Mountain; distanceM: number };
@@ -22,6 +23,10 @@ type Props = { onSelect: (mountainId: string) => void; stamps: StampRecord[] | n
 
 export function Home({ onSelect, stamps }: Props) {
   const collected = new Set(stamps?.map((stamp) => stamp.mountainId));
+  // 96곳을 한 줄로 늘어놓으면 못 찾는다. 권역으로 먼저 좁힌다.
+  const [region, setRegion] = useState<string | null>(null);
+  const regions = regionsOf(MOUNTAINS);
+  const inRegion = (mountain: Mountain) => region === null || (mountain.region ?? '기타') === region;
   const [state, setState] = useState<State>({ status: 'loading' });
   const [attempt, setAttempt] = useState(0);
 
@@ -85,8 +90,28 @@ export function Home({ onSelect, stamps }: Props) {
             : '위치를 확인하지 못해 거리를 보여드리지 못했어요. 휴대폰 설정에서 위치 서비스가 켜져 있는지 확인한 뒤 아래 버튼을 눌러주세요.'}
         </p>
 
+      <div className="chips">
+        <button
+          type="button"
+          className={region === null ? 'chip chip-active' : 'chip'}
+          onClick={() => setRegion(null)}
+        >
+          전체
+        </button>
+        {regions.map((name) => (
+          <button
+            key={name}
+            type="button"
+            className={region === name ? 'chip chip-active' : 'chip'}
+            onClick={() => setRegion(name)}
+          >
+            {name}
+          </button>
+        ))}
+      </div>
+
         <ul className="list">
-          {MOUNTAINS.map((mountain) => (
+          {MOUNTAINS.filter(inRegion).map((mountain) => (
             <li key={mountain.id}>
               <button type="button" className="row" onClick={() => onSelect(mountain.id)}>
                 <Stamp mountain={mountain} collected={collected.has(mountain.id)} size={40} />
@@ -118,8 +143,28 @@ export function Home({ onSelect, stamps }: Props) {
           : `${MOUNTAINS.length}곳 중 ${collected.size}곳을 모았어요`}
       </p>
 
+      <div className="chips">
+        <button
+          type="button"
+          className={region === null ? 'chip chip-active' : 'chip'}
+          onClick={() => setRegion(null)}
+        >
+          전체
+        </button>
+        {regions.map((name) => (
+          <button
+            key={name}
+            type="button"
+            className={region === name ? 'chip chip-active' : 'chip'}
+            onClick={() => setRegion(name)}
+          >
+            {name}
+          </button>
+        ))}
+      </div>
+
       <ul className="list">
-        {state.nearby.map(({ mountain, distanceM }) => (
+        {state.nearby.filter(({ mountain }) => inRegion(mountain)).map(({ mountain, distanceM }) => (
           <li key={mountain.id}>
             <button type="button" className="row" onClick={() => onSelect(mountain.id)}>
               <Stamp mountain={mountain} collected={collected.has(mountain.id)} size={40} />

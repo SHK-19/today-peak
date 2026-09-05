@@ -92,9 +92,63 @@ body {
   justify-content: flex-start;
 }
 
+/* 권역 필터. 가로로 넘치면 스크롤한다 — 줄바꿈하면 목록이 아래로 밀린다. */
+.chips {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  padding-bottom: var(--space-1);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.chips::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  flex: none;
+  min-height: 44px;
+  padding: 0 var(--space-4);
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-bg);
+  font-size: var(--font-size-body-small);
+  font-weight: 600;
+  color: var(--color-text-subtle);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.chip-active {
+  background: var(--brand-primary);
+  color: var(--color-text-inverse);
+}
+
+/* 권역 섹션. 96곳을 한 판에 늘어놓지 않는다. */
+.region {
+  margin-top: var(--space-6);
+}
+
+.region-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0;
+  font-size: var(--font-size-subtitle);
+  font-weight: 600;
+  color: var(--color-text-strong);
+}
+
+.region-count {
+  font-size: var(--font-size-body-small);
+  font-weight: 400;
+  color: var(--color-text-hint);
+}
+
 /* 컬렉션 판. 안 모은 산도 자리를 차지해야 다음 목표가 보인다. */
 .stamp-grid {
-  margin: var(--space-5) 0 0;
+  margin: var(--space-3) 0 0;
   padding: 0;
   list-style: none;
   display: grid;
