@@ -1,0 +1,184 @@
+{
+  "pngFrames": [
+    {
+      "file": "accuracy.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 18053
+    },
+    {
+      "file": "altitude.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 17702
+    },
+    {
+      "file": "checking.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 31044
+    },
+    {
+      "file": "collection-empty.png",
+      "width": 375,
+      "height": 2120,
+      "bytes": 104408
+    },
+    {
+      "file": "collection.png",
+      "width": 375,
+      "height": 2020,
+      "bytes": 116153
+    },
+    {
+      "file": "components.png",
+      "width": 375,
+      "height": 1300,
+      "bytes": 76777
+    },
+    {
+      "file": "detail-collected.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 36808
+    },
+    {
+      "file": "detail.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 30442
+    },
+    {
+      "file": "duplicate.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 18668
+    },
+    {
+      "file": "fail.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 20597
+    },
+    {
+      "file": "home-denied.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 35561
+    },
+    {
+      "file": "home-error.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 24033
+    },
+    {
+      "file": "home-loading.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 23553
+    },
+    {
+      "file": "home.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 37426
+    },
+    {
+      "file": "login-error.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 33268
+    },
+    {
+      "file": "login-loading.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 30303
+    },
+    {
+      "file": "login.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 28512
+    },
+    {
+      "file": "permission.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 18682
+    },
+    {
+      "file": "report-done.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 16253
+    },
+    {
+      "file": "report.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 23535
+    },
+    {
+      "file": "save-error.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 40583
+    },
+    {
+      "file": "stale.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 18686
+    },
+    {
+      "file": "success.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 34776
+    },
+    {
+      "file": "unavailable.png",
+      "width": 375,
+      "height": 740,
+      "bytes": 18775
+    }
+  ],
+  "renderedTemplateStates": [
+    "accuracy",
+    "altitude",
+    "checking",
+    "collection-empty",
+    "collection",
+    "components",
+    "detail-collected",
+    "detail",
+    "duplicate",
+    "fail",
+    "home-denied",
+    "home-error",
+    "home-loading",
+    "home",
+    "login-error",
+    "login-loading",
+    "login",
+    "permission",
+    "report-done",
+    "report",
+    "save-error",
+    "stale",
+    "success",
+    "unavailable"
+  ],
+  "uniqueRidgeSeeds": 96,
+  "contrastRatios": {
+    "primaryOnPaper": 6.22,
+    "whiteOnPrimary": 6.44,
+    "mutedOnPaper": 4.93,
+    "mutedOnCanvas": 4.51
+  },
+  "browserTested": false,
+  "deviceTested": false,
+  "notes": "PNG files rendered from editable SVG design frames, not browser screenshots. JS state templates were evaluated with a mock document; this is not an interaction test."
+}

@@ -1,0 +1,30 @@
+<!doctype html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>오늘 정상 — 디자인 수첩</title><style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",system-ui,sans-serif;color:#20372D;background:#EAEDE5;font-synthesis:none}*{box-sizing:border-box}body{margin:0;word-break:keep-all}header{padding:48px 48px 32px;max-width:1600px;margin:auto}.eyebrow{color:#526857;letter-spacing:3px;font-size:13px;font-weight:600}h1{font-size:48px;letter-spacing:-2.4px;margin:16px 0;line-height:1.2;font-weight:700}header p{font-size:17px;color:#526857;line-height:1.8;max-width:720px}header .meta{margin-top:24px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:15px}a{color:inherit;text-underline-offset:5px}header a{display:inline-flex;min-height:44px;align-items:center}.toolbar{position:sticky;top:0;z-index:10;padding:12px 48px;background:#EAEDE5F5;border-top:1px solid #D2DACD;border-bottom:1px solid #D2DACD;display:flex;gap:8px;flex-wrap:wrap}button{font:inherit;cursor:pointer;min-height:44px;padding:8px 16px;border:1px solid #C9D1C4;border-radius:24px;color:#36553F;background:transparent;font-size:15px}.active{background:#1F6B4A;color:white;border-color:#1F6B4A}.board{display:grid;grid-template-columns:repeat(auto-fit,375px);gap:48px 32px;max-width:1660px;margin:0 auto;padding:32px 48px 64px;justify-content:center}.frame{width:375px}.frame-label{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:16px;min-height:48px}.frame-label h2{font-size:17px;margin:0;letter-spacing:-.3px}.frame-label span,.frame-label a{font-size:13px;color:#526857}.frame-label a{display:flex;min-height:44px;align-items:center}iframe{display:block;width:375px;height:740px;border:0;background:#FCFBF7;box-shadow:0 16px 40px #1D3E2810;outline:1px solid #D5DBD0;border-radius:0}.annotation{font-size:15px;line-height:1.7;color:#536657;padding-top:16px}.legend{display:flex;gap:12px;align-items:center}.swatch{width:18px;height:18px;border-radius:50%;display:inline-block;background:#1F6B4A}.swatch.orange{background:#E8622C}.board[hidden],.frame[hidden]{display:none}footer{padding:24px 48px 48px;border-top:1px solid #D2DACD;font-size:15px;color:#526857;line-height:1.8}@media(max-width:500px){header{padding:32px 24px}h1{font-size:36px}.toolbar{padding:12px 16px}.board{padding:24px 0;gap:32px}.frame-label,.annotation{padding-left:16px;padding-right:16px}footer{padding:24px}.board{overflow-x:auto;justify-content:start}.frame{margin:auto}}
+</style></head><body><header><div class="eyebrow">오늘 정상 / DESIGN NOTES 01</div><h1>오늘 오른 산이,<br>오래 남는 기록으로.</h1><p>가볍게 펼쳐보고, 하나씩 채워가는 등산 수첩.<br>성취의 순간은 또렷하게, 모아둔 시간은 담백하게 담았습니다.</p><div class="meta"><span class="legend"><i class="swatch"></i>#1F6B4A <i class="swatch orange"></i>#E8622C</span><span>375px · 라이트모드</span><a href="DESIGN.md">디자인 명세</a><a href="app.html?screen=home" target="_blank">앱 미리보기</a></div></header><nav class="toolbar" aria-label="디자인 화면 분류"><button class="active" data-filter="core">핵심 화면</button><button data-filter="flow">진입·인증</button><button data-filter="states">실패·로딩·빈 상태</button><button data-filter="system">스탬프 규칙</button><button data-filter="all">전체 보기</button></nav><main class="board" id="board"></main><footer>디자인 시연용입니다. 위치 확인·로그인·저장·제보는 실제로 실행되지 않습니다.<br>각 화면은 플랫폼 상단 네비게이션 아래부터 시작합니다. 기존 앱 소스와 96곳 원본 데이터는 포함되지 않아 예시 데이터로 구성했습니다.</footer><script>
+const frames=[
+['success','인증 성공','core','680ms의 짧은 찍힘. 초록 바탕과 절취선이 있는 종이 카드로 소장감을 만듭니다.'],
+['collection','내 스탬프','core','3열·76px. 스탬프만 컬러로 남기고, 빈 자리는 음각처럼 표현합니다. 아래로 스크롤할 수 있습니다.'],
+['detail','산 상세','core','160px 히어로. 인증 지점과 큰 하단 버튼을 먼저 확인하게 합니다.'],
+['home','홈','core','40px 스탬프와 88px 목록 행. 권역 칩과 탭이 작동합니다.'],
+['login','로그인 인트로','flow','수집할 대상을 먼저 보여주고 로그인 행동은 하나만 남깁니다.'],
+['home-denied','홈 · 위치 거부','flow','권한 안내 아래에 목록 유지. 거리는 숨기고 고도는 보여줍니다.'],
+['fail','인증 결과','flow','거리 안내와 정상 제보를 분리해 제보가 인증으로 오해되지 않게 합니다.'],
+['report','정상 이름 입력','flow','20자 입력·정보 이용 안내·보내기. 빈 입력 검증을 포함했습니다.'],
+['permission','위치 권한 필요','flow','차분한 초록 아이콘과 하나의 큰 재시도 버튼.'],
+['report-done','정상 제보 완료','flow','확정 문구와 홈으로 돌아가는 동선.'],
+['save-error','저장 실패','states','획득한 도장과 카드는 유지합니다. 하단 안내와 CTA만 바뀝니다.'],
+['collection-empty','컬렉션 · 0개','states','빈 자리 자체가 컬렉션이 됩니다. 권역을 접지 않고 유지합니다.'],
+['detail-collected','산 상세 · 모음','states','히어로에 계절색과 인증 상태를 표시합니다.'],
+['login-loading','로그인 · 로딩','states','기존 레이아웃을 유지하며 버튼 중복 탭을 막습니다.'],
+['login-error','로그인 · 실패','states','레이아웃 이동 없이 확보한 문구 영역에 표시합니다.'],
+['checking','인증 · 위치 확인 중','states','명확한 진행 상태와 중복 탭 방지.'],
+['home-loading','홈 · 로딩','states','레이아웃 크기를 유지하는 목록 로딩 상태. 신규 보조 문구는 명세에 별도 표시했습니다.'],
+['home-error','홈 · 네트워크 오류','states','목록을 다시 불러오는 동선. 신규 보조 문구는 명세에 별도 표시했습니다.'],
+['accuracy','위치 정확도 낮음','states','동일한 결과 카드 틀을 사용합니다.'],
+['altitude','고도 불일치','states','동일한 결과 카드 틀을 사용합니다.'],
+['stale','오래된 위치 정보','states','동일한 결과 카드 틀을 사용합니다.'],
+['duplicate','오늘 이미 획득','states','동일한 결과 카드 틀을 사용합니다.'],
+['unavailable','위치 확인 불가','states','동일한 결과 카드 틀을 사용합니다.'],
+['components','스탬프 컴포넌트','system','모음·미모음 × 40·76·160px. 계절 4종과 고도 4단계를 아래에서 확인합니다.']];
+const board=document.getElementById('board');board.innerHTML=frames.map(([id,name,group,note],i)=>`<section class="frame" data-group="${group}" ${group!=='core'?'hidden':''}><div class="frame-label"><h2><span>${String(i+1).padStart(2,'0')}</span> ${name}</h2><a href="app.html?screen=${id}" target="_blank">단독 보기</a></div><iframe title="${name}" src="app.html?screen=${id}" loading="lazy"></iframe><div class="annotation">${note}</div></section>`).join('');document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.frame').forEach(f=>f.hidden=b.dataset.filter!=='all'&&b.dataset.filter!==f.dataset.group)});
+</script></body></html>

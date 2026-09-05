@@ -1,0 +1,12 @@
+:root {
+  --brand-primary:#1F6B4A; --brand-accent:#E8622C;
+  --color-text-strong:#20372D; --color-text-default:#30443A; --color-text-subtle:#657168; --color-text-hint:#6E776F; --color-text-disabled:#A6ACA2; --color-text-inverse:#FFFFFF;
+  --color-bg:#FCFBF7; --color-bg-canvas:#F3F1E8; --color-surface:#FFFFFF; --color-line:#E2E5DC; --color-soft-green:#EAF0E8; --color-soft-orange:#FBEADF;
+  --color-danger:#965437; --color-success:#1F6B4A; --color-warning:#92542E;
+  --font-size-display:32px; --font-size-title:24px; --font-size-subtitle:20px; --font-size-body:17px; --font-size-body-small:15px; --font-size-caption:13px;
+  --font-weight-display:700; --font-weight-title:700; --font-weight-subtitle:600; --font-weight-body:400; --font-weight-body-small:400; --font-weight-caption:400;
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:24px; --space-6:32px;
+  --radius-control:16px; --radius-card:24px; --safe-bottom:34px; --dim:rgba(20,40,30,.4);
+  --stamp-low:#6E955C; --stamp-mid:#377650; --stamp-high:#245744; --stamp-alpine:#30485A;
+  --sky-spring:#EFDED6; --sky-summer:#DEE8DF; --sky-autumn:#F2D4B5; --sky-winter:#DAE7E9;
+}
