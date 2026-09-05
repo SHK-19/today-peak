@@ -2,6 +2,7 @@
 //
 //   숲나들e 100대명산 정보 (odcloud 15112801) — 이름·소재지·공식 높이·난이도·개요
 //   한국등산트레킹지원센터 봉우리POI (B553662/peakPoiInfoService) — 정상 좌표
+//   한국등산트레킹지원센터 숲길POI (B553662/fmmtnFrtrlPoiInfoService, ENTRY) — 등산로 입구 좌표
 //
 // 좌표는 지어내지 않는다. 정상은 "그 산에 귀속된 봉우리 중 공식 높이에 가장 가까운 것"으로
 // 고르고, 어떤 봉우리를 골랐는지(peakName) 파일과 리포트에 남긴다.
@@ -14,6 +15,8 @@ import { readFileSync, writeFileSync } from 'node:fs';
 const SUP_URL =
   'https://api.odcloud.kr/api/15112801/v1/uddi:72bf80fc-1a93-4193-a6db-8a547d7c3333';
 const PEAK_URL = 'https://apis.data.go.kr/B553662/peakPoiInfoService/getPeakPoiInfoList';
+const ENTRY_URL =
+  'https://apis.data.go.kr/B553662/fmmtnFrtrlPoiInfoService/getFmmtnFrtrlPoiInfoList';
 
 const KEY = readFileSync(new URL('../.env', import.meta.url), 'utf8')
   .split('\n')
@@ -70,6 +73,34 @@ async function loadPeaks() {
   return peaks;
 }
 
+// 등산로 입구는 전국 688건이라 한 페이지에 다 온다. 좌표가 완전히 같은 중복만 걷어낸다.
+async function loadEntries() {
+  const body = await fetchJson(
+    `${ENTRY_URL}?serviceKey=${KEY}&pageNo=1&numOfRows=1000&type=json&srchPlaceTpeCd=ENTRY`,
+  );
+  const { totalCount, items } = body.response.body;
+  if (items.item.length < totalCount) {
+    throw new Error(`등산로 입구 ${totalCount}건 중 ${items.item.length}건만 받았다. numOfRows를 늘려라`);
+  }
+  return items.item;
+}
+
+function trailheadsOf(entries) {
+  const seen = new Set();
+  const result = [];
+  for (const entry of entries) {
+    const lat = Number(Number(entry.lat).toFixed(6));
+    const lng = Number(Number(entry.lot).toFixed(6));
+    const key = `${lat},${lng}`;
+    if (seen.has(key)) {
+      continue;
+    }
+    seen.add(key);
+    result.push({ name: entry.placeNm.trim(), lat, lng });
+  }
+  return result;
+}
+
 // 난이도 필드는 "산행시간 : … 산높이 : … 난이도 : 초급" 같은 한 덩어리 문자열이다.
 function parseDifficulty(raw) {
   const matched = /난이도\s*:\s*([^\s]+)/.exec(raw ?? '');
@@ -83,12 +114,20 @@ function regionOf(place) {
 
 const mountains = await loadMountains();
 const peaks = await loadPeaks();
+const entries = await loadEntries();
 
 const peaksByName = new Map();
 for (const peak of peaks) {
   const list = peaksByName.get(peak.frtrlNm) ?? [];
   list.push(peak);
   peaksByName.set(peak.frtrlNm, list);
+}
+
+const entriesById = new Map();
+for (const entry of entries) {
+  const list = entriesById.get(entry.frtrlId) ?? [];
+  list.push(entry);
+  entriesById.set(entry.frtrlId, list);
 }
 
 const rows = [];
@@ -133,7 +172,7 @@ for (const mountain of mountains) {
     region: regionOf(mountain['명산_소재지']),
     difficulty: parseDifficulty(mountain['난이도']),
     peakName: summit.placeNm,
-    trailheads: [],
+    trailheads: trailheadsOf(entriesById.get(summit.frtrlId) ?? []),
   });
 }
 
@@ -144,6 +183,10 @@ console.log(`권역 분포: ${JSON.stringify(
   rows.reduce((acc, row) => ({ ...acc, [row.region ?? '미분류']: (acc[row.region ?? '미분류'] ?? 0) + 1 }), {}),
 )}`);
 console.log(`난이도 있음: ${rows.filter((row) => row.difficulty !== null).length}곳`);
+const noEntry = rows.filter((row) => row.trailheads.length === 0);
+console.log(
+  `등산로 입구 ${rows.reduce((sum, row) => sum + row.trailheads.length, 0)}곳 · 입구 없는 산 ${noEntry.length}곳: ${noEntry.map((row) => row.name).join(', ')}`,
+);
 if (warnings.length > 0) {
   console.log(`\n확인 필요 ${warnings.length}건 (공식 높이와 채택 봉우리 고도 차 60m 초과):`);
   for (const line of warnings) {
@@ -156,7 +199,7 @@ if (process.argv.includes('--write')) {
     _note:
       '자동 생성 파일입니다. 직접 고치지 말고 scripts/build-mountains.mjs를 다시 돌리세요. ' +
       '출처: 숲나들e 100대명산 정보(공공데이터포털 15112801, 이름·소재지·공식 높이·난이도) + ' +
-      '한국등산트레킹지원센터 봉우리POI(15097953, 정상 좌표). 이용허락범위 제한 없음. ' +
+      '한국등산트레킹지원센터 봉우리POI(15097953, 정상 좌표) + 숲길POI(15097947, 등산로 입구 좌표). 이용허락범위 제한 없음. ' +
       '정상은 산에 귀속된 봉우리 중 공식 높이에 가장 가까운 것을 채택했고, 채택한 봉우리 이름은 peakName에 남겼습니다. ' +
       `생성 ${new Date().toISOString().slice(0, 10)}.`,
     mountains: rows,
