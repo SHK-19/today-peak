@@ -156,6 +156,37 @@ body {
   white-space: nowrap;
 }
 
+/* 정상 제안 입력. 다른 사람에게 보이지 않는 제보라 목록·피드를 만들지 않는다. */
+.suggest {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-bg-canvas);
+}
+
+.suggest-label {
+  display: block;
+  font-size: var(--font-size-body-small);
+  font-weight: 600;
+  color: var(--color-text-strong);
+}
+
+.suggest-input {
+  width: 100%;
+  min-height: 48px;
+  margin-top: var(--space-2);
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-text-disabled);
+  border-radius: 12px;
+  background: var(--color-bg);
+  font-size: var(--font-size-body);
+  color: var(--color-text-strong);
+}
+
+.suggest-input:focus {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: -2px;
+}
+
 /* 인증 성공의 순간. 결과 카드 안에서 스탬프를 크게 보여준다. */
 .celebrate {
   display: flex;

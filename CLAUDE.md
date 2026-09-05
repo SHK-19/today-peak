@@ -83,6 +83,9 @@
 - Supabase `stamps`: `{ id, user_id(토스 로그인 식별자), mountain_id, verified_at, distance_m, accuracy_m }`. 이 6개 컬럼만.
 - Supabase `hike_starts`: `{ id, user_id, mountain_id, trailhead_name, started_at, distance_m }`. 이 6개 컬럼만.
 - Supabase `unlinked_users`: `{ user_id, referrer, unlinked_at }`. 연결을 끊은 유저. 다시 로그인하면 `login`이 지운다.
+- Supabase `peak_suggestions`: `{ id, user_id, mountain_id, peak_name, lat, lng, accuracy_m, distance_m, suggested_at }`.
+  이용자가 "여기도 정상"이라고 직접 누른 경우에만 저장한다. **평소 인증에서는 좌표를 저장하지 않는다** —
+  개인정보처리방침의 핵심 약속이라 자동 수집으로 바꾸지 않는다. 보관 1년, 다른 이용자에게 노출 금지.
 
 ## v0 범위 (2026-09-05 확정)
 스탬프 수집이 코어다. 산 정보는 "인증하러 가기 전에 필요한 최소한"까지만 넣는다.

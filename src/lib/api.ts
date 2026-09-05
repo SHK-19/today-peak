@@ -11,6 +11,20 @@ export type SummitOutcome =
 
 export type Stamp = { mountainId: string; verifiedAt: string };
 
+// 인증이 반경 밖으로 실패했을 때, 이용자가 "여기도 정상"이라고 알려주는 통로.
+// 스탬프를 주지 않는다 — 우리가 정상 좌표를 고칠지 판단하는 근거로만 쓴다.
+export async function suggestPeak(
+  mountainId: string,
+  reading: Reading,
+  peakName: string,
+): Promise<void> {
+  await call('/verify-summit', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ mountainId, reading, suggestPeakName: peakName }),
+  });
+}
+
 export type MountainStats = { hikingNow: number; todayStamps: number; totalStamps: number };
 
 async function call<T>(path: string, init?: RequestInit): Promise<T> {

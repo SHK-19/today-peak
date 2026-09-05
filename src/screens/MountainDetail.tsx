@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import {
   fetchMountainStats,
   startHike,
+  suggestPeak,
   verifySummitOnServer,
   type HikeStartOutcome,
   type MountainStats,
@@ -127,6 +128,10 @@ export function MountainDetail({ mountain, collected, onVerified }: Props) {
   const [state, setState] = useState<State>({ status: 'idle' });
   const [stats, setStats] = useState<MountainStats | null>(null);
   const [hike, setHike] = useState<HikeState>({ status: 'idle' });
+  // 정상 제안. 반경 밖으로 실패했을 때만 열린다.
+  const [suggesting, setSuggesting] = useState(false);
+  const [suggestName, setSuggestName] = useState('');
+  const [suggested, setSuggested] = useState<'no' | 'sending' | 'done' | 'failed'>('no');
   // 진행 중인 요청 자체를 들고 있는다. 버튼을 일찍 눌러도 새 요청을 또 만들지 않고
   // 먼저 시작한 요청을 기다린다 (야외에서 한 번 읽는 데 3~10초 걸린다).
   const prefetched = useRef<Promise<Reading | null> | null>(null);
@@ -169,6 +174,17 @@ export function MountainDetail({ mountain, collected, onVerified }: Props) {
       setHike({ status: 'done', outcome: await startHike(mountain.id, reading) });
     } catch {
       setHike({ status: 'failed' });
+    }
+  }
+
+  async function handleSuggest(reading: Reading) {
+    setSuggested('sending');
+    try {
+      await suggestPeak(mountain.id, reading, suggestName);
+      setSuggested('done');
+      setSuggesting(false);
+    } catch {
+      setSuggested('failed');
     }
   }
 
@@ -302,6 +318,54 @@ export function MountainDetail({ mountain, collected, onVerified }: Props) {
             >
               다시 저장
             </button>
+          )}
+
+          {/* 반경 밖으로 실패했을 때만. 스탬프를 주는 통로가 아니라 좌표를 고치기 위한 제보다. */}
+          {!state.saveFailed &&
+            state.outcome.status === 'rejected' &&
+            state.outcome.reason === 'too_far' &&
+            suggested !== 'done' &&
+            (suggesting ? (
+              <div className="suggest">
+                <label className="suggest-label" htmlFor="peak-name">
+                  지금 계신 봉우리 이름을 알려주세요
+                </label>
+                <input
+                  id="peak-name"
+                  className="suggest-input"
+                  value={suggestName}
+                  maxLength={20}
+                  placeholder="예: 문수봉"
+                  onChange={(event) => setSuggestName(event.target.value)}
+                />
+                <p className="footnote">
+                  이름과 지금 위치만 보내요. 다른 사람에게는 보이지 않고, 정상 좌표를 고칠지
+                  판단하는 데만 써요. 개인정보는 적지 말아주세요.
+                </p>
+                <button
+                  type="button"
+                  className="cta cta-inline"
+                  disabled={suggestName.trim() === '' || suggested === 'sending'}
+                  onClick={() => void handleSuggest(state.reading)}
+                >
+                  {suggested === 'sending' ? '보내는 중' : '보내기'}
+                </button>
+                {suggested === 'failed' && (
+                  <p className="notice">보내지 못했어요. 잠시 후 다시 눌러주세요.</p>
+                )}
+              </div>
+            ) : (
+              <button
+                type="button"
+                className="button-secondary"
+                onClick={() => setSuggesting(true)}
+              >
+                여기도 {mountain.name} 정상이에요
+              </button>
+            ))}
+
+          {suggested === 'done' && (
+            <p className="notice">알려주셔서 고마워요. 확인해서 반영할게요.</p>
           )}
         </section>
       )}

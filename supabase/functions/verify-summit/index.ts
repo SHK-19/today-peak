@@ -22,7 +22,7 @@ Deno.serve(async (request: Request) => {
     return json({ error: 'unauthorized' }, 401, origin);
   }
 
-  let body: { mountainId?: unknown; reading?: unknown };
+  let body: { mountainId?: unknown; reading?: unknown; suggestPeakName?: unknown };
   try {
     body = (await request.json()) as typeof body;
   } catch {
@@ -42,6 +42,32 @@ Deno.serve(async (request: Request) => {
   }
 
   const result = verifySummit(reading, mountain);
+
+  // 이용자가 "여기도 정상"이라고 알려준 경우. 인증이 아니라 제안이므로 스탬프를 주지 않는다.
+  // 평소에는 좌표를 저장하지 않지만 이 요청은 이용자가 직접 누른 것이다(개인정보처리방침 제3조).
+  if (typeof body.suggestPeakName === 'string') {
+    const peakName = body.suggestPeakName.trim().slice(0, 20);
+    if (peakName === '') {
+      return json({ error: 'invalid_request' }, 400, origin);
+    }
+    const { error } = await serviceClient().from('peak_suggestions').insert({
+      user_id: userKey,
+      mountain_id: mountain.id,
+      peak_name: peakName,
+      lat: reading.coords.latitude,
+      lng: reading.coords.longitude,
+      accuracy_m: reading.coords.accuracy,
+      distance_m: result.distanceM,
+    });
+    if (error !== null) {
+      console.error(`peak_suggestions 저장 실패 · ${error.message}`);
+      return json({ error: 'server_error' }, 500, origin);
+    }
+    console.log(
+      `peak suggestion · ${mountain.id} · ${Math.round(result.distanceM)}m 떨어진 지점`,
+    );
+    return json({ status: 'suggested' }, 200, origin);
+  }
   if (!result.ok) {
     return json({ status: 'rejected', reason: result.reason, distanceM: result.distanceM }, 200, origin);
   }
