@@ -341,6 +341,18 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
 - 스크린샷 검증은 헤드리스 Chrome에 `localStorage['__ait_storage:today-peak.session']`으로 토큰을 넣고
   `window.__ait._state.location.coords`를 바꿔 실제 인증 흐름을 돌리는 방식. 스크래치패드 `shot.mjs`.
 
+### 출시 전 정리 (2026-09-06)
+
+- `supabase secrets unset TEST_PLACES` 완료. `src/data/test-places.json`은 저장소 밖(스크래치패드)으로 옮겼다.
+  빌드 결과에 `[테스트]`·`test-home` 문자열이 없는 것을 확인. 목록 96곳, 실측 각주 자동 소멸.
+- DB 테스트 행: stamps 9(+검증 캡처 중 생긴 북한산 1), hike_starts 1, peak_suggestions 3. **삭제 SQL은 자동 모드
+  분류기가 막아서 사용자가 직접 실행한다.** `unlinked_users` 1행은 정상 상태라 남긴다.
+- 등록용 스크린샷 6장을 새 디자인으로 다시 만들었다(`assets/screenshot-1~6`). 375×618 뷰포트를 dsf 1.696으로
+  찍어 636×1048 정확히. 인트로 카드는 `reg/intro.html`(종이색 배경 + 성공 티켓). 콘솔 교체는 앱정보 재검토를
+  부르므로 사용자 결정.
+- 릴리즈 판정: `reviewRequestDecision=ALLOWED`, `releaseDecision=WORKSPACE_TERMS_AGREEMENT_REQUIRED_FROM_OWNER`
+  → 번들 검수 요청은 가능하지만 **출시하기 전에 대표관리자가 콘솔 웹에서 제휴 약관에 동의**해야 한다.
+
 ## 백로그 — 데이터 검증 (출시 전, 사람이 확인)
 
 `node scripts/build-mountains.mjs`가 매번 같은 리포트를 낸다. 고치는 방법은 스크립트의 정상 선택 규칙에
