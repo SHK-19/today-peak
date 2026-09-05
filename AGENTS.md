@@ -23,7 +23,7 @@
 - 오버레이: `--dim`(#000 대신)
 - 인라인 style 객체에서도 `var()`가 그대로 동작한다
 
-아이콘: React는 `src/components/icons.tsx` 6종.
+아이콘: React는 `src/components/icons.tsx` 12종(기본 6 + 디자인 납품 6: 홈·컬렉션·체크·위치·깃발·사람).
 아이콘: vanilla는 `src/assets/icons/*.svg` 6종.
 
 전문(3층 전체 규칙): `docs/design-guide.md`.

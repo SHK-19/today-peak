@@ -10,7 +10,15 @@ import {
   type MountainStats,
   type SummitOutcome,
 } from '../lib/api.ts';
+import {
+  CheckIcon,
+  CollectionIcon,
+  FlagIcon,
+  LocationIcon,
+  PeopleIcon,
+} from '../components/icons.tsx';
 import { Stamp } from '../components/Stamp.tsx';
+import { formatSeoulDate } from '../lib/day.ts';
 import { formatDistance } from '../lib/format.ts';
 import { IS_FIELD_TEST_BUILD } from '../lib/mountains.ts';
 import {
@@ -19,18 +27,12 @@ import {
   readBestLocation,
   readLocationForCheckIn,
 } from '../lib/location.ts';
-import {
-  MAX_READS,
-  SUMMIT_RADIUS_M,
-  verifySummit,
-  type Mountain,
-  type Reading,
-} from '../lib/verify.ts';
+import { MAX_READS, verifySummit, type Mountain, type Reading } from '../lib/verify.ts';
 
 type State =
   | { status: 'idle' }
   | { status: 'reading'; attempt: number }
-  // 위치를 읽은 뒤. outcome이 null이면 서버 응답을 기다리는 중,
+  // 위치를 읽은 뒤. confirmed가 false면 서버 응답을 기다리는 중,
   // saveFailed면 통신이 끊긴 것이라 같은 reading으로 다시 보낼 수 있다.
   | {
       status: 'result';
@@ -48,7 +50,15 @@ type HikeState =
   | { status: 'done'; outcome: HikeStartOutcome }
   | { status: 'failed' };
 
-type Props = { mountain: Mountain; collected: boolean; onVerified: () => void };
+type Props = {
+  mountain: Mountain;
+  collected: boolean;
+  /** 성공 티켓 절취선 아래 "96곳 중 N곳" */
+  collectedCount: number;
+  totalCount: number;
+  onVerified: () => void;
+  onGoToStamps: () => void;
+};
 
 function hikeMessage(state: HikeState): string | null {
   switch (state.status) {
@@ -124,7 +134,29 @@ function ctaLabel(state: State): string {
   return `신호가 약해서 다시 확인하고 있어요 (${state.attempt}/${MAX_READS})`;
 }
 
-export function MountainDetail({ mountain, collected, onVerified }: Props) {
+// 실측 빌드에서만 결과 아래 붙는 좌표 한 줄. 테스트 장소를 만들 때 이 값을 쓴다.
+function FieldNote({ reading, outcome }: { reading: Reading; outcome: SummitOutcome }) {
+  if (!IS_FIELD_TEST_BUILD) {
+    return null;
+  }
+  return (
+    <p className="footnote">
+      내 좌표 {reading.coords.latitude.toFixed(6)}, {reading.coords.longitude.toFixed(6)} · 정확도{' '}
+      {Math.round(reading.coords.accuracy)}m · 거리{' '}
+      {'distanceM' in outcome ? Math.round(outcome.distanceM) : '-'}m · 고도{' '}
+      {reading.coords.altitude == null ? '없음' : `${Math.round(reading.coords.altitude)}m`}
+    </p>
+  );
+}
+
+export function MountainDetail({
+  mountain,
+  collected,
+  collectedCount,
+  totalCount,
+  onVerified,
+  onGoToStamps,
+}: Props) {
   const [state, setState] = useState<State>({ status: 'idle' });
   const [stats, setStats] = useState<MountainStats | null>(null);
   const [hike, setHike] = useState<HikeState>({ status: 'idle' });
@@ -238,170 +270,258 @@ export function MountainDetail({ mountain, collected, onVerified }: Props) {
     }
   }
 
-  return (
-    <main className="screen">
-      <h1 className="title">{mountain.name}</h1>
-      <p className="subtitle">
-        높이 {mountain.elevationM}m
-        {mountain.peakName != null && ` · 인증 지점 ${mountain.peakName}`}
-      </p>
+  const verifyButton = (
+    <button
+      type="button"
+      className="btn"
+      disabled={state.status === 'reading'}
+      onClick={() => void handleVerify()}
+    >
+      {state.status === 'reading' && <span className="spinner" aria-hidden="true" />}
+      {ctaLabel(state)}
+    </button>
+  );
 
-      {stats !== null && (stats.hikingNow > 0 || stats.todayStamps > 0 || stats.totalStamps > 0) && (
-        <ul className="stats">
-          {stats.hikingNow > 0 && <li>지금 {stats.hikingNow}명 등산 중</li>}
-          {stats.todayStamps > 0 ? (
-            <li>오늘 {stats.todayStamps}명이 정상을 찍었어요</li>
+  // ---- 인증 성공: 초록 들판 위 종이 티켓. 로컬 판정이 ok면 바로 찍고, 서버가 뒤집으면 결과 카드로 간다.
+  if (state.status === 'result' && state.outcome.status === 'ok') {
+    const now = new Date().toISOString();
+    // 저장 성공 전엔 아직 셈에 안 들어 있다. 절취선 아래 숫자를 미리 올려서 보여준다.
+    const shownCount = collected ? collectedCount : collectedCount + (state.confirmed ? 0 : 1);
+    return (
+      <main className="page success">
+        <header className="success-heading">
+          <h1>스탬프를 획득했어요</h1>
+          <p>정상에 도착한 걸 확인했어요.</p>
+        </header>
+
+        <section className="ticket">
+          <div className="ticket-main">
+            <Stamp
+              mountain={mountain}
+              collected
+              size={160}
+              verifiedAt={now}
+              className="stamp-impact"
+            />
+            <h2>{mountain.name}</h2>
+            <p className="altitude">
+              {mountain.elevationM}m
+              {mountain.peakName != null && ` · ${mountain.peakName}`}
+            </p>
+            <p className="ticket-date">{formatSeoulDate(now)}</p>
+            <FieldNote reading={state.reading} outcome={state.outcome} />
+          </div>
+          <div className="ticket-stub">
+            <span className="seal-check">
+              <CheckIcon size={20} />
+            </span>
+            <p>
+              <strong>내 스탬프</strong>
+              {totalCount}곳 중 {shownCount}곳을 모았어요
+            </p>
+          </div>
+        </section>
+
+        {state.saveFailed && (
+          <p className="save-alert">
+            <strong>스탬프를 저장하지 못했어요</strong>
+            인터넷 연결을 확인한 뒤 다시 저장해 주세요. 위치는 그대로 두고 저장만 다시 해요.
+          </p>
+        )}
+
+        <div className="bottom-actions">
+          {state.saveFailed ? (
+            <button
+              type="button"
+              className="btn"
+              onClick={() => void save(state.reading, state.outcome)}
+            >
+              다시 저장
+            </button>
           ) : (
-            stats.totalStamps > 0 && <li>지금까지 {stats.totalStamps}명 인증</li>
+            <button type="button" className="btn" disabled={!state.confirmed} onClick={onGoToStamps}>
+              {state.confirmed ? '내 스탬프' : '저장하고 있어요'}
+            </button>
           )}
-        </ul>
-      )}
+        </div>
+      </main>
+    );
+  }
 
-      {mountain.trailheads.length > 0 && (
-        <>
+  // ---- 정상 제안 입력
+  if (state.status === 'result' && suggesting) {
+    const reading = state.reading;
+    return (
+      <main className="page">
+        <div className="form-content">
+          <label htmlFor="peak-name">지금 계신 봉우리 이름을 알려주세요</label>
+          <input
+            id="peak-name"
+            value={suggestName}
+            maxLength={20}
+            placeholder="예: 문수봉"
+            autoComplete="off"
+            onChange={(event) => setSuggestName(event.target.value)}
+          />
+          <p className="count">{suggestName.length} / 20</p>
+          <p className="privacy">
+            이름과 지금 위치만 보내요. 다른 사람에게는 보이지 않고, 정상 좌표를 고칠지 판단하는
+            데만 써요. 개인정보는 적지 말아주세요.
+          </p>
+          {suggested === 'failed' && (
+            <p className="form-error">보내지 못했어요. 잠시 후 다시 눌러주세요.</p>
+          )}
+        </div>
+        <div className="bottom-actions">
           <button
             type="button"
-            className="button-secondary"
+            className="btn"
+            disabled={suggestName.trim() === '' || suggested === 'sending'}
+            onClick={() => void handleSuggest(reading)}
+          >
+            {suggested === 'sending' && <span className="spinner" aria-hidden="true" />}
+            {suggested === 'sending' ? '보내는 중' : '보내기'}
+          </button>
+        </div>
+      </main>
+    );
+  }
+
+  // ---- 실패·중복·오래됨 결과, 제안 완료
+  if (state.status === 'result') {
+    const message = state.saveFailed
+      ? {
+          heading: '스탬프를 저장하지 못했어요',
+          body: '인터넷 연결을 확인한 뒤 다시 저장해 주세요. 위치는 그대로 두고 저장만 다시 해요.',
+        }
+      : resultMessage(state.outcome, mountain.peakName);
+    const canSuggest =
+      !state.saveFailed &&
+      state.outcome.status === 'rejected' &&
+      state.outcome.reason === 'too_far' &&
+      suggested !== 'done';
+    return (
+      <main className="page">
+        <section className="result-card">
+          <span className="state-icon">
+            {suggested === 'done' ? <CheckIcon size={32} /> : <LocationIcon size={32} />}
+          </span>
+          <h1>{suggested === 'done' ? '알려주셔서 고마워요' : message.heading}</h1>
+          <p>{suggested === 'done' ? '확인해서 반영할게요.' : message.body}</p>
+          <FieldNote reading={state.reading} outcome={state.outcome} />
+        </section>
+
+        {/* 반경 밖으로 실패했을 때만. 스탬프를 주는 통로가 아니라 좌표를 고치기 위한 제보라
+            메인 버튼과 확실히 다르게(밑줄 글자) 그린다. */}
+        {canSuggest && (
+          <div className="report-action">
+            <button type="button" className="btn btn-ghost" onClick={() => setSuggesting(true)}>
+              여기도 {mountain.name} 정상이에요
+            </button>
+          </div>
+        )}
+
+        <div className="bottom-actions">
+          {state.saveFailed ? (
+            <button
+              type="button"
+              className="btn"
+              onClick={() => void save(state.reading, state.outcome)}
+            >
+              다시 저장
+            </button>
+          ) : (
+            verifyButton
+          )}
+        </div>
+      </main>
+    );
+  }
+
+  // ---- 위치 권한·위치 실패. 막다른 화면이 아니라 문을 여는 화면이다.
+  if (state.status === 'denied' || state.status === 'failed') {
+    return (
+      <main className="page">
+        <section className="permission">
+          <span className="state-icon">
+            <LocationIcon size={32} />
+          </span>
+          <h1>{state.status === 'denied' ? '위치 권한이 필요해요' : '위치를 확인할 수 없어요'}</h1>
+          <p>
+            {state.status === 'denied'
+              ? '정상에 도착했는지 확인하려면 위치가 필요해요. 아래 버튼을 누르면 허용 여부를 다시 물어봐요.'
+              : '휴대폰 설정에서 위치 서비스가 켜져 있는지 확인한 뒤 다시 눌러주세요.'}
+            {state.status === 'denied' &&
+              state.askedAgain &&
+              ' 팝업이 뜨지 않으면 토스 앱 설정 > 권한에서 위치를 켜주세요.'}
+          </p>
+        </section>
+        <div className="bottom-actions">
+          <button type="button" className="btn" onClick={() => void handleVerify()}>
+            {state.status === 'denied' ? '위치 허용하기' : '정상 인증하기'}
+          </button>
+        </div>
+      </main>
+    );
+  }
+
+  // ---- 기본: 정상에서 보는 화면. 큰 글자, 큰 버튼, 한 번의 탭.
+  const hikeNote = hikeMessage(hike);
+  return (
+    <main className="page">
+      <section className="hero">
+        <Stamp mountain={mountain} collected={collected} size={160} />
+      </section>
+
+      <div className="detail-info">
+        <h1>{mountain.name}</h1>
+        <p>
+          높이 {mountain.elevationM}m
+          {mountain.peakName != null && ` · 인증 지점 ${mountain.peakName}`}
+        </p>
+        {collected && <span className="badge">이 산의 스탬프를 모았어요</span>}
+      </div>
+
+      {stats !== null && (stats.hikingNow > 0 || stats.todayStamps > 0 || stats.totalStamps > 0) && (
+        <div className="stats">
+          {stats.hikingNow > 0 && (
+            <p>
+              <PeopleIcon size={22} />
+              지금 {stats.hikingNow}명 등산 중
+            </p>
+          )}
+          {stats.todayStamps > 0 && (
+            <p>
+              <FlagIcon size={22} />
+              오늘 {stats.todayStamps}명이 정상을 찍었어요
+            </p>
+          )}
+          {stats.totalStamps > 0 && (
+            <p>
+              <CollectionIcon size={22} />
+              지금까지 {stats.totalStamps}명 인증
+            </p>
+          )}
+        </div>
+      )}
+
+      {hikeNote !== null && <p className="hike-note">{hikeNote}</p>}
+
+      <div className="bottom-actions">
+        <p className="footnote">
+          정상에서 인터넷이 안 되면 신호가 잡히는 가까운 지점에서 시도해 주세요.
+        </p>
+        {mountain.trailheads.length > 0 && (
+          <button
+            type="button"
+            className="btn btn-secondary"
             disabled={hike.status === 'starting'}
             onClick={() => void handleStartHike()}
           >
             {hike.status === 'starting' ? '위치를 확인하고 있어요' : '산행 시작'}
           </button>
-          {hikeMessage(hike) !== null && <p className="notice">{hikeMessage(hike)}</p>}
-        </>
-      )}
-
-      {(state.status === 'idle' || state.status === 'reading') && (
-        <section className="hero">
-          <Stamp mountain={mountain} collected={collected} size={160} />
-          <p className="hero-note">
-            {collected
-              ? '이 산의 스탬프를 모았어요'
-              : mountain.peakName == null
-                ? `정상 반경 ${SUMMIT_RADIUS_M}m 안에서 인증하면 이 스탬프를 받아요`
-                : `${mountain.peakName} 반경 ${SUMMIT_RADIUS_M}m 안에서 인증하면 이 스탬프를 받아요`}
-          </p>
-        </section>
-      )}
-
-      {state.status === 'result' && (
-        <section className={state.outcome.status === 'ok' && state.confirmed ? 'result result-ok' : 'result'}>
-          {state.outcome.status === 'ok' && state.confirmed && (
-            <div className="celebrate">
-              <Stamp mountain={mountain} collected size={140} />
-            </div>
-          )}
-          <h2 className="result-heading">
-            {state.saveFailed ? '스탬프를 저장하지 못했어요' : resultMessage(state.outcome, mountain.peakName).heading}
-          </h2>
-          <p className="notice">
-            {state.saveFailed
-              ? '인터넷 연결을 확인한 뒤 다시 저장해 주세요. 위치는 그대로 두고 저장만 다시 해요.'
-              : resultMessage(state.outcome, mountain.peakName).body}
-          </p>
-          {IS_FIELD_TEST_BUILD && (
-            <p className="footnote">
-              내 좌표 {state.reading.coords.latitude.toFixed(6)},{' '}
-              {state.reading.coords.longitude.toFixed(6)} · 정확도{' '}
-              {Math.round(state.reading.coords.accuracy)}m · 거리{' '}
-              {'distanceM' in state.outcome ? Math.round(state.outcome.distanceM) : '-'}m · 고도{' '}
-              {state.reading.coords.altitude == null
-                ? '없음'
-                : Math.round(state.reading.coords.altitude) + 'm'}
-            </p>
-          )}
-          {state.saveFailed && (
-            <button
-              type="button"
-              className="cta cta-inline"
-              onClick={() => void save(state.reading, state.outcome)}
-            >
-              다시 저장
-            </button>
-          )}
-
-          {/* 반경 밖으로 실패했을 때만. 스탬프를 주는 통로가 아니라 좌표를 고치기 위한 제보다. */}
-          {!state.saveFailed &&
-            state.outcome.status === 'rejected' &&
-            state.outcome.reason === 'too_far' &&
-            suggested !== 'done' &&
-            (suggesting ? (
-              <div className="suggest">
-                <label className="suggest-label" htmlFor="peak-name">
-                  지금 계신 봉우리 이름을 알려주세요
-                </label>
-                <input
-                  id="peak-name"
-                  className="suggest-input"
-                  value={suggestName}
-                  maxLength={20}
-                  placeholder="예: 문수봉"
-                  onChange={(event) => setSuggestName(event.target.value)}
-                />
-                <p className="footnote">
-                  이름과 지금 위치만 보내요. 다른 사람에게는 보이지 않고, 정상 좌표를 고칠지
-                  판단하는 데만 써요. 개인정보는 적지 말아주세요.
-                </p>
-                <button
-                  type="button"
-                  className="cta cta-inline"
-                  disabled={suggestName.trim() === '' || suggested === 'sending'}
-                  onClick={() => void handleSuggest(state.reading)}
-                >
-                  {suggested === 'sending' ? '보내는 중' : '보내기'}
-                </button>
-                {suggested === 'failed' && (
-                  <p className="notice">보내지 못했어요. 잠시 후 다시 눌러주세요.</p>
-                )}
-              </div>
-            ) : (
-              <button
-                type="button"
-                className="button-secondary"
-                onClick={() => setSuggesting(true)}
-              >
-                여기도 {mountain.name} 정상이에요
-              </button>
-            ))}
-
-          {suggested === 'done' && (
-            <p className="notice">알려주셔서 고마워요. 확인해서 반영할게요.</p>
-          )}
-        </section>
-      )}
-
-      {state.status === 'denied' && (
-        <section className="result">
-          <h2 className="result-heading">위치 권한이 필요해요</h2>
-          <p className="notice">
-            정상에 도착했는지 확인하려면 위치가 필요해요. 아래 <strong>정상 인증하기</strong>를
-            누르면 허용 여부를 다시 물어봐요.
-            {state.askedAgain && ' 팝업이 뜨지 않으면 토스 앱 설정 > 권한에서 위치를 켜주세요.'}
-          </p>
-        </section>
-      )}
-
-      {state.status === 'failed' && (
-        <section className="result">
-          <h2 className="result-heading">위치를 확인할 수 없어요</h2>
-          <p className="notice">
-            휴대폰 설정에서 위치 서비스가 켜져 있는지 확인한 뒤 다시 눌러주세요.
-          </p>
-        </section>
-      )}
-
-      <div className="cta-area">
-        <p className="footnote">
-          정상에서 인터넷이 안 되면 신호가 잡히는 가까운 지점에서 시도해 주세요.
-        </p>
-        <button
-          type="button"
-          className="cta"
-          disabled={state.status === 'reading'}
-          onClick={() => void handleVerify()}
-        >
-          {ctaLabel(state)}
-        </button>
+        )}
+        {verifyButton}
       </div>
     </main>
   );

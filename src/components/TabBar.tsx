@@ -1,8 +1,10 @@
+import { CollectionIcon, HomeIcon } from './icons.tsx';
+
 export type TabId = 'home' | 'stamps';
 
-const TABS: { id: TabId; label: string }[] = [
-  { id: 'home', label: '오늘 정상' },
-  { id: 'stamps', label: '스탬프' },
+const TABS: { id: TabId; label: string; Icon: typeof HomeIcon }[] = [
+  { id: 'home', label: '홈', Icon: HomeIcon },
+  { id: 'stamps', label: '내 스탬프', Icon: CollectionIcon },
 ];
 
 type Props = { active: TabId; onChange: (id: TabId) => void };
@@ -12,15 +14,16 @@ type Props = { active: TabId; onChange: (id: TabId) => void };
 export function TabBar({ active, onChange }: Props) {
   return (
     <nav className="tabbar">
-      {TABS.map((tab) => (
+      {TABS.map(({ id, label, Icon }) => (
         <button
-          key={tab.id}
+          key={id}
           type="button"
-          className={tab.id === active ? 'tab tab-active' : 'tab'}
-          aria-current={tab.id === active ? 'page' : undefined}
-          onClick={() => onChange(tab.id)}
+          className={id === active ? 'tab tab-active' : 'tab'}
+          aria-current={id === active ? 'page' : undefined}
+          onClick={() => onChange(id)}
         >
-          {tab.label}
+          <Icon size={24} />
+          {label}
         </button>
       ))}
     </nav>

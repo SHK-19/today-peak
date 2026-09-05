@@ -59,8 +59,8 @@ function App() {
 
   if (session === 'checking') {
     return (
-      <main className="screen">
-        <p className="notice">잠시만 기다려 주세요</p>
+      <main className="page">
+        <p className="screen-notice">잠시만 기다려 주세요</p>
       </main>
     );
   }
@@ -75,7 +75,13 @@ function App() {
       <MountainDetail
         mountain={detail}
         collected={stamps?.some((stamp) => stamp.mountainId === detail.id) ?? false}
+        collectedCount={stamps?.length ?? 0}
+        totalCount={MOUNTAINS.length}
         onVerified={() => void loadStamps()}
+        onGoToStamps={() => {
+          setDetailId(null);
+          setTab('stamps');
+        }}
       />
     );
   }
