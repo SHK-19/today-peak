@@ -13,20 +13,32 @@ function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export type PermissionOutcome = { allowed: boolean; status: string };
+// 권한이 없으면 다이얼로그를 띄운다. **거부 상태에서도 다시 띄운다** —
+// 공식 예제가 denied에서 openPermissionDialog를 여는 방식이고, 이 권한은 미니앱 단위라
+// 토스 앱 자체 위치 권한이 켜져 있어도 여기서만 거부돼 있을 수 있다.
+// (2026-09-05 새 기기 실기기 확인. 사용자는 설정 어디를 봐야 할지 알 수 없는 상태가 된다.)
+let pendingDialog: Promise<boolean> | null = null;
 
-// 권한이 없으면 다이얼로그를 띄운다. 거부 상태면 다이얼로그를 다시 띄우지 않는다.
-// status는 세션 2 진단용으로 화면에 그대로 찍는다.
-export async function ensureLocationPermission(): Promise<PermissionOutcome> {
-  const status = await getCurrentLocation.getPermission();
-  if (status === 'allowed') {
-    return { allowed: true, status };
+export async function ensureLocationPermission(): Promise<boolean> {
+  if ((await getCurrentLocation.getPermission()) === 'allowed') {
+    return true;
   }
-  if (status === 'notDetermined') {
-    const next = await getCurrentLocation.openPermissionDialog();
-    return { allowed: next === 'allowed', status: `notDetermined→${next}` };
-  }
-  return { allowed: false, status };
+
+  // 버튼을 연타하면 다이얼로그가 이미 떠 있는 상태에서 또 호출돼 denied가 돌아온다
+  // (2026-09-05 실기기: 허용돼 있는데도 "위치 권한이 필요해요"가 떴다).
+  // 요청은 하나만 보내고, 결과도 dialog 답이 아니라 실제 권한 상태로 확정한다.
+  pendingDialog ??= (async () => {
+    try {
+      if ((await getCurrentLocation.openPermissionDialog()) === 'allowed') {
+        return true;
+      }
+      return (await getCurrentLocation.getPermission()) === 'allowed';
+    } finally {
+      pendingDialog = null;
+    }
+  })();
+
+  return await pendingDialog;
 }
 
 // 홈 목록 정렬용. 거리순만 필요해서 정확도를 낮게 잡는다.
@@ -43,6 +55,12 @@ export async function prefetchLocation(): Promise<Reading | null> {
   } catch {
     return null;
   }
+}
+
+// 산행 시작 체크인용. 반경이 500m라 반복 읽기는 하지 않는다.
+// 다만 서버가 30초 만료를 검사하므로 캐시가 덜 끼도록 Highest로 읽는다.
+export async function readLocationForCheckIn(): Promise<Reading> {
+  return await getCurrentLocation({ accuracy: Accuracy.Highest });
 }
 
 // 정상 인증용. 최대 MAX_READS회 읽고 accuracy가 가장 좋은 것을 채택한다.
