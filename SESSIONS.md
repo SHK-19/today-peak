@@ -406,7 +406,10 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
   Edge Function 고정 IP가 없어서 **IP 등록이 걸림돌**. 엔드포인트: `POST /openapi/links`(tacaItemId→shortUrl), `GET /openapi/products/detail`(이름·가격·이미지·재고),
   카테고리 베스트·오늘의 특가·베스트셀러 목록. **키워드 검색 없음**. 정책: 가격을 DB에 쌓아 이커머스처럼 나열 금지, 이미지 저장·외부 앱 표시는 사전 승인,
   고지 문구 "토스쇼핑 쉐어링크 활동으로, 링크 구매 시 수수료를 지급받습니다"를 상품 소개 가까이에.
-- 네이버 지역 검색: 요청당 최대 5건, 반경 없음(검색어), 좌표 변환 필요. Edge Function에서 호출(키 비공개). `NAVER_CLIENT_ID/SECRET` secrets.
+- 네이버 지역 검색은 **네이버 클라우드 플랫폼(API Hub)**으로 옮겨감. `GET https://naverapihub.apigw.ntruss.com/search/v1/local?query=&display=5&sort=comment`,
+  헤더 `X-NCP-APIGW-API-KEY-ID`/`X-NCP-APIGW-API-KEY`. 요청당 최대 5건, 하루 25,000회, 반경 없음(검색어), 좌표는 WGS84(문서 표기).
+  Edge Function에서 호출(키 비공개). `NAVER_CLIENT_ID/SECRET` secrets.
+- 쉐어링크 신청용 시안 `assets/sharelink-mockup.png`(산 상세 + '챙길 것' 섹션, 상품은 예시).
 
 ## 백로그 — 데이터 검증 (출시 전, 사람이 확인)
 
