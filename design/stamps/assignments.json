@@ -3367,5 +3367,1373 @@
       "winter": "custom"
     },
     "assetKey": "0000000087"
+  },
+  {
+    "name": "가리산",
+    "height": 1051,
+    "region": "강원",
+    "summit": "가리산정상1051",
+    "id": "0000000002",
+    "peak": [
+      88,
+      59
+    ],
+    "motif": "rock-wall",
+    "x": 63,
+    "y": 67,
+    "scale": 0.63,
+    "tag": "가리산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000002"
+  },
+  {
+    "name": "가리왕산",
+    "height": 1562,
+    "region": "강원",
+    "summit": "가리왕산 정상",
+    "id": "0000000003",
+    "peak": [
+      103,
+      66
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "가리왕산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "custom",
+    "seasonSnow": {
+      "spring": "custom-lg-only",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000003"
+  },
+  {
+    "name": "계방산",
+    "height": 1579,
+    "region": "강원",
+    "summit": "계방산정상",
+    "id": "0000000008",
+    "peak": [
+      106,
+      69
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "계방산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "custom",
+    "seasonSnow": {
+      "spring": "custom-lg-only",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000008"
+  },
+  {
+    "name": "공작산",
+    "height": 887,
+    "region": "강원",
+    "summit": "공작산 정상(과거 정상표지석 위치)",
+    "id": "0000000009",
+    "peak": [
+      91,
+      65
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "공작산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000009"
+  },
+  {
+    "name": "덕항산",
+    "height": 1073,
+    "region": "강원",
+    "summit": "덕항산 정상",
+    "id": "0000000025",
+    "peak": [
+      90,
+      69
+    ],
+    "motif": "sheer-face",
+    "x": 63,
+    "y": 68,
+    "scale": 0.65,
+    "tag": "덕항산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000025"
+  },
+  {
+    "name": "두타산",
+    "height": 1357,
+    "region": "강원",
+    "summit": "두타산",
+    "id": "0000000029",
+    "peak": [
+      95,
+      55
+    ],
+    "motif": "rock-spire",
+    "x": 44,
+    "y": 77,
+    "scale": 0.4,
+    "tag": "정상과 베틀바위의 인상",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000029"
+  },
+  {
+    "name": "명성산",
+    "height": 922,
+    "region": "강원",
+    "summit": "삼각봉",
+    "id": "0000000032",
+    "peak": [
+      93,
+      68
+    ],
+    "motif": "meadow",
+    "x": 51,
+    "y": 116,
+    "scale": 0.85,
+    "tag": "명성산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "gold",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000032"
+  },
+  {
+    "name": "방태산",
+    "height": 1446,
+    "region": "강원",
+    "summit": "방태산주억봉 1,444m",
+    "id": "0000000040",
+    "peak": [
+      99,
+      62
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "방태산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000040"
+  },
+  {
+    "name": "백덕산",
+    "height": 1350,
+    "region": "강원",
+    "summit": "백덕산정상",
+    "id": "0000000041",
+    "peak": [
+      84,
+      62
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "백덕산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000041"
+  },
+  {
+    "name": "백운산(정선)",
+    "height": 884,
+    "region": "강원",
+    "summit": "백운산",
+    "id": "0000000045",
+    "peak": [
+      80,
+      68
+    ],
+    "motif": "sheer-face",
+    "x": 59,
+    "y": 68,
+    "scale": 0.53,
+    "tag": "백운산(정선)의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000045"
+  },
+  {
+    "name": "삼악산",
+    "height": 656,
+    "region": "강원",
+    "summit": "삼악산 용화봉(654m)",
+    "id": "0000000049",
+    "peak": [
+      89,
+      65
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "삼악산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000049"
+  },
+  {
+    "name": "오대산",
+    "height": 1565,
+    "region": "강원",
+    "summit": "비로봉정상",
+    "id": "0000000059",
+    "peak": [
+      98,
+      77
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "비로봉의 완만한 마루",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "custom",
+    "seasonSnow": {
+      "spring": "custom-lg-only",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000059"
+  },
+  {
+    "name": "오봉산",
+    "height": 778,
+    "region": "강원",
+    "summit": "오봉산 정상",
+    "id": "0000000060",
+    "peak": [
+      96,
+      66
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "오봉산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000060"
+  },
+  {
+    "name": "용화산",
+    "height": 878,
+    "region": "강원",
+    "summit": "용화산 정상",
+    "id": "0000000062",
+    "peak": [
+      84,
+      54
+    ],
+    "motif": "rock-spire",
+    "x": 73,
+    "y": 55,
+    "scale": 0.4,
+    "tag": "용화산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000062"
+  },
+  {
+    "name": "응봉산",
+    "height": 1000,
+    "region": "강원",
+    "summit": "응봉산 정상",
+    "id": "0000000069",
+    "peak": [
+      101,
+      71
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "응봉산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000069"
+  },
+  {
+    "name": "치악산",
+    "height": 1282,
+    "region": "강원",
+    "summit": "비로봉정상",
+    "id": "0000000086",
+    "peak": [
+      96,
+      65
+    ],
+    "motif": "cairn",
+    "x": 86,
+    "y": 41,
+    "scale": 0.68,
+    "tag": "비로봉 돌탑",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      128,
+      45
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000086"
+  },
+  {
+    "name": "태화산",
+    "height": 1028,
+    "region": "강원",
+    "summit": "태화산정상",
+    "id": "0000000089",
+    "peak": [
+      102,
+      77
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "태화산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000089"
+  },
+  {
+    "name": "팔봉산",
+    "height": 328,
+    "region": "강원",
+    "summit": "팔봉산",
+    "id": "0000000091",
+    "peak": [
+      79,
+      84
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "팔봉산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "none"
+    },
+    "assetKey": "0000000091"
+  },
+  {
+    "name": "강천산",
+    "height": 586,
+    "region": "전라",
+    "summit": "운대봉",
+    "id": "0000000006",
+    "peak": [
+      78,
+      79
+    ],
+    "motif": "sheer-face",
+    "x": 55,
+    "y": 79,
+    "scale": 0.46,
+    "tag": "강천산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "none"
+    },
+    "assetKey": "0000000006"
+  },
+  {
+    "name": "깃대봉",
+    "height": 368,
+    "region": "전라",
+    "summit": "홍도 깃대봉",
+    "id": "0000000016",
+    "peak": [
+      86,
+      85
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "깃대봉의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "none"
+    },
+    "assetKey": "0000000016"
+  },
+  {
+    "name": "내장산",
+    "height": 764,
+    "region": "전라",
+    "summit": "까치봉 정상",
+    "id": "0000000019",
+    "peak": [
+      105,
+      68
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "내장산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000019"
+  },
+  {
+    "name": "덕유산",
+    "height": 1614,
+    "region": "전라",
+    "summit": "중봉",
+    "id": "0000000024",
+    "peak": [
+      111,
+      81
+    ],
+    "motif": "dead-tree",
+    "x": 49,
+    "y": 57,
+    "scale": 0.63,
+    "tag": "중봉과 설원",
+    "collection": "hundred",
+    "paletteType": "gold",
+    "snow": "custom",
+    "sun": [
+      128,
+      45
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "custom",
+    "seasonSnow": {
+      "spring": "custom-lg-only",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000024"
+  },
+  {
+    "name": "두륜산",
+    "height": 700,
+    "region": "전라",
+    "summit": "노승봉",
+    "id": "0000000028",
+    "peak": [
+      71,
+      76
+    ],
+    "motif": "rock-dome",
+    "x": 55,
+    "y": 75,
+    "scale": 0.61,
+    "tag": "두륜산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000028"
+  },
+  {
+    "name": "마이산",
+    "height": 687,
+    "region": "전라",
+    "summit": "암마이봉정상",
+    "id": "0000000031",
+    "peak": [
+      65,
+      52
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "깊은 골 사이로 선 두 귀",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000031"
+  },
+  {
+    "name": "모악산",
+    "height": 795,
+    "region": "전라",
+    "summit": "정상",
+    "id": "0000000034",
+    "peak": [
+      99,
+      69
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "모악산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000034"
+  },
+  {
+    "name": "방장산",
+    "height": 734,
+    "region": "전라",
+    "summit": "산정상",
+    "id": "0000000039",
+    "peak": [
+      80,
+      71
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "방장산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000039"
+  },
+  {
+    "name": "백암산",
+    "height": 741,
+    "region": "전라",
+    "summit": "사자봉",
+    "id": "0000000042",
+    "peak": [
+      81,
+      66
+    ],
+    "motif": "sheer-face",
+    "x": 64,
+    "y": 66,
+    "scale": 0.58,
+    "tag": "백암산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000042"
+  },
+  {
+    "name": "백운산(광양)",
+    "height": 1222,
+    "region": "전라",
+    "summit": "백운산 상봉",
+    "id": "0000000044",
+    "peak": [
+      103,
+      60
+    ],
+    "motif": "rock-dome",
+    "x": 92,
+    "y": 61,
+    "scale": 0.34,
+    "tag": "백운산(광양)의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000044"
+  },
+  {
+    "name": "변산",
+    "height": 509,
+    "region": "전라",
+    "summit": "옥녀봉",
+    "id": "0000000046",
+    "peak": [
+      88,
+      82
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "변산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "none"
+    },
+    "assetKey": "0000000046"
+  },
+  {
+    "name": "운장산",
+    "height": 1126,
+    "region": "전라",
+    "summit": "운장대",
+    "id": "0000000065",
+    "peak": [
+      97,
+      68
+    ],
+    "motif": "rock-wall",
+    "x": 73,
+    "y": 76,
+    "scale": 0.47,
+    "tag": "운장산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000065"
+  },
+  {
+    "name": "장안산",
+    "height": 1237,
+    "region": "전라",
+    "summit": "장안산",
+    "id": "0000000070",
+    "peak": [
+      109,
+      72
+    ],
+    "motif": "meadow",
+    "x": 49,
+    "y": 115,
+    "scale": 0.9,
+    "tag": "장안산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "gold",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000070"
+  },
+  {
+    "name": "적상산",
+    "height": 1031,
+    "region": "전라",
+    "summit": "향로봉",
+    "id": "0000000072",
+    "peak": [
+      101,
+      72
+    ],
+    "motif": "sheer-face",
+    "x": 61,
+    "y": 74,
+    "scale": 0.73,
+    "tag": "적상산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000072"
+  },
+  {
+    "name": "조계산",
+    "height": 887,
+    "region": "전라",
+    "summit": "조계산연산봉",
+    "id": "0000000074",
+    "peak": [
+      92,
+      74
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "조계산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000074"
+  },
+  {
+    "name": "천관산",
+    "height": 724,
+    "region": "전라",
+    "summit": "천관산 연대봉",
+    "id": "0000000079",
+    "peak": [
+      88,
+      67
+    ],
+    "motif": "rock-spire",
+    "x": 72,
+    "y": 68,
+    "scale": 0.44,
+    "tag": "천관산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000079"
+  },
+  {
+    "name": "추월산",
+    "height": 731,
+    "region": "전라",
+    "summit": "보리암정상",
+    "id": "0000000084",
+    "peak": [
+      78,
+      65
+    ],
+    "motif": "sheer-face",
+    "x": 62,
+    "y": 66,
+    "scale": 0.56,
+    "tag": "추월산의 정상 능선",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000084"
+  },
+  {
+    "name": "팔영산",
+    "height": 607,
+    "region": "전라",
+    "summit": "팔영산 5봉",
+    "id": "0000000092",
+    "peak": [
+      105,
+      65
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "5봉을 중심으로 잇는 암릉",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000092"
   }
 ]

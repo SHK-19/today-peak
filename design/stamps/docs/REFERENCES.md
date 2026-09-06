@@ -1,11 +1,9 @@
-# 기준과 해석
+# 기준과 참고
 
-데이터는 designbriefstampsbatch02.md의38행 표가 정본입니다. 지점명과 고도가 다르게 기재된 경우도 원문을 보존합니다. 추가 좌표를 만들지 않았습니다.
+designbriefstampsbatch03.md의36행 표가 ID·높이·지역·인증지점의 정본입니다. 본문에 '마이산은2차에 있었다'고 되어 있으나 이전 표에는 없어 이번 표의0000000031로 처음 추가했습니다. 대둔산은 이번 표에 없어 중복하지 않았습니다.
 
-형태 맥락 확인:
-- 완주군, 대둔산 금강구름다리: https://www.wanju.go.kr/news/planweb/board/view.9is?boardUid=ff8080818b024d8e018b1c99655f1226&categoryUid1=ff8080818b024d8e018b1c9ae4f91243&contentUid=ff808081898ba9ba0189f1e5b90d01a8&dataUid=4926e87531fa49ebaf87a39012399235
-- 대구 동구, 팔공산: https://dong.daegu.kr/tour/travel/view.do?idx=112&mid=0101050000&page=1&searchTxt=&searchType= — 갓바위는 관봉에 위치한다는 설명. 이번 인증 지점은 동봉이므로 갓바위를 사용하지 않음.
-- 대구관광, 팔공산 힐링: https://tour.daegu.go.kr/index.do?menu_id=00000020 — 동봉·서봉·비로봉의 서로 다른 위치 맥락.
-- 양산시, 천성산: https://yangsan.go.kr/tour/spot/view.do?idx=8&mid=0201020000 — 화엄늪·봄 꽃·계곡의 자연 맥락.
+- 진안군, 마이산 소개: https://www.jinan.go.kr/tour/board/view.jtour?boardId=BBS_0000009&categoryCode1=A&dataSid=222&keyword=%EB%A7%88%EC%9D%B4%EC%82%B0&menuCd=DOM_000000104001000000&paging=ok&searchType=DATA_TITLE&startPage=1 — 암마이봉·숫마이봉의 구분.
+- 한국관광공사, 덕유산 능선 트레킹: https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=52406683-e4af-42e1-a8fc-e1fb9932f622 — 중봉에서 덕유평전으로 이어지는 완만한 능선.
+- 대한민국 정책브리핑, 덕유산 겨울 풍경: https://www.korea.kr/news/issueQAView.do?newsId=148790216 — 상고대와 중봉의 겨울 맥락.
 
-개별 그림은 새로 작성한 벡터이며 외부 사진을 포함하거나 트레이스하지 않았습니다. 모든38개 산의 정상 사진이나 DEM를 대조한 것은 아닙니다. 봄 군락과 여름 물길·겨울 눈은 계절 표현으로, 정확한 위치·수량·적설을 보증하지 않습니다. 이름 없는19곳 이상 식별 여부는 등산 경험자의 검수가 필요합니다.
+치악산 돌탑·두타산 베틀바위·팔영산 암릉은 의뢰서에서 지정한 특징을 기준으로 직접 그린 상징적 표현입니다. 모든36곳의 정상사진·DEM를 대조한 것은 아닙니다. 사진·타사 로고를 사용하거나 트레이스하지 않았습니다. 꽃·물·적설의 정확한 위치와 수량을 나타내는 지도도 아닙니다.

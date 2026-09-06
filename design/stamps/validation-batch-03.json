@@ -1,0 +1,793 @@
+{
+  "batch": 3,
+  "mountains": 36,
+  "regionCounts": {
+    "강원": 18,
+    "전라": 18
+  },
+  "sourceRowsMatched": true,
+  "baseAssets": 36,
+  "seasonAssets": 144,
+  "sharedMotifs": 16,
+  "original15MotifsByteUnchanged": true,
+  "prior90PaletteMappingsPreserved": true,
+  "totalPaletteMappings": 126,
+  "previewPairs": 864,
+  "standalone600pxPairs": 144,
+  "reviewSheets": 9,
+  "maxSeasonFileBytes": 1788,
+  "maxFourSeasonSumBytes": 6778,
+  "maxSingleAssetWithMotifBytes": 2393,
+  "graySky144CellsAtEachSize": true,
+  "smallAndEmptyFiltersOff": true,
+  "springSnowHighMountains": 4,
+  "expandedWinterSnowHighMountains": 4,
+  "snowFreeLowMountains": 4,
+  "pngDimensionsAndSVGReferencesChecked": true,
+  "existingBuildScriptUnmodified": true,
+  "isolatedPipelineMountainCount": 126,
+  "demValidated": false,
+  "nameBlindRecognitionTested": false,
+  "appIntegrated": false,
+  "assets": [
+    {
+      "file": "stamps/0000000084.svg",
+      "bytesWithMotif": 1444
+    },
+    {
+      "file": "stamps/0000000046.svg",
+      "bytesWithMotif": 903
+    },
+    {
+      "file": "stamps/0000000091.svg",
+      "bytesWithMotif": 933
+    },
+    {
+      "file": "stamps/0000000044.svg",
+      "bytesWithMotif": 1609
+    },
+    {
+      "file": "stamps/0000000045.svg",
+      "bytesWithMotif": 1444
+    },
+    {
+      "file": "stamps/0000000079.svg",
+      "bytesWithMotif": 1613
+    },
+    {
+      "file": "stamps/0000000092.svg",
+      "bytesWithMotif": 928
+    },
+    {
+      "file": "stamps/0000000086.svg",
+      "bytesWithMotif": 1492
+    },
+    {
+      "file": "stamps/0000000041.svg",
+      "bytesWithMotif": 1001
+    },
+    {
+      "file": "stamps/0000000069.svg",
+      "bytesWithMotif": 1003
+    },
+    {
+      "file": "stamps/0000000040.svg",
+      "bytesWithMotif": 997
+    },
+    {
+      "file": "stamps/0000000042.svg",
+      "bytesWithMotif": 1445
+    },
+    {
+      "file": "stamps/0000000024.svg",
+      "bytesWithMotif": 1652
+    },
+    {
+      "file": "stamps/0000000025.svg",
+      "bytesWithMotif": 1550
+    },
+    {
+      "file": "stamps/0000000031.svg",
+      "bytesWithMotif": 936
+    },
+    {
+      "file": "stamps/0000000019.svg",
+      "bytesWithMotif": 909
+    },
+    {
+      "file": "stamps/0000000032.svg",
+      "bytesWithMotif": 1735
+    },
+    {
+      "file": "stamps/0000000009.svg",
+      "bytesWithMotif": 901
+    },
+    {
+      "file": "stamps/0000000008.svg",
+      "bytesWithMotif": 1004
+    },
+    {
+      "file": "stamps/0000000034.svg",
+      "bytesWithMotif": 901
+    },
+    {
+      "file": "stamps/0000000039.svg",
+      "bytesWithMotif": 900
+    },
+    {
+      "file": "stamps/0000000006.svg",
+      "bytesWithMotif": 1453
+    },
+    {
+      "file": "stamps/0000000003.svg",
+      "bytesWithMotif": 1003
+    },
+    {
+      "file": "stamps/0000000016.svg",
+      "bytesWithMotif": 897
+    },
+    {
+      "file": "stamps/0000000002.svg",
+      "bytesWithMotif": 1850
+    },
+    {
+      "file": "stamps/0000000028.svg",
+      "bytesWithMotif": 1506
+    },
+    {
+      "file": "stamps/0000000029.svg",
+      "bytesWithMotif": 1710
+    },
+    {
+      "file": "stamps/0000000072.svg",
+      "bytesWithMotif": 1563
+    },
+    {
+      "file": "stamps/0000000059.svg",
+      "bytesWithMotif": 1003
+    },
+    {
+      "file": "stamps/0000000065.svg",
+      "bytesWithMotif": 1845
+    },
+    {
+      "file": "stamps/0000000070.svg",
+      "bytesWithMotif": 1848
+    },
+    {
+      "file": "stamps/0000000060.svg",
+      "bytesWithMotif": 913
+    },
+    {
+      "file": "stamps/0000000074.svg",
+      "bytesWithMotif": 901
+    },
+    {
+      "file": "stamps/0000000049.svg",
+      "bytesWithMotif": 907
+    },
+    {
+      "file": "stamps/0000000062.svg",
+      "bytesWithMotif": 1597
+    },
+    {
+      "file": "stamps/0000000089.svg",
+      "bytesWithMotif": 1004
+    },
+    {
+      "file": "seasons/spring/0000000084.svg",
+      "bytesWithMotif": 2080
+    },
+    {
+      "file": "seasons/spring/0000000046.svg",
+      "bytesWithMotif": 1472
+    },
+    {
+      "file": "seasons/spring/0000000091.svg",
+      "bytesWithMotif": 1533
+    },
+    {
+      "file": "seasons/spring/0000000044.svg",
+      "bytesWithMotif": 2144
+    },
+    {
+      "file": "seasons/spring/0000000045.svg",
+      "bytesWithMotif": 2080
+    },
+    {
+      "file": "seasons/spring/0000000079.svg",
+      "bytesWithMotif": 2268
+    },
+    {
+      "file": "seasons/spring/0000000092.svg",
+      "bytesWithMotif": 1523
+    },
+    {
+      "file": "seasons/spring/0000000086.svg",
+      "bytesWithMotif": 2022
+    },
+    {
+      "file": "seasons/spring/0000000041.svg",
+      "bytesWithMotif": 1465
+    },
+    {
+      "file": "seasons/spring/0000000069.svg",
+      "bytesWithMotif": 1457
+    },
+    {
+      "file": "seasons/spring/0000000040.svg",
+      "bytesWithMotif": 1451
+    },
+    {
+      "file": "seasons/spring/0000000042.svg",
+      "bytesWithMotif": 2082
+    },
+    {
+      "file": "seasons/spring/0000000024.svg",
+      "bytesWithMotif": 2261
+    },
+    {
+      "file": "seasons/spring/0000000025.svg",
+      "bytesWithMotif": 2081
+    },
+    {
+      "file": "seasons/spring/0000000031.svg",
+      "bytesWithMotif": 1544
+    },
+    {
+      "file": "seasons/spring/0000000019.svg",
+      "bytesWithMotif": 1485
+    },
+    {
+      "file": "seasons/spring/0000000032.svg",
+      "bytesWithMotif": 2378
+    },
+    {
+      "file": "seasons/spring/0000000009.svg",
+      "bytesWithMotif": 1471
+    },
+    {
+      "file": "seasons/spring/0000000008.svg",
+      "bytesWithMotif": 1539
+    },
+    {
+      "file": "seasons/spring/0000000034.svg",
+      "bytesWithMotif": 1470
+    },
+    {
+      "file": "seasons/spring/0000000039.svg",
+      "bytesWithMotif": 1469
+    },
+    {
+      "file": "seasons/spring/0000000006.svg",
+      "bytesWithMotif": 2096
+    },
+    {
+      "file": "seasons/spring/0000000003.svg",
+      "bytesWithMotif": 1538
+    },
+    {
+      "file": "seasons/spring/0000000016.svg",
+      "bytesWithMotif": 1460
+    },
+    {
+      "file": "seasons/spring/0000000002.svg",
+      "bytesWithMotif": 2393
+    },
+    {
+      "file": "seasons/spring/0000000028.svg",
+      "bytesWithMotif": 2154
+    },
+    {
+      "file": "seasons/spring/0000000029.svg",
+      "bytesWithMotif": 2253
+    },
+    {
+      "file": "seasons/spring/0000000072.svg",
+      "bytesWithMotif": 2099
+    },
+    {
+      "file": "seasons/spring/0000000059.svg",
+      "bytesWithMotif": 1539
+    },
+    {
+      "file": "seasons/spring/0000000065.svg",
+      "bytesWithMotif": 2380
+    },
+    {
+      "file": "seasons/spring/0000000070.svg",
+      "bytesWithMotif": 2382
+    },
+    {
+      "file": "seasons/spring/0000000060.svg",
+      "bytesWithMotif": 1495
+    },
+    {
+      "file": "seasons/spring/0000000074.svg",
+      "bytesWithMotif": 1469
+    },
+    {
+      "file": "seasons/spring/0000000049.svg",
+      "bytesWithMotif": 1483
+    },
+    {
+      "file": "seasons/spring/0000000062.svg",
+      "bytesWithMotif": 2240
+    },
+    {
+      "file": "seasons/spring/0000000089.svg",
+      "bytesWithMotif": 1458
+    },
+    {
+      "file": "seasons/summer/0000000084.svg",
+      "bytesWithMotif": 2002
+    },
+    {
+      "file": "seasons/summer/0000000046.svg",
+      "bytesWithMotif": 1395
+    },
+    {
+      "file": "seasons/summer/0000000091.svg",
+      "bytesWithMotif": 1455
+    },
+    {
+      "file": "seasons/summer/0000000044.svg",
+      "bytesWithMotif": 2068
+    },
+    {
+      "file": "seasons/summer/0000000045.svg",
+      "bytesWithMotif": 2002
+    },
+    {
+      "file": "seasons/summer/0000000079.svg",
+      "bytesWithMotif": 2191
+    },
+    {
+      "file": "seasons/summer/0000000092.svg",
+      "bytesWithMotif": 1449
+    },
+    {
+      "file": "seasons/summer/0000000086.svg",
+      "bytesWithMotif": 1946
+    },
+    {
+      "file": "seasons/summer/0000000041.svg",
+      "bytesWithMotif": 1386
+    },
+    {
+      "file": "seasons/summer/0000000069.svg",
+      "bytesWithMotif": 1381
+    },
+    {
+      "file": "seasons/summer/0000000040.svg",
+      "bytesWithMotif": 1373
+    },
+    {
+      "file": "seasons/summer/0000000042.svg",
+      "bytesWithMotif": 2004
+    },
+    {
+      "file": "seasons/summer/0000000024.svg",
+      "bytesWithMotif": 2105
+    },
+    {
+      "file": "seasons/summer/0000000025.svg",
+      "bytesWithMotif": 2005
+    },
+    {
+      "file": "seasons/summer/0000000031.svg",
+      "bytesWithMotif": 1463
+    },
+    {
+      "file": "seasons/summer/0000000019.svg",
+      "bytesWithMotif": 1411
+    },
+    {
+      "file": "seasons/summer/0000000032.svg",
+      "bytesWithMotif": 2302
+    },
+    {
+      "file": "seasons/summer/0000000009.svg",
+      "bytesWithMotif": 1395
+    },
+    {
+      "file": "seasons/summer/0000000008.svg",
+      "bytesWithMotif": 1383
+    },
+    {
+      "file": "seasons/summer/0000000034.svg",
+      "bytesWithMotif": 1394
+    },
+    {
+      "file": "seasons/summer/0000000039.svg",
+      "bytesWithMotif": 1391
+    },
+    {
+      "file": "seasons/summer/0000000006.svg",
+      "bytesWithMotif": 2018
+    },
+    {
+      "file": "seasons/summer/0000000003.svg",
+      "bytesWithMotif": 1383
+    },
+    {
+      "file": "seasons/summer/0000000016.svg",
+      "bytesWithMotif": 1383
+    },
+    {
+      "file": "seasons/summer/0000000002.svg",
+      "bytesWithMotif": 2314
+    },
+    {
+      "file": "seasons/summer/0000000028.svg",
+      "bytesWithMotif": 2076
+    },
+    {
+      "file": "seasons/summer/0000000029.svg",
+      "bytesWithMotif": 2175
+    },
+    {
+      "file": "seasons/summer/0000000072.svg",
+      "bytesWithMotif": 2023
+    },
+    {
+      "file": "seasons/summer/0000000059.svg",
+      "bytesWithMotif": 1384
+    },
+    {
+      "file": "seasons/summer/0000000065.svg",
+      "bytesWithMotif": 2304
+    },
+    {
+      "file": "seasons/summer/0000000070.svg",
+      "bytesWithMotif": 2308
+    },
+    {
+      "file": "seasons/summer/0000000060.svg",
+      "bytesWithMotif": 1419
+    },
+    {
+      "file": "seasons/summer/0000000074.svg",
+      "bytesWithMotif": 1393
+    },
+    {
+      "file": "seasons/summer/0000000049.svg",
+      "bytesWithMotif": 1406
+    },
+    {
+      "file": "seasons/summer/0000000062.svg",
+      "bytesWithMotif": 2161
+    },
+    {
+      "file": "seasons/summer/0000000089.svg",
+      "bytesWithMotif": 1384
+    },
+    {
+      "file": "seasons/autumn/0000000084.svg",
+      "bytesWithMotif": 1926
+    },
+    {
+      "file": "seasons/autumn/0000000046.svg",
+      "bytesWithMotif": 1318
+    },
+    {
+      "file": "seasons/autumn/0000000091.svg",
+      "bytesWithMotif": 1379
+    },
+    {
+      "file": "seasons/autumn/0000000044.svg",
+      "bytesWithMotif": 1990
+    },
+    {
+      "file": "seasons/autumn/0000000045.svg",
+      "bytesWithMotif": 1926
+    },
+    {
+      "file": "seasons/autumn/0000000079.svg",
+      "bytesWithMotif": 2114
+    },
+    {
+      "file": "seasons/autumn/0000000092.svg",
+      "bytesWithMotif": 1369
+    },
+    {
+      "file": "seasons/autumn/0000000086.svg",
+      "bytesWithMotif": 1868
+    },
+    {
+      "file": "seasons/autumn/0000000041.svg",
+      "bytesWithMotif": 1311
+    },
+    {
+      "file": "seasons/autumn/0000000069.svg",
+      "bytesWithMotif": 1303
+    },
+    {
+      "file": "seasons/autumn/0000000040.svg",
+      "bytesWithMotif": 1297
+    },
+    {
+      "file": "seasons/autumn/0000000042.svg",
+      "bytesWithMotif": 1928
+    },
+    {
+      "file": "seasons/autumn/0000000024.svg",
+      "bytesWithMotif": 2139
+    },
+    {
+      "file": "seasons/autumn/0000000025.svg",
+      "bytesWithMotif": 1927
+    },
+    {
+      "file": "seasons/autumn/0000000031.svg",
+      "bytesWithMotif": 1390
+    },
+    {
+      "file": "seasons/autumn/0000000019.svg",
+      "bytesWithMotif": 1331
+    },
+    {
+      "file": "seasons/autumn/0000000032.svg",
+      "bytesWithMotif": 2338
+    },
+    {
+      "file": "seasons/autumn/0000000009.svg",
+      "bytesWithMotif": 1317
+    },
+    {
+      "file": "seasons/autumn/0000000008.svg",
+      "bytesWithMotif": 1303
+    },
+    {
+      "file": "seasons/autumn/0000000034.svg",
+      "bytesWithMotif": 1316
+    },
+    {
+      "file": "seasons/autumn/0000000039.svg",
+      "bytesWithMotif": 1315
+    },
+    {
+      "file": "seasons/autumn/0000000006.svg",
+      "bytesWithMotif": 1942
+    },
+    {
+      "file": "seasons/autumn/0000000003.svg",
+      "bytesWithMotif": 1303
+    },
+    {
+      "file": "seasons/autumn/0000000016.svg",
+      "bytesWithMotif": 1306
+    },
+    {
+      "file": "seasons/autumn/0000000002.svg",
+      "bytesWithMotif": 2239
+    },
+    {
+      "file": "seasons/autumn/0000000028.svg",
+      "bytesWithMotif": 2000
+    },
+    {
+      "file": "seasons/autumn/0000000029.svg",
+      "bytesWithMotif": 2099
+    },
+    {
+      "file": "seasons/autumn/0000000072.svg",
+      "bytesWithMotif": 1945
+    },
+    {
+      "file": "seasons/autumn/0000000059.svg",
+      "bytesWithMotif": 1306
+    },
+    {
+      "file": "seasons/autumn/0000000065.svg",
+      "bytesWithMotif": 2226
+    },
+    {
+      "file": "seasons/autumn/0000000070.svg",
+      "bytesWithMotif": 2342
+    },
+    {
+      "file": "seasons/autumn/0000000060.svg",
+      "bytesWithMotif": 1341
+    },
+    {
+      "file": "seasons/autumn/0000000074.svg",
+      "bytesWithMotif": 1315
+    },
+    {
+      "file": "seasons/autumn/0000000049.svg",
+      "bytesWithMotif": 1329
+    },
+    {
+      "file": "seasons/autumn/0000000062.svg",
+      "bytesWithMotif": 2086
+    },
+    {
+      "file": "seasons/autumn/0000000089.svg",
+      "bytesWithMotif": 1304
+    },
+    {
+      "file": "seasons/winter/0000000084.svg",
+      "bytesWithMotif": 1912
+    },
+    {
+      "file": "seasons/winter/0000000046.svg",
+      "bytesWithMotif": 903
+    },
+    {
+      "file": "seasons/winter/0000000091.svg",
+      "bytesWithMotif": 933
+    },
+    {
+      "file": "seasons/winter/0000000044.svg",
+      "bytesWithMotif": 1980
+    },
+    {
+      "file": "seasons/winter/0000000045.svg",
+      "bytesWithMotif": 1912
+    },
+    {
+      "file": "seasons/winter/0000000079.svg",
+      "bytesWithMotif": 2081
+    },
+    {
+      "file": "seasons/winter/0000000092.svg",
+      "bytesWithMotif": 1391
+    },
+    {
+      "file": "seasons/winter/0000000086.svg",
+      "bytesWithMotif": 1863
+    },
+    {
+      "file": "seasons/winter/0000000041.svg",
+      "bytesWithMotif": 1374
+    },
+    {
+      "file": "seasons/winter/0000000069.svg",
+      "bytesWithMotif": 1371
+    },
+    {
+      "file": "seasons/winter/0000000040.svg",
+      "bytesWithMotif": 1365
+    },
+    {
+      "file": "seasons/winter/0000000042.svg",
+      "bytesWithMotif": 1913
+    },
+    {
+      "file": "seasons/winter/0000000024.svg",
+      "bytesWithMotif": 2293
+    },
+    {
+      "file": "seasons/winter/0000000025.svg",
+      "bytesWithMotif": 1926
+    },
+    {
+      "file": "seasons/winter/0000000031.svg",
+      "bytesWithMotif": 1401
+    },
+    {
+      "file": "seasons/winter/0000000019.svg",
+      "bytesWithMotif": 1372
+    },
+    {
+      "file": "seasons/winter/0000000032.svg",
+      "bytesWithMotif": 2206
+    },
+    {
+      "file": "seasons/winter/0000000009.svg",
+      "bytesWithMotif": 1361
+    },
+    {
+      "file": "seasons/winter/0000000008.svg",
+      "bytesWithMotif": 1642
+    },
+    {
+      "file": "seasons/winter/0000000034.svg",
+      "bytesWithMotif": 1362
+    },
+    {
+      "file": "seasons/winter/0000000039.svg",
+      "bytesWithMotif": 1365
+    },
+    {
+      "file": "seasons/winter/0000000006.svg",
+      "bytesWithMotif": 1456
+    },
+    {
+      "file": "seasons/winter/0000000003.svg",
+      "bytesWithMotif": 1641
+    },
+    {
+      "file": "seasons/winter/0000000016.svg",
+      "bytesWithMotif": 897
+    },
+    {
+      "file": "seasons/winter/0000000002.svg",
+      "bytesWithMotif": 2226
+    },
+    {
+      "file": "seasons/winter/0000000028.svg",
+      "bytesWithMotif": 1974
+    },
+    {
+      "file": "seasons/winter/0000000029.svg",
+      "bytesWithMotif": 2081
+    },
+    {
+      "file": "seasons/winter/0000000072.svg",
+      "bytesWithMotif": 1934
+    },
+    {
+      "file": "seasons/winter/0000000059.svg",
+      "bytesWithMotif": 1642
+    },
+    {
+      "file": "seasons/winter/0000000065.svg",
+      "bytesWithMotif": 2216
+    },
+    {
+      "file": "seasons/winter/0000000070.svg",
+      "bytesWithMotif": 2226
+    },
+    {
+      "file": "seasons/winter/0000000060.svg",
+      "bytesWithMotif": 1374
+    },
+    {
+      "file": "seasons/winter/0000000074.svg",
+      "bytesWithMotif": 1361
+    },
+    {
+      "file": "seasons/winter/0000000049.svg",
+      "bytesWithMotif": 1372
+    },
+    {
+      "file": "seasons/winter/0000000062.svg",
+      "bytesWithMotif": 2065
+    },
+    {
+      "file": "seasons/winter/0000000089.svg",
+      "bytesWithMotif": 1372
+    }
+  ],
+  "fourSeasonByteTotals": {
+    "0000000029": 6364,
+    "0000000025": 6291,
+    "0000000060": 5629,
+    "0000000089": 5518,
+    "0000000045": 6272,
+    "0000000016": 5046,
+    "0000000002": 6360,
+    "0000000031": 5798,
+    "0000000042": 6279,
+    "0000000019": 5599,
+    "0000000032": 6388,
+    "0000000028": 6356,
+    "0000000040": 5486,
+    "0000000008": 5867,
+    "0000000034": 5542,
+    "0000000070": 6422,
+    "0000000069": 5512,
+    "0000000046": 5088,
+    "0000000084": 6272,
+    "0000000044": 6334,
+    "0000000006": 5864,
+    "0000000091": 5300,
+    "0000000086": 6247,
+    "0000000092": 5732,
+    "0000000079": 6410,
+    "0000000065": 6314,
+    "0000000059": 5871,
+    "0000000072": 6353,
+    "0000000049": 5590,
+    "0000000003": 5865,
+    "0000000041": 5536,
+    "0000000039": 5540,
+    "0000000074": 5538,
+    "0000000062": 6308,
+    "0000000009": 5544,
+    "0000000024": 6778
+  },
+  "actualPrepareArtRuntimeCombinationsPassed": 2016
+}

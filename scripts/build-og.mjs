@@ -64,7 +64,7 @@ async function shoot(page, file) {
       `--screenshot=${path.join(OUT, file)}`,
       `file://${page}`,
     ],
-    { timeout: 30_000 },
+    { timeout: 30_000, killSignal: 'SIGKILL' },
   );
 }
 await rm(pages, { recursive: true, force: true });
