@@ -1,7 +1,13 @@
 // 산 상세에 보여줄 집계. 0명이라는 문구는 만들지 않는다 — 숫자만 주고, 화면에서 0이면 줄을 숨긴다.
 
 import { seoulDayStartMs } from '../../../src/lib/day.ts';
-import { placesQueries, toPlaces, type Place } from '../../../src/lib/places.ts';
+import {
+  placesQueries,
+  splitPlaces,
+  toPlaces,
+  type NearbyPlaces,
+  type PlaceKeyword,
+} from '../../../src/lib/places.ts';
 import { MOUNTAINS } from '../_shared/mountains.ts';
 import { json, preflight } from '../_shared/http.ts';
 import { readUserKey, serviceClient } from '../_shared/session.ts';
@@ -10,14 +16,25 @@ const HIKING_WINDOW_MS = 6 * 60 * 60 * 1000;
 
 // 산에서 내려와 들르는 음식점. 네이버 지역 검색을 그때그때 부르고 저장하지 않는다.
 // 키가 없거나 네이버가 실패하면 빈 배열 — 집계와 마찬가지로 없으면 줄을 안 그리면 그만이다.
-async function nearbyPlaces(mountainId: string): Promise<Place[]> {
+async function nearbyPlaces(mountainId: string): Promise<NearbyPlaces> {
   const id = Deno.env.get('NAVER_CLIENT_ID');
   const secret = Deno.env.get('NAVER_CLIENT_SECRET');
   const mountain = MOUNTAINS.find((item) => item.id === mountainId);
+  const empty = { food: [], cafe: [] };
   if (id === undefined || secret === undefined || mountain === undefined) {
-    return [];
+    return empty;
   }
-  for (const query of placesQueries(mountain.name, mountain.trailheads[0]?.name)) {
+  // 한 번에 5건까지라 나눠 찾는다. "맛집"에는 카페가 많이 섞여서 "식당"을 한 번 더 부른다.
+  const trailhead = mountain.trailheads[0]?.name;
+  const [popular, diners, cafes] = await Promise.all([
+    search(mountain.name, trailhead, '맛집'),
+    search(mountain.name, trailhead, '식당'),
+    search(mountain.name, trailhead, '카페'),
+  ]);
+  return splitPlaces([...popular, ...diners], cafes);
+
+  async function search(name: string, trailhead: string | undefined, kind: PlaceKeyword) {
+  for (const query of placesQueries(name, trailhead, kind)) {
     const url = `https://naverapihub.apigw.ntruss.com/search/v1/local?query=${encodeURIComponent(query)}&display=5&sort=comment`;
     try {
       const response = await fetch(url, {
@@ -37,6 +54,7 @@ async function nearbyPlaces(mountainId: string): Promise<Place[]> {
     }
   }
   return [];
+  }
 }
 
 Deno.serve(async (request: Request) => {

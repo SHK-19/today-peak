@@ -182,6 +182,8 @@ export function MountainDetail({
   const [suggesting, setSuggesting] = useState(false);
   const [suggestName, setSuggestName] = useState('');
   const [suggested, setSuggested] = useState<'no' | 'sending' | 'done' | 'failed'>('no');
+  // 내려와서 카드 안 전환. 한쪽이 비면 버튼을 숨기고 있는 쪽만 보여준다.
+  const [placeKind, setPlaceKind] = useState<'food' | 'cafe'>('food');
   // 진행 중인 요청 자체를 들고 있는다. 버튼을 일찍 눌러도 새 요청을 또 만들지 않고
   // 먼저 시작한 요청을 기다린다 (야외에서 한 번 읽는 데 3~10초 걸린다).
   const prefetched = useRef<Promise<Reading | null> | null>(null);
@@ -288,6 +290,11 @@ export function MountainDetail({
       );
     }
   }
+
+  const both = (stats?.places?.food.length ?? 0) > 0 && (stats?.places?.cafe.length ?? 0) > 0;
+  const nearby = both
+    ? (stats?.places?.[placeKind] ?? [])
+    : [...(stats?.places?.food ?? []), ...(stats?.places?.cafe ?? [])];
 
   const verifyButton = (
     <button
@@ -559,11 +566,29 @@ export function MountainDetail({
         </div>
       )}
 
-      {stats !== null && stats.places !== undefined && stats.places.length > 0 && (
+      {nearby.length > 0 && (
         <section className="places">
-          <h3 className="section-title">내려와서</h3>
+          <div className="section-title">
+            <h3>내려와서</h3>
+            {both && (
+              <div className="toggle" role="tablist">
+                {(['food', 'cafe'] as const).map((kind) => (
+                  <button
+                    key={kind}
+                    type="button"
+                    role="tab"
+                    aria-selected={placeKind === kind}
+                    className={placeKind === kind ? 'toggle-item toggle-active' : 'toggle-item'}
+                    onClick={() => setPlaceKind(kind)}
+                  >
+                    {kind === 'food' ? '음식점' : '카페'}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
           <ul>
-            {stats.places.map((place) => (
+            {nearby.map((place) => (
               <li key={place.name}>
                 <strong>{place.name}</strong>
                 <span>

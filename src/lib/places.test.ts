@@ -1,7 +1,14 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 
-import { placesQueries, shortAddress, shortCategory, stripTags, toPlaces } from './places.ts';
+import {
+  placesQueries,
+  shortAddress,
+  shortCategory,
+  splitPlaces,
+  stripTags,
+  toPlaces,
+} from './places.ts';
 
 test('네이버 강조 태그와 엔티티를 걷어낸다', () => {
   assert.equal(stripTags('<b>북한산</b> 손두부&amp;막걸리'), '북한산 손두부&막걸리');
@@ -31,8 +38,19 @@ test('toPlaces는 이름이 겹치거나 빈 항목을 버린다', () => {
   ]);
 });
 
+test('splitPlaces는 카테고리로 음식점·카페를 나누고 5곳까지만 담는다', () => {
+  const place = (name: string, category: string) => ({ name, category, address: '' });
+  const { food, cafe } = splitPlaces(
+    [place('손칼국수', '한식'), place('산장카페', '카페,디저트'), place('손칼국수', '한식')],
+    [place('초소책방', '카페,디저트'), place('효자베이커리', '베이커리'), place('산장카페', '카페,디저트')],
+  );
+  assert.deepEqual(food.map((p) => p.name), ['손칼국수']);
+  assert.deepEqual(cafe.map((p) => p.name), ['산장카페', '초소책방', '효자베이커리']);
+});
+
 test('검색어는 들머리 꼬리말을 떼고, 산 이름을 폴백으로 둔다', () => {
   assert.deepEqual(placesQueries('북한산', '우이령길 사전예약 입구'), ['우이령길 맛집', '북한산 맛집']);
+  assert.deepEqual(placesQueries('북한산', undefined, '카페'), ['북한산 카페']);
   assert.deepEqual(placesQueries('지리산(통영)', '화엄사자연관찰로'), [
     '화엄사자연관찰로 맛집',
     '지리산 맛집',

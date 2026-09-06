@@ -1161,3 +1161,42 @@ h3 {
 .places .footnote {
   margin-top: var(--space-3);
 }
+
+/* 내려와서 카드 안 음식점·카페 전환 */
+.places .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.places .section-title h3 {
+  font-size: var(--font-size-subtitle);
+  font-weight: 600;
+  color: var(--color-text-strong);
+}
+
+.toggle {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  border-radius: 999px;
+  background: var(--color-bg-canvas);
+}
+
+.toggle-item {
+  min-height: 44px;
+  padding: 0 var(--space-3);
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  font-size: var(--font-size-caption);
+  font-weight: 600;
+  color: var(--color-text-subtle);
+}
+
+.toggle-active {
+  background: var(--color-bg);
+  color: var(--brand-primary);
+  box-shadow: 0 1px 3px rgba(32, 55, 45, 0.12);
+}
