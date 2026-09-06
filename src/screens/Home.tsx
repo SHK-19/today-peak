@@ -48,6 +48,8 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
     mountain.name.replace(/\s/g, '').includes(needle) ||
     (mountain.peakName ?? '').replace(/\s/g, '').includes(needle);
   const visible = (mountain: Mountain) => inRegion(mountain) && matches(mountain);
+  // 기본은 가까운 순. 이미 모은 산이 위를 채우면 다음 목표가 안 보여서 정렬을 하나 더 둔다.
+  const [sort, setSort] = useState<'near' | 'todo'>('near');
   const [state, setState] = useState<State>({ status: 'loading' });
   const [attempt, setAttempt] = useState(0);
 
@@ -100,6 +102,14 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
     state.status === 'ready'
       ? state.nearby.filter(({ mountain }) => visible(mountain))
       : MOUNTAINS.filter(visible).map((mountain) => ({ mountain }));
+  // 정렬은 안정적이라 안 모은 산끼리는 거리 순서가 그대로 유지된다.
+  const sorted =
+    sort === 'near'
+      ? rows
+      : [...rows].sort(
+          (a, b) =>
+            Number(collected.has(a.mountain.id)) - Number(collected.has(b.mountain.id)),
+        );
 
   return (
     <main className="page page-tabbed">
@@ -167,17 +177,37 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
         ))}
       </div>
 
+      <div className="list-sort">
+        <div className="toggle" role="tablist">
+          {([
+            ['near', '가까운 순'],
+            ['todo', '안 모은 산 먼저'],
+          ] as const).map(([id, label]) => (
+            <button
+              key={id}
+              type="button"
+              role="tab"
+              aria-selected={sort === id}
+              className={sort === id ? 'toggle-item toggle-active' : 'toggle-item'}
+              onClick={() => setSort(id)}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {state.status === 'loading' ? (
         <div className="skeleton-list" aria-label="가까운 산을 찾고 있어요">
           <div className="skeleton" />
           <div className="skeleton" />
           <div className="skeleton" />
         </div>
-      ) : rows.length === 0 ? (
+      ) : sorted.length === 0 ? (
         <p className="screen-notice">'{query}'에 맞는 산이 없어요.</p>
       ) : (
         <ul className="list">
-          {rows.map(({ mountain, distanceM }) => (
+          {sorted.map(({ mountain, distanceM }) => (
             <li key={mountain.id}>
               <button type="button" className="mountain-row" onClick={() => onSelect(mountain.id)}>
                 <Stamp mountain={mountain} collected={collected.has(mountain.id)} size={40} />

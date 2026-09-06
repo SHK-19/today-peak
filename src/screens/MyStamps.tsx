@@ -7,6 +7,7 @@ import type { Stamp as StampRecord } from '../lib/api.ts';
 import { COLLECTIONS, collectionOf, type CollectionId } from '../lib/collection.ts';
 import { formatSeoulDate } from '../lib/day.ts';
 import { groupByRegion } from '../lib/region.ts';
+import { askReview, canReview } from '../lib/review.ts';
 import { groupSeasons, latestSeason, seasonCount } from '../lib/seasons.ts';
 import type { Mountain } from '../lib/verify.ts';
 
@@ -127,6 +128,16 @@ export function MyStamps({ mountains: allMountains, stamps, failed, onRetry }: P
           );
         })}
       </div>
+
+      {/* 리뷰는 여기서만 직접 물어본다. 스탬프를 보고 있을 때가 가장 기분 좋은 순간이다. */}
+      {canReview() && (
+        <section className="review-ask">
+          <p>오늘 정상, 쓸 만한가요?</p>
+          <button type="button" className="btn btn-secondary" onClick={askReview}>
+            앱 평가하기
+          </button>
+        </section>
+      )}
 
       {open !== null && (
         <SeasonSheet mountain={open} record={seasons.get(open.id) ?? {}} onClose={() => setOpen(null)} />

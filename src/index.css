@@ -360,6 +360,13 @@ h3 {
   color: var(--color-text-inverse);
 }
 
+/* 정렬 전환. 목록 바로 위 오른쪽에 붙인다. */
+.list-sort {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 var(--space-5) var(--space-3);
+}
+
 .list {
   margin: 0;
   padding: 0 var(--space-5) var(--space-5);
@@ -1374,4 +1381,26 @@ h3 {
 .pick-card span:last-child {
   font-size: var(--font-size-body-small);
   color: var(--color-text-subtle);
+}
+
+/* 내 스탬프 아래 리뷰 요청. 노출 여부는 플랫폼이 정해서 눌러도 아무 일이 없을 수 있다. */
+.review-ask {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: center;
+  margin: 0 var(--space-5) var(--space-6);
+  padding: var(--space-5) var(--space-4);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-control);
+  text-align: center;
+}
+
+.review-ask p {
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-subtle);
+}
+
+.review-ask .btn {
+  width: auto;
+  padding: 0 var(--space-5);
 }

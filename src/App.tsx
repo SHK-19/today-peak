@@ -5,6 +5,7 @@ import { TabBar, type TabId } from './components/TabBar.tsx';
 import { fetchMyStamps, type Stamp } from './lib/api.ts';
 import { restoreSession, setSessionLostHandler } from './lib/auth.ts';
 import { collectionOf } from './lib/collection.ts';
+import { seoulDayStartMs } from './lib/day.ts';
 import { PICKS } from './lib/picks-data.ts';
 import { openPick } from './lib/share.ts';
 import { HOME_ENTRY, parseEntry } from './lib/entry.ts';
@@ -94,6 +95,11 @@ function App() {
       <MountainDetail
         mountain={detail}
         seasons={groupSeasons(stamps ?? []).get(detail.id) ?? {}}
+        stampedToday={(stamps ?? []).some(
+          (stamp) =>
+            stamp.mountainId === detail.id &&
+            new Date(stamp.verifiedAt).getTime() >= seoulDayStartMs(Date.now()),
+        )}
         collectedCount={
           [...groupSeasons(stamps ?? []).keys()].filter((id) => {
             const m = MOUNTAINS.find((mountain) => mountain.id === id);
@@ -110,6 +116,7 @@ function App() {
           setDetailId(null);
           setTab('stamps');
         }}
+        onBack={() => setDetailId(null)}
       />
     );
   }

@@ -1,4 +1,4 @@
-import { GetCurrentLocationPermissionError, requestReview } from '@apps-in-toss/web-framework';
+import { GetCurrentLocationPermissionError } from '@apps-in-toss/web-framework';
 import { useEffect, useRef, useState } from 'react';
 
 import {
@@ -26,6 +26,7 @@ import { IS_FIELD_TEST_BUILD } from '../lib/mountains.ts';
 import { SEASON_LABEL, seasonCount, type SeasonRecord } from '../lib/seasons.ts';
 import { PICKS } from '../lib/picks-data.ts';
 import { PICK_DISCLOSURE, picksForMountain } from '../lib/picks.ts';
+import { askReviewOnce } from '../lib/review.ts';
 import { openPick, shareMountain } from '../lib/share.ts';
 import { seasonOf } from '../lib/stamp-art.ts';
 import {
@@ -63,11 +64,14 @@ type Props = {
   onGoToPicks: () => void;
   /** 이 산에서 모은 계절별 인증 시각 */
   seasons: SeasonRecord;
+  /** 오늘(한국 시간) 이 산 스탬프를 이미 받았는지. 성공 화면을 띄웠다가 되돌리지 않으려고 본다. */
+  stampedToday: boolean;
   /** 성공 티켓 절취선 아래 "96곳 중 N곳" */
   collectedCount: number;
   totalCount: number;
   onVerified: () => void;
   onGoToStamps: () => void;
+  onBack: () => void;
 };
 
 function hikeMessage(state: HikeState): string | null {
@@ -134,18 +138,6 @@ function resultMessage(
   }
 }
 
-// 리뷰 요청은 한 세션에 한 번. 노출 여부는 플랫폼이 정하고, 결과에 따라 흐름을 바꾸지 않는다.
-let reviewAsked = false;
-function askReviewOnce() {
-  if (reviewAsked) return;
-  reviewAsked = true;
-  try {
-    if (requestReview.isSupported()) void requestReview().catch(() => {});
-  } catch {
-    // 지원하지 않는 환경. 조용히 넘어간다.
-  }
-}
-
 function ctaLabel(state: State): string {
   if (state.status !== 'reading') {
     return '오늘 정상 인증하기';
@@ -175,10 +167,12 @@ export function MountainDetail({
   mountain,
   onGoToPicks,
   seasons,
+  stampedToday,
   collectedCount,
   totalCount,
   onVerified,
   onGoToStamps,
+  onBack,
 }: Props) {
   const collected = seasonCount(seasons) > 0;
   const [state, setState] = useState<State>({ status: 'idle' });
@@ -193,6 +187,9 @@ export function MountainDetail({
   // 진행 중인 요청 자체를 들고 있는다. 버튼을 일찍 눌러도 새 요청을 또 만들지 않고
   // 먼저 시작한 요청을 기다린다 (야외에서 한 번 읽는 데 3~10초 걸린다).
   const prefetched = useRef<Promise<Reading | null> | null>(null);
+  // 이 화면에서 방금 받은 스탬프. 목록 새로고침이 돌아오기 전에 다시 눌러도
+  // 성공 화면을 띄웠다가 "이미 받았어요"로 뒤집지 않게 한다.
+  const stampedHere = useRef(false);
 
   // 화면에 들어오자마자 위치를 한 번 미리 읽어둔다.
   useEffect(() => {
@@ -252,6 +249,7 @@ export function MountainDetail({
       const outcome = await verifySummitOnServer(mountain.id, reading);
       setState({ status: 'result', reading, outcome, confirmed: true, saveFailed: false });
       if (outcome.status === 'ok') {
+        stampedHere.current = true;
         onVerified();
         askReviewOnce();
       }
@@ -281,10 +279,14 @@ export function MountainDetail({
       );
 
       // 즉시 피드백. 같은 판정을 서버가 다시 해서 최종 결과를 준다.
+      // 하루 한 번 규칙은 서버만 아는 것이라, 이미 받은 날이면 성공 화면을 아예 띄우지 않는다.
       const local = verifySummit(reading, mountain);
-      const shown: SummitOutcome = local.ok
-        ? { status: 'ok', distanceM: local.distanceM }
-        : { status: 'rejected', reason: local.reason, distanceM: local.distanceM };
+      const again = stampedToday || stampedHere.current;
+      const shown: SummitOutcome = !local.ok
+        ? { status: 'rejected', reason: local.reason, distanceM: local.distanceM }
+        : again
+          ? { status: 'already_today', distanceM: local.distanceM }
+          : { status: 'ok', distanceM: local.distanceM };
       setState({ status: 'result', reading, outcome: shown, confirmed: false, saveFailed: false });
 
       await save(reading, shown);
@@ -483,6 +485,14 @@ export function MountainDetail({
             >
               다시 저장
             </button>
+          ) : suggested === 'done' ? (
+            // 제보를 끝낸 화면. 인증 버튼만 남으면 나갈 길이 없어 보인다.
+            <>
+              <button type="button" className="btn btn-secondary" onClick={onBack}>
+                돌아가기
+              </button>
+              {verifyButton}
+            </>
           ) : (
             verifyButton
           )}
@@ -527,8 +537,9 @@ export function MountainDetail({
     season: seasonOf(new Date().toISOString()),
     elevationM: mountain.elevationM,
   });
-  const hasStatLines =
-    stats !== null && (stats.hikingNow > 0 || stats.todayStamps > 0 || stats.totalStamps > 0);
+  // 집계는 인증 전에도 보여준다 — 이 산이 오늘 어떤지가 인증하러 가기 전에 궁금한 정보다.
+  // 다만 "지금 N명 등산 중"은 0이면 숨긴다(등산 중인 사람이 없다는 건 알릴 게 아니다).
+  const hasStatLines = stats !== null;
   return (
     <main className="page">
       <section className="hero">
@@ -566,16 +577,20 @@ export function MountainDetail({
               지금 {stats.hikingNow}명 등산 중
             </p>
           )}
-          {stats !== null && stats.todayStamps > 0 && (
+          {stats !== null && (
             <p>
               <FlagIcon size={22} />
-              오늘 {stats.todayStamps}명이 정상을 찍었어요
+              {stats.todayStamps > 0
+                ? `오늘 ${stats.todayStamps}명이 정상을 찍었어요`
+                : '오늘은 아직 정상을 찍은 사람이 없어요'}
             </p>
           )}
-          {stats !== null && stats.totalStamps > 0 && (
+          {stats !== null && (
             <p>
               <CollectionIcon size={22} />
-              지금까지 {stats.totalStamps}명 인증
+              {stats.totalStamps > 0
+                ? `지금까지 ${stats.totalStamps}명 인증`
+                : '이 산의 첫 인증이 기다리고 있어요'}
             </p>
           )}
 
