@@ -1,0 +1,180 @@
+{
+  "seasonAssets": 40,
+  "baseFilesByteIdentical": 10,
+  "winterFilesByteIdentical": 10,
+  "motifFilesByteIdentical": 9,
+  "filtersUnchanged": true,
+  "emptyRenderingsUnchanged": true,
+  "previewPairs": 240,
+  "standalonePairs": 40,
+  "reviewSheets": 4,
+  "maxArtworkPlusMotifBytes": 2885,
+  "graySky76and40Checked": true,
+  "pngDimensionsChecked": true,
+  "uniqueIDsAndReferencesChecked": true,
+  "sunColorUnchanged": true,
+  "userRecognitionTested": false,
+  "appIntegrated": false,
+  "assets": [
+    {
+      "file": "seasons/autumn/0000000047.svg",
+      "bytesWithSharedMotif": 2417
+    },
+    {
+      "file": "seasons/autumn/0000000052.svg",
+      "bytesWithSharedMotif": 2628
+    },
+    {
+      "file": "seasons/autumn/0000000093.svg",
+      "bytesWithSharedMotif": 2414
+    },
+    {
+      "file": "seasons/autumn/0000000054.svg",
+      "bytesWithSharedMotif": 2583
+    },
+    {
+      "file": "seasons/autumn/0000000027.svg",
+      "bytesWithSharedMotif": 2373
+    },
+    {
+      "file": "seasons/autumn/0000000035.svg",
+      "bytesWithSharedMotif": 2277
+    },
+    {
+      "file": "seasons/autumn/0000000067.svg",
+      "bytesWithSharedMotif": 2472
+    },
+    {
+      "file": "seasons/autumn/0000000075.svg",
+      "bytesWithSharedMotif": 2515
+    },
+    {
+      "file": "seasons/autumn/0000000088.svg",
+      "bytesWithSharedMotif": 2336
+    },
+    {
+      "file": "seasons/autumn/0000000077.svg",
+      "bytesWithSharedMotif": 2223
+    },
+    {
+      "file": "seasons/winter/0000000047.svg",
+      "bytesWithSharedMotif": 2240
+    },
+    {
+      "file": "seasons/winter/0000000052.svg",
+      "bytesWithSharedMotif": 2509
+    },
+    {
+      "file": "seasons/winter/0000000093.svg",
+      "bytesWithSharedMotif": 2311
+    },
+    {
+      "file": "seasons/winter/0000000054.svg",
+      "bytesWithSharedMotif": 2396
+    },
+    {
+      "file": "seasons/winter/0000000027.svg",
+      "bytesWithSharedMotif": 2235
+    },
+    {
+      "file": "seasons/winter/0000000035.svg",
+      "bytesWithSharedMotif": 2143
+    },
+    {
+      "file": "seasons/winter/0000000067.svg",
+      "bytesWithSharedMotif": 2295
+    },
+    {
+      "file": "seasons/winter/0000000075.svg",
+      "bytesWithSharedMotif": 2336
+    },
+    {
+      "file": "seasons/winter/0000000088.svg",
+      "bytesWithSharedMotif": 2176
+    },
+    {
+      "file": "seasons/winter/0000000077.svg",
+      "bytesWithSharedMotif": 2118
+    },
+    {
+      "file": "seasons/summer/0000000047.svg",
+      "bytesWithSharedMotif": 2491
+    },
+    {
+      "file": "seasons/summer/0000000052.svg",
+      "bytesWithSharedMotif": 2722
+    },
+    {
+      "file": "seasons/summer/0000000093.svg",
+      "bytesWithSharedMotif": 2534
+    },
+    {
+      "file": "seasons/summer/0000000054.svg",
+      "bytesWithSharedMotif": 2549
+    },
+    {
+      "file": "seasons/summer/0000000027.svg",
+      "bytesWithSharedMotif": 2445
+    },
+    {
+      "file": "seasons/summer/0000000035.svg",
+      "bytesWithSharedMotif": 2355
+    },
+    {
+      "file": "seasons/summer/0000000067.svg",
+      "bytesWithSharedMotif": 2552
+    },
+    {
+      "file": "seasons/summer/0000000075.svg",
+      "bytesWithSharedMotif": 2577
+    },
+    {
+      "file": "seasons/summer/0000000088.svg",
+      "bytesWithSharedMotif": 2302
+    },
+    {
+      "file": "seasons/summer/0000000077.svg",
+      "bytesWithSharedMotif": 2359
+    },
+    {
+      "file": "seasons/spring/0000000047.svg",
+      "bytesWithSharedMotif": 2571
+    },
+    {
+      "file": "seasons/spring/0000000052.svg",
+      "bytesWithSharedMotif": 2885
+    },
+    {
+      "file": "seasons/spring/0000000093.svg",
+      "bytesWithSharedMotif": 2680
+    },
+    {
+      "file": "seasons/spring/0000000054.svg",
+      "bytesWithSharedMotif": 2633
+    },
+    {
+      "file": "seasons/spring/0000000027.svg",
+      "bytesWithSharedMotif": 2527
+    },
+    {
+      "file": "seasons/spring/0000000035.svg",
+      "bytesWithSharedMotif": 2441
+    },
+    {
+      "file": "seasons/spring/0000000067.svg",
+      "bytesWithSharedMotif": 2626
+    },
+    {
+      "file": "seasons/spring/0000000075.svg",
+      "bytesWithSharedMotif": 2669
+    },
+    {
+      "file": "seasons/spring/0000000088.svg",
+      "bytesWithSharedMotif": 2489
+    },
+    {
+      "file": "seasons/spring/0000000077.svg",
+      "bytesWithSharedMotif": 2470
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+[
+  {
+    "id": "0000000047",
+    "name": "북한산",
+    "height": 836,
+    "peak": [
+      91,
+      47
+    ],
+    "motif": "rock-dome",
+    "x": 116,
+    "y": 61,
+    "scale": 0.72,
+    "snow": "none",
+    "sun": [
+      116,
+      57
+    ],
+    "accent": "#E8622C",
+    "entry": "북한산성탐방로 입구",
+    "lat": 37.655113,
+    "lng": 126.949081,
+    "notes": "세 봉우리의 넓은 골과 둥근 암봉. 인수봉 밝은 면은 모티프로 분리.",
+    "tag": "둥근 바위의 온기",
+    "seasonAnchor": [
+      51,
+      139
+    ],
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "approved-original"
+    },
+    "viewpoint": "landmark-concept / DEM pending"
+  },
+  {
+    "id": "0000000027",
+    "name": "도봉산",
+    "height": 740,
+    "motif": "rock-spire",
+    "x": 47,
+    "y": 46,
+    "scale": 0.97,
+    "peak": [
+      82,
+      46
+    ],
+    "sun": [
+      119,
+      48
+    ],
+    "tag": "세 개의 바늘봉",
+    "snow": "none",
+    "accent": "#E8622C",
+    "notes": "랜드마크 중심의 창작 풍경. DEM와 기준 조망 대조 전.",
+    "seasonAnchor": [
+      128,
+      141
+    ],
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "approved-original"
+    },
+    "viewpoint": "landmark-concept / DEM pending"
+  },
+  {
+    "id": "0000000052",
+    "name": "설악산",
+    "height": 1708,
+    "peak": [
+      90.5,
+      69.8
+    ],
+    "motif": "rock-wall",
+    "x": 38,
+    "y": 66,
+    "scale": 1.28,
+    "snow": "none",
+    "sun": [
+      116,
+      57
+    ],
+    "accent": "#E8622C",
+    "entry": "설악산 소공원",
+    "lat": 38.172565,
+    "lng": 128.494278,
+    "notes": "울산바위를 중심으로 재구성한 풍경 도장. 대청봉의 정확한 조망이 아닌 랜드마크 중심 제안.",
+    "tag": "울산바위의 긴 오후",
+    "seasonAnchor": [
+      46,
+      142
+    ],
+    "seasonSnow": {
+      "spring": "custom-lg-only",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "approved-original"
+    },
+    "viewpoint": "landmark-concept / DEM pending"
+  },
+  {
+    "id": "0000000088",
+    "name": "태백산",
+    "height": 1567,
+    "motif": "dead-tree",
+    "x": 48,
+    "y": 52,
+    "scale": 0.75,
+    "peak": [
+      109,
+      89
+    ],
+    "sun": [
+      119,
+      47
+    ],
+    "tag": "바람을 기억하는 주목",
+    "snow": "custom",
+    "accent": "#E8622C",
+    "notes": "랜드마크 중심의 창작 풍경. DEM와 기준 조망 대조 전.",
+    "seasonAnchor": [
+      126,
+      139
+    ],
+    "seasonSnow": {
+      "spring": "custom-lg-only",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "approved-original"
+    },
+    "viewpoint": "landmark-concept / DEM pending"
+  },
+  {
+    "id": "0000000093",
+    "name": "한라산",
+    "height": 1947,
+    "peak": [
+      75,
+      89
+    ],
+    "motif": "crater",
+    "x": 66,
+    "y": 98,
+    "scale": 0.72,
+    "snow": "custom",
+    "sun": [
+      64,
+      47
+    ],
+    "accent": "#E8622C",
+    "entry": "한라산 성판악 들머리",
+    "lat": 33.384819,
+    "lng": 126.61956,
+    "notes": "방패형 양어깨와 정상부의 열린 홈. 작은 크기에서도 홈을 유지하고 물·내륜은 숨김.",
+    "tag": "하늘을 담은 분화구",
+    "seasonAnchor": [
+      52,
+      143
+    ],
+    "seasonSnow": {
+      "spring": "custom-lg-only",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "approved-original"
+    },
+    "viewpoint": "landmark-concept / DEM pending"
+  },
+  {
+    "id": "0000000077",
+    "name": "지리산",
+    "height": 1915,
+    "motif": "cloud-sea",
+    "x": 27,
+    "y": 117,
+    "scale": 1.08,
+    "peak": [
+      130,
+      66
+    ],
+    "sun": [
+      55,
+      49
+    ],
+    "tag": "끝없이 이어진 능선",
+    "snow": "custom",
+    "accent": "#E8622C",
+    "notes": "랜드마크 중심의 창작 풍경. DEM와 기준 조망 대조 전.",
+    "seasonAnchor": [
+      131,
+      145
+    ],
+    "seasonSnow": {
+      "spring": "custom-lg-only",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "approved-original"
+    },
+    "viewpoint": "landmark-concept / DEM pending"
+  },
+  {
+    "id": "0000000035",
+    "name": "무등산",
+    "height": 1187,
+    "motif": "columns",
+    "x": 48,
+    "y": 79,
+    "scale": 1.03,
+    "peak": [
+      91,
+      82
+    ],
+    "sun": [
+      116,
+      48
+    ],
+    "tag": "빛을 세운 돌기둥",
+    "snow": "custom",
+    "accent": "#E8622C",
+    "notes": "랜드마크 중심의 창작 풍경. DEM와 기준 조망 대조 전.",
+    "seasonAnchor": [
+      132,
+      145
+    ],
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "approved-original"
+    },
+    "viewpoint": "landmark-concept / DEM pending"
+  },
+  {
+    "id": "0000000067",
+    "name": "월출산",
+    "height": 811,
+    "motif": "rock-spire",
+    "x": 79,
+    "y": 66,
+    "scale": 0.68,
+    "peak": [
+      103,
+      66
+    ],
+    "sun": [
+      55,
+      52
+    ],
+    "tag": "리듬이 다른 기암",
+    "snow": "none",
+    "accent": "#E8622C",
+    "notes": "랜드마크 중심의 창작 풍경. DEM와 기준 조망 대조 전.",
+    "seasonAnchor": [
+      48,
+      145
+    ],
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "approved-original"
+    },
+    "viewpoint": "landmark-concept / DEM pending"
+  },
+  {
+    "id": "0000000075",
+    "name": "주왕산",
+    "height": 722,
+    "motif": "cliff",
+    "x": 29,
+    "y": 67,
+    "scale": 1.06,
+    "peak": [
+      67,
+      67
+    ],
+    "sun": [
+      112,
+      47
+    ],
+    "tag": "깊은 골의 고요",
+    "snow": "none",
+    "accent": "#E8622C",
+    "notes": "랜드마크 중심의 창작 풍경. DEM와 기준 조망 대조 전.",
+    "seasonAnchor": [
+      50,
+      143
+    ],
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "approved-original"
+    },
+    "viewpoint": "landmark-concept / DEM pending"
+  },
+  {
+    "id": "0000000054",
+    "name": "소백산",
+    "height": 1440,
+    "motif": "meadow",
+    "x": 65,
+    "y": 108,
+    "scale": 0.98,
+    "peak": [
+      104,
+      84
+    ],
+    "sun": [
+      59,
+      48
+    ],
+    "tag": "바람이 머무는 풀밭",
+    "snow": "custom",
+    "accent": "#E8622C",
+    "notes": "랜드마크 중심의 창작 풍경. DEM와 기준 조망 대조 전.",
+    "seasonAnchor": [
+      127,
+      144
+    ],
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "approved-original"
+    },
+    "viewpoint": "landmark-concept / DEM pending"
+  }
+]

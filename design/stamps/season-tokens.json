@@ -1,0 +1,240 @@
+{
+  "seasons": {
+    "spring": {
+      "name": "봄",
+      "title": "처음 피어난 마음",
+      "sky": "#EBE2DC",
+      "accent": "#CE8CA3",
+      "description": "회갈색 정상 아래 연두빛 새순과 분홍 군락"
+    },
+    "summer": {
+      "name": "여름",
+      "title": "초록에 오래 머물다",
+      "sky": "#C7E4EF",
+      "accent": "#A9E1D8",
+      "description": "깊은 녹색 숲과 밝은 청록의 물"
+    },
+    "autumn": {
+      "name": "가을",
+      "title": "빛이 천천히 물들 때",
+      "sky": "#E5EBE7",
+      "accent": "#D5AA69",
+      "description": "붉은 정상에서 황토와 녹색으로 내려오는 단풍"
+    },
+    "winter": {
+      "name": "겨울",
+      "title": "고요를 한 장 담다",
+      "sky": "#DAE7E9",
+      "accent": "#B9D1D1",
+      "description": "눈이 머문 바위와 넓은 설면"
+    }
+  },
+  "paletteTypes": {
+    "red": {
+      "name": "붉은 단풍형",
+      "spring": [
+        "#85846F",
+        "#9EB87A",
+        "#BBD392"
+      ],
+      "summer": [
+        "#123F38",
+        "#174E3E",
+        "#276247"
+      ],
+      "autumn": [
+        "#973F42",
+        "#CE6341",
+        "#D9A354",
+        "#65764D"
+      ]
+    },
+    "gold": {
+      "name": "황금 초원형",
+      "spring": [
+        "#8F8778",
+        "#A2B67B",
+        "#BED496"
+      ],
+      "summer": [
+        "#19483C",
+        "#225B42",
+        "#3B7350"
+      ],
+      "autumn": [
+        "#AA7950",
+        "#C59C58",
+        "#DFC585",
+        "#7A8153"
+      ]
+    }
+  },
+  "mountainPaletteTypes": {
+    "0000000047": "red",
+    "0000000027": "red",
+    "0000000052": "red",
+    "0000000088": "gold",
+    "0000000093": "red",
+    "0000000077": "red",
+    "0000000035": "red",
+    "0000000067": "red",
+    "0000000075": "red",
+    "0000000054": "gold"
+  },
+  "sun": {
+    "color": "#E8622C",
+    "radius": 20,
+    "changed": false
+  },
+  "winter": "Approved first delivery colors and geometry retained; elevation-based colors only in winter.",
+  "artColorMode": "spring/summer/autumn self-colored; winter inherited original slots",
+  "resolvedPalettes": {
+    "red": {
+      "spring": {
+        "ridgeStops": [
+          "#85846F",
+          "#9EB87A",
+          "#BBD392"
+        ],
+        "stopOffsets": [
+          0,
+          0.45,
+          1
+        ],
+        "gradientY": [
+          72,
+          165
+        ],
+        "ridgeBack": "#ACA394",
+        "ridgeBackOpacity": 1,
+        "paper": "#E9E5D6",
+        "ink": "#60735B",
+        "motif": "#878574"
+      },
+      "summer": {
+        "ridgeStops": [
+          "#123F38",
+          "#174E3E",
+          "#276247"
+        ],
+        "stopOffsets": [
+          0,
+          0.45,
+          1
+        ],
+        "gradientY": [
+          72,
+          165
+        ],
+        "ridgeBack": "#71998A",
+        "ridgeBackOpacity": 1,
+        "paper": "#A8BBA1",
+        "ink": "#123E36",
+        "motif": "#255244"
+      },
+      "autumn": {
+        "ridgeStops": [
+          "#973F42",
+          "#CE6341",
+          "#D9A354",
+          "#65764D"
+        ],
+        "stopOffsets": [
+          0,
+          0.38,
+          0.73,
+          1
+        ],
+        "gradientY": [
+          72,
+          165
+        ],
+        "ridgeBack": "#D59A67",
+        "ridgeBackOpacity": 1,
+        "paper": "#E1BA89",
+        "ink": "#714E39",
+        "motif": "#A55440"
+      }
+    },
+    "gold": {
+      "spring": {
+        "ridgeStops": [
+          "#8F8778",
+          "#A2B67B",
+          "#BED496"
+        ],
+        "stopOffsets": [
+          0,
+          0.45,
+          1
+        ],
+        "gradientY": [
+          72,
+          165
+        ],
+        "ridgeBack": "#ACA394",
+        "ridgeBackOpacity": 1,
+        "paper": "#E9E5D6",
+        "ink": "#60735B",
+        "motif": "#878574"
+      },
+      "summer": {
+        "ridgeStops": [
+          "#19483C",
+          "#225B42",
+          "#3B7350"
+        ],
+        "stopOffsets": [
+          0,
+          0.45,
+          1
+        ],
+        "gradientY": [
+          72,
+          165
+        ],
+        "ridgeBack": "#71998A",
+        "ridgeBackOpacity": 1,
+        "paper": "#A8BBA1",
+        "ink": "#123E36",
+        "motif": "#255244"
+      },
+      "autumn": {
+        "ridgeStops": [
+          "#AA7950",
+          "#C59C58",
+          "#DFC585",
+          "#7A8153"
+        ],
+        "stopOffsets": [
+          0,
+          0.38,
+          0.73,
+          1
+        ],
+        "gradientY": [
+          72,
+          165
+        ],
+        "ridgeBack": "#B7A980",
+        "ridgeBackOpacity": 1,
+        "paper": "#E7D9B5",
+        "ink": "#714E39",
+        "motif": "#AA8354"
+      }
+    }
+  },
+  "winterPalette": {
+    "ridgeByElevation": {
+      "under600": "#6E955C",
+      "600to999": "#377650",
+      "1000to1499": "#245744",
+      "1500andAbove": "#30485A"
+    },
+    "paper": "#FCFBF7",
+    "inkBelow1500": "#234D36",
+    "ink1500AndAbove": "#203442",
+    "ridgeBackOpacity": 0.6,
+    "accent": "#B9D1D1"
+  }
+}

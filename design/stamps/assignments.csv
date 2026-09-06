@@ -1,0 +1,11 @@
+﻿id,산,모티프,x,y,scale,기본 눈,계절 눈,해 x,해 y,조망 상태
+0000000047,북한산,rock-dome,116,61,0.72,none,겨울만 custom,116,57,DEM 대조 전
+0000000027,도봉산,rock-spire,47,46,0.97,none,겨울만 custom,119,48,DEM 대조 전
+0000000052,설악산,rock-wall,38,66,1.28,none,겨울만 custom,116,57,DEM 대조 전
+0000000088,태백산,dead-tree,48,52,0.75,custom,겨울만 custom,119,47,DEM 대조 전
+0000000093,한라산,crater,66,98,0.72,custom,겨울만 custom,64,47,DEM 대조 전
+0000000077,지리산,cloud-sea,27,117,1.08,custom,겨울만 custom,55,49,DEM 대조 전
+0000000035,무등산,columns,48,79,1.03,custom,겨울만 custom,116,48,DEM 대조 전
+0000000067,월출산,rock-spire,79,66,0.68,none,겨울만 custom,55,52,DEM 대조 전
+0000000075,주왕산,cliff,29,67,1.06,none,겨울만 custom,112,47,DEM 대조 전
+0000000054,소백산,meadow,65,108,0.98,custom,겨울만 custom,59,48,DEM 대조 전

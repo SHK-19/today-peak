@@ -361,6 +361,18 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
   옛 이미지를 돌려준다(검토 중인 페이로드는 조회에 안 나온다).
 - 번들 검수 요청은 사용자가 콘솔 웹에서 직접 한다. 릴리즈 노트 초안은 아래.
 
+### 산별 스탬프 v0.1 (2026-09-06, 출시 후 첫 업데이트용)
+
+`docs/design-brief-stamps.md` + 2차 `design-brief-stamps-seasons.md` → 납품 `design/stamps/`(10곳 × 4계절 + 모티프 9종).
+- `scripts/build-stamp-art.mjs`가 `src/data/stamp-art.json`(96KB)을 만든다. 모티프 `<use href="x.svg#…">`를 문서 안 `<symbol>`로 인라인.
+- `src/lib/stamp-art.ts`(순수, 테스트 7개): id 접두사, 40px에서 `lg-only` 제거, 미모음은 `collected-only` 제거 + 전부 `#D4DACE` 단색 + 불투명도 제거.
+  중첩 `<g>`를 지우려고 태그를 세는 함수를 썼다. 정규식 하나로는 못 한다.
+- `Stamp.tsx`: 그림이 있는 산은 `dangerouslySetInnerHTML`, 없는 86곳은 절차적. **절차적도 같은 계절 팔레트**(붉은 단풍형)로
+  능선 그라데이션·눈 규칙(겨울만, 봄은 1500m↑ 잔설)을 따르게 해서 두 체계가 형제로 보인다.
+- 검증은 react-dom/server로 시트를 그려 헤드리스 캡처. **셀마다 따로 렌더하면 `useId`가 겹쳐 clipPath가 섞인다** — 한 트리로 렌더해야 한다.
+- 번들 js 333→439KB(gzip 102→111KB). 미모음 시트에서 그림이 흐린 건 의도(빈 자리).
+- 나머지 86곳 디자이너 확장은 `design/stamps/docs/EXPANSION.md` 규칙대로. 팔레트 유형(red/gold)만 배정하면 된다.
+
 ## 백로그 — 데이터 검증 (출시 전, 사람이 확인)
 
 `node scripts/build-mountains.mjs`가 매번 같은 리포트를 낸다. 고치는 방법은 스크립트의 정상 선택 규칙에
