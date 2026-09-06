@@ -1,5 +1,5 @@
 {
-  "_note": "자동 생성 파일입니다. 직접 고치지 말고 scripts/build-mountains.mjs를 다시 돌리세요. 출처: 숲나들e 100대명산 정보(공공데이터포털 15112801, 이름·소재지·공식 높이·난이도) + 한국등산트레킹지원센터 봉우리POI(15097953, 정상 좌표) + 숲길POI(15097947, 등산로 입구 좌표). 이용허락범위 제한 없음. 정상은 산에 귀속된 봉우리 중 공식 높이에 가장 가까운 것을 채택했고, 채택한 봉우리 이름은 peakName에 남겼습니다. 생성 2026-09-05.",
+  "_note": "자동 생성 파일입니다. 직접 고치지 말고 scripts/build-mountains.mjs를 다시 돌리세요. 출처: 숲나들e 100대명산 정보(공공데이터포털 15112801, 이름·소재지·공식 높이·난이도) + 한국등산트레킹지원센터 봉우리POI(15097953, 정상 좌표) + 숲길POI(15097947, 등산로 입구 좌표). 이용허락범위 제한 없음. 정상은 산에 귀속된 봉우리 중 공식 높이에 가장 가까운 것을 채택했고, 채택한 봉우리 이름은 peakName에 남겼습니다. 생성 2026-09-06.",
   "mountains": [
     {
       "id": "0000000002",
@@ -8,6 +8,7 @@
       "summitLng": 127.956352,
       "elevationM": 1051,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "가리산정상1051",
       "trailheads": [
@@ -25,6 +26,7 @@
       "summitLng": 128.563171,
       "elevationM": 1562,
       "region": "강원",
+      "province": null,
       "difficulty": "중급",
       "peakName": "가리왕산 정상",
       "trailheads": [
@@ -52,6 +54,7 @@
       "summitLng": 128.120651,
       "elevationM": 1433,
       "region": "경상",
+      "province": null,
       "difficulty": "중급",
       "peakName": "가야산 상왕봉",
       "trailheads": [
@@ -104,6 +107,7 @@
       "summitLng": 129.00293,
       "elevationM": 1241,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "가지산",
       "trailheads": [
@@ -126,6 +130,7 @@
       "summitLng": 126.970116,
       "elevationM": 675,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "peakName": "감악산 정상",
       "trailheads": [
@@ -188,6 +193,7 @@
       "summitLng": 127.038055,
       "elevationM": 586,
       "region": "전라",
+      "province": null,
       "difficulty": "중급",
       "peakName": "운대봉",
       "trailheads": [
@@ -215,6 +221,7 @@
       "summitLng": 127.210381,
       "elevationM": 847,
       "region": "충청",
+      "province": null,
       "difficulty": null,
       "peakName": "삼불봉",
       "trailheads": [
@@ -272,6 +279,7 @@
       "summitLng": 128.465591,
       "elevationM": 1579,
       "region": "강원",
+      "province": null,
       "difficulty": "중급",
       "peakName": "계방산정상",
       "trailheads": [
@@ -289,6 +297,7 @@
       "summitLng": 128.010681,
       "elevationM": 887,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "공작산 정상(과거 정상표지석 위치)",
       "trailheads": [
@@ -356,6 +365,7 @@
       "summitLng": 126.964211,
       "elevationM": 632,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "peakName": "연주대",
       "trailheads": [
@@ -573,6 +583,7 @@
       "summitLng": 127.861916,
       "elevationM": 876,
       "region": "경상",
+      "province": null,
       "difficulty": "고급",
       "peakName": "구병산",
       "trailheads": [
@@ -595,6 +606,7 @@
       "summitLng": 127.982872,
       "elevationM": 705,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "남해 금산 정상",
       "trailheads": [
@@ -617,6 +629,7 @@
       "summitLng": 128.256775,
       "elevationM": 1016,
       "region": "충청",
+      "province": null,
       "difficulty": null,
       "peakName": "금수산정상",
       "trailheads": [
@@ -704,6 +717,7 @@
       "summitLng": 128.300095,
       "elevationM": 977,
       "region": "경상",
+      "province": null,
       "difficulty": "고급",
       "peakName": "현월봉 정상",
       "trailheads": [
@@ -781,6 +795,7 @@
       "summitLng": 129.050766,
       "elevationM": 801,
       "region": "경상",
+      "province": null,
       "difficulty": "고급",
       "peakName": "고당봉",
       "trailheads": [
@@ -918,6 +933,7 @@
       "summitLng": 125.203148,
       "elevationM": 368,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "홍도 깃대봉",
       "trailheads": [
@@ -935,6 +951,7 @@
       "summitLng": 129.289886,
       "elevationM": 711,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "삼지봉",
       "trailheads": [
@@ -967,6 +984,7 @@
       "summitLng": 126.881653,
       "elevationM": 764,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "까치봉 정상",
       "trailheads": []
@@ -978,6 +996,7 @@
       "summitLng": 127.320518,
       "elevationM": 879,
       "region": "충청",
+      "province": null,
       "difficulty": "고급",
       "peakName": "정상",
       "trailheads": []
@@ -989,6 +1008,7 @@
       "summitLng": 127.929474,
       "elevationM": 931,
       "region": "경상",
+      "province": null,
       "difficulty": "고급",
       "peakName": "대야산",
       "trailheads": [
@@ -1026,6 +1046,7 @@
       "summitLng": 126.624367,
       "elevationM": 495,
       "region": "충청",
+      "province": null,
       "difficulty": "중급",
       "peakName": "덕숭산정상",
       "trailheads": [
@@ -1043,6 +1064,7 @@
       "summitLng": 127.747452,
       "elevationM": 1614,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "중봉",
       "trailheads": [
@@ -1090,6 +1112,7 @@
       "summitLng": 129.012405,
       "elevationM": 1073,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "덕항산 정상",
       "trailheads": [
@@ -1117,6 +1140,7 @@
       "summitLng": 128.311111,
       "elevationM": 965,
       "region": "충청",
+      "province": null,
       "difficulty": null,
       "peakName": "도락산",
       "trailheads": []
@@ -1128,6 +1152,7 @@
       "summitLng": 127.015053,
       "elevationM": 740,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "peakName": "신선대",
       "trailheads": [
@@ -1325,6 +1350,7 @@
       "summitLng": 126.636658,
       "elevationM": 700,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "노승봉",
       "trailheads": [
@@ -1352,6 +1378,7 @@
       "summitLng": 129.004425,
       "elevationM": 1357,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "두타산",
       "trailheads": []
@@ -1363,6 +1390,7 @@
       "summitLng": 126.430573,
       "elevationM": 472,
       "region": "수도권",
+      "province": "인천",
       "difficulty": null,
       "peakName": "마니산 정상",
       "trailheads": [
@@ -1400,6 +1428,7 @@
       "summitLng": 127.411438,
       "elevationM": 687,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "암마이봉정상",
       "trailheads": [
@@ -1432,6 +1461,7 @@
       "summitLng": 127.338776,
       "elevationM": 922,
       "region": "강원",
+      "province": null,
       "difficulty": "중급",
       "peakName": "삼각봉",
       "trailheads": [
@@ -1459,6 +1489,7 @@
       "summitLng": 127.432426,
       "elevationM": 1252,
       "region": "수도권",
+      "province": "경기",
       "difficulty": "중급",
       "peakName": "명지산",
       "trailheads": [
@@ -1551,6 +1582,7 @@
       "summitLng": 127.085114,
       "elevationM": 795,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "정상",
       "trailheads": [
@@ -1593,6 +1625,7 @@
       "summitLng": 127.002785,
       "elevationM": 1187,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "서석대",
       "trailheads": [
@@ -1760,6 +1793,7 @@
       "summitLng": 128.546753,
       "elevationM": 761,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "중봉",
       "trailheads": [
@@ -1807,6 +1841,7 @@
       "summitLng": 128.416229,
       "elevationM": 458,
       "region": "경상",
+      "province": null,
       "difficulty": "중급",
       "peakName": "미륵산 정상",
       "trailheads": [
@@ -1909,6 +1944,7 @@
       "summitLng": 127.849396,
       "elevationM": 1242,
       "region": "충청",
+      "province": null,
       "difficulty": "고급",
       "peakName": "민주지산",
       "trailheads": [
@@ -1956,6 +1992,7 @@
       "summitLng": 126.756386,
       "elevationM": 734,
       "region": "전라",
+      "province": null,
       "difficulty": "초급",
       "peakName": "산정상",
       "trailheads": [
@@ -1978,6 +2015,7 @@
       "summitLng": 128.39032,
       "elevationM": 1446,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "방태산주억봉 1,444m",
       "trailheads": [
@@ -2000,6 +2038,7 @@
       "summitLng": 128.293381,
       "elevationM": 1350,
       "region": "강원",
+      "province": null,
       "difficulty": "중급",
       "peakName": "백덕산정상",
       "trailheads": [
@@ -2062,6 +2101,7 @@
       "summitLng": 126.86338,
       "elevationM": 741,
       "region": "전라",
+      "province": null,
       "difficulty": "초급",
       "peakName": "사자봉",
       "trailheads": [
@@ -2099,6 +2139,7 @@
       "summitLng": 127.621597,
       "elevationM": 1222,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "백운산 상봉",
       "trailheads": [
@@ -2141,6 +2182,7 @@
       "summitLng": 128.596085,
       "elevationM": 884,
       "region": "강원",
+      "province": null,
       "difficulty": "고급",
       "peakName": "백운산",
       "trailheads": [
@@ -2173,6 +2215,7 @@
       "summitLng": 127.445709,
       "elevationM": 903,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "peakName": "도마봉",
       "trailheads": [
@@ -2205,6 +2248,7 @@
       "summitLng": 126.622643,
       "elevationM": 509,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "옥녀봉",
       "trailheads": [
@@ -2237,6 +2281,7 @@
       "summitLng": 126.978073,
       "elevationM": 836,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "peakName": "백운대",
       "trailheads": [
@@ -2504,6 +2549,7 @@
       "summitLng": 128.52359,
       "elevationM": 1083,
       "region": "경상",
+      "province": null,
       "difficulty": "중급",
       "peakName": "비슬산 천왕봉",
       "trailheads": [
@@ -2546,6 +2592,7 @@
       "summitLng": 127.660637,
       "elevationM": 656,
       "region": "강원",
+      "province": null,
       "difficulty": "중급",
       "peakName": "삼악산 용화봉(654m)",
       "trailheads": [
@@ -2583,6 +2630,7 @@
       "summitLng": 127.540298,
       "elevationM": 905,
       "region": "충청",
+      "province": null,
       "difficulty": "고급",
       "peakName": "장군바위정상",
       "trailheads": [
@@ -2620,6 +2668,7 @@
       "summitLng": 128.465347,
       "elevationM": 1708,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "대청봉",
       "trailheads": [
@@ -2667,6 +2716,7 @@
       "summitLng": 130.867004,
       "elevationM": 987,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "성인봉",
       "trailheads": [
@@ -2689,6 +2739,7 @@
       "summitLng": 128.484924,
       "elevationM": 1440,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "비로봉",
       "trailheads": [
@@ -2741,6 +2792,7 @@
       "summitLng": 127.087906,
       "elevationM": 588,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "peakName": "소요산 ㅡ 의상대",
       "trailheads": [
@@ -2813,6 +2865,7 @@
       "summitLng": 127.870842,
       "elevationM": 1058,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "속리산 천왕봉",
       "trailheads": []
@@ -2824,6 +2877,7 @@
       "summitLng": 129.054382,
       "elevationM": 1159,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "구 정상석",
       "trailheads": [
@@ -2901,6 +2955,7 @@
       "summitLng": 128.254959,
       "elevationM": 524,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "연화1봉",
       "trailheads": [
@@ -2928,6 +2983,7 @@
       "summitLng": 128.543701,
       "elevationM": 1565,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "비로봉정상",
       "trailheads": [
@@ -2960,6 +3016,7 @@
       "summitLng": 127.807144,
       "elevationM": 778,
       "region": "강원",
+      "province": null,
       "difficulty": "중급",
       "peakName": "오봉산 정상",
       "trailheads": [
@@ -2987,6 +3044,7 @@
       "summitLng": 127.54895,
       "elevationM": 1157,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "peakName": "용문산",
       "trailheads": [
@@ -3034,6 +3092,7 @@
       "summitLng": 127.747963,
       "elevationM": 878,
       "region": "강원",
+      "province": null,
       "difficulty": "중급",
       "peakName": "용화산 정상",
       "trailheads": [
@@ -3096,6 +3155,7 @@
       "summitLng": 128.957626,
       "elevationM": 1195,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "함화산 1107m",
       "trailheads": [
@@ -3143,6 +3203,7 @@
       "summitLng": 127.325218,
       "elevationM": 935,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "peakName": "동봉",
       "trailheads": [
@@ -3190,6 +3251,7 @@
       "summitLng": 127.357658,
       "elevationM": 1126,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "운장대",
       "trailheads": []
@@ -3201,6 +3263,7 @@
       "summitLng": 128.106003,
       "elevationM": 1095,
       "region": "충청",
+      "province": null,
       "difficulty": null,
       "peakName": "영봉안내",
       "trailheads": [
@@ -3253,6 +3316,7 @@
       "summitLng": 126.703896,
       "elevationM": 811,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "천황봉",
       "trailheads": [
@@ -3290,6 +3354,7 @@
       "summitLng": 127.486534,
       "elevationM": 864,
       "region": "수도권",
+      "province": "경기",
       "difficulty": "초급",
       "peakName": "유명산",
       "trailheads": [
@@ -3372,6 +3437,7 @@
       "summitLng": 129.230545,
       "elevationM": 1000,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "응봉산 정상",
       "trailheads": [
@@ -3399,6 +3465,7 @@
       "summitLng": 127.595222,
       "elevationM": 1237,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "장안산",
       "trailheads": [
@@ -3416,6 +3483,7 @@
       "summitLng": 128.965073,
       "elevationM": 1119,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "상투봉",
       "trailheads": [
@@ -3483,6 +3551,7 @@
       "summitLng": 127.687225,
       "elevationM": 1031,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "향로봉",
       "trailheads": []
@@ -3494,6 +3563,7 @@
       "summitLng": 127.301994,
       "elevationM": 887,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "조계산연산봉",
       "trailheads": [
@@ -3511,6 +3581,7 @@
       "summitLng": 129.162216,
       "elevationM": 722,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "정상",
       "trailheads": [
@@ -3533,6 +3604,7 @@
       "summitLng": 128.105942,
       "elevationM": 1108,
       "region": "경상",
+      "province": null,
       "difficulty": "중급",
       "peakName": "주흘산 주봉",
       "trailheads": [
@@ -3575,6 +3647,7 @@
       "summitLng": 127.730614,
       "elevationM": 1915,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "천왕봉정상",
       "trailheads": [
@@ -3597,6 +3670,7 @@
       "summitLng": 128.205032,
       "elevationM": 399,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "가마봉 정상",
       "trailheads": [
@@ -3619,6 +3693,7 @@
       "summitLng": 126.91951,
       "elevationM": 724,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "천관산 연대봉",
       "trailheads": [
@@ -3651,6 +3726,7 @@
       "summitLng": 127.27327,
       "elevationM": 810,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "peakName": "천마산 정상(해발 812m)",
       "trailheads": [
@@ -3713,6 +3789,7 @@
       "summitLng": 128.985245,
       "elevationM": 920,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "산정상",
       "trailheads": []
@@ -3724,6 +3801,7 @@
       "summitLng": 127.600105,
       "elevationM": 714,
       "region": "충청",
+      "province": null,
       "difficulty": "고급",
       "peakName": "천태산 정상",
       "trailheads": [
@@ -3761,6 +3839,7 @@
       "summitLng": 128.908844,
       "elevationM": 870,
       "region": "경상",
+      "province": null,
       "difficulty": "고급",
       "peakName": "장인봉",
       "trailheads": [
@@ -3808,6 +3887,7 @@
       "summitLng": 126.987808,
       "elevationM": 731,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "보리암정상",
       "trailheads": [
@@ -3840,6 +3920,7 @@
       "summitLng": 127.333946,
       "elevationM": 887,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "peakName": "정상석",
       "trailheads": [
@@ -3892,6 +3973,7 @@
       "summitLng": 128.055557,
       "elevationM": 1282,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "비로봉정상",
       "trailheads": [
@@ -3964,6 +4046,7 @@
       "summitLng": 126.88089,
       "elevationM": 560,
       "region": "충청",
+      "province": null,
       "difficulty": null,
       "peakName": "삼형제봉",
       "trailheads": [
@@ -4006,6 +4089,7 @@
       "summitLng": 128.916565,
       "elevationM": 1567,
       "region": "강원",
+      "province": null,
       "difficulty": "중급",
       "peakName": "태백산",
       "trailheads": [
@@ -4023,6 +4107,7 @@
       "summitLng": 128.485245,
       "elevationM": 1028,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "태화산정상",
       "trailheads": [
@@ -4045,6 +4130,7 @@
       "summitLng": 128.697037,
       "elevationM": 1192,
       "region": "경상",
+      "province": null,
       "difficulty": "중급",
       "peakName": "동봉",
       "trailheads": [
@@ -4107,6 +4193,7 @@
       "summitLng": 127.696999,
       "elevationM": 328,
       "region": "강원",
+      "province": null,
       "difficulty": null,
       "peakName": "팔봉산",
       "trailheads": [
@@ -4129,6 +4216,7 @@
       "summitLng": 127.430595,
       "elevationM": 607,
       "region": "전라",
+      "province": null,
       "difficulty": null,
       "peakName": "팔영산 5봉",
       "trailheads": [
@@ -4156,6 +4244,7 @@
       "summitLng": 126.535667,
       "elevationM": 1947,
       "region": "제주",
+      "province": null,
       "difficulty": null,
       "peakName": "한라산 백록담",
       "trailheads": [
@@ -4218,6 +4307,7 @@
       "summitLng": 127.498184,
       "elevationM": 1468,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "peakName": "중봉",
       "trailheads": [
@@ -4300,6 +4390,7 @@
       "summitLng": 128.533127,
       "elevationM": 758,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "화왕지맥",
       "trailheads": [
@@ -4357,6 +4448,7 @@
       "summitLng": 127.974609,
       "elevationM": 1113,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "황매산 군립공원",
       "trailheads": [
@@ -4389,6 +4481,7 @@
       "summitLng": 127.755493,
       "elevationM": 1193,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "황석산 정상",
       "trailheads": [
@@ -4436,6 +4529,7 @@
       "summitLng": 127.966873,
       "elevationM": 1111,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "황악산 정상 1111m",
       "trailheads": [
@@ -4483,6 +4577,7 @@
       "summitLng": 128.278091,
       "elevationM": 1079,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "황장산",
       "trailheads": []
@@ -4494,9 +4589,15 @@
       "summitLng": 128.005096,
       "elevationM": 996,
       "region": "경상",
+      "province": null,
       "difficulty": null,
       "peakName": "희양산 정상",
       "trailheads": [
+        {
+          "name": "날머리",
+          "lat": 36.73584,
+          "lng": 127.985229
+        },
         {
           "name": "날머리",
           "lat": 36.744598,
@@ -4546,11 +4647,6 @@
           "name": "날머리",
           "lat": 36.746456,
           "lng": 128.017197
-        },
-        {
-          "name": "날머리",
-          "lat": 36.73584,
-          "lng": 127.985229
         }
       ]
     }

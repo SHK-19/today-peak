@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 
-import { OTHER_REGION, groupByRegion, regionsOf } from './region.ts';
+import { OTHER_REGION, areaOf, areasOf, groupByRegion, regionsOf } from './region.ts';
 import type { Mountain } from './verify.ts';
 
 function mountain(name: string, region: string | null): Mountain {
@@ -52,4 +52,18 @@ test('regionsOf는 데이터에 있는 권역만 순서대로 준다', () => {
     '수도권',
     '제주',
   ]);
+});
+
+test('areaOf는 수도권만 시·도로 쪼갠다', () => {
+  assert.equal(areaOf({ region: '수도권', province: '서울' }), '서울');
+  assert.equal(areaOf({ region: '수도권', province: null }), '수도권');
+  assert.equal(areaOf({ region: '강원', province: null }), '강원');
+  assert.deepEqual(
+    areasOf([
+      { ...mountain('a', '강원'), province: null },
+      { ...mountain('b', '수도권'), province: '경기' },
+      { ...mountain('c', '수도권'), province: '서울' },
+    ]),
+    ['서울', '경기', '강원'],
+  );
 });

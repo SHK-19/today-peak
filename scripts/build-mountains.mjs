@@ -108,6 +108,12 @@ function parseDifficulty(raw) {
   return value === undefined || value === '-' ? null : value;
 }
 
+// 수도권만 시·도로 더 쪼갠다. 홈에서 "서울만" 보고 싶은 사람이 많다. 소재지 첫 토큰 기준.
+const PROVINCE_OF = { 서울: '서울', 경기: '경기', 인천: '인천' };
+function provinceOf(place) {
+  return PROVINCE_OF[(place ?? '').slice(0, 2)] ?? null;
+}
+
 function regionOf(place) {
   return REGION_OF[(place ?? '').slice(0, 2)] ?? null;
 }
@@ -170,6 +176,7 @@ for (const mountain of mountains) {
     summitLng: Number(Number(summit.lot).toFixed(6)),
     elevationM: official,
     region: regionOf(mountain['명산_소재지']),
+    province: provinceOf(mountain['명산_소재지']),
     difficulty: parseDifficulty(mountain['난이도']),
     peakName: summit.placeNm,
     trailheads: trailheadsOf(entriesById.get(summit.frtrlId) ?? []),

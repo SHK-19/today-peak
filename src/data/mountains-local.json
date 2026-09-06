@@ -8,6 +8,7 @@
       "summitLng": 126.805178,
       "elevationM": 132,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -19,6 +20,7 @@
       "summitLng": 127.249354,
       "elevationM": 658,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -30,6 +32,7 @@
       "summitLng": 126.714593,
       "elevationM": 395,
       "region": "수도권",
+      "province": "인천",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -41,6 +44,7 @@
       "summitLng": 126.43721,
       "elevationM": 436,
       "region": "수도권",
+      "province": "인천",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -52,6 +56,7 @@
       "summitLng": 127.034443,
       "elevationM": 582,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "peakName": "시루봉",
       "trailheads": [],
@@ -64,6 +69,7 @@
       "summitLng": 127.061218,
       "elevationM": 306,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -75,6 +81,7 @@
       "summitLng": 126.987961,
       "elevationM": 267,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -86,6 +93,7 @@
       "summitLng": 127.204081,
       "elevationM": 522,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -97,6 +105,7 @@
       "summitLng": 126.944136,
       "elevationM": 487,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -108,6 +117,7 @@
       "summitLng": 127.079007,
       "elevationM": 293,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -119,6 +129,7 @@
       "summitLng": 126.978647,
       "elevationM": 385,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -130,6 +141,7 @@
       "summitLng": 126.54861,
       "elevationM": 376,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -141,6 +153,7 @@
       "summitLng": 127.017006,
       "elevationM": 567,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -152,6 +165,7 @@
       "summitLng": 126.900963,
       "elevationM": 209,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -163,6 +177,7 @@
       "summitLng": 126.973738,
       "elevationM": 342,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -174,6 +189,7 @@
       "summitLng": 127.134392,
       "elevationM": 335,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -185,6 +201,7 @@
       "summitLng": 127.095245,
       "elevationM": 508,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -196,6 +213,7 @@
       "summitLng": 126.939371,
       "elevationM": 481,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -207,6 +225,7 @@
       "summitLng": 127.172944,
       "elevationM": 470,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -218,6 +237,7 @@
       "summitLng": 126.778923,
       "elevationM": 300,
       "region": "수도권",
+      "province": "인천",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -229,6 +249,7 @@
       "summitLng": 127.08134,
       "elevationM": 638,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -240,6 +261,7 @@
       "summitLng": 127.102742,
       "elevationM": 296,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -251,6 +273,7 @@
       "summitLng": 126.945783,
       "elevationM": 296,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -262,6 +285,7 @@
       "summitLng": 127.398148,
       "elevationM": 670,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -273,6 +297,7 @@
       "summitLng": 127.261132,
       "elevationM": 683,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -284,6 +309,7 @@
       "summitLng": 127.09571,
       "elevationM": 348,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -295,6 +321,7 @@
       "summitLng": 127.00913,
       "elevationM": 293,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -306,6 +333,7 @@
       "summitLng": 127.294586,
       "elevationM": 610,
       "region": "수도권",
+      "province": "경기",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -317,6 +345,7 @@
       "summitLng": 126.95781,
       "elevationM": 339,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"
@@ -328,6 +357,7 @@
       "summitLng": 127.043217,
       "elevationM": 618,
       "region": "수도권",
+      "province": "서울",
       "difficulty": null,
       "trailheads": [],
       "collection": "local"

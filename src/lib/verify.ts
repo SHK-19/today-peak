@@ -37,6 +37,8 @@ export type Mountain = {
   peakName?: string;
   /** 수도권·강원·충청·전라·경상·제주 */
   region?: string | null;
+  /** 수도권만 시·도로: 서울·경기·인천. 홈 필터용. */
+  province?: string | null;
   /** 숲나들e 원본에 값이 있는 산만 채워진다(29곳). */
   difficulty?: string | null;
   /** 없으면 100대 명산. 'local'은 OSM에서 뽑은 동네 명산 컬렉션. */

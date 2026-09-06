@@ -30,7 +30,27 @@ export function groupByRegion(mountains: Mountain[]): RegionGroup[] {
   return ordered;
 }
 
-// 홈 필터용. 데이터에 실제로 있는 권역만 순서대로 준다.
+// 홈 필터 단위. 수도권은 시·도(서울·경기·인천)로 쪼개고 나머지는 권역 그대로.
+export const AREA_ORDER: readonly string[] = ['서울', '경기', '인천', '강원', '충청', '전라', '경상', '제주'];
+
+export function areaOf(mountain: Pick<Mountain, 'region' | 'province'>): string {
+  if (mountain.region === '수도권' && mountain.province) {
+    return mountain.province;
+  }
+  return mountain.region ?? OTHER_REGION;
+}
+
+// 데이터에 실제로 있는 필터 단위만 순서대로. 순서에 없는 건 뒤에.
+export function areasOf(mountains: Mountain[]): string[] {
+  const present = new Set(mountains.map(areaOf));
+  const ordered = AREA_ORDER.filter((area) => present.has(area));
+  for (const area of present) {
+    if (!ordered.includes(area)) ordered.push(area);
+  }
+  return ordered;
+}
+
+// 컬렉션 화면용. 데이터에 실제로 있는 권역만 순서대로 준다.
 export function regionsOf(mountains: Mountain[]): string[] {
   return groupByRegion(mountains).map((group) => group.region);
 }
