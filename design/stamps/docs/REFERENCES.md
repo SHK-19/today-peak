@@ -1,12 +1,15 @@
-# 형태 참고와 해석 범위
+# 형태 참고와 데이터 기준
 
-사용자가 제공한 designbriefstamps.md의 랜드마크 분류와 mountains.json의 산 ID·고도를 기준으로 새 벡터를 그렸습니다. 사진을 포함하거나 트레이스하지 않았습니다. 특정 입구의 실제 조망을 복원한 그림은 아닙니다. 새로운 일곱 산의 대표 입구 좌표는 확정하지 않았습니다.
+ID·산명·고도·지역·인증지점은 사용자 의뢰서 designbriefstampsbatches.md의1묶음 표를 정본으로 사용했습니다. 현지 소개와 표기고도가 달라도 의뢰서 값을 바꾸지 않았습니다. 명칭 없는 동네 정상에는 지점명을 만들어 넣지 않았습니다.
 
-추가 확인한 공식 자료:
-- 도봉구 관광, 도봉산 소개: https://tour.dobong.go.kr/Contents.asp?code=10006251 — 자운봉·만장봉·선인봉 등 화강암 암봉 설명.
-- 국가유산청, 무등산 주상절리대: https://digital.khs.go.kr/heri/heriDetail.do?ctptNo=1362404650000&ctptUid=13928226026418038080 — 기둥·병풍 형태와 서석대·입석대 설명.
-- 한국관광공사 관광 데이터, 주왕산: https://data.visitkorea.or.kr/page/126020 — 주방·절골·월외계곡 등 지형 맥락. 이번 표기 고도는 외부 관광 소개의 값이 아닌 앱 데이터722m를 유지.
+주요 랜드마크의 맥락을 확인한 공식 자료:
+- 관악구, 관악산 소개: https://www.gwanak.go.kr/site/gwanak/08/10802010000002026041302.jsp — 절벽 위 연주대의 배치 맥락.
+- 강화군, 마니산(참성단): https://www.ganghwa.go.kr/open_content/tour/tour/tourInfoDetail.do?tour_seq=44&tourdiv=all — 세 봉우리와 원형기초·사각 상부 제단. 사진을 포함하거나 트레이스하지 않음.
+- 서울관광재단, Namsan Seoul Tower: https://english.visitseoul.net/attractions/N-Seoul-Tower/ENP000036 — 남산 정상 타워의 맥락. 타사 로고를 사용하지 않고 구조를 단순화한 새 그림.
+- 서울관광재단, Inwangsan Mountain: https://english.visitseoul.net/nature/Inwangsan%20Mountain/ENP003840 — 바위산과 도성 능선 맥락.
+- 계양구 기록보관소: https://gyeyang.photo/30 — 계양산의 위치와 정상 조망 맥락. 정자 모티프 선택은 의뢰서의 명시 예시를 근거로 함.
+- 서울시, 서울의 다양한 산: https://mediahub.seoul.go.kr/news/article/newsArticlePrintPopup.do?articleNo=2007699 — 북악산·인왕산 등 서울 산의 맥락.
 
-기존 세 산은 앞선 시안의 Wikimedia 참고를 이어 사용했습니다. 북한산 전경, Ulsanbawi(rock), The Peak of Hallasan Baengnokdam 1의 지형 특징을 참고한 창작 도형입니다. 저작권 사진을 패키지에 넣지 않았습니다.
+모든 산의 정상 시점 사진을 수집·대조한 작업은 아닙니다. 실루엣만 둔 산의 경로는 해당 인증 지점명을 출발점으로 한 상징적 구도이며 정확한 시선 방향·DEM 지평선으로 설명하면 안 됩니다. 개별 구도의 지리적 적합성과 식별률은 묶음 검수에서 확인해야 합니다.
 
-계절의 꽃·잎·설면은 감성적 인쇄 표현입니다. 각 식물종·꽃의 위치·관측 날짜·적설량을 재현하거나 보증하지 않습니다. DEM 일치·등산자 식별률은 아직 검증하지 않았습니다.
+꽃 군락·여름 물길·겨울 적설은 계절 서명이며 현장 위치·수량·발생을 보증하지 않습니다. 원본 사진·서체·타사 로고·래스터 질감은 SVG 에셋에 포함하지 않았습니다.

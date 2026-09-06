@@ -327,5 +327,1601 @@
       "winter": "approved-original"
     },
     "viewpoint": "landmark-concept / DEM pending"
+  },
+  {
+    "name": "감악산",
+    "height": 675,
+    "region": "경기",
+    "summit": "감악산 정상",
+    "id": "0000000005",
+    "peak": [
+      87,
+      61
+    ],
+    "motif": "rock-dome",
+    "x": 75,
+    "y": 61,
+    "scale": 0.5,
+    "tag": "두툼한 정상과 긴 양어깨",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000005"
+  },
+  {
+    "name": "관악산",
+    "height": 632,
+    "region": "서울",
+    "summit": "연주대",
+    "id": "0000000010",
+    "peak": [
+      94,
+      58
+    ],
+    "motif": "pavilion",
+    "x": 77,
+    "y": 41,
+    "scale": 0.64,
+    "tag": "연주대의 절벽과 작은 지붕",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      128,
+      47
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000010"
+  },
+  {
+    "name": "마니산",
+    "height": 472,
+    "region": "인천",
+    "summit": "마니산 정상",
+    "id": "0000000030",
+    "peak": [
+      96,
+      69
+    ],
+    "motif": "altar",
+    "x": 81,
+    "y": 50,
+    "scale": 0.78,
+    "tag": "세 봉우리와 낮은 돌 제단",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000030"
+  },
+  {
+    "name": "명지산",
+    "height": 1252,
+    "region": "경기",
+    "summit": "명지산",
+    "id": "0000000033",
+    "peak": [
+      82,
+      58
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "깊은 골 너머 둥근 주봉",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000033"
+  },
+  {
+    "name": "백운산(포천)",
+    "height": 903,
+    "region": "경기",
+    "summit": "도마봉",
+    "id": "0000000043",
+    "peak": [
+      83,
+      73
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "도마봉의 넓게 열린 등성이",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000043"
+  },
+  {
+    "name": "소요산",
+    "height": 588,
+    "region": "경기",
+    "summit": "소요산 ㅡ 의상대",
+    "id": "0000000055",
+    "peak": [
+      85,
+      66
+    ],
+    "motif": "rock-spire",
+    "x": 72,
+    "y": 67,
+    "scale": 0.43,
+    "tag": "의상대와 굽이치는 암릉",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000055"
+  },
+  {
+    "name": "용문산",
+    "height": 1157,
+    "region": "경기",
+    "summit": "용문산",
+    "id": "0000000061",
+    "peak": [
+      99,
+      55
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "넓은 산체 끝에 선 높은 정상",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000061"
+  },
+  {
+    "name": "운악산",
+    "height": 935,
+    "region": "경기",
+    "summit": "동봉",
+    "id": "0000000064",
+    "peak": [
+      94,
+      49
+    ],
+    "motif": "rock-spire",
+    "x": 74,
+    "y": 49,
+    "scale": 0.64,
+    "tag": "동봉의 깊은 틈과 돌 첨봉",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000064"
+  },
+  {
+    "name": "유명산",
+    "height": 864,
+    "region": "경기",
+    "summit": "유명산",
+    "id": "0000000068",
+    "peak": [
+      91,
+      72
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "넓고 유연하게 이어지는 풀등",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000068"
+  },
+  {
+    "name": "천마산",
+    "height": 810,
+    "region": "경기",
+    "summit": "천마산 정상(해발 812m)",
+    "id": "0000000080",
+    "peak": [
+      94,
+      58
+    ],
+    "motif": "rock-dome",
+    "x": 86,
+    "y": 62,
+    "scale": 0.35,
+    "tag": "비탈 끝에 솟은 작은 바위",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000080"
+  },
+  {
+    "name": "축령산",
+    "height": 887,
+    "region": "경기",
+    "summit": "정상석",
+    "id": "0000000085",
+    "peak": [
+      81,
+      63
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "왼쪽 주봉에서 길게 흐르는 숲",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000085"
+  },
+  {
+    "name": "화악산",
+    "height": 1468,
+    "region": "경기",
+    "summit": "중봉",
+    "id": "0000000094",
+    "peak": [
+      102,
+      62
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "중봉의 묵직하고 넓은 어깨",
+    "collection": "hundred",
+    "paletteType": "red",
+    "snow": "custom",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "0000000094"
+  },
+  {
+    "name": "개화산",
+    "height": 132,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-2475002037",
+    "peak": [
+      95,
+      88
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "도시 끝의 낮고 둥근 언덕",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-2475002037"
+  },
+  {
+    "name": "검단산(하남)",
+    "height": 658,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-446003587",
+    "peak": [
+      87,
+      74
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "넓은 능선 중앙의 조용한 주봉",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-446003587"
+  },
+  {
+    "name": "계양산",
+    "height": 395,
+    "region": "인천",
+    "summit": "-",
+    "id": "osm-2351356729",
+    "peak": [
+      87,
+      83
+    ],
+    "motif": "pavilion",
+    "x": 72,
+    "y": 62,
+    "scale": 0.75,
+    "tag": "완만한 정상 위 작은 정자",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-2351356729"
+  },
+  {
+    "name": "고려산",
+    "height": 436,
+    "region": "인천",
+    "summit": "-",
+    "id": "osm-4663856172",
+    "peak": [
+      96,
+      83
+    ],
+    "motif": "meadow",
+    "x": 49,
+    "y": 115,
+    "scale": 0.75,
+    "tag": "너른 능선을 물들이는 꽃빛",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-4663856172"
+  },
+  {
+    "name": "광교산",
+    "height": 582,
+    "region": "경기",
+    "summit": "시루봉",
+    "id": "osm-445993704",
+    "peak": [
+      96,
+      78
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "시루봉의 부드러운 마루",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "named-checkpoint-concept",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-445993704"
+  },
+  {
+    "name": "구룡산",
+    "height": 306,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-2668196921",
+    "peak": [
+      82,
+      90
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "작은 둔덕이 이어지는 왼쪽 정상",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-2668196921"
+  },
+  {
+    "name": "남산",
+    "height": 267,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-288169256",
+    "peak": [
+      96,
+      88
+    ],
+    "motif": "tower",
+    "x": 86,
+    "y": 46,
+    "scale": 0.71,
+    "tag": "숲 위로 길게 선 남산 타워",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      125,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-288169256"
+  },
+  {
+    "name": "남한산",
+    "height": 522,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-5404330941",
+    "peak": [
+      97,
+      84
+    ],
+    "motif": "fortress",
+    "x": 54,
+    "y": 93,
+    "scale": 0.85,
+    "tag": "산허리를 따르는 성벽",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-5404330941"
+  },
+  {
+    "name": "노고산(고양)",
+    "height": 487,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-5515194678",
+    "peak": [
+      108,
+      85
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "동쪽으로 비껴 앉은 둥근 산마루",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-5515194678"
+  },
+  {
+    "name": "대모산",
+    "height": 293,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-2668200158",
+    "peak": [
+      96,
+      89
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "길게 감싸는 낮은 둥근 어깨",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-2668200158"
+  },
+  {
+    "name": "모락산",
+    "height": 385,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-445998652",
+    "peak": [
+      80,
+      78
+    ],
+    "motif": "rock-dome",
+    "x": 67,
+    "y": 77,
+    "scale": 0.43,
+    "tag": "낮은 숲에서 드러난 암봉",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-445998652"
+  },
+  {
+    "name": "문수산(김포)",
+    "height": 376,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-7481782673",
+    "peak": [
+      92,
+      80
+    ],
+    "motif": "fortress",
+    "x": 54,
+    "y": 96,
+    "scale": 0.7,
+    "tag": "완만한 능선의 오래된 성벽",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-7481782673"
+  },
+  {
+    "name": "백운산(의왕)",
+    "height": 567,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-445993581",
+    "peak": [
+      103,
+      78
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "긴 왼쪽 등성이와 작은 정상",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-445993581"
+  },
+  {
+    "name": "봉산(은평)",
+    "height": 209,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-4908796773",
+    "peak": [
+      102,
+      92
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "낮은 둔덕을 잇는 산책 능선",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-4908796773"
+  },
+  {
+    "name": "북악산",
+    "height": 342,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-2668271331",
+    "peak": [
+      83,
+      79
+    ],
+    "motif": "fortress",
+    "x": 55,
+    "y": 101,
+    "scale": 0.7,
+    "tag": "도성 너머 단정한 주봉",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-2668271331"
+  },
+  {
+    "name": "불곡산(성남)",
+    "height": 335,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-10252883546",
+    "peak": [
+      114,
+      88
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "두 둔덕 사이의 작은 안부",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-10252883546"
+  },
+  {
+    "name": "불암산",
+    "height": 508,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-7972716239",
+    "peak": [
+      87,
+      74
+    ],
+    "motif": "rock-dome",
+    "x": 66,
+    "y": 74,
+    "scale": 0.71,
+    "tag": "넓고 둥근 하나의 화강암 돔",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-7972716239"
+  },
+  {
+    "name": "삼성산",
+    "height": 481,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-2668273218",
+    "peak": [
+      98,
+      78
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "낮게 엇갈리는 세 바위봉",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-2668273218"
+  },
+  {
+    "name": "석성산",
+    "height": 470,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-7272756382",
+    "peak": [
+      89,
+      79
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "중앙을 짚고 내려오는 숲 능선",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-7272756382"
+  },
+  {
+    "name": "소래산",
+    "height": 300,
+    "region": "인천",
+    "summit": "-",
+    "id": "osm-7972716219",
+    "peak": [
+      88,
+      83
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "평야 위에 홀로 둥근 산",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-7972716219"
+  },
+  {
+    "name": "수락산",
+    "height": 638,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-3803846068",
+    "peak": [
+      98,
+      72
+    ],
+    "motif": "rock-wall",
+    "x": 49,
+    "y": 88,
+    "scale": 0.71,
+    "tag": "여러 바위 덩어리와 깊은 틈",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-3803846068"
+  },
+  {
+    "name": "아차산",
+    "height": 296,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-10252999053",
+    "peak": [
+      111,
+      91
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "한쪽으로 길게 펼친 낮은 마루",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-10252999053"
+  },
+  {
+    "name": "안산(서대문)",
+    "height": 296,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-2668320332",
+    "peak": [
+      83,
+      85
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "숲 사이로 볼록 올라온 작은 정상",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-2668320332"
+  },
+  {
+    "name": "앵자봉",
+    "height": 670,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-8794850421",
+    "peak": [
+      98,
+      77
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "두 어깨 사이로 올라오는 숲 봉우리",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-8794850421"
+  },
+  {
+    "name": "예봉산",
+    "height": 683,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-852509472",
+    "peak": [
+      98,
+      75
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "긴 사면을 타고 오르는 높은 쪽 끝",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-852509472"
+  },
+  {
+    "name": "용마산",
+    "height": 348,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-2493496155",
+    "peak": [
+      86,
+      85
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "아차산보다 선명하게 솟은 마루",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-2493496155"
+  },
+  {
+    "name": "우면산",
+    "height": 293,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-2668326235",
+    "peak": [
+      112,
+      93
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "오른쪽으로 누운 편안한 능선",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-2668326235"
+  },
+  {
+    "name": "운길산",
+    "height": 610,
+    "region": "경기",
+    "summit": "-",
+    "id": "osm-5750035970",
+    "peak": [
+      90,
+      77
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "긴 숲길 위에 오목한 양어깨",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      121,
+      50
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      133,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-5750035970"
+  },
+  {
+    "name": "인왕산",
+    "height": 339,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-6505641385",
+    "peak": [
+      103,
+      77
+    ],
+    "motif": "rock-dome",
+    "x": 49,
+    "y": 79,
+    "scale": 0.54,
+    "tag": "겹쳐진 둥근 바위와 큰 골",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-6505641385"
+  },
+  {
+    "name": "청계산",
+    "height": 618,
+    "region": "서울",
+    "summit": "-",
+    "id": "osm-2668340883",
+    "peak": [
+      105,
+      77
+    ],
+    "motif": "none",
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "tag": "길게 잇다가 오른쪽에서 맺는 능선",
+    "collection": "local",
+    "paletteType": "red",
+    "snow": "none",
+    "sun": [
+      54,
+      49
+    ],
+    "accent": "#E8622C",
+    "seasonAnchor": [
+      49,
+      143
+    ],
+    "notes": "인증 지점명 기반의 상징적 구도. 정확한 정상 조망/DEM 대조 전.",
+    "viewpointStatus": "summit-only-no-named-peak",
+    "springSnow": "none",
+    "seasonSnow": {
+      "spring": "none",
+      "summer": "none",
+      "autumn": "none",
+      "winter": "custom"
+    },
+    "assetKey": "osm-2668340883"
   }
 ]
