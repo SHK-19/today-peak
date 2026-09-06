@@ -559,6 +559,24 @@ export function MountainDetail({
         </div>
       )}
 
+      {stats !== null && stats.places !== undefined && stats.places.length > 0 && (
+        <section className="places">
+          <h3 className="section-title">내려와서</h3>
+          <ul>
+            {stats.places.map((place) => (
+              <li key={place.name}>
+                <strong>{place.name}</strong>
+                <span>
+                  {place.category}
+                  {place.address !== '' && ` · ${place.address}`}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <p className="footnote">네이버 검색 결과예요. 영업 여부는 달라질 수 있어요.</p>
+        </section>
+      )}
+
       {hikeNote !== null && <p className="hike-note">{hikeNote}</p>}
 
       <div className="bottom-actions">

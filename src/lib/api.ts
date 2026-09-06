@@ -1,3 +1,4 @@
+import type { Place } from './places.ts';
 import { expireSession, getSessionToken } from './auth.ts';
 import type { Reading, VerifyReason } from './verify.ts';
 
@@ -25,7 +26,13 @@ export async function suggestPeak(
   });
 }
 
-export type MountainStats = { hikingNow: number; todayStamps: number; totalStamps: number };
+export type MountainStats = {
+  hikingNow: number;
+  todayStamps: number;
+  totalStamps: number;
+  /** 산 근처 음식점. 네이버 검색이 실패하면 빈 배열. */
+  places?: Place[];
+};
 
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   const token = getSessionToken();
