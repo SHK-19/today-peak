@@ -397,6 +397,17 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
 - 서버 재배포(verify-summit·start-hike). 서울시청→인왕산 `too_far 2713m` 확인.
 - 남은 것: 앱 설명·키워드에 동네 명산 반영(앱정보 재검토), 개인정보처리방침/설명에 OSM 출처 한 줄.
 
+### 산 정보 확장 준비 (2026-09-06)
+
+- **TourAPI 관광사진** `https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1`(keyword, MobileOS=ETC, MobileApp, _type=json).
+  126곳 검색: **81곳 있음 / 45곳 없음**(100대 26 + 동네 19). 없는 목록은 사용자가 직접 구한다. 공공누리 1유형, 촬영자 표기.
+- **토스쇼핑 쉐어링크 오픈 API 있음** (`https://sharelink.toss.im/openapi`, 문서 sharelink-docs.toss.im/guide/open-api).
+  승인 사업자만 발급(크리에이터 어드민 > API 연동, 영업일 5일, 서비스명·URL·용도·화면 시안 제출). Access/Secret Key, 서버 IP 등록(최대 10개) 필수 →
+  Edge Function 고정 IP가 없어서 **IP 등록이 걸림돌**. 엔드포인트: `POST /openapi/links`(tacaItemId→shortUrl), `GET /openapi/products/detail`(이름·가격·이미지·재고),
+  카테고리 베스트·오늘의 특가·베스트셀러 목록. **키워드 검색 없음**. 정책: 가격을 DB에 쌓아 이커머스처럼 나열 금지, 이미지 저장·외부 앱 표시는 사전 승인,
+  고지 문구 "토스쇼핑 쉐어링크 활동으로, 링크 구매 시 수수료를 지급받습니다"를 상품 소개 가까이에.
+- 네이버 지역 검색: 요청당 최대 5건, 반경 없음(검색어), 좌표 변환 필요. Edge Function에서 호출(키 비공개). `NAVER_CLIENT_ID/SECRET` secrets.
+
 ## 백로그 — 데이터 검증 (출시 전, 사람이 확인)
 
 `node scripts/build-mountains.mjs`가 매번 같은 리포트를 낸다. 고치는 방법은 스크립트의 정상 선택 규칙에
