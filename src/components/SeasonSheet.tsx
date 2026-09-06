@@ -1,7 +1,13 @@
 import { Close } from './icons.tsx';
 import { Stamp } from './Stamp.tsx';
 import { formatSeoulDate } from '../lib/day.ts';
-import { SEASON_LABEL, SEASON_ORDER, seasonCount, type SeasonRecord } from '../lib/seasons.ts';
+import {
+  SEASON_LABEL,
+  SEASON_ORDER,
+  latestSeason,
+  seasonCount,
+  type SeasonRecord,
+} from '../lib/seasons.ts';
 import { shareMountain } from '../lib/share.ts';
 import { useSystemBack } from '../lib/useSystemBack.ts';
 import type { Mountain } from '../lib/verify.ts';
@@ -12,6 +18,8 @@ type Props = { mountain: Mountain; record: SeasonRecord; onClose: () => void };
 export function SeasonSheet({ mountain, record, onClose }: Props) {
   useSystemBack(true, onClose);
   const done = seasonCount(record);
+  // 미리보기 카드는 가장 최근에 찍은 계절로 만든다.
+  const latest = latestSeason(record);
 
   return (
     <div className="sheet-dim" onClick={onClose} role="presentation">
@@ -47,7 +55,7 @@ export function SeasonSheet({ mountain, record, onClose }: Props) {
           })}
         </ul>
 
-        {done > 0 && (
+        {latest !== undefined && (
           <button
             type="button"
             className="btn btn-secondary"
@@ -55,9 +63,10 @@ export function SeasonSheet({ mountain, record, onClose }: Props) {
             onClick={() =>
               void shareMountain(
                 mountain,
+                latest.season,
                 done === 4
-                  ? `${mountain.name} 사계절 스탬프를 다 모았어요 · 오늘 정상`
-                  : `${mountain.name} 스탬프 ${done}장을 모았어요 · 오늘 정상`,
+                  ? `${mountain.name} 사계절 스탬프를 다 모았어요`
+                  : `${mountain.name} ${SEASON_LABEL[latest.season]} 스탬프를 모았어요`,
               ).catch(() => {})
             }
           >

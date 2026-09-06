@@ -1,7 +1,7 @@
 // 산행 시작 체크인. 정상 인증과 완전히 독립이다 — 여기서 실패해도 정상 인증에는 영향이 없다.
 
 import { seoulDayStartMs } from '../../../src/lib/day.ts';
-import { START_RADIUS_M, nearestTrailhead } from '../../../src/lib/trailhead.ts';
+import { startPoint } from '../../../src/lib/trailhead.ts';
 import { isReadingFresh } from '../../../src/lib/verify.ts';
 import { json, preflight } from '../_shared/http.ts';
 import { MOUNTAINS } from '../_shared/mountains.ts';
@@ -41,17 +41,13 @@ Deno.serve(async (request: Request) => {
     return json({ status: 'stale_reading' }, 200, origin);
   }
 
-  const nearest = nearestTrailhead(reading, mountain);
-  if (nearest === null) {
+  const start = startPoint(reading, mountain);
+  if (start === null) {
     return json({ error: 'invalid_request' }, 400, origin);
   }
-  if (nearest.distanceM > START_RADIUS_M) {
+  if (start.distanceM > start.radiusM) {
     return json(
-      {
-        status: 'too_far',
-        trailheadName: nearest.trailhead.name,
-        distanceM: nearest.distanceM,
-      },
+      { status: 'too_far', trailheadName: start.name, distanceM: start.distanceM },
       200,
       origin,
     );
@@ -71,20 +67,20 @@ Deno.serve(async (request: Request) => {
     return json({ error: 'server_error' }, 500, origin);
   }
   if (today.length > 0) {
-    return json({ status: 'already_today', trailheadName: nearest.trailhead.name }, 200, origin);
+    return json({ status: 'already_today', trailheadName: start.name }, 200, origin);
   }
 
   const { error: insertError } = await supabase.from('hike_starts').insert({
     user_id: userKey,
     mountain_id: mountain.id,
-    trailhead_name: nearest.trailhead.name,
-    distance_m: nearest.distanceM,
+    trailhead_name: start.name,
+    distance_m: start.distanceM,
   });
   if (insertError !== null) {
     console.error(`hike_starts 저장 실패 · ${insertError.message}`);
     return json({ error: 'server_error' }, 500, origin);
   }
 
-  console.log(`hike start · userKey=${userKey} · ${mountain.id} · ${nearest.trailhead.name}`);
-  return json({ status: 'ok', trailheadName: nearest.trailhead.name }, 200, origin);
+  console.log(`hike start · userKey=${userKey} · ${mountain.id} · ${start.name}`);
+  return json({ status: 'ok', trailheadName: start.name }, 200, origin);
 });

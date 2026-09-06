@@ -29,6 +29,7 @@ import { PICK_DISCLOSURE, picksForMountain } from '../lib/picks.ts';
 import { askReviewOnce } from '../lib/review.ts';
 import { openPick, shareMountain } from '../lib/share.ts';
 import { seasonOf } from '../lib/stamp-art.ts';
+import { canCheckIn } from '../lib/trailhead.ts';
 import {
   ensureLocationPermission,
   prefetchLocation,
@@ -88,7 +89,7 @@ function hikeMessage(state: HikeState): string | null {
         case 'already_today':
           return '오늘은 이미 산행 시작을 기록했어요.';
         case 'too_far':
-          return `등산로 입구에서 눌러주세요. ${state.outcome.trailheadName}까지 ${formatDistance(state.outcome.distanceM)}예요.`;
+          return `${state.outcome.trailheadName} 근처에서 눌러주세요. 지금 ${formatDistance(state.outcome.distanceM)} 떨어져 있어요.`;
         case 'stale_reading':
           return '위치 정보가 오래됐어요. 다시 눌러주세요.';
       }
@@ -386,7 +387,8 @@ export function MountainDetail({
                   onClick={() =>
                     void shareMountain(
                       mountain,
-                      `${mountain.name} 정상에서 ${SEASON_LABEL[season]} 스탬프를 모았어요 · 오늘 정상`,
+                      season,
+                      `${mountain.name} 정상에서 ${SEASON_LABEL[season]} 스탬프를 모았어요`,
                     ).catch(() => {})
                   }
                 >
@@ -530,7 +532,7 @@ export function MountainDetail({
 
   // ---- 기본: 정상에서 보는 화면. 큰 글자, 큰 버튼, 한 번의 탭.
   const hikeNote = hikeMessage(hike);
-  const canStartHike = mountain.trailheads.length > 0;
+  const canStartHike = canCheckIn(mountain);
   // 집계 줄이 하나도 없으면 버튼 위 구분선을 그리지 않는다.
   // 이 산의 계절·고도에 맞는 추천 물건 3개. 큐레이션이 비면 카드를 그리지 않는다.
   const recommended = picksForMountain(PICKS, {
@@ -608,7 +610,9 @@ export function MountainDetail({
               </button>
               <p className="footnote">
                 {hikeNote ??
-                  '등산로 입구에서 누르면 위 집계에 함께 잡혀요. 정상 인증과는 상관없어요.'}
+                  (mountain.trailheads.length > 0
+                    ? '등산로 입구에서 누르면 위 집계에 함께 잡혀요. 정상 인증과는 상관없어요.'
+                    : '산 근처에서 누르면 위 집계에 함께 잡혀요. 정상 인증과는 상관없어요.')}
               </p>
             </div>
           )}

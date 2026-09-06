@@ -1,15 +1,21 @@
 import { Share, openURL } from '@apps-in-toss/web-framework';
 
+import type { Season } from './stamp-art.ts';
 import type { Mountain } from './verify.ts';
 
-// 공유 링크의 미리보기 이미지. 콘솔에 올린 등록용 스크린샷(인증 성공)이라 공개 URL이다.
-const OG_IMAGE = 'https://static.toss.im/appsintoss/90797/790be3ac-6d78-492f-af66-6d7ced3caed5.png';
+// 미리보기 이미지는 산 × 계절로 미리 구워 둔다(scripts/build-og.mjs → docs/og, GitHub Pages).
+// 파일 이름 규칙이 곧 URL이라 매핑 파일이 없다. 산이나 스탬프 그림이 바뀌면 다시 굽는다.
+const OG_BASE = 'https://shk-19.github.io/today-peak/og';
 
 // 스탬프 자랑. 링크를 열면 그 산 상세로 들어간다. intoss-private:// 는 쓰지 않는다(출시 가이드).
-export async function shareMountain(mountain: Mountain, message: string): Promise<void> {
+export async function shareMountain(
+  mountain: Mountain,
+  season: Season,
+  message: string,
+): Promise<void> {
   const link = await Share.createLink({
     path: `intoss://today-peak?mountain=${encodeURIComponent(mountain.id)}`,
-    ogImageUrl: OG_IMAGE,
+    ogImageUrl: `${OG_BASE}/${mountain.id}-${season}.png`,
   });
   await Share.sendMessage({ message: `${message}\n${link}` });
 }

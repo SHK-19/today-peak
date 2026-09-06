@@ -1,7 +1,13 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 
-import { START_RADIUS_M, nearestTrailhead } from './trailhead.ts';
+import {
+  LOCAL_START_RADIUS_M,
+  START_RADIUS_M,
+  canCheckIn,
+  nearestTrailhead,
+  startPoint,
+} from './trailhead.ts';
 import type { Mountain, Reading } from './verify.ts';
 
 const BASE_LAT = 37.6589;
@@ -58,4 +64,26 @@ test('경계: 445m는 반경 안, 556m는 반경 밖', () => {
   const outside = nearestTrailhead(readingAt(0.005), mountain);
   assert.ok(inside!.distanceM <= START_RADIUS_M, `${inside!.distanceM}m`);
   assert.ok(outside!.distanceM > START_RADIUS_M, `${outside!.distanceM}m`);
+});
+
+test('동네 명산은 들머리가 없어도 정상 반경으로 시작 지점을 준다', () => {
+  const local: Mountain = { ...mountainWith([]), name: '남산', collection: 'local' };
+  const start = startPoint(readingAt(0), local);
+  assert.equal(start?.name, '남산');
+  assert.equal(start?.radiusM, LOCAL_START_RADIUS_M);
+  assert.ok(start!.distanceM < 1);
+});
+
+test('들머리가 있으면 동네 명산이라도 입구를 먼저 본다', () => {
+  const local: Mountain = {
+    ...mountainWith([{ name: '입구', lat: 37.6, lng: 127 }]),
+    collection: 'local',
+  };
+  assert.equal(startPoint(readingAt(0), local)?.radiusM, START_RADIUS_M);
+});
+
+test('100대 명산은 들머리가 없으면 시작 지점이 없다', () => {
+  assert.equal(startPoint(readingAt(0), mountainWith([])), null);
+  assert.equal(canCheckIn(mountainWith([])), false);
+  assert.equal(canCheckIn({ ...mountainWith([]), collection: 'local' }), true);
 });
