@@ -17,6 +17,7 @@ import {
   LocationIcon,
   PeopleIcon,
 } from '../components/icons.tsx';
+import { FoldCard } from '../components/FoldCard.tsx';
 import { SeasonDots } from '../components/SeasonDots.tsx';
 import { Stamp } from '../components/Stamp.tsx';
 import { formatSeoulDate } from '../lib/day.ts';
@@ -514,6 +515,10 @@ export function MountainDetail({
 
   // ---- 기본: 정상에서 보는 화면. 큰 글자, 큰 버튼, 한 번의 탭.
   const hikeNote = hikeMessage(hike);
+  const canStartHike = mountain.trailheads.length > 0;
+  // 집계 줄이 하나도 없으면 버튼 위 구분선을 그리지 않는다.
+  const hasStatLines =
+    stats !== null && (stats.hikingNow > 0 || stats.todayStamps > 0 || stats.totalStamps > 0);
   return (
     <main className="page">
       <section className="hero">
@@ -543,34 +548,54 @@ export function MountainDetail({
         )}
       </div>
 
-      {stats !== null && (stats.hikingNow > 0 || stats.todayStamps > 0 || stats.totalStamps > 0) && (
+      {(canStartHike || hasStatLines) && (
         <div className="stats">
-          {stats.hikingNow > 0 && (
+          {stats !== null && stats.hikingNow > 0 && (
             <p>
               <PeopleIcon size={22} />
               지금 {stats.hikingNow}명 등산 중
             </p>
           )}
-          {stats.todayStamps > 0 && (
+          {stats !== null && stats.todayStamps > 0 && (
             <p>
               <FlagIcon size={22} />
               오늘 {stats.todayStamps}명이 정상을 찍었어요
             </p>
           )}
-          {stats.totalStamps > 0 && (
+          {stats !== null && stats.totalStamps > 0 && (
             <p>
               <CollectionIcon size={22} />
               지금까지 {stats.totalStamps}명 인증
             </p>
           )}
+
+          {/* 산행 시작은 인증의 전제 조건이 아니다. 집계에 참여하는 버튼이라는 게 보이게
+              집계 카드 안에 두고, 하단 CTA(정상 인증하기)와 섞이지 않게 한다. */}
+          {canStartHike && (
+            <div className={hasStatLines ? 'stats-action' : 'stats-action stats-action-only'}>
+              <button
+                type="button"
+                className="btn btn-outline"
+                disabled={hike.status === 'starting' || hike.status === 'done'}
+                onClick={() => void handleStartHike()}
+              >
+                {hike.status === 'starting' ? '위치를 확인하고 있어요' : '나도 등산 중이라고 알리기'}
+              </button>
+              <p className="footnote">
+                {hikeNote ??
+                  '등산로 입구에서 누르면 위 집계에 함께 잡혀요. 정상 인증과는 상관없어요.'}
+              </p>
+            </div>
+          )}
         </div>
       )}
 
       {nearby.length > 0 && (
-        <section className="places">
-          <div className="section-title">
-            <h3>내려와서</h3>
-            {both && (
+        <FoldCard
+          title="내려와서"
+          hint={`${(stats?.places?.food.length ?? 0) + (stats?.places?.cafe.length ?? 0)}곳`}
+          actions={
+            both && (
               <div className="toggle" role="tablist">
                 {(['food', 'cafe'] as const).map((kind) => (
                   <button
@@ -585,9 +610,10 @@ export function MountainDetail({
                   </button>
                 ))}
               </div>
-            )}
-          </div>
-          <ul>
+            )
+          }
+        >
+          <ul className="place-list">
             {nearby.map((place) => (
               <li key={place.name}>
                 <strong>{place.name}</strong>
@@ -599,25 +625,13 @@ export function MountainDetail({
             ))}
           </ul>
           <p className="footnote">네이버 검색 결과예요. 영업 여부는 달라질 수 있어요.</p>
-        </section>
+        </FoldCard>
       )}
-
-      {hikeNote !== null && <p className="hike-note">{hikeNote}</p>}
 
       <div className="bottom-actions">
         <p className="footnote">
           정상에서 인터넷이 안 되면 신호가 잡히는 가까운 지점에서 시도해 주세요.
         </p>
-        {mountain.trailheads.length > 0 && (
-          <button
-            type="button"
-            className="btn btn-secondary"
-            disabled={hike.status === 'starting'}
-            onClick={() => void handleStartHike()}
-          >
-            {hike.status === 'starting' ? '위치를 확인하고 있어요' : '산행 시작'}
-          </button>
-        )}
         {verifyButton}
       </div>
     </main>
