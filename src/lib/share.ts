@@ -1,4 +1,4 @@
-import { Share } from '@apps-in-toss/web-framework';
+import { Share, openURL } from '@apps-in-toss/web-framework';
 
 import type { Mountain } from './verify.ts';
 
@@ -12,4 +12,9 @@ export async function shareMountain(mountain: Mountain, message: string): Promis
     ogImageUrl: OG_IMAGE,
   });
   await Share.sendMessage({ message: `${message}\n${link}` });
+}
+
+// 토스쇼핑 쉐어링크 열기. 이용자가 카드를 눌렀을 때만 부른다(자동 실행 금지).
+export function openPick(pick: { link: string }): void {
+  void openURL(pick.link).catch(() => {});
 }

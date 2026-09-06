@@ -195,3 +195,12 @@ export function PeopleIcon({ size }: IconProps) {
     </LineIcon>
   );
 }
+
+export function BackpackIcon({ size }: IconProps) {
+  return (
+    <LineIcon size={size}>
+      <path d="M6 9a6 6 0 0 1 12 0v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z" />
+      <path d="M9 9V6a3 3 0 0 1 6 0v3M9 14h6" />
+    </LineIcon>
+  );
+}

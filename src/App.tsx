@@ -5,6 +5,8 @@ import { TabBar, type TabId } from './components/TabBar.tsx';
 import { fetchMyStamps, type Stamp } from './lib/api.ts';
 import { restoreSession, setSessionLostHandler } from './lib/auth.ts';
 import { collectionOf } from './lib/collection.ts';
+import { PICKS } from './lib/picks-data.ts';
+import { openPick } from './lib/share.ts';
 import { HOME_ENTRY, parseEntry } from './lib/entry.ts';
 import { MOUNTAINS } from './lib/mountains.ts';
 import { groupSeasons } from './lib/seasons.ts';
@@ -13,6 +15,7 @@ import { Home } from './screens/Home.tsx';
 import { Login } from './screens/Login.tsx';
 import { MountainDetail } from './screens/MountainDetail.tsx';
 import { MyStamps } from './screens/MyStamps.tsx';
+import { Picks } from './screens/Picks.tsx';
 
 // 스킴 진입점(주요 기능·공유 링크). 앱을 켤 때 한 번만 읽는다. 실패하면 홈.
 function readEntry() {
@@ -99,6 +102,10 @@ function App() {
         }
         totalCount={MOUNTAINS.filter((m) => collectionOf(m) === collectionOf(detail)).length}
         onVerified={() => void loadStamps()}
+        onGoToPicks={() => {
+          setDetailId(null);
+          setTab('picks');
+        }}
         onGoToStamps={() => {
           setDetailId(null);
           setTab('stamps');
@@ -111,6 +118,8 @@ function App() {
     <>
       {tab === 'home' ? (
         <Home onSelect={setDetailId} stamps={stamps} openNearestOnce={entry.verifyNearest} />
+      ) : tab === 'picks' ? (
+        <Picks onOpen={openPick} />
       ) : (
         <MyStamps
           mountains={MOUNTAINS}
@@ -119,7 +128,7 @@ function App() {
           onRetry={() => void loadStamps()}
         />
       )}
-      <TabBar active={tab} onChange={setTab} />
+      <TabBar active={tab} onChange={setTab} showPicks={PICKS.length > 0} />
     </>
   );
 }

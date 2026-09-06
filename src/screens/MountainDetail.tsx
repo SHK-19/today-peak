@@ -24,7 +24,9 @@ import { formatSeoulDate } from '../lib/day.ts';
 import { formatDistance } from '../lib/format.ts';
 import { IS_FIELD_TEST_BUILD } from '../lib/mountains.ts';
 import { SEASON_LABEL, seasonCount, type SeasonRecord } from '../lib/seasons.ts';
-import { shareMountain } from '../lib/share.ts';
+import { PICKS } from '../lib/picks-data.ts';
+import { PICK_DISCLOSURE, picksForMountain } from '../lib/picks.ts';
+import { openPick, shareMountain } from '../lib/share.ts';
 import { seasonOf } from '../lib/stamp-art.ts';
 import {
   ensureLocationPermission,
@@ -57,6 +59,8 @@ type HikeState =
 
 type Props = {
   mountain: Mountain;
+  /** '더 보기'로 오늘 Pick 탭에 보낸다. */
+  onGoToPicks: () => void;
   /** 이 산에서 모은 계절별 인증 시각 */
   seasons: SeasonRecord;
   /** 성공 티켓 절취선 아래 "96곳 중 N곳" */
@@ -169,6 +173,7 @@ function FieldNote({ reading, outcome }: { reading: Reading; outcome: SummitOutc
 
 export function MountainDetail({
   mountain,
+  onGoToPicks,
   seasons,
   collectedCount,
   totalCount,
@@ -517,6 +522,11 @@ export function MountainDetail({
   const hikeNote = hikeMessage(hike);
   const canStartHike = mountain.trailheads.length > 0;
   // 집계 줄이 하나도 없으면 버튼 위 구분선을 그리지 않는다.
+  // 이 산의 계절·고도에 맞는 추천 물건 3개. 큐레이션이 비면 카드를 그리지 않는다.
+  const recommended = picksForMountain(PICKS, {
+    season: seasonOf(new Date().toISOString()),
+    elevationM: mountain.elevationM,
+  });
   const hasStatLines =
     stats !== null && (stats.hikingNow > 0 || stats.todayStamps > 0 || stats.totalStamps > 0);
   return (
@@ -588,6 +598,36 @@ export function MountainDetail({
             </div>
           )}
         </div>
+      )}
+
+      {recommended.length > 0 && (
+        <FoldCard title="추천 물건" hint={`${PICKS.length}개`}>
+          <p className="footnote" style={{ marginTop: 0 }}>
+            {PICK_DISCLOSURE}
+          </p>
+          <ul className="pick-row">
+            {recommended.map((pick) => (
+              <li key={pick.id}>
+                <button type="button" className="pick-card" onClick={() => openPick(pick)}>
+                  {pick.imageUrl === undefined ? (
+                    <span className="pick-img pick-img-empty" aria-hidden="true" />
+                  ) : (
+                    <img className="pick-img" src={pick.imageUrl} alt="" loading="lazy" />
+                  )}
+                  <strong>{pick.name}</strong>
+                  <span>{pick.priceText ?? '토스쇼핑에서 확인'}</span>
+                </button>
+              </li>
+            ))}
+            <li>
+              <button type="button" className="pick-card pick-more" onClick={onGoToPicks}>
+                <span className="pick-img pick-more-box">더 보기</span>
+                <strong>오늘 Pick</strong>
+                <span>{PICKS.length}개</span>
+              </button>
+            </li>
+          </ul>
+        </FoldCard>
       )}
 
       {nearby.length > 0 && (

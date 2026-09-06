@@ -1296,3 +1296,82 @@ h3 {
   padding-top: 0;
   border-top: 0;
 }
+
+/* ---------- 오늘 Pick ---------- */
+
+.pick-row {
+  display: flex;
+  gap: var(--space-3);
+  margin: var(--space-3) 0 0;
+  padding: 0 0 var(--space-1);
+  overflow-x: auto;
+  list-style: none;
+  scrollbar-width: none;
+}
+
+.pick-row::-webkit-scrollbar {
+  display: none;
+}
+
+.pick-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5) var(--space-3);
+  margin: 0;
+  padding: 0 var(--space-5) var(--space-5);
+  list-style: none;
+}
+
+.pick-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+}
+
+.pick-row .pick-card {
+  width: 128px;
+}
+
+.pick-img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-control);
+  object-fit: cover;
+  background: var(--color-bg-canvas);
+}
+
+.pick-row .pick-img {
+  width: 128px;
+  height: 128px;
+}
+
+.pick-img-empty {
+  display: block;
+}
+
+.pick-more-box {
+  display: grid;
+  place-items: center;
+  background: var(--color-soft-green);
+  color: var(--brand-primary);
+  font-size: var(--font-size-body-small);
+  font-weight: 600;
+}
+
+.pick-card strong {
+  margin-top: var(--space-1);
+  font-size: var(--font-size-body-small);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-text-strong);
+}
+
+.pick-card span:last-child {
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-subtle);
+}
