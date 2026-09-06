@@ -1,7 +1,7 @@
 import { useId } from 'react';
 
 import stampArt from '../data/stamp-art.json';
-import { EMPTY_INK, prepareArt, seasonOf, type Season } from '../lib/stamp-art.ts';
+import { emptyInkFor, prepareArt, seasonOf, type Season } from '../lib/stamp-art.ts';
 import type { Mountain } from '../lib/verify.ts';
 
 // 스탬프는 두 갈래다.
@@ -119,7 +119,7 @@ function ProceduralArt({
           ))}
         </linearGradient>
       )}
-      <path d={ridgePath} fill={collected ? color : EMPTY_INK} />
+      <path d={ridgePath} fill={collected ? color : emptyInkFor(size)} />
       {snow && (
         <path
           d={`M${peak[0] - 15} ${peak[1] + 20}L${peak[0]} ${peak[1]}L${peak[0] + 16} ${peak[1] + 22}L${peak[0] + 4} ${peak[1] + 16}L${peak[0] - 3} ${peak[1] + 22}Z`}

@@ -184,8 +184,8 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
                 <span className="row-copy">
                   <strong>{mountain.name}</strong>
                   <p>
-                    {mountain.elevationM}m
-                    {distanceM !== undefined && ` · ${formatDistance(distanceM)}`}
+                    높이 {mountain.elevationM}m
+                    {distanceM !== undefined && ` · 여기서 ${formatDistance(distanceM)}`}
                   </p>
                 </span>
                 <span className="row-end">

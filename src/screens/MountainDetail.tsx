@@ -143,7 +143,7 @@ function askReviewOnce() {
 
 function ctaLabel(state: State): string {
   if (state.status !== 'reading') {
-    return '정상 인증하기';
+    return '오늘 정상 인증하기';
   }
   if (state.attempt === 1) {
     return '위치를 확인하고 있어요';
@@ -498,7 +498,7 @@ export function MountainDetail({
         </section>
         <div className="bottom-actions">
           <button type="button" className="btn" onClick={() => void handleVerify()}>
-            {state.status === 'denied' ? '위치 허용하기' : '정상 인증하기'}
+            {state.status === 'denied' ? '위치 허용하기' : '오늘 정상 인증하기'}
           </button>
         </div>
       </main>

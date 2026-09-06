@@ -9,6 +9,11 @@
 export type Season = 'spring' | 'summer' | 'autumn' | 'winter';
 
 export const EMPTY_INK = '#D4DACE';
+// 40px(홈 목록)에서는 흐린 회색이 빈 원으로 보여서 한 단계 진하게. 컬렉션 76px은 원래 값.
+export const EMPTY_INK_SMALL = '#B8C0B2';
+export function emptyInkFor(size: number): string {
+  return size <= 40 ? EMPTY_INK_SMALL : EMPTY_INK;
+}
 
 // 인증 시각의 한국 시간 월로 계절을 정한다. 한 번 찍힌 스탬프의 계절은 바뀌지 않는다.
 export function seasonOf(verifiedAt: string): Season {
@@ -80,6 +85,7 @@ export function stripFilters(markup: string): string {
 export type PrepareOptions = { prefix: string; size: number; collected: boolean };
 
 export function prepareArt(markup: string, { prefix, size, collected }: PrepareOptions): string {
+  const ink = emptyInkFor(size);
   let out = markup;
   if (size < 76) {
     out = removeGroups(out, 'lg-only');
@@ -91,7 +97,7 @@ export function prepareArt(markup: string, { prefix, size, collected }: PrepareO
     out = stripFilters(out);
   }
   if (!collected) {
-    out = monochrome(out, EMPTY_INK);
+    out = monochrome(out, ink);
   }
   return prefixIds(out, prefix);
 }
