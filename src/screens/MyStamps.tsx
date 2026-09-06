@@ -1,7 +1,12 @@
+import { useState } from 'react';
+
+import { SeasonDots } from '../components/SeasonDots.tsx';
+import { SeasonSheet } from '../components/SeasonSheet.tsx';
 import { Stamp } from '../components/Stamp.tsx';
 import type { Stamp as StampRecord } from '../lib/api.ts';
 import { formatSeoulDate } from '../lib/day.ts';
 import { groupByRegion } from '../lib/region.ts';
+import { groupSeasons, latestSeason, seasonCount } from '../lib/seasons.ts';
 import type { Mountain } from '../lib/verify.ts';
 
 type Props = {
@@ -13,9 +18,12 @@ type Props = {
 
 // 모은 것만 보여주면 목록이지 컬렉션이 아니다. 빈 칸이 보여야 다음 목표가 생긴다.
 // 96곳을 한 판에 늘어놓으면 훑기 어려워서 권역으로 접는다. 접기 기능은 두지 않는다.
+// 칸은 산당 하나. 계절은 칸 안의 점 4개로 보여주고, 누르면 사계절 시트가 뜬다.
 export function MyStamps({ mountains, stamps, failed, onRetry }: Props) {
-  const collectedAt = new Map(stamps?.map((stamp) => [stamp.mountainId, stamp.verifiedAt]));
-  const count = stamps === null ? 0 : collectedAt.size;
+  const seasons = groupSeasons(stamps ?? []);
+  const count = stamps === null ? 0 : seasons.size;
+  const fourSeasons = [...seasons.values()].filter((record) => seasonCount(record) === 4).length;
+  const [open, setOpen] = useState<Mountain | null>(null);
 
   return (
     <main className="page page-tabbed">
@@ -26,7 +34,7 @@ export function MyStamps({ mountains, stamps, failed, onRetry }: Props) {
             ? failed
               ? '스탬프를 불러오지 못했어요'
               : '스탬프를 불러오고 있어요'
-            : `${mountains.length}곳 중 ${count}곳을 모았어요`}
+            : `${mountains.length}곳 중 ${count}곳을 모았어요${fourSeasons > 0 ? ` · 사계절 완성 ${fourSeasons}곳` : ''}`}
         </p>
         <div
           className="progress"
@@ -58,7 +66,7 @@ export function MyStamps({ mountains, stamps, failed, onRetry }: Props) {
 
       <div className="collection-main">
         {groupByRegion(mountains).map(({ region, mountains: inRegion }) => {
-          const done = inRegion.filter((mountain) => collectedAt.has(mountain.id)).length;
+          const done = inRegion.filter((mountain) => seasons.has(mountain.id)).length;
           return (
             <section key={region} className="region">
               <h3 className="section-title">
@@ -70,18 +78,26 @@ export function MyStamps({ mountains, stamps, failed, onRetry }: Props) {
 
               <ul className="grid">
                 {inRegion.map((mountain) => {
-                  const verifiedAt = collectedAt.get(mountain.id);
-                  const isCollected = verifiedAt !== undefined;
+                  const record = seasons.get(mountain.id) ?? {};
+                  const latest = latestSeason(record);
                   return (
-                    <li
-                      key={mountain.id}
-                      className={isCollected ? 'stamp-cell' : 'stamp-cell stamp-cell-empty'}
-                    >
-                      <Stamp mountain={mountain} collected={isCollected} verifiedAt={verifiedAt} />
-                      <strong>{mountain.name}</strong>
-                      <span className="caption">
-                        {isCollected ? formatSeoulDate(verifiedAt) : `${mountain.elevationM}m`}
-                      </span>
+                    <li key={mountain.id}>
+                      <button
+                        type="button"
+                        className={latest === undefined ? 'stamp-cell stamp-cell-empty' : 'stamp-cell'}
+                        onClick={() => setOpen(mountain)}
+                      >
+                        <Stamp
+                          mountain={mountain}
+                          collected={latest !== undefined}
+                          verifiedAt={latest?.verifiedAt}
+                        />
+                        <strong>{mountain.name}</strong>
+                        <span className="caption">
+                          {latest === undefined ? `${mountain.elevationM}m` : formatSeoulDate(latest.verifiedAt)}
+                        </span>
+                        <SeasonDots record={record} />
+                      </button>
                     </li>
                   );
                 })}
@@ -90,6 +106,10 @@ export function MyStamps({ mountains, stamps, failed, onRetry }: Props) {
           );
         })}
       </div>
+
+      {open !== null && (
+        <SeasonSheet mountain={open} record={seasons.get(open.id) ?? {}} onClose={() => setOpen(null)} />
+      )}
     </main>
   );
 }

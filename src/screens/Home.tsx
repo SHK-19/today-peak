@@ -1,7 +1,7 @@
 import { GetCurrentLocationPermissionError } from '@apps-in-toss/web-framework';
 import { useEffect, useState } from 'react';
 
-import { ChevronRight, CollectionIcon, LocationIcon } from '../components/icons.tsx';
+import { ChevronRight, CollectionIcon, LocationIcon, Search } from '../components/icons.tsx';
 import { Stamp } from '../components/Stamp.tsx';
 import type { Stamp as StampRecord } from '../lib/api.ts';
 import { formatDistance } from '../lib/format.ts';
@@ -31,6 +31,14 @@ export function Home({ onSelect, stamps }: Props) {
   const [region, setRegion] = useState<string | null>(null);
   const regions = regionsOf(MOUNTAINS);
   const inRegion = (mountain: Mountain) => region === null || (mountain.region ?? '기타') === region;
+  // 96곳이라 이름으로 바로 찾는 길도 둔다. 공백은 무시하고 이름·인증 지점을 본다.
+  const [query, setQuery] = useState('');
+  const needle = query.replace(/\s/g, '');
+  const matches = (mountain: Mountain) =>
+    needle === '' ||
+    mountain.name.replace(/\s/g, '').includes(needle) ||
+    (mountain.peakName ?? '').replace(/\s/g, '').includes(needle);
+  const visible = (mountain: Mountain) => inRegion(mountain) && matches(mountain);
   const [state, setState] = useState<State>({ status: 'loading' });
   const [attempt, setAttempt] = useState(0);
 
@@ -77,8 +85,8 @@ export function Home({ onSelect, stamps }: Props) {
   // 위치를 못 읽어도 산 목록은 그대로 보여준다. 거리만 빠진다.
   const rows: { mountain: Mountain; distanceM?: number }[] =
     state.status === 'ready'
-      ? state.nearby.filter(({ mountain }) => inRegion(mountain))
-      : MOUNTAINS.filter(inRegion).map((mountain) => ({ mountain }));
+      ? state.nearby.filter(({ mountain }) => visible(mountain))
+      : MOUNTAINS.filter(visible).map((mountain) => ({ mountain }));
 
   return (
     <main className="page page-tabbed">
@@ -114,6 +122,18 @@ export function Home({ onSelect, stamps }: Props) {
         </section>
       )}
 
+      <label className="search">
+        <Search size={20} />
+        <input
+          type="search"
+          value={query}
+          placeholder="산 이름으로 찾기"
+          autoComplete="off"
+          enterKeyHint="search"
+          onChange={(event) => setQuery(event.target.value)}
+        />
+      </label>
+
       <div className="chips">
         <button
           type="button"
@@ -140,6 +160,8 @@ export function Home({ onSelect, stamps }: Props) {
           <div className="skeleton" />
           <div className="skeleton" />
         </div>
+      ) : rows.length === 0 ? (
+        <p className="screen-notice">'{query}'에 맞는 산이 없어요.</p>
       ) : (
         <ul className="list">
           {rows.map(({ mountain, distanceM }) => (

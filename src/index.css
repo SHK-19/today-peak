@@ -894,3 +894,190 @@ h3 {
     transform: rotate(360deg);
   }
 }
+
+/* ---------- 검색 ---------- */
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 48px;
+  margin: 0 var(--space-5) var(--space-3);
+  padding: 0 var(--space-4);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-control);
+  background: var(--color-bg-canvas);
+  color: var(--color-text-subtle);
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  font-size: var(--font-size-body);
+  color: var(--color-text-strong);
+}
+
+.search input::placeholder {
+  color: var(--color-text-hint);
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* ---------- 계절 점 4개 ---------- */
+
+.dots {
+  display: inline-flex;
+  gap: 5px;
+  margin-top: 2px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #c9d0c3;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.dot-spring {
+  border-color: #ce8ca3;
+  background: #ce8ca3;
+}
+
+.dot-summer {
+  border-color: #276247;
+  background: #276247;
+}
+
+.dot-autumn {
+  border-color: #ce6341;
+  background: #ce6341;
+}
+
+.dot-winter {
+  border-color: #7fa2ab;
+  background: #7fa2ab;
+}
+
+.stamp-cell {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  width: 100%;
+  font: inherit;
+}
+
+.detail-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-3);
+}
+
+.ticket-season {
+  margin-top: var(--space-2);
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-subtle);
+}
+
+/* ---------- 사계절 시트 ---------- */
+
+.sheet-dim {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  background: var(--dim);
+}
+
+.sheet {
+  width: 100%;
+  padding: var(--space-5) var(--space-5) var(--safe-bottom);
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  background: var(--color-bg);
+  animation: sheet-up 240ms ease-out;
+}
+
+@keyframes sheet-up {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.sheet-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.sheet-head p {
+  margin-top: var(--space-1);
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-subtle);
+}
+
+.sheet-close {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-bg-canvas);
+  color: var(--color-text-subtle);
+}
+
+.season-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.season-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  text-align: center;
+}
+
+.season-cell .stamp {
+  width: 100%;
+  height: auto;
+  max-width: 76px;
+}
+
+.season-cell strong {
+  margin-top: var(--space-1);
+  font-size: var(--font-size-body-small);
+  font-weight: 600;
+}
+
+.season-cell .caption {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-subtle);
+}
+
+.season-cell-empty strong {
+  font-weight: 400;
+  color: #616f62;
+}

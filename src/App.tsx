@@ -4,6 +4,7 @@ import { TabBar, type TabId } from './components/TabBar.tsx';
 import { fetchMyStamps, type Stamp } from './lib/api.ts';
 import { restoreSession, setSessionLostHandler } from './lib/auth.ts';
 import { MOUNTAINS } from './lib/mountains.ts';
+import { groupSeasons } from './lib/seasons.ts';
 import { useSystemBack } from './lib/useSystemBack.ts';
 import { Home } from './screens/Home.tsx';
 import { Login } from './screens/Login.tsx';
@@ -74,8 +75,8 @@ function App() {
     return (
       <MountainDetail
         mountain={detail}
-        collected={stamps?.some((stamp) => stamp.mountainId === detail.id) ?? false}
-        collectedCount={stamps?.length ?? 0}
+        seasons={groupSeasons(stamps ?? []).get(detail.id) ?? {}}
+        collectedCount={groupSeasons(stamps ?? []).size}
         totalCount={MOUNTAINS.length}
         onVerified={() => void loadStamps()}
         onGoToStamps={() => {

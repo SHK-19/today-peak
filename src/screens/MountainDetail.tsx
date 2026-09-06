@@ -17,10 +17,13 @@ import {
   LocationIcon,
   PeopleIcon,
 } from '../components/icons.tsx';
+import { SeasonDots } from '../components/SeasonDots.tsx';
 import { Stamp } from '../components/Stamp.tsx';
 import { formatSeoulDate } from '../lib/day.ts';
 import { formatDistance } from '../lib/format.ts';
 import { IS_FIELD_TEST_BUILD } from '../lib/mountains.ts';
+import { SEASON_LABEL, seasonCount, type SeasonRecord } from '../lib/seasons.ts';
+import { seasonOf } from '../lib/stamp-art.ts';
 import {
   ensureLocationPermission,
   prefetchLocation,
@@ -52,7 +55,8 @@ type HikeState =
 
 type Props = {
   mountain: Mountain;
-  collected: boolean;
+  /** 이 산에서 모은 계절별 인증 시각 */
+  seasons: SeasonRecord;
   /** 성공 티켓 절취선 아래 "96곳 중 N곳" */
   collectedCount: number;
   totalCount: number;
@@ -151,12 +155,13 @@ function FieldNote({ reading, outcome }: { reading: Reading; outcome: SummitOutc
 
 export function MountainDetail({
   mountain,
-  collected,
+  seasons,
   collectedCount,
   totalCount,
   onVerified,
   onGoToStamps,
 }: Props) {
+  const collected = seasonCount(seasons) > 0;
   const [state, setState] = useState<State>({ status: 'idle' });
   const [stats, setStats] = useState<MountainStats | null>(null);
   const [hike, setHike] = useState<HikeState>({ status: 'idle' });
@@ -285,8 +290,10 @@ export function MountainDetail({
   // ---- 인증 성공: 초록 들판 위 종이 티켓. 로컬 판정이 ok면 바로 찍고, 서버가 뒤집으면 결과 카드로 간다.
   if (state.status === 'result' && state.outcome.status === 'ok') {
     const now = new Date().toISOString();
+    const season = seasonOf(now);
     // 저장 성공 전엔 아직 셈에 안 들어 있다. 절취선 아래 숫자를 미리 올려서 보여준다.
     const shownCount = collected ? collectedCount : collectedCount + (state.confirmed ? 0 : 1);
+    const seasonDone = seasonCount({ ...seasons, [season]: seasons[season] ?? now });
     return (
       <main className="page success">
         <header className="success-heading">
@@ -309,6 +316,9 @@ export function MountainDetail({
               {mountain.peakName != null && ` · ${mountain.peakName}`}
             </p>
             <p className="ticket-date">{formatSeoulDate(now)}</p>
+            <p className="ticket-season">
+              {SEASON_LABEL[season]} 스탬프 · 사계절 중 {seasonDone}
+            </p>
             <FieldNote reading={state.reading} outcome={state.outcome} />
           </div>
           <div className="ticket-stub">
@@ -479,7 +489,21 @@ export function MountainDetail({
           높이 {mountain.elevationM}m
           {mountain.peakName != null && ` · 인증 지점 ${mountain.peakName}`}
         </p>
-        {collected && <span className="badge">이 산의 스탬프를 모았어요</span>}
+        {collected && (
+          <span className="badge">
+            {seasonCount(seasons) === 4
+              ? '이 산의 사계절을 다 모았어요'
+              : `${(Object.keys(SEASON_LABEL) as (keyof typeof SEASON_LABEL)[])
+                  .filter((s) => seasons[s] !== undefined)
+                  .map((s) => SEASON_LABEL[s])
+                  .join('·')} 스탬프를 모았어요`}
+          </span>
+        )}
+        {collected && (
+          <div className="detail-dots">
+            <SeasonDots record={seasons} />
+          </div>
+        )}
       </div>
 
       {stats !== null && (stats.hikingNow > 0 || stats.todayStamps > 0 || stats.totalStamps > 0) && (
