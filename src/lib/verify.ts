@@ -39,6 +39,8 @@ export type Mountain = {
   region?: string | null;
   /** 숲나들e 원본에 값이 있는 산만 채워진다(29곳). */
   difficulty?: string | null;
+  /** 없으면 100대 명산. 'local'은 OSM에서 뽑은 동네 명산 컬렉션. */
+  collection?: 'top100' | 'local';
 };
 
 export type VerifyReason = 'ok' | 'low_accuracy' | 'too_far' | 'altitude_mismatch';

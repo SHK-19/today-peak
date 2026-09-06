@@ -4,6 +4,7 @@ import { SeasonDots } from '../components/SeasonDots.tsx';
 import { SeasonSheet } from '../components/SeasonSheet.tsx';
 import { Stamp } from '../components/Stamp.tsx';
 import type { Stamp as StampRecord } from '../lib/api.ts';
+import { COLLECTIONS, collectionOf, type CollectionId } from '../lib/collection.ts';
 import { formatSeoulDate } from '../lib/day.ts';
 import { groupByRegion } from '../lib/region.ts';
 import { groupSeasons, latestSeason, seasonCount } from '../lib/seasons.ts';
@@ -19,8 +20,14 @@ type Props = {
 // 모은 것만 보여주면 목록이지 컬렉션이 아니다. 빈 칸이 보여야 다음 목표가 생긴다.
 // 96곳을 한 판에 늘어놓으면 훑기 어려워서 권역으로 접는다. 접기 기능은 두지 않는다.
 // 칸은 산당 하나. 계절은 칸 안의 점 4개로 보여주고, 누르면 사계절 시트가 뜬다.
-export function MyStamps({ mountains, stamps, failed, onRetry }: Props) {
-  const seasons = groupSeasons(stamps ?? []);
+export function MyStamps({ mountains: allMountains, stamps, failed, onRetry }: Props) {
+  // 컬렉션 두 판을 따로 센다. 100대 명산 96곳에 동네 산을 섞으면 완주의 의미가 흐려진다.
+  const [collection, setCollection] = useState<CollectionId>('top100');
+  const mountains = allMountains.filter((mountain) => collectionOf(mountain) === collection);
+  const inThis = new Set(mountains.map((mountain) => mountain.id));
+  const seasons = new Map(
+    [...groupSeasons(stamps ?? [])].filter(([mountainId]) => inThis.has(mountainId)),
+  );
   const count = stamps === null ? 0 : seasons.size;
   const fourSeasons = [...seasons.values()].filter((record) => seasonCount(record) === 4).length;
   const [open, setOpen] = useState<Mountain | null>(null);
@@ -29,6 +36,20 @@ export function MyStamps({ mountains, stamps, failed, onRetry }: Props) {
     <main className="page page-tabbed">
       <header className="collection-head">
         <h1>내 스탬프</h1>
+        <div className="segment" role="tablist">
+          {COLLECTIONS.map((item) => (
+            <button
+              key={item.id}
+              type="button"
+              role="tab"
+              aria-selected={item.id === collection}
+              className={item.id === collection ? 'segment-item segment-active' : 'segment-item'}
+              onClick={() => setCollection(item.id)}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
         <p>
           {stamps === null
             ? failed

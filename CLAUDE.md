@@ -78,6 +78,8 @@
    산 상세에 들어갈 때만 필요하고, 이미 `mountain-stats`를 부르므로 왕복이 늘지 않는다. v1.
 
 ## 데이터 규칙
+- `mountains-local.json`: "동네 명산" 컬렉션(100대 명산 밖). OpenStreetMap `natural=peak`에서 `scripts/build-local-mountains.mjs`로 생성, ODbL 출처 표기.
+  스키마는 같고 `collection: 'local'`, id는 `osm-{노드id}`. 산 선택(WANTED 목록)은 사람이, 좌표·고도는 OSM 값 그대로. 컬렉션은 UI에서 따로 센다.
 - `mountains.json` 스키마: `{ id, name, summitLat, summitLng, elevationM, trailheads: [{ name, lat, lng }] }`. `trailheads`는 빈 배열 허용.
 - **좌표를 지어내지 않는다.** 정상·입구 모두 사용자가 제공한다. 없으면 샘플 3개(북한산·관악산·도봉산, 입구는 각 1개)로 개발하고 파일 상단 주석에 샘플임을 명시한다.
 - Supabase `stamps`: `{ id, user_id(토스 로그인 식별자), mountain_id, verified_at, distance_m, accuracy_m }`. 이 6개 컬럼만.

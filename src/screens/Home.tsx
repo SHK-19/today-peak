@@ -8,6 +8,7 @@ import { formatDistance } from '../lib/format.ts';
 import { haversineMeters } from '../lib/geo.ts';
 import { ensureLocationPermission, readLocationOnce } from '../lib/location.ts';
 import { IS_FIELD_TEST_BUILD, MOUNTAINS } from '../lib/mountains.ts';
+import { collectionOf } from '../lib/collection.ts';
 import { regionsOf } from '../lib/region.ts';
 import type { Mountain } from '../lib/verify.ts';
 
@@ -38,7 +39,11 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
   // 96곳을 한 줄로 늘어놓으면 못 찾는다. 권역으로 먼저 좁힌다.
   const [region, setRegion] = useState<string | null>(null);
   const regions = regionsOf(MOUNTAINS);
-  const inRegion = (mountain: Mountain) => region === null || (mountain.region ?? '기타') === region;
+  // '동네 명산' 칩은 권역이 아니라 컬렉션으로 거른다. 동네 명산도 권역 칩에는 같이 잡힌다.
+  const LOCAL_CHIP = 'local';
+  const inRegion = (mountain: Mountain) =>
+    region === null ||
+    (region === LOCAL_CHIP ? collectionOf(mountain) === 'local' : (mountain.region ?? '기타') === region);
   // 96곳이라 이름으로 바로 찾는 길도 둔다. 공백은 무시하고 이름·인증 지점을 본다.
   const [query, setQuery] = useState('');
   const needle = query.replace(/\s/g, '');
@@ -154,6 +159,13 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
         >
           전체
         </button>
+        <button
+          type="button"
+          className={region === LOCAL_CHIP ? 'chip chip-active' : 'chip'}
+          onClick={() => setRegion(LOCAL_CHIP)}
+        >
+          동네 명산
+        </button>
         {regions.map((name) => (
           <button
             key={name}
@@ -183,6 +195,7 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
                 <span className="row-copy">
                   <strong>{mountain.name}</strong>
                   <p>
+                    {collectionOf(mountain) === 'local' && '동네 명산 · '}
                     {mountain.elevationM}m
                     {distanceM !== undefined && ` · ${formatDistance(distanceM)}`}
                   </p>

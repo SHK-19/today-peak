@@ -1,3 +1,4 @@
+import localData from '../../../src/data/mountains-local.json' with { type: 'json' };
 import mountainsData from '../../../src/data/mountains.json' with { type: 'json' };
 import type { Mountain } from '../../../src/lib/verify.ts';
 
@@ -17,4 +18,8 @@ function testPlaces(): Mountain[] {
   }
 }
 
-export const MOUNTAINS: Mountain[] = [...(mountainsData.mountains as Mountain[]), ...testPlaces()];
+export const MOUNTAINS: Mountain[] = [
+  ...(mountainsData.mountains as Mountain[]),
+  ...(localData.mountains as Mountain[]),
+  ...testPlaces(),
+];

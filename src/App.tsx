@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { TabBar, type TabId } from './components/TabBar.tsx';
 import { fetchMyStamps, type Stamp } from './lib/api.ts';
 import { restoreSession, setSessionLostHandler } from './lib/auth.ts';
+import { collectionOf } from './lib/collection.ts';
 import { HOME_ENTRY, parseEntry } from './lib/entry.ts';
 import { MOUNTAINS } from './lib/mountains.ts';
 import { groupSeasons } from './lib/seasons.ts';
@@ -90,8 +91,13 @@ function App() {
       <MountainDetail
         mountain={detail}
         seasons={groupSeasons(stamps ?? []).get(detail.id) ?? {}}
-        collectedCount={groupSeasons(stamps ?? []).size}
-        totalCount={MOUNTAINS.length}
+        collectedCount={
+          [...groupSeasons(stamps ?? []).keys()].filter((id) => {
+            const m = MOUNTAINS.find((mountain) => mountain.id === id);
+            return m !== undefined && collectionOf(m) === collectionOf(detail);
+          }).length
+        }
+        totalCount={MOUNTAINS.filter((m) => collectionOf(m) === collectionOf(detail)).length}
         onVerified={() => void loadStamps()}
         onGoToStamps={() => {
           setDetailId(null);
