@@ -10,6 +10,7 @@ import { groupByRegion } from '../lib/region.ts';
 import { askReview, canReview } from '../lib/review.ts';
 import { groupSeasons, latestSeason, seasonCount } from '../lib/seasons.ts';
 import type { Mountain } from '../lib/verify.ts';
+import { visitsOf } from '../lib/visits.ts';
 
 type Props = {
   mountains: Mountain[];
@@ -144,7 +145,12 @@ export function MyStamps({ mountains: allMountains, stamps, failed, onRetry }: P
       )}
 
       {open !== null && (
-        <SeasonSheet mountain={open} record={seasons.get(open.id) ?? {}} onClose={() => setOpen(null)} />
+        <SeasonSheet
+          mountain={open}
+          record={seasons.get(open.id) ?? {}}
+          visits={visitsOf(stamps ?? [], open.id)}
+          onClose={() => setOpen(null)}
+        />
       )}
     </main>
   );

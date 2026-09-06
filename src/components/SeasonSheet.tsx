@@ -11,11 +11,12 @@ import {
 import { shareMountain } from '../lib/share.ts';
 import { useSystemBack } from '../lib/useSystemBack.ts';
 import type { Mountain } from '../lib/verify.ts';
+import { formatDuration, type Visit } from '../lib/visits.ts';
 
-type Props = { mountain: Mountain; record: SeasonRecord; onClose: () => void };
+type Props = { mountain: Mountain; record: SeasonRecord; visits: Visit[]; onClose: () => void };
 
 // 산 하나의 사계절. 컬렉션 칸을 누르면 뜬다. "다음엔 겨울에 오자"가 생기는 자리.
-export function SeasonSheet({ mountain, record, onClose }: Props) {
+export function SeasonSheet({ mountain, record, visits, onClose }: Props) {
   useSystemBack(true, onClose);
   const done = seasonCount(record);
   // 미리보기 카드는 가장 최근에 찍은 계절로 만든다.
@@ -54,6 +55,26 @@ export function SeasonSheet({ mountain, record, onClose }: Props) {
             );
           })}
         </ul>
+
+        {/* 다녀온 기록. 산행 시작을 누르고 온 날만 걸린 시간이 붙는다. */}
+        {visits.length > 0 && (
+          <section className="visits">
+            <h3 className="section-title">
+              {visits.length}번 다녀왔어요
+            </h3>
+            <ul className="visit-list">
+              {visits.slice(0, 10).map((visit) => (
+                <li key={visit.verifiedAt}>
+                  <span>{formatSeoulDate(visit.verifiedAt)}</span>
+                  <span>{SEASON_LABEL[visit.season]}</span>
+                  <strong>
+                    {visit.durationMin === undefined ? '' : formatDuration(visit.durationMin)}
+                  </strong>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {latest !== undefined && (
           <button

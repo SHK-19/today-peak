@@ -5,12 +5,13 @@ import type { Reading, VerifyReason } from './verify.ts';
 const API_BASE = import.meta.env.VITE_API_BASE ?? '';
 
 export type SummitOutcome =
-  | { status: 'ok'; distanceM: number }
+  // hikeStartedAt: 같은 산에서 24시간 안에 누른 산행 시작. 있으면 티켓에 걸린 시간을 적는다.
+  | { status: 'ok'; distanceM: number; hikeStartedAt?: string }
   | { status: 'already_today'; distanceM: number }
   | { status: 'rejected'; reason: VerifyReason; distanceM: number }
   | { status: 'stale_reading' };
 
-export type Stamp = { mountainId: string; verifiedAt: string };
+export type Stamp = { mountainId: string; verifiedAt: string; hikeStartedAt?: string };
 
 // 인증이 반경 밖으로 실패했을 때, 이용자가 "여기도 정상"이라고 알려주는 통로.
 // 스탬프를 주지 않는다 — 우리가 정상 좌표를 고칠지 판단하는 근거로만 쓴다.

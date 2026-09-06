@@ -100,6 +100,7 @@ function App() {
             stamp.mountainId === detail.id &&
             new Date(stamp.verifiedAt).getTime() >= seoulDayStartMs(Date.now()),
         )}
+        visitCount={(stamps ?? []).filter((stamp) => stamp.mountainId === detail.id).length}
         collectedCount={
           [...groupSeasons(stamps ?? []).keys()].filter((id) => {
             const m = MOUNTAINS.find((mountain) => mountain.id === id);

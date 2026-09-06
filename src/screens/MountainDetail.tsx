@@ -30,6 +30,7 @@ import { askReviewOnce } from '../lib/review.ts';
 import { openPick, shareMountain } from '../lib/share.ts';
 import { seasonOf } from '../lib/stamp-art.ts';
 import { canCheckIn } from '../lib/trailhead.ts';
+import { durationMin, formatDuration } from '../lib/visits.ts';
 import {
   ensureLocationPermission,
   prefetchLocation,
@@ -67,6 +68,8 @@ type Props = {
   seasons: SeasonRecord;
   /** 오늘(한국 시간) 이 산 스탬프를 이미 받았는지. 성공 화면을 띄웠다가 되돌리지 않으려고 본다. */
   stampedToday: boolean;
+  /** 이 산을 다녀온 횟수(스탬프 행 수) */
+  visitCount: number;
   /** 성공 티켓 절취선 아래 "96곳 중 N곳" */
   collectedCount: number;
   totalCount: number;
@@ -169,6 +172,7 @@ export function MountainDetail({
   onGoToPicks,
   seasons,
   stampedToday,
+  visitCount,
   collectedCount,
   totalCount,
   onVerified,
@@ -349,6 +353,11 @@ export function MountainDetail({
             <p className="ticket-season">
               {SEASON_LABEL[season]} 스탬프 · 사계절 중 {seasonDone}
             </p>
+            {state.outcome.hikeStartedAt !== undefined && (
+              <p className="ticket-season">
+                시작부터 {formatDuration(durationMin(state.outcome.hikeStartedAt, now))} 만에 정상
+              </p>
+            )}
             <FieldNote reading={state.reading} outcome={state.outcome} />
           </div>
           <div className="ticket-stub">
@@ -562,6 +571,7 @@ export function MountainDetail({
                   .filter((s) => seasons[s] !== undefined)
                   .map((s) => SEASON_LABEL[s])
                   .join('·')} 스탬프를 모았어요`}
+            {visitCount > 1 && ` · ${visitCount}번`}
           </span>
         )}
         {collected && (
@@ -611,8 +621,8 @@ export function MountainDetail({
               <p className="footnote">
                 {hikeNote ??
                   (mountain.trailheads.length > 0
-                    ? '등산로 입구에서 누르면 위 집계에 함께 잡혀요. 정상 인증과는 상관없어요.'
-                    : '산 근처에서 누르면 위 집계에 함께 잡혀요. 정상 인증과는 상관없어요.')}
+                    ? '등산로 입구에서 누르고 정상까지 가면 걸린 시간이 스탬프에 남아요. 안 눌러도 정상 인증은 돼요.'
+                    : '산 근처에서 누르고 정상까지 가면 걸린 시간이 스탬프에 남아요. 안 눌러도 정상 인증은 돼요.')}
               </p>
             </div>
           )}

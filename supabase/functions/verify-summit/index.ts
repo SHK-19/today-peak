@@ -2,6 +2,7 @@
 
 import { seoulDayStartMs } from '../../../src/lib/day.ts';
 import { isReadingFresh, verifySummit } from '../../../src/lib/verify.ts';
+import { hikeStartFor } from '../../../src/lib/visits.ts';
 import { json, preflight } from '../_shared/http.ts';
 import { MOUNTAINS } from '../_shared/mountains.ts';
 import { parseReading } from '../_shared/reading.ts';
@@ -89,17 +90,40 @@ Deno.serve(async (request: Request) => {
     return json({ status: 'already_today', distanceM: result.distanceM }, 200, origin);
   }
 
-  const { error: insertError } = await supabase.from('stamps').insert({
-    user_id: userKey,
-    mountain_id: mountain.id,
-    distance_m: result.distanceM,
-    accuracy_m: reading.coords.accuracy,
-  });
+  const { data: inserted, error: insertError } = await supabase
+    .from('stamps')
+    .insert({
+      user_id: userKey,
+      mountain_id: mountain.id,
+      distance_m: result.distanceM,
+      accuracy_m: reading.coords.accuracy,
+    })
+    .select('verified_at')
+    .single();
   if (insertError !== null) {
     console.error(`stamps 저장 실패 · ${insertError.message}`);
     return json({ error: 'server_error' }, 500, origin);
   }
 
+  // 24시간 안에 이 산에서 산행 시작을 눌렀으면 걸린 시간의 재료를 돌려준다. 조회가 실패해도
+  // 스탬프는 이미 저장됐으니 시간만 빼고 성공으로 답한다.
+  const { data: starts } = await supabase
+    .from('hike_starts')
+    .select('mountain_id, started_at')
+    .eq('user_id', userKey)
+    .eq('mountain_id', mountain.id)
+    .gte('started_at', new Date(now - 24 * 60 * 60 * 1000).toISOString());
+  const hikeStartedAt = hikeStartFor(
+    { mountainId: mountain.id, verifiedAt: inserted.verified_at },
+    (starts ?? []).map((row) => ({ mountainId: row.mountain_id, startedAt: row.started_at })),
+  );
+
   console.log(`stamp · userKey=${userKey} · ${mountain.id} · ${Math.round(result.distanceM)}m`);
-  return json({ status: 'ok', distanceM: result.distanceM }, 200, origin);
+  return json(
+    hikeStartedAt === undefined
+      ? { status: 'ok', distanceM: result.distanceM }
+      : { status: 'ok', distanceM: result.distanceM, hikeStartedAt },
+    200,
+    origin,
+  );
 });

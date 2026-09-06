@@ -1404,3 +1404,37 @@ h3 {
   width: auto;
   padding: 0 var(--space-5);
 }
+
+/* 사계절 시트의 다녀온 기록. 날짜 · 계절 · 걸린 시간(있을 때만). */
+.visits {
+  margin-top: var(--space-5);
+}
+
+.visits .section-title {
+  padding: 0 0 var(--space-2);
+}
+
+.visit-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visit-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 44px;
+  border-top: 1px solid var(--color-line);
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-subtle);
+}
+
+.visit-list li span:first-child {
+  color: var(--color-text-default);
+}
+
+.visit-list strong {
+  margin-left: auto;
+  color: var(--brand-primary);
+}
