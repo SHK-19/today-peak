@@ -89,6 +89,10 @@ export function MyStamps({ mountains: allMountains, stamps, failed, onRetry }: P
       <div className="collection-main">
         {groupByRegion(mountains).map(({ region, mountains: inRegion }) => {
           const done = inRegion.filter((mountain) => seasons.has(mountain.id)).length;
+          // 모은 산을 앞으로 모은다. 빈 칸은 그대로 두되 뒤로 밀려서, 판이 채워지는 게 보인다.
+          const ordered = [...inRegion].sort(
+            (a, b) => Number(seasons.has(b.id)) - Number(seasons.has(a.id)),
+          );
           return (
             <section key={region} className="region">
               <h3 className="section-title">
@@ -99,7 +103,7 @@ export function MyStamps({ mountains: allMountains, stamps, failed, onRetry }: P
               </h3>
 
               <ul className="grid">
-                {inRegion.map((mountain) => {
+                {ordered.map((mountain) => {
                   const record = seasons.get(mountain.id) ?? {};
                   const latest = latestSeason(record);
                   return (
