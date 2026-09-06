@@ -2,6 +2,7 @@ import { Close } from './icons.tsx';
 import { Stamp } from './Stamp.tsx';
 import { formatSeoulDate } from '../lib/day.ts';
 import { SEASON_LABEL, SEASON_ORDER, seasonCount, type SeasonRecord } from '../lib/seasons.ts';
+import { shareMountain } from '../lib/share.ts';
 import { useSystemBack } from '../lib/useSystemBack.ts';
 import type { Mountain } from '../lib/verify.ts';
 
@@ -45,6 +46,24 @@ export function SeasonSheet({ mountain, record, onClose }: Props) {
             );
           })}
         </ul>
+
+        {done > 0 && (
+          <button
+            type="button"
+            className="btn btn-secondary"
+            style={{ marginTop: 'var(--space-5)' }}
+            onClick={() =>
+              void shareMountain(
+                mountain,
+                done === 4
+                  ? `${mountain.name} 사계절 스탬프를 다 모았어요 · 오늘 정상`
+                  : `${mountain.name} 스탬프 ${done}장을 모았어요 · 오늘 정상`,
+              ).catch(() => {})
+            }
+          >
+            자랑하기
+          </button>
+        )}
       </section>
     </div>
   );

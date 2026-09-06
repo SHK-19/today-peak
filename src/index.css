@@ -828,7 +828,7 @@ h3 {
   background: var(--brand-primary);
 }
 
-.success .btn {
+.success .btn:not(.btn-secondary) {
   background: var(--color-bg);
   color: var(--brand-primary);
 }
@@ -1080,4 +1080,10 @@ h3 {
 .season-cell-empty strong {
   font-weight: 400;
   color: #616f62;
+}
+
+.success .btn-secondary {
+  border-color: rgba(252, 251, 247, 0.4);
+  background: transparent;
+  color: var(--color-text-inverse);
 }

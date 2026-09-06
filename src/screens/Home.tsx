@@ -1,5 +1,5 @@
 import { GetCurrentLocationPermissionError } from '@apps-in-toss/web-framework';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { ChevronRight, CollectionIcon, LocationIcon, Search } from '../components/icons.tsx';
 import { Stamp } from '../components/Stamp.tsx';
@@ -23,9 +23,17 @@ type State =
       coords: { latitude: number; longitude: number; accuracy: number };
     };
 
-type Props = { onSelect: (mountainId: string) => void; stamps: StampRecord[] | null };
+type Props = {
+  onSelect: (mountainId: string) => void;
+  stamps: StampRecord[] | null;
+  /** '정상 인증하기' 주요 기능으로 들어왔을 때. 위치를 읽자마자 가장 가까운 산을 한 번 연다. */
+  openNearestOnce?: boolean;
+};
 
-export function Home({ onSelect, stamps }: Props) {
+export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
+  const nearestOpened = useRef(!openNearestOnce);
+  const selectRef = useRef(onSelect);
+  selectRef.current = onSelect;
   const collected = new Set(stamps?.map((stamp) => stamp.mountainId));
   // 96곳을 한 줄로 늘어놓으면 못 찾는다. 권역으로 먼저 좁힌다.
   const [region, setRegion] = useState<string | null>(null);
@@ -65,6 +73,10 @@ export function Home({ onSelect, stamps }: Props) {
         })).sort((a, b) => a.distanceM - b.distanceM);
 
         if (!cancelled) setState({ status: 'ready', nearby, coords });
+        if (!cancelled && !nearestOpened.current && nearby.length > 0) {
+          nearestOpened.current = true;
+          selectRef.current(nearby[0].mountain.id);
+        }
       } catch (error) {
         // getPermission이 allowed를 주고도 실제 조회에서 권한 에러가 날 수 있다.
         // (OS 위치 서비스가 꺼져 있는 경우 — 2026-09-05 실기기 확인)

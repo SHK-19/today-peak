@@ -1,4 +1,4 @@
-import { GetCurrentLocationPermissionError } from '@apps-in-toss/web-framework';
+import { GetCurrentLocationPermissionError, requestReview } from '@apps-in-toss/web-framework';
 import { useEffect, useRef, useState } from 'react';
 
 import {
@@ -23,6 +23,7 @@ import { formatSeoulDate } from '../lib/day.ts';
 import { formatDistance } from '../lib/format.ts';
 import { IS_FIELD_TEST_BUILD } from '../lib/mountains.ts';
 import { SEASON_LABEL, seasonCount, type SeasonRecord } from '../lib/seasons.ts';
+import { shareMountain } from '../lib/share.ts';
 import { seasonOf } from '../lib/stamp-art.ts';
 import {
   ensureLocationPermission,
@@ -125,6 +126,18 @@ function resultMessage(
         case 'ok':
           return { heading: '스탬프를 획득했어요', body: '정상에 도착한 걸 확인했어요.' };
       }
+  }
+}
+
+// 리뷰 요청은 한 세션에 한 번. 노출 여부는 플랫폼이 정하고, 결과에 따라 흐름을 바꾸지 않는다.
+let reviewAsked = false;
+function askReviewOnce() {
+  if (reviewAsked) return;
+  reviewAsked = true;
+  try {
+    if (requestReview.isSupported()) void requestReview().catch(() => {});
+  } catch {
+    // 지원하지 않는 환경. 조용히 넘어간다.
   }
 }
 
@@ -232,6 +245,7 @@ export function MountainDetail({
       setState({ status: 'result', reading, outcome, confirmed: true, saveFailed: false });
       if (outcome.status === 'ok') {
         onVerified();
+        askReviewOnce();
       }
     } catch {
       setState({ status: 'result', reading, outcome: local, confirmed: false, saveFailed: true });
@@ -349,9 +363,25 @@ export function MountainDetail({
               다시 저장
             </button>
           ) : (
-            <button type="button" className="btn" disabled={!state.confirmed} onClick={onGoToStamps}>
-              {state.confirmed ? '내 스탬프' : '저장하고 있어요'}
-            </button>
+            <>
+              {state.confirmed && (
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={() =>
+                    void shareMountain(
+                      mountain,
+                      `${mountain.name} 정상에서 ${SEASON_LABEL[season]} 스탬프를 모았어요 · 오늘 정상`,
+                    ).catch(() => {})
+                  }
+                >
+                  자랑하기
+                </button>
+              )}
+              <button type="button" className="btn" disabled={!state.confirmed} onClick={onGoToStamps}>
+                {state.confirmed ? '내 스탬프' : '저장하고 있어요'}
+              </button>
+            </>
           )}
         </div>
       </main>

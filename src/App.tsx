@@ -1,8 +1,10 @@
+import { getSchemeUri } from '@apps-in-toss/web-framework';
 import { useCallback, useEffect, useState } from 'react';
 
 import { TabBar, type TabId } from './components/TabBar.tsx';
 import { fetchMyStamps, type Stamp } from './lib/api.ts';
 import { restoreSession, setSessionLostHandler } from './lib/auth.ts';
+import { HOME_ENTRY, parseEntry } from './lib/entry.ts';
 import { MOUNTAINS } from './lib/mountains.ts';
 import { groupSeasons } from './lib/seasons.ts';
 import { useSystemBack } from './lib/useSystemBack.ts';
@@ -11,10 +13,22 @@ import { Login } from './screens/Login.tsx';
 import { MountainDetail } from './screens/MountainDetail.tsx';
 import { MyStamps } from './screens/MyStamps.tsx';
 
+// 스킴 진입점(주요 기능·공유 링크). 앱을 켤 때 한 번만 읽는다. 실패하면 홈.
+function readEntry() {
+  try {
+    return parseEntry(getSchemeUri());
+  } catch {
+    return HOME_ENTRY;
+  }
+}
+
 function App() {
+  const [entry] = useState(readEntry);
   const [session, setSession] = useState<'checking' | 'none' | 'ok'>('checking');
-  const [tab, setTab] = useState<TabId>('home');
-  const [detailId, setDetailId] = useState<string | null>(null);
+  const [tab, setTab] = useState<TabId>(entry.tab);
+  const [detailId, setDetailId] = useState<string | null>(() =>
+    MOUNTAINS.some((mountain) => mountain.id === entry.mountainId) ? entry.mountainId : null,
+  );
   // 스탬프는 세 화면이 같이 본다 — 홈의 획득 배지, 컬렉션 그리드, 산 상세의 획득 여부.
   // 한 곳에서 한 번만 불러온다.
   const [stamps, setStamps] = useState<Stamp[] | null>(null);
@@ -90,7 +104,7 @@ function App() {
   return (
     <>
       {tab === 'home' ? (
-        <Home onSelect={setDetailId} stamps={stamps} />
+        <Home onSelect={setDetailId} stamps={stamps} openNearestOnce={entry.verifyNearest} />
       ) : (
         <MyStamps
           mountains={MOUNTAINS}
