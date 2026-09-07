@@ -1,8 +1,9 @@
 // 오늘 Pick(등산 준비물 큐레이션)을 토스쇼핑 쉐어링크 API로 채운다 → src/data/picks.json
 //
 //   입력: src/data/picks-curation.txt — 사람이 고른 상품. 한 줄에 하나.
-//     카테고리 | 상품 URL 또는 tacaId | 계절(봄,여름,가을,겨울 · 선택) | 최소 고도 m(선택)
+//     카테고리 | 상품 URL 또는 tacaId 또는 item:tacaItemId | 계절(봄,여름,가을,겨울 · 선택) | 최소 고도 m(선택)
 //     예)  장비 | https://toss.shopping/t/9876 | 겨울 | 1000
+//          음식 | item:1221294259 | |          ← 목록 API에서 고른 옵션 ID
 //
 //   node scripts/build-picks.mjs            리포트만 (API는 부른다)
 //   node scripts/build-picks.mjs --write    src/data/picks.json 갱신
@@ -39,13 +40,15 @@ const lines = readFileSync(new URL('src/data/picks-curation.txt', ROOT), 'utf8')
   .filter((line) => line !== '' && !line.startsWith('#'));
 const wanted = [];
 for (const line of lines) {
-  const [category, ref, seasons = '', minEle = ''] = line.split('|').map((s) => s.trim());
+  const [category, ref, seasons = '', minEle = ''] = line.replace(/\s+#.*$/, '').split('|').map((s) => s.trim());
   if (!CATEGORIES.has(category)) throw new Error(`카테고리가 이상하다: ${line}`);
-  const tacaId = Number(/^\d+$/.test(ref) ? ref : /toss\.shopping\/t\/(\d+)/.exec(ref)?.[1]);
-  if (!Number.isFinite(tacaId)) throw new Error(`tacaId를 못 읽었다(https://toss.shopping/t/숫자 형태여야 한다): ${line}`);
+  const tacaItemId = /^item:(\d+)$/.exec(ref)?.[1];
+  const tacaId = tacaItemId ? null : Number(/^\d+$/.test(ref) ? ref : /toss\.shopping\/t\/(\d+)/.exec(ref)?.[1]);
+  if (!tacaItemId && !Number.isFinite(tacaId)) throw new Error(`상품을 못 읽었다(https://toss.shopping/t/숫자 · tacaId · item:tacaItemId): ${line}`);
   wanted.push({
     category,
     tacaId,
+    tacaItemId: tacaItemId ? Number(tacaItemId) : null,
     seasons: seasons.split(',').map((s) => SEASON[s.trim()]).filter(Boolean),
     minElevationM: minEle === '' ? undefined : Number(minEle),
   });
@@ -87,19 +90,24 @@ async function api(path, init = {}) {
   return body.success;
 }
 
-// ---- 상품 상세 (30건씩)
-const details = new Map();
-for (let i = 0; i < wanted.length; i += 30) {
-  const ids = wanted.slice(i, i + 30).map((w) => w.tacaId);
-  const { items, notFoundIds } = await api(`/openapi/products/detail?tacaIds=${ids.join(',')}`);
-  for (const item of items) details.set(item.tacaId, item);
-  if (notFoundIds?.length) console.log(`못 찾은 상품: ${notFoundIds.join(', ')}`);
+// ---- 상품 상세 (30건씩). 옵션 ID(tacaItemId)와 상품 ID(tacaId)를 따로 조회한다.
+const details = new Map(); // key: `item:${tacaItemId}` 또는 `taca:${tacaId}`
+const byItem = wanted.filter((w) => w.tacaItemId !== null).map((w) => w.tacaItemId);
+const byTaca = wanted.filter((w) => w.tacaItemId === null).map((w) => w.tacaId);
+for (const [param, ids, keyOf] of [['tacaItemIds', byItem, (d) => `item:${d.tacaItemId}`], ['tacaIds', byTaca, (d) => `taca:${d.tacaId}`]]) {
+  for (let i = 0; i < ids.length; i += 30) {
+    const chunk = ids.slice(i, i + 30);
+    const { items, notFoundIds } = await api(`/openapi/products/detail?${param}=${chunk.join(',')}`);
+    for (const item of items) details.set(keyOf(item), item);
+    if (notFoundIds?.length) console.log(`못 찾은 상품: ${notFoundIds.join(', ')}`);
+  }
 }
 
-// ---- 링크 발급
+// ---- 링크 발급. 초당 제한(429)에 걸리지 않게 호출 사이를 띄운다.
 const picks = [];
 for (const w of wanted) {
-  const d = details.get(w.tacaId);
+  await new Promise((resolve) => setTimeout(resolve, 400));
+  const d = details.get(w.tacaItemId !== null ? `item:${w.tacaItemId}` : `taca:${w.tacaId}`);
   if (d === undefined) continue;
   let link;
   try {

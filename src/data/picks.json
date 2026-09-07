@@ -1,4 +1,320 @@
 {
-  "_note": "토스쇼핑 쉐어링크 큐레이션. 승인 후 어드민에서 발급한 링크를 여기에 채웁니다. 비어 있으면 '오늘 Pick' 탭과 산 상세의 '추천 물건' 카드가 렌더되지 않습니다.",
-  "items": []
+  "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
+  "items": [
+    {
+      "id": "sl-1268069353",
+      "name": "살림살림 고강도 알루미늄 3단조절 등산스틱, 2개",
+      "category": "장비",
+      "link": "https://toss.im/_m/5bcu4ds9",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MWIwNWNk/TUR5VW84ZkRWU3dlQ1V2R0tqNHVNWi9CcTFvb0huSEMwV3V0T2EwaktWWT0.png",
+      "priceText": "13,900원"
+    },
+    {
+      "id": "sl-1568257163",
+      "name": "트렉스타 패스파인더 초경량 5단 폴딩 등산스틱, 블랙, FREE, 안티쇼크, 고급케이스, 2개, 1세트",
+      "category": "장비",
+      "link": "https://toss.im/_m/djN205Xb",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-17/1cb4da73-798c-4587-903b-450d5d54dc8d.jpeg",
+      "priceText": "54,000원",
+      "minElevationM": 1000
+    },
+    {
+      "id": "sl-16403105",
+      "name": "접이식 경량 배낭, 20L, 그레이, 1개",
+      "category": "장비",
+      "link": "https://toss.im/_m/rEQhVyAe",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NTQ1NzYx/QUxUY1RwRVpKKzJNekkxN0VrSGwzS1F6MmZZWUhqSnpjOEwybkhscjVISHY.png",
+      "priceText": "7,900원"
+    },
+    {
+      "id": "sl-1899515367",
+      "name": "트렉스타 마스터 등산가방, 블랙, 28L, 1개",
+      "category": "장비",
+      "link": "https://toss.im/_m/3ivV80Qf",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDUyYzQy/QUpQellRNWZDWkwyYWh5ZjhiTDJiY01WNDFlUFQ0bXdIS3E5Q2Z4VlVQWUQ.png",
+      "priceText": "30,900원",
+      "minElevationM": 800
+    },
+    {
+      "id": "sl-323211391",
+      "name": "브리사 LED 충전식 모션센서 헤드랜턴, 본품, 1개",
+      "category": "장비",
+      "link": "https://toss.im/_m/VXy2EGrj",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTdkZDAx/QU80Wi9NZDQwM001enlkK0Fic1JObFlXY1UrTC85QUptSktKS1Nlc1ZJYjg.png",
+      "priceText": "14,200원",
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "id": "sl-105123055",
+      "name": "프로스펙스 액티브 슬개골 보호대, 블랙, 1개",
+      "category": "장비",
+      "link": "https://toss.im/_m/FYJZvyWl",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZjE3YzE3/QU1tY2QzKzhUSmxtNXhqNG5qalBUQStjWjJlWlo1MllaV1daenpPeXlEVE0.png",
+      "priceText": "9,800원"
+    },
+    {
+      "id": "sl-1467863751",
+      "name": "옴미 마운틴14 등산 자외선차단 벙거지 F14, 다크그린, 59Cm, 1개",
+      "category": "장비",
+      "link": "https://toss.im/_m/1d0lJZbn",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/OWVkN2Iw/SmNpRE1LOHZ1K2ZKQzgwWUNXbnd6a21MbVJoWmE0YkJta25HZklaVE9ZUT0.png",
+      "priceText": "8,928원",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    {
+      "id": "sl-721399481",
+      "name": "쿨 메쉬 등산 모자 볼캡, FREE, 블랙, 1개",
+      "category": "장비",
+      "link": "https://toss.im/_m/BS8zULZp",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDQ0YTM1/QUtTVE1jM25rMnVjam5QT1c1akwyNW56REEwMGF5Undac2RzbDQ0c09Fa1o.png",
+      "priceText": "5,674원",
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "id": "sl-2399104711",
+      "name": "더나은 이중파일 등산양말, 남성용, 중목, 10개",
+      "category": "의류",
+      "link": "https://toss.im/_m/1fWnwj4r",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDliMzFj/TG1VNDN1dmN2VnBWdU03bHdnZnFwY1lIZXAwaU5PVWJNaFZ6RHJZUWRSbz0.png",
+      "priceText": "8,900원"
+    },
+    {
+      "id": "sl-110973211",
+      "name": "밀레 남성 파일 쿠션 중목 양말 A타입, 혼합구성, 250-270mm, 5족 번들, 1개",
+      "category": "의류",
+      "link": "https://toss.im/_m/dgT515Kt",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MGYzNWM0/WmpuYlhNdG50VE9Xc2o1T3pjek1rVW16T3lNMmJpYk80YzVoWWRHNW1aWT0.png",
+      "priceText": "14,900원"
+    },
+    {
+      "id": "sl-33689321",
+      "name": "원더 라이트 여성 반장갑, 블랙 M(손큰여성용), 1세트",
+      "category": "의류",
+      "link": "https://toss.im/_m/Ng5LFqyx",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MTY1NzUx/QU92VjNwWlY1cnNDVUpKbkJ2eGx1aGFzbzFWS1JGaU05YzFiUS9RWFBKdVQ.png",
+      "priceText": "9,590원",
+      "seasons": [
+        "spring",
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "id": "sl-11198281",
+      "name": "논슬립 스포츠 반장갑, 남성-블랙, 1개",
+      "category": "의류",
+      "link": "https://toss.im/_m/rrXayi3A",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDIyN2Yx/UktDODFvcE5Hay92TGNRUy9sR1NXeHNoa2pPOVVDS2J0Tk1sUTV5R2FQUT0.png",
+      "priceText": "8,380원",
+      "seasons": [
+        "spring",
+        "autumn"
+      ]
+    },
+    {
+      "id": "sl-220645623",
+      "name": "프루어 후드 판초우의, 브라운, one size",
+      "category": "의류",
+      "link": "https://toss.im/_m/dRYb5N3B",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/M2FjNWE0/SzhRY2E5d2xzNmFxOHNZWVh3OW9TWEQ4OFliblJ3NHhIaHFzZWJDa2M0WT0.png",
+      "priceText": "12,771원",
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "id": "sl-2383024153",
+      "name": "모엔 경량 판초우의, FREE, 블랙, 1개",
+      "category": "의류",
+      "link": "https://toss.im/_m/XWpVBdbC",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-01/7f027d34-6a65-4cd2-b712-fb0afd9e46f1.jpeg",
+      "priceText": "15,900원",
+      "seasons": [
+        "summer",
+        "autumn"
+      ]
+    },
+    {
+      "id": "sl-10143179",
+      "name": "스파클 생수, 무라벨, 500ml, 80개",
+      "category": "음식",
+      "link": "https://toss.im/_m/RVagWNE9",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
+      "priceText": "8,800원",
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "id": "sl-135256485",
+      "name": "이온더핏, 제로, 500ml, 24개",
+      "category": "음식",
+      "link": "https://toss.im/_m/H6eHslQ",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
+      "priceText": "15,900원",
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "id": "sl-2034295555",
+      "name": "호정가 하루단백질바, 25g, 20개",
+      "category": "음식",
+      "link": "https://toss.im/_m/Jf0vjY06",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NmFkNDg1/YTNNaXA1eW1lVUdtR2MrMnYwcjJEc205bTdGMlRrMWp1clVpUHdYQnExST0.png",
+      "priceText": "12,990원"
+    },
+    {
+      "id": "sl-2484194021",
+      "name": "이춘복의 비법 고소한 치즈육포, 30g, 10봉",
+      "category": "음식",
+      "link": "https://toss.im/_m/f1PrbQv8",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTRjYWY4/QVBEei9Qc1AvbnRXL09lSHEvRlJlVStPTnNoMGMrNm5pNC9SZkh6MEVjT1g.png",
+      "priceText": "11,900원"
+    },
+    {
+      "id": "sl-83885933",
+      "name": "머거본 달콤한 직화육포, 20g, 10봉지",
+      "category": "음식",
+      "link": "https://toss.im/_m/jnLVK8gc",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWNhMTY0/SjFJOFllUEdlOU80clFlR1orTnJHeDFTaGpnTTRjNTBIbUd4bWFWV2VlWT0.png",
+      "priceText": "11,000원"
+    },
+    {
+      "id": "sl-1221294259",
+      "name": "하루견과 The오리지널, 20g, 10봉",
+      "category": "음식",
+      "link": "https://toss.im/_m/xaT5Ihld",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NjQ0NDFm/UFo2MDZ3M3dtbnpjWTg3SDMrdHg0NGgwL3NGOUpEbzRjYVBtSTQ1VTVjdz0.png",
+      "priceText": "9,900원"
+    },
+    {
+      "id": "sl-2567903989",
+      "name": "경북 홍로사과, 14-16과, 2kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/dSdrXIAe",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/477ae75a-02ab-449d-ab8d-131c9c98fb91.jpeg",
+      "priceText": "8,900원",
+      "seasons": [
+        "autumn"
+      ]
+    },
+    {
+      "id": "sl-10150471",
+      "name": "건달마토 스테비아 방울토마토, 500g, 1팩",
+      "category": "음식",
+      "link": "https://toss.im/_m/VyvY6yHf",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZWNhY2Nm/SnM0dkE3dXhheDc4azNZb0t6WTM3RS82ckdGQStRMGhtaVNNVlRvRHdEdz0.png",
+      "priceText": "8,900원",
+      "seasons": [
+        "spring",
+        "summer"
+      ]
+    },
+    {
+      "id": "sl-2626110909",
+      "name": "바나나, 1kg, 1봉",
+      "category": "음식",
+      "link": "https://toss.im/_m/pPyblZWg",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/79e4dda9-4447-49a1-ab10-d960eb876252.png",
+      "priceText": "5,900원"
+    },
+    {
+      "id": "sl-2511369781",
+      "name": "햅푸드 구운계란, 대란, 30구, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/lRPzesIe",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
+      "priceText": "10,400원"
+    },
+    {
+      "id": "sl-2274809577",
+      "name": "촉촉한 고구마, 50g, 5개",
+      "category": "음식",
+      "link": "https://toss.im/_m/lsig6l5m",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDZlNDU3/TXhsM205bXNveFBPYzB4c09jazAyK2M4d3k4WWNqeHc1WVBzemhwOEV6TT0.png",
+      "priceText": "6,870원",
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "id": "sl-173577755",
+      "name": "마른 진짜 과일칩 무설탕 동결건조과일 5종 믹스, 90g, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/tq9uE7zn",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NmMzMDI4/QU1scGxrNXZuTkxNbkxWNjJYNDRsVHFqc2pvNXVQSGh1RmRTUGFGb0s4eG0.png",
+      "priceText": "12,000원"
+    },
+    {
+      "id": "sl-1005944115",
+      "name": "건짐 반건조 오징어, 350g 내외, 5마리",
+      "category": "음식",
+      "link": "https://toss.im/_m/XQVGwdAo",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MDVjM2U2/WWVhVDhiZXo5SXVVK1ptQ0ROZHJaLzJTTnNzMndGWGovOUFJRFJnWVpPND0.png",
+      "priceText": "13,900원"
+    },
+    {
+      "id": "sl-1980204115",
+      "name": "닥터지 메디 유브이 마일드 선크림, 50ml, 1+1 구성, 총 2개",
+      "category": "안전",
+      "link": "https://toss.im/_m/bcMxJEPp",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/Zjk3NTE0/UWJFbXcvSHVuTE1zUHJscDA5dHpscHR4MnBTV3k2VkxhVFE4OVdrMDJ6UT0.png",
+      "priceText": "15,890원",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    {
+      "id": "sl-175254013",
+      "name": "곰도리 붙이는 핫팩, 50개, 1개",
+      "category": "안전",
+      "link": "https://toss.im/_m/ngvzUlzt",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-27/51ab485d-6d3f-4999-aae1-e70c17c04844.jpeg",
+      "priceText": "9,682원",
+      "seasons": [
+        "winter"
+      ],
+      "minElevationM": 800
+    },
+    {
+      "id": "sl-12804289",
+      "name": "마데카웨이 케어키트 중형 응급키트, 마데카솔 연고+스팟패치 46매+밴드 58매+틴케이스, 1개",
+      "category": "안전",
+      "link": "https://toss.im/_m/p36TLd4w",
+      "imageUrl": "https://shopping.toss.im/live/temp/2024-04-04/1e5bb95f-1b1d-4eea-81d5-2d83d7c6ce89.png",
+      "priceText": "15,900원"
+    },
+    {
+      "id": "sl-12045353",
+      "name": "구급 약보관 파우치, 레드, 10.5x15cm, 1개",
+      "category": "안전",
+      "link": "https://toss.im/_m/7fy3E5zy",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTdiYjFk/QUx0Sm9Fa214bVNIVGJ4ZEJNbncyM0NEVzdONUhrWmsxM3dVYUllQjZDUEQ.png",
+      "priceText": "5,355원"
+    },
+    {
+      "id": "sl-2574839441",
+      "name": "휴대용 우비, 1개",
+      "category": "안전",
+      "link": "https://toss.im/_m/D1tjPWVA",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-05-23/57d5fdc9-d678-48a7-a3ef-a034db071ef8.jpeg",
+      "priceText": "5,100원",
+      "seasons": [
+        "summer"
+      ]
+    }
+  ]
 }
