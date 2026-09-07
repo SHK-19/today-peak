@@ -23,7 +23,6 @@ import { SeasonDots } from '../components/SeasonDots.tsx';
 import { Stamp } from '../components/Stamp.tsx';
 import { formatSeoulDate } from '../lib/day.ts';
 import { formatKm, formatMinutes, type CourseSummary } from '../lib/courses.ts';
-import { FACILITY_LABEL, FACILITY_ORDER, facilityCount, summarizeNames } from '../lib/facilities.ts';
 import { formatDistance } from '../lib/format.ts';
 import { IS_FIELD_TEST_BUILD } from '../lib/mountains.ts';
 import { SEASON_LABEL, seasonCount, type SeasonRecord } from '../lib/seasons.ts';
@@ -310,7 +309,6 @@ export function MountainDetail({
     }
   }
 
-  const facilities = stats?.facilities;
   const both = (stats?.places?.food.length ?? 0) > 0 && (stats?.places?.cafe.length ?? 0) > 0;
   const nearby = both
     ? (stats?.places?.[placeKind] ?? [])
@@ -697,20 +695,6 @@ export function MountainDetail({
             ))}
           </ul>
           <p className="footnote">한국등산트레킹지원센터 GPX 기록이에요. 시간·칼로리는 계산값이에요.</p>
-        </FoldCard>
-      )}
-
-      {facilities !== undefined && facilityCount(facilities) > 0 && (
-        <FoldCard title="시설" hint={`${facilityCount(facilities)}곳`}>
-          <ul className="facility-list">
-            {FACILITY_ORDER.filter((kind) => (facilities[kind]?.length ?? 0) > 0).map((kind) => (
-              <li key={kind}>
-                <strong>{FACILITY_LABEL[kind]}</strong>
-                <span>{summarizeNames(facilities[kind] ?? [], FACILITY_LABEL[kind])}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="footnote">한국등산트레킹지원센터 숲길 정보예요. 운영 여부는 달라질 수 있어요.</p>
         </FoldCard>
       )}
 

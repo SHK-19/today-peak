@@ -1,0 +1,5 @@
+# 오늘 Pick 큐레이션. 한 줄에 상품 하나. scripts/build-picks.mjs가 읽는다.
+# 카테고리(장비·의류·음식·안전) | 토스쇼핑 상품 URL(https://toss.shopping/t/숫자) 또는 tacaId | 계절(봄,여름,가을,겨울 · 비워도 됨) | 최소 고도 m(비워도 됨)
+# 예)
+# 장비 | https://toss.shopping/t/9876 | 겨울 | 1000
+# 음식 | 12345 | |

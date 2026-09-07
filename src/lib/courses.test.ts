@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 
-import { formatKm, formatMinutes, groupPois } from './courses.ts';
+import { MAP_H, MAP_W, formatKm, formatMinutes, groupPois, mapFrame } from './courses.ts';
 
 test('시간·거리 표기', () => {
   assert.equal(formatMinutes(221), '3시간 41분');
@@ -24,4 +24,17 @@ test('지점을 교통·주차·편의·볼거리·주의로 묶고 빈 묶음�
     { label: '편의', names: ['화장실'] },
     { label: '주의', names: ['낙석주의'] },
   ]);
+});
+
+test('트랙이 지도 안에 들어가는 줌을 고르고 가운데에 놓는다', () => {
+  const frame = mapFrame([
+    [37.6589, 126.9779],
+    [37.655, 126.95],
+    [37.662, 126.99],
+  ]);
+  assert.ok(frame !== null);
+  for (const [x, y] of frame!.points) {
+    assert.ok(x >= 0 && x <= MAP_W && y >= 0 && y <= MAP_H, `${x},${y}`);
+  }
+  assert.equal(mapFrame([[37, 127]]), null);
 });

@@ -3,12 +3,18 @@ import { useEffect, useState } from 'react';
 import { Close } from './icons.tsx';
 import { fetchCourse } from '../lib/api.ts';
 import {
+  MAP_H,
+  MAP_W,
   formatKm,
   formatMinutes,
   groupPois,
+  mapFrame,
+  staticMapUrl,
   type CourseDetail,
   type CourseSummary,
 } from '../lib/courses.ts';
+
+const MAP_KEY_ID = import.meta.env.VITE_NAVER_MAP_KEY_ID as string | undefined;
 import { useSystemBack } from '../lib/useSystemBack.ts';
 
 type Props = { course: CourseSummary; onClose: () => void };
@@ -34,6 +40,8 @@ export function CourseSheet({ course, onClose }: Props) {
   }, [course.id]);
 
   const groups = detail === null ? [] : groupPois(detail.pois);
+  const frame = detail === null ? null : mapFrame(detail.track);
+  const mapUrl = frame === null ? null : staticMapUrl(frame, MAP_KEY_ID);
 
   return (
     <div className="sheet-dim" onClick={onClose} role="presentation">
@@ -55,6 +63,24 @@ export function CourseSheet({ course, onClose }: Props) {
             <Close size={22} />
           </button>
         </header>
+
+        {frame !== null && (
+          <figure className="course-map" aria-label="코스 위치">
+            {mapUrl !== null && <img src={mapUrl} alt="" width={MAP_W} height={MAP_H} />}
+            <svg viewBox={`0 0 ${MAP_W} ${MAP_H}`} aria-hidden="true">
+              <polyline
+                points={frame.points.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' ')}
+                fill="none"
+                stroke="var(--brand-accent)"
+                strokeWidth="3"
+                strokeLinejoin="round"
+                strokeLinecap="round"
+              />
+              <circle cx={frame.points[0][0]} cy={frame.points[0][1]} r="6" fill="var(--brand-primary)" stroke="#fff" strokeWidth="2" />
+            </svg>
+            <figcaption>{mapUrl === null ? '코스 모양 · 초록 점이 시작점' : '지도 네이버 · 초록 점이 시작점'}</figcaption>
+          </figure>
+        )}
 
         <ul className="course-stats">
           <li>

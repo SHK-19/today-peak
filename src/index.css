@@ -1463,7 +1463,7 @@ h3 {
   color: var(--brand-primary);
 }
 
-/* 시설 카드. 종류 라벨 + 이름 요약 한 줄. */
+/* 코스 시트의 지점 목록. 종류 라벨 + 이름들. */
 .facility-list {
   margin: 0;
   padding: 0;
@@ -1591,4 +1591,34 @@ h3 {
 
 .course-danger strong {
   color: var(--color-danger);
+}
+
+/* 코스 지도: 정적 지도 이미지 위에 트랙 SVG. 이미지가 안 오면 배경색 위에 선만 남는다. */
+.course-map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 360 / 220;
+  margin: var(--space-4) 0 0;
+  overflow: hidden;
+  border-radius: var(--radius-control);
+  background: var(--color-bg-canvas);
+}
+
+.course-map img,
+.course-map svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.course-map figcaption {
+  position: absolute;
+  right: var(--space-2);
+  bottom: var(--space-2);
+  padding: 2px var(--space-2);
+  border-radius: 8px;
+  background: var(--dim);
+  font-size: var(--font-size-caption);
+  color: var(--color-text-inverse);
 }

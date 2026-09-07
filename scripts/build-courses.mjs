@@ -31,7 +31,7 @@ const KEEP = new Set([
   'ENTRY', 'PARK', 'TRANS', 'TOILET', 'SPRING', 'SHELTER', 'STORE', 'FOOD', 'CAMP',
   'CULTURAL', 'VIEW', 'SCENERY', 'REST', 'INFO', 'DANGER', 'PEAK',
 ]);
-const GENERIC_NAME = /^(갈림길|화장실|주차장|버스\s?정류장|버스|정상|안내소|쉼터|이정표|입구|들머리)$/;
+const GENERIC_NAME = /^(갈림길|화장실|주차장|버스\s?정류장|버스|정상|안내소|쉼터|이정표|입구|들머리|등산로\s?입구|탐방로\s?입구)$/;
 
 function haversine(lat1, lng1, lat2, lng2) {
   const R = 6371000;
@@ -63,6 +63,35 @@ function parseGpx(raw) {
 
 // GPS 고도 잡음 문턱. 벤치마크 앱(북한산성 코스 981m)과 맞춰 정했다.
 const ELE_THRESHOLD_M = Number(process.env.ELE_THRESHOLD_M ?? 8);
+
+// 트랙을 지도에 선으로 그릴 만큼만 남긴다(더글러스-포이커, 허용 오차 15m). 좌표 원본은 두지 않는다.
+function simplify(points, toleranceM = 15) {
+  const keep = new Array(points.length).fill(false);
+  keep[0] = keep[points.length - 1] = true;
+  const stack = [[0, points.length - 1]];
+  while (stack.length > 0) {
+    const [a, b] = stack.pop();
+    let worst = -1;
+    let at = -1;
+    for (let i = a + 1; i < b; i += 1) {
+      const d = pointToSegmentM(points[i], points[a], points[b]);
+      if (d > worst) { worst = d; at = i; }
+    }
+    if (worst > toleranceM) { keep[at] = true; stack.push([a, at], [at, b]); }
+  }
+  return points.filter((_, i) => keep[i]).map((p) => [Number(p.lat.toFixed(5)), Number(p.lng.toFixed(5))]);
+}
+
+function pointToSegmentM(p, a, b) {
+  // 작은 영역이라 평면 근사로 충분하다.
+  const kx = 111320 * Math.cos((a.lat * Math.PI) / 180);
+  const ky = 110540;
+  const px = (p.lng - a.lng) * kx, py = (p.lat - a.lat) * ky;
+  const bx = (b.lng - a.lng) * kx, by = (b.lat - a.lat) * ky;
+  const len2 = bx * bx + by * by;
+  const t = len2 === 0 ? 0 : Math.max(0, Math.min(1, (px * bx + py * by) / len2));
+  return Math.hypot(px - t * bx, py - t * by);
+}
 
 function stats(points) {
   let distance = 0;
@@ -119,6 +148,7 @@ function course(file, mountainId, seq, mountainName) {
     difficulty,
     isLoop: haversine(start.lat, start.lng, end.lat, end.lng) <= 200,
     pois,
+    track: simplify(points),
     _peak: peak,
     _top: s.top,
   };
@@ -177,7 +207,7 @@ for (const m of LOCAL) {
 const byMountain = new Map();
 for (const r of rows) byMountain.set(r.mountainId, (byMountain.get(r.mountainId) ?? 0) + 1);
 console.log(`코스 ${rows.length}개 · 산 ${byMountain.size}곳 · PEAK 있는 코스 ${rows.filter((r) => r.peakName !== null).length} · 왕복 ${rows.filter((r) => r.isLoop).length}`);
-console.log(`지점 ${rows.reduce((s, r) => s + r.pois.length, 0)}개 · "N.Nkm 코스" 이름 ${rows.filter((r) => /km 코스$/.test(r.name)).length}개`);
+console.log(`지점 ${rows.reduce((s, r) => s + r.pois.length, 0)}개 · "N.Nkm 코스" 이름 ${rows.filter((r) => /km 코스/.test(r.name)).length}개 · 트랙 점 평균 ${Math.round(rows.reduce((s, r) => s + r.track.length, 0) / rows.length)}`);
 for (const line of report) console.log('  ' + line);
 const bhs = rows.filter((r) => r.mountainId === '0000000047').slice(0, 6);
 console.log('북한산 처음 6개:');
@@ -186,11 +216,11 @@ for (const c of bhs) console.log(`  ${c.id} ${c.name} · ${(c.distanceM / 1000).
 if (flag === '--write') {
   const q = (v) => (v === null ? 'null' : typeof v === 'number' ? String(v) : typeof v === 'boolean' ? String(v) : `'${String(v).replace(/'/g, "''")}'`);
   const values = rows
-    .map((r) => `(${[r.id, r.mountainId, r.name, r.startName, r.peakName, r.peakEleM, r.distanceM, r.ascentM, r.descentM, r.maxEleM, r.minutes, r.kcal, r.difficulty, r.isLoop, JSON.stringify(r.pois)].map(q).join(', ')})`)
+    .map((r) => `(${[r.id, r.mountainId, r.name, r.startName, r.peakName, r.peakEleM, r.distanceM, r.ascentM, r.descentM, r.maxEleM, r.minutes, r.kcal, r.difficulty, r.isLoop, JSON.stringify(r.pois), JSON.stringify(r.track)].map(q).join(', ')})`)
     .join(',\n');
   const sql = `-- 자동 생성: scripts/build-courses.mjs (${new Date().toISOString().slice(0, 10)}). 출처: 한국등산트레킹지원센터 GPX.
 delete from public.courses;
-insert into public.courses (id, mountain_id, name, start_name, peak_name, peak_ele_m, distance_m, ascent_m, descent_m, max_ele_m, minutes, kcal, difficulty, is_loop, pois) values
+insert into public.courses (id, mountain_id, name, start_name, peak_name, peak_ele_m, distance_m, ascent_m, descent_m, max_ele_m, minutes, kcal, difficulty, is_loop, pois, track) values
 ${values};
 `;
   mkdirSync(new URL('../supabase/seed/', import.meta.url), { recursive: true });
