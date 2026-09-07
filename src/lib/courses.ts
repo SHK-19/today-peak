@@ -77,7 +77,7 @@ export function staticMapUrl(frame: MapFrame, keyId: string | undefined): string
     format: 'png',
     'X-NCP-APIGW-API-KEY-ID': keyId,
   });
-  return `https://naveropenapi.apigw.ntruss.com/map-static/v2/raster-cors?${q.toString()}`;
+  return `https://maps.apigw.ntruss.com/map-static/v2/raster-cors?${q.toString()}`;
 }
 
 // 160 → "3시간 41분", 45 → "45분"

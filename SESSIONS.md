@@ -595,3 +595,18 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
 - 100대 명산 폴더에 우리 목록에 없는 4곳(남산=**경주 남산**·선운산·점봉산·대암산)이 있다. PEAK 좌표로 정상을
   채울 수 있다(대암산은 PEAK 없음). 데이터 백로그.
 - 동네 명산 중 코스 없는 8곳: 남산(서울)·모락산·문수산·백운산(의왕)·봉산·북악산·불곡산·앵자봉.
+
+### 코스 지도·주소·오늘 Pick (2026-09-07 밤)
+
+- 코스 시트에 네이버 정적 지도 + 트랙 SVG. **호스트는 `maps.apigw.ntruss.com`** — 옛 `naveropenapi.apigw.ntruss.com`은
+  같은 키로 401. raster-cors는 Referer 인증이라 Client ID가 번들에 들어가도 된다(콘솔에 등록한 URL에서만 동작).
+  Client ID는 10자, Secret은 40자 — 처음에 둘이 바뀌어 들어가 401이 났다.
+- 역지오코딩(`build-courses.mjs --geocode`)으로 635코스 들머리 주소를 `course-addresses.json`에 캐시.
+  입구 이름 없는 코스는 "불광동 5.8km 코스". 시트에 주소 + "주소 복사"(SDK setClipboardText → navigator).
+- 시설 카드는 코스 시트의 교통·주차·편의와 겹쳐서 뺐다. facilities 표 drop.
+- 코스 시트 아이콘은 Tossface 이모지(`.tf`). 편의에서 REST·INFO 제외, 묶음당 8개 + 외 N곳.
+- 쉐어링크: `sharelink-docs.toss.im/guide/open-api/*.md`가 문서. 토큰 oauth2.cert.toss.im client_credentials,
+  베스트·카테고리 베스트(10,582개 카테고리 트리)·하루특가·상품 상세·링크 발급. 카테고리 베스트를 187개 연달아
+  부르면 429가 난다. 일 사용 상한은 "응답 상품 수" 기준이라 한 번에 1,700개 받은 건 낭비였다 — 다음엔 리프 몇 개만.
+  32개 큐레이션 → picks.json → 오늘 Pick 탭·추천 물건 카드 켜짐.
+- 북한산 0049·0053은 서울 성곽 종주 기록(인왕산·북악산 포함). 지도로 보이니 그대로 뒀다.
