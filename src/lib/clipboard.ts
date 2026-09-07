@@ -4,15 +4,13 @@ import { setClipboardText } from '@apps-in-toss/web-framework';
 // 실패해도 false만 돌려주고 화면은 조용히 넘어간다 — 복사가 안 된다고 앱이 멈추면 안 된다.
 export async function copyText(text: string): Promise<boolean> {
   try {
-    if (setClipboardText.isSupported()) {
-      if ((await setClipboardText.getPermission()) !== 'allowed') {
-        if ((await setClipboardText.openPermissionDialog()) !== 'allowed') return false;
-      }
-      await setClipboardText(text);
-      return true;
+    if ((await setClipboardText.getPermission()) !== 'allowed') {
+      if ((await setClipboardText.openPermissionDialog()) !== 'allowed') return false;
     }
+    await setClipboardText(text);
+    return true;
   } catch {
-    // SDK 실패 → 아래 navigator로 한 번 더
+    // SDK가 없는 브라우저(개발) 또는 실패 → 아래 navigator로 한 번 더
   }
   try {
     await navigator.clipboard.writeText(text);
