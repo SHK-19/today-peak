@@ -1622,3 +1622,42 @@ h3 {
   font-size: var(--font-size-caption);
   color: var(--color-text-inverse);
 }
+
+.course-start {
+  display: grid;
+  gap: 2px;
+}
+
+.course-start small {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-subtle);
+}
+
+.btn-ghost-small {
+  justify-self: start;
+  min-height: 32px;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  background: transparent;
+  font-size: var(--font-size-caption);
+  font-weight: 600;
+  color: var(--brand-primary);
+}
+
+.course-route li {
+  align-items: flex-start;
+  padding: var(--space-2) 0;
+}
+
+.course-route > li > span,
+.course-stats span,
+.facility-list strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+em.tf {
+  font-style: normal;
+}

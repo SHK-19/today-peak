@@ -3,6 +3,10 @@ export type CourseSummary = {
   id: string;
   name: string;
   startName: string | null;
+  /** 들머리 주소(네이버 역지오코딩). 복사해서 지도 앱에 붙이는 용도. */
+  startAddress: string | null;
+  startLat: number | null;
+  startLng: number | null;
   peakName: string | null;
   peakEleM: number | null;
   distanceM: number;
@@ -90,17 +94,29 @@ export function formatKm(meters: number): string {
 }
 
 // 지점 종류를 화면 묶음으로. GPX category → 라벨. 순서가 곧 표시 순서.
-export const POI_GROUPS: { label: string; kinds: string[] }[] = [
-  { label: '교통', kinds: ['TRANS'] },
-  { label: '주차', kinds: ['PARK'] },
-  { label: '편의', kinds: ['TOILET', 'SPRING', 'SHELTER', 'STORE', 'FOOD', 'CAMP', 'REST', 'INFO'] },
-  { label: '볼거리', kinds: ['VIEW', 'SCENERY', 'CULTURAL'] },
-  { label: '주의', kinds: ['DANGER'] },
+// 이모지는 Tossface로 그린다(.tf). 아이콘 SVG를 12종 더 만드는 것보다 가볍고, 토스 안에서 일관된다.
+export const POI_GROUPS: { label: string; icon: string; kinds: string[] }[] = [
+  { label: '교통', icon: '🚌', kinds: ['TRANS'] },
+  { label: '주차', icon: '🅿️', kinds: ['PARK'] },
+  // REST(쉼터)·INFO(안내판)는 뺀다 — "낙뢰 시 행동 요령" 같은 안내판까지 편의 시설로 나열되면 읽을 수 없다.
+  { label: '편의', icon: '🚻', kinds: ['TOILET', 'SPRING', 'SHELTER', 'STORE', 'FOOD', 'CAMP'] },
+  { label: '볼거리', icon: '👀', kinds: ['VIEW', 'SCENERY', 'CULTURAL'] },
+  { label: '주의', icon: '⚠️', kinds: ['DANGER'] },
 ];
 
-export function groupPois(pois: CoursePoi[]): { label: string; names: string[] }[] {
-  return POI_GROUPS.map(({ label, kinds }) => ({
-    label,
-    names: [...new Set(pois.filter((p) => kinds.includes(p.kind)).map((p) => p.name))],
-  })).filter((group) => group.names.length > 0);
+// 묶음마다 이름은 8개까지, 나머지는 "외 N곳". 긴 코스는 편의 지점이 수십 개다.
+export const MAX_POI_NAMES = 8;
+
+export function groupPois(pois: CoursePoi[]): { label: string; icon: string; names: string[]; more: number }[] {
+  return POI_GROUPS.map(({ label, icon, kinds }) => {
+    const names = [...new Set(pois.filter((p) => kinds.includes(p.kind)).map((p) => p.name))];
+    return { label, icon, names: names.slice(0, MAX_POI_NAMES), more: Math.max(0, names.length - MAX_POI_NAMES) };
+  }).filter((group) => group.names.length > 0);
+}
+
+/** 들머리를 지도 앱에 붙여 넣을 문자열. 주소가 있으면 주소, 없으면 좌표. */
+export function startCopyText(course: Pick<CourseSummary, 'startAddress' | 'startLat' | 'startLng'>): string | null {
+  if (course.startAddress !== null && course.startAddress !== '') return course.startAddress;
+  if (course.startLat !== null && course.startLng !== null) return `${course.startLat}, ${course.startLng}`;
+  return null;
 }

@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+import { copyText } from '../lib/clipboard.ts';
+
 import { Close } from './icons.tsx';
 import { fetchCourse } from '../lib/api.ts';
 import {
@@ -9,6 +11,7 @@ import {
   formatMinutes,
   groupPois,
   mapFrame,
+  startCopyText,
   staticMapUrl,
   type CourseDetail,
   type CourseSummary,
@@ -24,6 +27,10 @@ export function CourseSheet({ course, onClose }: Props) {
   useSystemBack(true, onClose);
   const [detail, setDetail] = useState<CourseDetail | null>(null);
   const [failed, setFailed] = useState(false);
+  const [copied, setCopied] = useState(false);
+  // 정적 지도가 안 오면(키 미등록·오프라인) 깨진 이미지 대신 코스 모양만 남긴다.
+  const [mapFailed, setMapFailed] = useState(false);
+  const copyable = startCopyText(course);
 
   useEffect(() => {
     let cancelled = false;
@@ -66,7 +73,9 @@ export function CourseSheet({ course, onClose }: Props) {
 
         {frame !== null && (
           <figure className="course-map" aria-label="코스 위치">
-            {mapUrl !== null && <img src={mapUrl} alt="" width={MAP_W} height={MAP_H} />}
+            {mapUrl !== null && !mapFailed && (
+              <img src={mapUrl} alt="" width={MAP_W} height={MAP_H} onError={() => setMapFailed(true)} />
+            )}
             <svg viewBox={`0 0 ${MAP_W} ${MAP_H}`} aria-hidden="true">
               <polyline
                 points={frame.points.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' ')}
@@ -78,25 +87,27 @@ export function CourseSheet({ course, onClose }: Props) {
               />
               <circle cx={frame.points[0][0]} cy={frame.points[0][1]} r="6" fill="var(--brand-primary)" stroke="#fff" strokeWidth="2" />
             </svg>
-            <figcaption>{mapUrl === null ? '코스 모양 · 초록 점이 시작점' : '지도 네이버 · 초록 점이 시작점'}</figcaption>
+            <figcaption>
+              {mapUrl === null || mapFailed ? '코스 모양 · 초록 점이 시작점' : '지도 네이버 · 초록 점이 시작점'}
+            </figcaption>
           </figure>
         )}
 
         <ul className="course-stats">
           <li>
-            <span>거리</span>
+            <span><em className="tf">📏</em> 거리</span>
             <strong>{formatKm(course.distanceM)}</strong>
           </li>
           <li>
-            <span>예상 시간</span>
+            <span><em className="tf">⏱️</em> 예상 시간</span>
             <strong>{formatMinutes(course.minutes)}</strong>
           </li>
           <li>
-            <span>누적 오르막</span>
+            <span><em className="tf">⛰️</em> 누적 오르막</span>
             <strong>{course.ascentM}m</strong>
           </li>
           <li>
-            <span>칼로리</span>
+            <span><em className="tf">🔥</em> 칼로리</span>
             <strong>{course.kcal}kcal</strong>
           </li>
         </ul>
@@ -105,15 +116,32 @@ export function CourseSheet({ course, onClose }: Props) {
         </p>
 
         <ul className="course-route">
-          {course.startName !== null && (
+          {(course.startName !== null || copyable !== null) && (
             <li>
-              <span>들머리</span>
-              <strong>{course.startName}</strong>
+              <span><em className="tf">🚩</em> 들머리</span>
+              <div className="course-start">
+                {course.startName !== null && <strong>{course.startName}</strong>}
+                {course.startAddress !== null && <small>{course.startAddress}</small>}
+                {copyable !== null && (
+                  <button
+                    type="button"
+                    className="btn-ghost-small"
+                    onClick={() => {
+                      void copyText(copyable).then((ok) => {
+                        setCopied(ok);
+                        setTimeout(() => setCopied(false), 1500);
+                      });
+                    }}
+                  >
+                    {copied ? '복사했어요' : '주소 복사'}
+                  </button>
+                )}
+              </div>
             </li>
           )}
           {course.peakName !== null && (
             <li>
-              <span>정상</span>
+              <span><em className="tf">🏔️</em> 정상</span>
               <strong>
                 {course.peakName}
                 {course.peakEleM !== null && ` · ${course.peakEleM}m`}
@@ -132,8 +160,13 @@ export function CourseSheet({ course, onClose }: Props) {
           <ul className="facility-list">
             {groups.map((group) => (
               <li key={group.label} className={group.label === '주의' ? 'course-danger' : undefined}>
-                <strong>{group.label}</strong>
-                <span>{group.names.join(', ')}</span>
+                <strong>
+                  <em className="tf">{group.icon}</em> {group.label}
+                </strong>
+                <span>
+                  {group.names.join(', ')}
+                  {group.more > 0 && ` 외 ${group.more}곳`}
+                </span>
               </li>
             ))}
           </ul>

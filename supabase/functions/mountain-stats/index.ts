@@ -21,6 +21,9 @@ function courseSummary(row: any) {
     id: row.id,
     name: row.name,
     startName: row.start_name,
+    startAddress: row.start_address ?? null,
+    startLat: row.start_lat ?? null,
+    startLng: row.start_lng ?? null,
     peakName: row.peak_name,
     peakEleM: row.peak_ele_m,
     distanceM: row.distance_m,
@@ -131,7 +134,7 @@ Deno.serve(async (request: Request) => {
     nearbyPlaces(mountainId),
     supabase
       .from('courses')
-      .select('id, name, start_name, peak_name, peak_ele_m, distance_m, ascent_m, minutes, kcal, difficulty, is_loop')
+      .select('id, name, start_name, start_address, start_lat, start_lng, peak_name, peak_ele_m, distance_m, ascent_m, minutes, kcal, difficulty, is_loop')
       .eq('mountain_id', mountainId)
       .order('distance_m'),
   ]);
