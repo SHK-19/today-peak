@@ -1675,3 +1675,10 @@ em.tf {
   font-weight: 700;
   color: var(--brand-accent);
 }
+
+/* 배너 광고 자리. 너비는 화면 전체(SDK 요구), 카드 사이에 여백을 두고 놓는다. */
+.ad-banner {
+  width: 100%;
+  min-height: 96px;
+  margin: var(--space-2) 0 var(--space-4);
+}

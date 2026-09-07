@@ -17,6 +17,7 @@ import {
   LocationIcon,
   PeopleIcon,
 } from '../components/icons.tsx';
+import { AdBanner } from '../components/AdBanner.tsx';
 import { CourseSheet } from '../components/CourseSheet.tsx';
 import { FoldCard } from '../components/FoldCard.tsx';
 import { SeasonDots } from '../components/SeasonDots.tsx';
@@ -679,6 +680,9 @@ export function MountainDetail({
           </ul>
         </FoldCard>
       )}
+
+      {/* 배너는 카드 사이 한 곳. 접이식 카드 버튼과 붙지 않게 위아래 여백을 둔다. */}
+      <AdBanner />
 
       {(stats?.courses?.length ?? 0) > 0 && (
         <FoldCard title="코스" hint={`${stats?.courses?.length ?? 0}개`}>
