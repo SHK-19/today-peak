@@ -545,6 +545,30 @@ h3 {
   background: var(--color-bg-canvas);
 }
 
+.hero-photo {
+  position: relative;
+  min-height: 280px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* 사진 위에서 스탬프가 묻히지 않게 종이색 원 뒤판을 댄다. */
+.hero-photo > svg {
+  border-radius: 50%;
+  box-shadow: 0 8px 28px rgba(20, 40, 30, 0.35);
+}
+
+.photo-credit {
+  position: absolute;
+  right: var(--space-3);
+  bottom: var(--space-2);
+  padding: 2px var(--space-2);
+  border-radius: 8px;
+  background: var(--dim);
+  font-size: var(--font-size-caption);
+  color: var(--color-text-inverse);
+}
+
 .detail-info {
   padding: var(--space-5);
   text-align: center;

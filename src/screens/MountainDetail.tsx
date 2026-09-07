@@ -24,6 +24,7 @@ import { formatSeoulDate } from '../lib/day.ts';
 import { formatDistance } from '../lib/format.ts';
 import { IS_FIELD_TEST_BUILD } from '../lib/mountains.ts';
 import { SEASON_LABEL, seasonCount, type SeasonRecord } from '../lib/seasons.ts';
+import { photoOf } from '../lib/photos.ts';
 import { PICKS } from '../lib/picks-data.ts';
 import { PICK_DISCLOSURE, picksForMountain } from '../lib/picks.ts';
 import { askReviewOnce } from '../lib/review.ts';
@@ -551,10 +552,16 @@ export function MountainDetail({
   // 집계는 인증 전에도 보여준다 — 이 산이 오늘 어떤지가 인증하러 가기 전에 궁금한 정보다.
   // 다만 "지금 N명 등산 중"은 0이면 숨긴다(등산 중인 사람이 없다는 건 알릴 게 아니다).
   const hasStatLines = stats !== null;
+  const photo = photoOf(mountain.id);
   return (
     <main className="page">
-      <section className="hero">
+      {/* 실제 산 사진 위에 스탬프. 사진이 없거나 못 불러오면 배경색만 남는다. */}
+      <section
+        className={photo === null ? 'hero' : 'hero hero-photo'}
+        style={photo === null ? undefined : { backgroundImage: `url(${photo.url})` }}
+      >
         <Stamp mountain={mountain} collected={collected} size={160} />
+        {photo !== null && <p className="photo-credit">사진 {photo.credit}</p>}
       </section>
 
       <div className="detail-info">
