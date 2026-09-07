@@ -651,6 +651,9 @@ export function MountainDetail({
         </div>
       )}
 
+      {/* 배너는 집계 카드와 추천 물건 카드 사이 한 곳. 버튼과 붙지 않게 위아래 여백을 둔다. */}
+      <AdBanner />
+
       {recommended.length > 0 && (
         <FoldCard title="추천 물건" hint={`${picks.length}개`}>
           <p className="footnote" style={{ marginTop: 0 }}>
@@ -680,9 +683,6 @@ export function MountainDetail({
           </ul>
         </FoldCard>
       )}
-
-      {/* 배너는 카드 사이 한 곳. 접이식 카드 버튼과 붙지 않게 위아래 여백을 둔다. */}
-      <AdBanner />
 
       {(stats?.courses?.length ?? 0) > 0 && (
         <FoldCard title="코스" hint={`${stats?.courses?.length ?? 0}개`}>
