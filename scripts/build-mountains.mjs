@@ -3,6 +3,7 @@
 //   숲나들e 100대명산 정보 (odcloud 15112801) — 이름·소재지·공식 높이·난이도·개요
 //   한국등산트레킹지원센터 봉우리POI (B553662/peakPoiInfoService) — 정상 좌표
 //   한국등산트레킹지원센터 숲길POI (B553662/fmmtnFrtrlPoiInfoService, ENTRY) — 등산로 입구 좌표
+//     ENTRY가 한 건도 없는 산은 같은 API의 PARK(주차장)를 입구로 쓴다. 등산로 주차장은 사실상 들머리다.
 //
 // 좌표는 지어내지 않는다. 정상은 "그 산에 귀속된 봉우리 중 공식 높이에 가장 가까운 것"으로
 // 고르고, 어떤 봉우리를 골랐는지(peakName) 파일과 리포트에 남긴다.
@@ -74,18 +75,19 @@ async function loadPeaks() {
 }
 
 // 등산로 입구는 전국 688건이라 한 페이지에 다 온다. 좌표가 완전히 같은 중복만 걷어낸다.
-async function loadEntries() {
+async function loadPlaces(code) {
   const body = await fetchJson(
-    `${ENTRY_URL}?serviceKey=${KEY}&pageNo=1&numOfRows=1000&type=json&srchPlaceTpeCd=ENTRY`,
+    `${ENTRY_URL}?serviceKey=${KEY}&pageNo=1&numOfRows=2000&type=json&srchPlaceTpeCd=${code}`,
   );
   const { totalCount, items } = body.response.body;
   if (items.item.length < totalCount) {
-    throw new Error(`등산로 입구 ${totalCount}건 중 ${items.item.length}건만 받았다. numOfRows를 늘려라`);
+    throw new Error(`${code} ${totalCount}건 중 ${items.item.length}건만 받았다. numOfRows를 늘려라`);
   }
   return items.item;
 }
 
-function trailheadsOf(entries) {
+// 이름이 그냥 "주차장"이면 산 이름을 앞에 붙인다 — 화면에 "주차장에서 산행을 시작했어요"라고 뜨면 어색하다.
+function trailheadsOf(entries, mountainName) {
   const seen = new Set();
   const result = [];
   for (const entry of entries) {
@@ -96,7 +98,8 @@ function trailheadsOf(entries) {
       continue;
     }
     seen.add(key);
-    result.push({ name: entry.placeNm.trim(), lat, lng });
+    const raw = entry.placeNm.trim();
+    result.push({ name: raw === '주차장' ? `${mountainName} 주차장` : raw, lat, lng });
   }
   return result;
 }
@@ -120,7 +123,8 @@ function regionOf(place) {
 
 const mountains = await loadMountains();
 const peaks = await loadPeaks();
-const entries = await loadEntries();
+const entries = await loadPlaces('ENTRY');
+const parks = await loadPlaces('PARK');
 
 const peaksByName = new Map();
 for (const peak of peaks) {
@@ -129,12 +133,18 @@ for (const peak of peaks) {
   peaksByName.set(peak.frtrlNm, list);
 }
 
-const entriesById = new Map();
-for (const entry of entries) {
-  const list = entriesById.get(entry.frtrlId) ?? [];
-  list.push(entry);
-  entriesById.set(entry.frtrlId, list);
+function groupById(items) {
+  const byId = new Map();
+  for (const item of items) {
+    const list = byId.get(item.frtrlId) ?? [];
+    list.push(item);
+    byId.set(item.frtrlId, list);
+  }
+  return byId;
 }
+const entriesById = groupById(entries);
+const parksById = groupById(parks);
+const parkFallback = [];
 
 const rows = [];
 const skipped = [];
@@ -179,8 +189,12 @@ for (const mountain of mountains) {
     province: provinceOf(mountain['명산_소재지']),
     difficulty: parseDifficulty(mountain['난이도']),
     peakName: summit.placeNm,
-    trailheads: trailheadsOf(entriesById.get(summit.frtrlId) ?? []),
+    trailheads: trailheadsOf(entriesById.get(summit.frtrlId) ?? [], name),
   });
+  if (rows.at(-1).trailheads.length === 0 && parksById.has(summit.frtrlId)) {
+    rows.at(-1).trailheads = trailheadsOf(parksById.get(summit.frtrlId), name);
+    parkFallback.push(`${name}(${rows.at(-1).trailheads.length})`);
+  }
 }
 
 rows.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
@@ -194,6 +208,7 @@ const noEntry = rows.filter((row) => row.trailheads.length === 0);
 console.log(
   `등산로 입구 ${rows.reduce((sum, row) => sum + row.trailheads.length, 0)}곳 · 입구 없는 산 ${noEntry.length}곳: ${noEntry.map((row) => row.name).join(', ')}`,
 );
+console.log(`주차장으로 입구를 대신한 산 ${parkFallback.length}곳: ${parkFallback.join(', ')}`);
 if (warnings.length > 0) {
   console.log(`\n확인 필요 ${warnings.length}건 (공식 높이와 채택 봉우리 고도 차 60m 초과):`);
   for (const line of warnings) {
