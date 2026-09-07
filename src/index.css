@@ -360,10 +360,12 @@ h3 {
   color: var(--color-text-inverse);
 }
 
-/* 정렬 전환. 목록 바로 위 오른쪽에 붙인다. */
+/* 컬렉션·정렬 전환. 목록 바로 위, 좁으면 줄바꿈. */
 .list-sort {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: space-between;
   padding: 0 var(--space-5) var(--space-3);
 }
 
@@ -1660,4 +1662,12 @@ h3 {
 
 em.tf {
   font-style: normal;
+}
+
+/* 오늘 Pick 할인 배지. 발급 시점 할인율이라 탭에서만 쓴다. */
+.pick-sale {
+  margin-right: 6px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--brand-accent);
 }

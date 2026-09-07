@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { PICKS } from '../lib/picks-data.ts';
 import {
   PICK_DISCLOSURE,
+  SALE_BADGE_MIN,
   byCategory,
   pickCategories,
   type Pick,
@@ -58,7 +59,12 @@ export function Picks({ onOpen }: { onOpen: (pick: Pick) => void }) {
                 <img className="pick-img" src={pick.imageUrl} alt="" loading="lazy" />
               )}
               <strong>{pick.name}</strong>
-              <span>{pick.priceText ?? '토스쇼핑에서 확인'}</span>
+              <span>
+                {pick.discountRate !== undefined && pick.discountRate >= SALE_BADGE_MIN && (
+                  <em className="pick-sale">{pick.discountRate}% 특가</em>
+                )}
+                {pick.priceText ?? '토스쇼핑에서 확인'}
+              </span>
             </button>
           </li>
         ))}

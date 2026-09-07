@@ -8,6 +8,7 @@ import { formatDistance } from '../lib/format.ts';
 import { haversineMeters } from '../lib/geo.ts';
 import { ensureLocationPermission, readLocationOnce } from '../lib/location.ts';
 import { IS_FIELD_TEST_BUILD, MOUNTAINS } from '../lib/mountains.ts';
+import { COLLECTIONS, collectionOf, type CollectionId } from '../lib/collection.ts';
 import { areaOf, areasOf } from '../lib/region.ts';
 import type { Mountain } from '../lib/verify.ts';
 
@@ -47,7 +48,10 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
     needle === '' ||
     mountain.name.replace(/\s/g, '').includes(needle) ||
     (mountain.peakName ?? '').replace(/\s/g, '').includes(needle);
-  const visible = (mountain: Mountain) => inRegion(mountain) && matches(mountain);
+  // 100대 명산 / 동네 명산 / 둘 다. 내 스탬프의 컬렉션 구분과 같은 축이다.
+  const [collection, setCollection] = useState<CollectionId | null>(null);
+  const inCollection = (mountain: Mountain) => collection === null || collectionOf(mountain) === collection;
+  const visible = (mountain: Mountain) => inRegion(mountain) && matches(mountain) && inCollection(mountain);
   // 기본은 가까운 순. 이미 모은 산이 위를 채우면 다음 목표가 안 보여서 정렬을 하나 더 둔다.
   const [sort, setSort] = useState<'near' | 'todo'>('near');
   const [state, setState] = useState<State>({ status: 'loading' });
@@ -178,7 +182,23 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
       </div>
 
       <div className="list-sort">
-        <div className="toggle" role="tablist">
+        <div className="toggle" role="tablist" aria-label="컬렉션">
+          {([{ id: null, label: '전체' }, ...COLLECTIONS] as { id: CollectionId | null; label: string }[]).map(
+            ({ id, label }) => (
+              <button
+                key={label}
+                type="button"
+                role="tab"
+                aria-selected={collection === id}
+                className={collection === id ? 'toggle-item toggle-active' : 'toggle-item'}
+                onClick={() => setCollection(id)}
+              >
+                {label}
+              </button>
+            ),
+          )}
+        </div>
+        <div className="toggle" role="tablist" aria-label="정렬">
           {([
             ['near', '가까운 순'],
             ['todo', '안 모은 산 먼저'],

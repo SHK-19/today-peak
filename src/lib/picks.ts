@@ -15,11 +15,16 @@ export type Pick = {
   imageUrl?: string;
   /** "24,900원". 없으면 화면에서 "토스쇼핑에서 확인"으로 대체한다. */
   priceText?: string;
+  /** 정가 대비 할인율(%). 발급 시점 값이라 오늘 Pick 탭에서만 배지로 쓴다. 10% 이상만 기록. */
+  discountRate?: number;
   /** 이 물건이 특히 어울리는 계절·상황. 산 상세에서 3개를 고를 때 쓴다. */
   seasons?: ('spring' | 'summer' | 'autumn' | 'winter')[];
   /** 고도 이 값 이상인 산에서 우선 보여준다. */
   minElevationM?: number;
 };
+
+/** 할인 배지 기준. 토스쇼핑 정가는 부풀려진 게 많아 중앙값이 38%라, 절반 이상 깎인 것만 "특가"로 본다. */
+export const SALE_BADGE_MIN = 50;
 
 /** 쉐어링크 정책상 상품 가까이에 항상 붙어야 하는 고지. */
 export const PICK_DISCLOSURE = '토스쇼핑 쉐어링크 활동으로, 링크 구매 시 수수료를 지급받습니다.';
