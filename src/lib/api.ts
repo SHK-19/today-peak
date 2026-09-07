@@ -1,3 +1,4 @@
+import type { Facilities } from './facilities.ts';
 import type { NearbyPlaces } from './places.ts';
 import { expireSession, getSessionToken } from './auth.ts';
 import type { Reading, VerifyReason } from './verify.ts';
@@ -33,6 +34,8 @@ export type MountainStats = {
   totalStamps: number;
   /** 산 근처 음식점·카페. 네이버 검색이 실패하면 양쪽 다 빈 배열. */
   places?: NearbyPlaces;
+  /** 주차장·화장실·대피소·약수터 이름. 100대 명산만 있다. */
+  facilities?: Facilities;
 };
 
 async function call<T>(path: string, init?: RequestInit): Promise<T> {

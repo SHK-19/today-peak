@@ -1,6 +1,7 @@
 // 산 상세에 보여줄 집계. 0명이라는 문구는 만들지 않는다 — 숫자만 주고, 화면에서 0이면 줄을 숨긴다.
 
 import { seoulDayStartMs } from '../../../src/lib/day.ts';
+import type { Facilities, FacilityKind } from '../../../src/lib/facilities.ts';
 import {
   placesQueries,
   splitPlaces,
@@ -79,7 +80,7 @@ Deno.serve(async (request: Request) => {
 
   const now = Date.now();
   const supabase = serviceClient();
-  const [hiking, today, total, places] = await Promise.all([
+  const [hiking, today, total, places, facilityRows] = await Promise.all([
     supabase
       .from('hike_starts')
       .select('*', { count: 'exact', head: true })
@@ -95,6 +96,7 @@ Deno.serve(async (request: Request) => {
       .select('*', { count: 'exact', head: true })
       .eq('mountain_id', mountainId),
     nearbyPlaces(mountainId),
+    supabase.from('facilities').select('kind, name').eq('mountain_id', mountainId).order('name'),
   ]);
 
   const failed = [hiking, today, total].find((result) => result.error !== null);
@@ -103,12 +105,23 @@ Deno.serve(async (request: Request) => {
     return json({ error: 'server_error' }, 500, origin);
   }
 
+  // 시설은 참고 정보라 조회가 실패해도 집계는 내보낸다.
+  const facilities: Facilities = {};
+  for (const row of facilityRows.data ?? []) {
+    const kind = row.kind as FacilityKind;
+    (facilities[kind] ??= []).push(row.name);
+  }
+  if (facilityRows.error !== null) {
+    console.error(`facilities 조회 실패 · ${facilityRows.error.message}`);
+  }
+
   return json(
     {
       hikingNow: hiking.count ?? 0,
       todayStamps: today.count ?? 0,
       totalStamps: total.count ?? 0,
       places,
+      facilities,
     },
     200,
     origin,

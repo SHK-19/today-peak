@@ -564,3 +564,19 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
   성공 티켓은 375×618에서 절취선이 잘려 424×699 뷰포트(clip scale 1.5)로 찍음. 확인용 테스트 행은 지움.
 - **`apis.data.go.kr` 장애**: 저녁 내내 TCP 타임아웃(www.data.go.kr은 200). 사진(TourAPI)·주차장(숲길POI)은
   대기. `scripts/build-photos.mjs --probe`로 필드 확인 후 진행. 번들은 이 둘까지 끝내고 올리기로.
+
+### 사진·시설 (2026-09-07 오전, apis.data.go.kr 복구 후)
+
+- `apis.data.go.kr`은 9/6 저녁~9/7 오전 TCP는 받되 TLS 응답이 없는 상태였다(폰 셀룰러에서도 동일 → 포털 장애).
+- 스탬프 배치 2·3 통합 → 126곳 전부 고유 그림. 번들 gzip 152KB. 육안 검수는 `sheets/batch-03/09-all-126.png`.
+- 들머리 없는 100대 명산 9곳 중 8곳은 숲길POI PARK(주차장)로 채움. 천성산만 남음. 입구 682 → 706.
+- 사진: TourAPI 관광사진(공공누리 1유형, `이용허락범위 제한 없음`). 응답에 사진별 유형 필드는 없다.
+  제목순 첫 결과를 쓰면 63장 중 20장이 전시관·표지판·사찰이라, 제목 필터 + 풍경 키워드 우선 + 육안 검수로
+  15곳 SKIP + 원본 깨진 2곳 → **39곳**. 나머지 87곳은 사용자가 준다(`docs/photos-needed.md`,
+  `src/data/photos-manual.json`으로 받음). 파일은 800px q70으로 줄여 `docs/photos/`(5MB), GitHub Pages 서빙.
+  산 상세 hero = 사진 + 스탬프 + "사진 한국관광공사 · 촬영자".
+- 시설: `facilities` 테이블(2,473행: 주차장 775·화장실 1,179·대피소 191·약수터 328, 94/96곳).
+  `scripts/build-facilities.mjs --write` → `supabase/seed/facilities.sql` → `supabase db query -f`.
+  **`db query`에 SQL을 인자로 주면 `--`로 시작하는 주석을 플래그로 읽어 help가 뜬다. `-f 파일`로 줄 것.**
+  mountain-stats가 종류별 이름을 같이 준다. 관악산은 141곳(화장실 86)이라 이름 3개 + "외 N곳"으로 요약.
+- 완주 기록·콘솔 앱정보 교체(`IN_REVIEW`)·대시보드 확인은 9/6 밤 항목 참고.
