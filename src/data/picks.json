@@ -1,6 +1,67 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
+  "updatedAt": "2026-09-07T14:53:43.727Z",
   "items": [
+    {
+      "id": "deal-1674359003",
+      "name": "종근당건강 6년근 홍삼녹용 프리미엄, 50ml, 30포, 4박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/NwVBBA3g",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-24/f0a8025b-4c4c-4b7c-a8ea-c027a4e797e4.jpeg",
+      "priceText": "52,712원",
+      "discountRate": 47,
+      "dealEndsAt": "2026-09-07T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2484194021",
+      "name": "이춘복의 비법 고소한 치즈육포, 30g, 10봉",
+      "category": "음식",
+      "link": "https://toss.im/_m/f1PrbQv8",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTRjYWY4/QVBEei9Qc1AvbnRXL09lSHEvRlJlVStPTnNoMGMrNm5pNC9SZkh6MEVjT1g.png",
+      "priceText": "11,900원",
+      "discountRate": 25,
+      "dealEndsAt": "2026-09-07T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2137802307",
+      "name": "잘마른 몸통 오징어, 200g 내외, 1봉",
+      "category": "음식",
+      "link": "https://toss.im/_m/jh1VDowe",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/22d32278-3310-44ee-b57d-e46d015eb2e0.jpeg",
+      "priceText": "9,900원",
+      "discountRate": 34,
+      "dealEndsAt": "2026-09-07T23:59:59+09:00"
+    },
+    {
+      "id": "deal-92159815",
+      "name": "페페브루노 엑스트라버진 올리브오일, 500ml, 2개",
+      "category": "음식",
+      "link": "https://toss.im/_m/NY76jIfc",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-01-29/793cd7a4-c856-482d-b13d-ed4d9b8cb564.jpeg",
+      "priceText": "15,900원",
+      "discountRate": 67,
+      "dealEndsAt": "2026-09-07T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2640224271",
+      "name": "탐나유 사과대추, 1kg, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/FyEYvYy8",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-30/1e92357e-16a1-4804-9b37-c8ed6a28c040.jpeg",
+      "priceText": "14,400원",
+      "discountRate": 51,
+      "dealEndsAt": "2026-09-07T23:59:59+09:00"
+    },
+    {
+      "id": "deal-1128231235",
+      "name": "디핀다트 구슬아이스크림, 레인보우 50ml 4개 + 딸기 50ml 4개 + 초코바나나 50ml 4개 + 쿠키앤크림 50ml 4개, 16개",
+      "category": "음식",
+      "link": "https://toss.im/_m/x0myZFO4",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MDYyODFj/QU5KMHpxYVVLMzJVSzVialk5U1BMUjVySVpUeUMrVmV6N1VROG1rbEVHMlc.png",
+      "priceText": "14,900원",
+      "discountRate": 46,
+      "dealEndsAt": "2026-09-07T23:59:59+09:00"
+    },
     {
       "id": "sl-1268069353",
       "name": "살림살림 고강도 알루미늄 3단조절 등산스틱, 2개",
@@ -166,7 +227,10 @@
       "priceText": "8,800원",
       "discountRate": 63,
       "seasons": [
-        "summer"
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
       ]
     },
     {
@@ -178,7 +242,10 @@
       "priceText": "15,900원",
       "discountRate": 15,
       "seasons": [
-        "summer"
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
       ]
     },
     {
@@ -269,6 +336,8 @@
       "priceText": "6,870원",
       "discountRate": 31,
       "seasons": [
+        "spring",
+        "summer",
         "autumn",
         "winter"
       ]
@@ -546,6 +615,8 @@
       "priceText": "14,200원",
       "discountRate": 40,
       "seasons": [
+        "spring",
+        "summer",
         "autumn",
         "winter"
       ]

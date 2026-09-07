@@ -21,7 +21,14 @@ export type Pick = {
   seasons?: ('spring' | 'summer' | 'autumn' | 'winter')[];
   /** 고도 이 값 이상인 산에서 우선 보여준다. */
   minElevationM?: number;
+  /** 하루특가 종료 시각(ISO). 지나면 화면에서 뺀다. */
+  dealEndsAt?: string;
 };
+
+/** 하루특가가 끝난 항목을 뺀다. 번들이 정적이라 화면에서 걸러야 어제 특가가 남지 않는다. */
+export function withoutExpired(items: Pick[], now: number): Pick[] {
+  return items.filter((item) => item.dealEndsAt === undefined || Date.parse(item.dealEndsAt) > now);
+}
 
 /** 할인 배지 기준. 토스쇼핑 정가는 부풀려진 게 많아 중앙값이 38%라, 절반 이상 깎인 것만 "특가"로 본다. */
 export const SALE_BADGE_MIN = 50;

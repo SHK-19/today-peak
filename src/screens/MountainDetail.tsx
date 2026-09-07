@@ -27,8 +27,8 @@ import { formatDistance } from '../lib/format.ts';
 import { IS_FIELD_TEST_BUILD } from '../lib/mountains.ts';
 import { SEASON_LABEL, seasonCount, type SeasonRecord } from '../lib/seasons.ts';
 import { photoOf } from '../lib/photos.ts';
-import { PICKS } from '../lib/picks-data.ts';
-import { PICK_DISCLOSURE, picksForMountain } from '../lib/picks.ts';
+import { PICK_DISCLOSURE, picksForMountain, type Pick } from '../lib/picks.ts';
+import { preloadInterstitial, showInterstitial } from '../lib/ads.ts';
 import { askReviewOnce } from '../lib/review.ts';
 import { openPick, shareMountain } from '../lib/share.ts';
 import { seasonOf } from '../lib/stamp-art.ts';
@@ -65,6 +65,8 @@ type HikeState =
 
 type Props = {
   mountain: Mountain;
+  /** 오늘 Pick 목록(원격 갱신본). 비면 추천 물건 카드를 그리지 않는다. */
+  picks: Pick[];
   /** '더 보기'로 오늘 Pick 탭에 보낸다. */
   onGoToPicks: () => void;
   /** 이 산에서 모은 계절별 인증 시각 */
@@ -172,6 +174,7 @@ function FieldNote({ reading, outcome }: { reading: Reading; outcome: SummitOutc
 
 export function MountainDetail({
   mountain,
+  picks,
   onGoToPicks,
   seasons,
   stampedToday,
@@ -262,6 +265,8 @@ export function MountainDetail({
         stampedHere.current = true;
         onVerified();
         askReviewOnce();
+        // 성공 화면에 머무는 동안 불러두고, 내 스탬프로 넘어갈 때 보여준다.
+        preloadInterstitial();
       }
     } catch {
       setState({ status: 'result', reading, outcome: local, confirmed: false, saveFailed: true });
@@ -409,7 +414,12 @@ export function MountainDetail({
                   자랑하기
                 </button>
               )}
-              <button type="button" className="btn" disabled={!state.confirmed} onClick={onGoToStamps}>
+              <button
+                type="button"
+                className="btn"
+                disabled={!state.confirmed}
+                onClick={() => void showInterstitial().then(onGoToStamps)}
+              >
                 {state.confirmed ? '내 스탬프' : '저장하고 있어요'}
               </button>
             </>
@@ -549,7 +559,7 @@ export function MountainDetail({
   const canStartHike = canCheckIn(mountain);
   // 집계 줄이 하나도 없으면 버튼 위 구분선을 그리지 않는다.
   // 이 산의 계절·고도에 맞는 추천 물건 3개. 큐레이션이 비면 카드를 그리지 않는다.
-  const recommended = picksForMountain(PICKS, {
+  const recommended = picksForMountain(picks, {
     season: seasonOf(new Date().toISOString()),
     elevationM: mountain.elevationM,
   });
@@ -641,7 +651,7 @@ export function MountainDetail({
       )}
 
       {recommended.length > 0 && (
-        <FoldCard title="추천 물건" hint={`${PICKS.length}개`}>
+        <FoldCard title="추천 물건" hint={`${picks.length}개`}>
           <p className="footnote" style={{ marginTop: 0 }}>
             {PICK_DISCLOSURE}
           </p>
@@ -663,7 +673,7 @@ export function MountainDetail({
               <button type="button" className="pick-card pick-more" onClick={onGoToPicks}>
                 <span className="pick-img pick-more-box">더 보기</span>
                 <strong>오늘 Pick</strong>
-                <span>{PICKS.length}개</span>
+                <span>{picks.length}개</span>
               </button>
             </li>
           </ul>

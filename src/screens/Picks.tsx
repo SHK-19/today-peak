@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-import { PICKS } from '../lib/picks-data.ts';
 import {
   PICK_DISCLOSURE,
   SALE_BADGE_MIN,
@@ -13,10 +12,10 @@ import {
 // 등산 준비물 큐레이션. 카테고리별 편집이지 상품 목록이 아니다 —
 // 가격을 쌓아 비교·나열하는 형태는 쉐어링크 정책에서 막는다.
 // PICKS가 비면 App이 이 탭 자체를 렌더하지 않는다.
-export function Picks({ onOpen }: { onOpen: (pick: Pick) => void }) {
+export function Picks({ items, onOpen }: { items: Pick[]; onOpen: (pick: Pick) => void }) {
   const [category, setCategory] = useState<PickCategory | null>(null);
-  const categories = pickCategories(PICKS);
-  const shown = byCategory(PICKS, category);
+  const categories = pickCategories(items);
+  const shown = byCategory(items, category);
 
   return (
     <main className="page page-tabbed">
@@ -60,8 +59,11 @@ export function Picks({ onOpen }: { onOpen: (pick: Pick) => void }) {
               )}
               <strong>{pick.name}</strong>
               <span>
-                {pick.discountRate !== undefined && pick.discountRate >= SALE_BADGE_MIN && (
-                  <em className="pick-sale">{pick.discountRate}% 특가</em>
+                {pick.dealEndsAt !== undefined ? (
+                  <em className="pick-sale">오늘만 특가</em>
+                ) : (
+                  pick.discountRate !== undefined &&
+                  pick.discountRate >= SALE_BADGE_MIN && <em className="pick-sale">{pick.discountRate}% 특가</em>
                 )}
                 {pick.priceText ?? '토스쇼핑에서 확인'}
               </span>

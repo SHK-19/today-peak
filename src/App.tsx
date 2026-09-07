@@ -6,7 +6,8 @@ import { fetchMyStamps, type Stamp } from './lib/api.ts';
 import { restoreSession, setSessionLostHandler } from './lib/auth.ts';
 import { collectionOf } from './lib/collection.ts';
 import { seoulDayStartMs } from './lib/day.ts';
-import { PICKS } from './lib/picks-data.ts';
+import { PICKS, loadPicks } from './lib/picks-data.ts';
+import { withoutExpired, type Pick } from './lib/picks.ts';
 import { openPick } from './lib/share.ts';
 import { HOME_ENTRY, parseEntry } from './lib/entry.ts';
 import { MOUNTAINS } from './lib/mountains.ts';
@@ -37,6 +38,11 @@ function App() {
   // 스탬프는 세 화면이 같이 본다 — 홈의 획득 배지, 컬렉션 그리드, 산 상세의 획득 여부.
   // 한 곳에서 한 번만 불러온다.
   const [stamps, setStamps] = useState<Stamp[] | null>(null);
+  // 오늘 Pick. 번들 사본으로 시작해 원격(매일 갱신)으로 바꾼다. 끝난 하루특가는 뺀다.
+  const [picks, setPicks] = useState<Pick[]>(() => withoutExpired(PICKS, Date.now()));
+  useEffect(() => {
+    void loadPicks().then((items) => setPicks(withoutExpired(items, Date.now())));
+  }, []);
   const [stampsFailed, setStampsFailed] = useState(false);
   const detail = MOUNTAINS.find((mountain) => mountain.id === detailId);
 
@@ -109,6 +115,7 @@ function App() {
         }
         totalCount={MOUNTAINS.filter((m) => collectionOf(m) === collectionOf(detail)).length}
         onVerified={() => void loadStamps()}
+        picks={picks}
         onGoToPicks={() => {
           setDetailId(null);
           setTab('picks');
@@ -127,7 +134,7 @@ function App() {
       {tab === 'home' ? (
         <Home onSelect={setDetailId} stamps={stamps} openNearestOnce={entry.verifyNearest} />
       ) : tab === 'picks' ? (
-        <Picks onOpen={openPick} />
+        <Picks items={picks} onOpen={openPick} />
       ) : (
         <MyStamps
           mountains={MOUNTAINS}
@@ -136,7 +143,7 @@ function App() {
           onRetry={() => void loadStamps()}
         />
       )}
-      <TabBar active={tab} onChange={setTab} showPicks={PICKS.length > 0} />
+      <TabBar active={tab} onChange={setTab} showPicks={picks.length > 0} />
     </>
   );
 }

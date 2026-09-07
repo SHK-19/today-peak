@@ -6,7 +6,9 @@
 //          음식 | item:1221294259 | |          ← 목록 API에서 고른 옵션 ID
 //
 //   node scripts/build-picks.mjs            리포트만 (API는 부른다)
-//   node scripts/build-picks.mjs --write    src/data/picks.json 갱신
+//   node scripts/build-picks.mjs --write    src/data/picks.json(번들 폴백) + docs/picks.json(GitHub Pages, 앱이 시작할 때 받음) 갱신
+//
+// 매일 갱신: scripts/daily-picks.sh (launchd). 가격·품절이 하루 단위로 따라가고, 하루특가는 endAt이 지나면 화면에서 빠진다.
 //
 // 규칙(문서: sharelink-docs.toss.im/guide/open-api):
 //   - 토큰은 client_credentials로 받고 .sharelink-token.json에 저장해 재사용한다(매번 발급 금지).
@@ -103,6 +105,20 @@ for (const [param, ids, keyOf] of [['tacaItemIds', byItem, (d) => `item:${d.taca
   }
 }
 
+// ---- 하루특가. 오늘 편성 중 등산 키워드에 맞는 것만. endAt이 지나면 앱이 숨긴다.
+const DEAL_KEYWORDS = /등산|트레킹|아웃도어|캠핑|배낭|스틱|헤드랜턴|보호대|양말|장갑|모자|우비|생수|이온|음료|커피|견과|너트|육포|오징어|단백질|프로틴|에너지바|영양바|초콜릿|젤리|양갱|과자|스낵|감자칩|사과|귤|감귤|바나나|토마토|고구마|옥수수|계란|주먹밥|김밥|홍삼|유산균|비타민|오메가|올리브|선크림|핫팩|물티슈|손소독|구급|밴드/;
+const deals = [];
+try {
+  const { items } = await api('/openapi/products/today-deals?size=30');
+  for (const d of items ?? []) {
+    if (!DEAL_KEYWORDS.test(d.displayName ?? '') || d.isSoldOut) continue;
+    deals.push(d);
+  }
+  console.log(`하루특가 ${items?.length ?? 0}개 중 등산 관련 ${deals.length}개`);
+} catch (error) {
+  console.log(`하루특가 조회 실패 → 건너뜀: ${error.message.slice(0, 100)}`);
+}
+
 // ---- 링크 발급. 초당 제한(429)에 걸리지 않게 호출 사이를 띄운다.
 const picks = [];
 for (const w of wanted) {
@@ -119,7 +135,10 @@ for (const w of wanted) {
     console.log(`링크 발급 실패 → 제외: ${d.displayName} (${error.message.slice(0, 120)})`);
     continue;
   }
-  if (d.isSoldOut) console.log(`품절: ${d.displayName}`);
+  if (d.isSoldOut) {
+    console.log(`품절 → 제외: ${d.displayName}`);
+    continue;
+  }
   picks.push({
     id: `sl-${d.tacaItemId}`,
     name: d.displayName,
@@ -127,18 +146,42 @@ for (const w of wanted) {
     link: link.shortUrl,
     imageUrl: d.thumbnailUrl,
     priceText: `${Number(d.displayPrice).toLocaleString('ko-KR')}원`,
+    // 정가보다 싸면 할인율. 하루특가 표시는 안 한다 — 번들은 정적이고 특가는 그날 끝난다.
+    ...(Number(d.discountRate) >= 10 ? { discountRate: Number(d.discountRate) } : {}),
     ...(w.seasons.length > 0 ? { seasons: w.seasons } : {}),
     ...(w.minElevationM === undefined ? {} : { minElevationM: w.minElevationM }),
   });
 }
 
-console.log(`큐레이션 ${wanted.length}개 → 상품 ${details.size}개 → 링크 ${picks.length}개`);
+// 하루특가도 링크를 발급해 앞에 둔다. 카테고리는 이름으로 대충 나눈다 — 하루 지나면 사라지는 항목이다.
+for (const d of deals) {
+  await new Promise((resolve) => setTimeout(resolve, 400));
+  let link;
+  try {
+    link = await api('/openapi/links', { method: 'POST', body: JSON.stringify({ tacaItemId: d.tacaItemId, publisherId: PUBLISHER_ID }) });
+  } catch {
+    continue;
+  }
+  const name = d.displayName ?? '';
+  const category = /등산|트레킹|배낭|스틱|랜턴|보호대|캠핑/.test(name) ? '장비' : /양말|장갑|모자|우비|의류|자켓|티셔츠/.test(name) ? '의류' : /선크림|핫팩|물티슈|손소독|구급|밴드/.test(name) ? '안전' : '음식';
+  picks.unshift({
+    id: `deal-${d.tacaItemId}`,
+    name,
+    category,
+    link: link.shortUrl,
+    imageUrl: d.thumbnailUrl,
+    priceText: `${Number(d.displayPrice).toLocaleString('ko-KR')}원`,
+    ...(Number(d.discountRate) >= 10 ? { discountRate: Number(d.discountRate) } : {}),
+    dealEndsAt: d.endAt,
+  });
+}
+
+console.log(`큐레이션 ${wanted.length}개 → 상품 ${details.size}개 → 링크 ${picks.length}개 (하루특가 ${deals.length})`);
 for (const p of picks) console.log(`  [${p.category}] ${p.name} · ${p.priceText} · ${p.link}`);
 
 if (process.argv[2] === '--write') {
-  writeFileSync(
-    new URL('src/data/picks.json', ROOT),
-    `${JSON.stringify({ _note: '자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.', items: picks }, null, 2)}\n`,
-  );
-  console.log('src/data/picks.json 갱신');
+  const body = { _note: '자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.', updatedAt: new Date().toISOString(), items: picks };
+  writeFileSync(new URL('src/data/picks.json', ROOT), `${JSON.stringify(body, null, 2)}\n`);
+  writeFileSync(new URL('docs/picks.json', ROOT), `${JSON.stringify(body)}\n`);
+  console.log('src/data/picks.json · docs/picks.json 갱신');
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 매일 07:30 오늘 Pick 갱신. 설치:
+       cp scripts/launchd/com.todaypeak.picks.plist ~/Library/LaunchAgents/
+       launchctl load ~/Library/LaunchAgents/com.todaypeak.picks.plist
+     해제: launchctl unload ~/Library/LaunchAgents/com.todaypeak.picks.plist -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.todaypeak.picks</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/sanghun_kim/Code/today_peak/scripts/daily-picks.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>30</integer></dict>
+  <key>StandardOutPath</key><string>/tmp/todaypeak-picks.log</string>
+  <key>StandardErrorPath</key><string>/tmp/todaypeak-picks.log</string>
+</dict>
+</plist>

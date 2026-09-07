@@ -8,7 +8,7 @@ import { formatDistance } from '../lib/format.ts';
 import { haversineMeters } from '../lib/geo.ts';
 import { ensureLocationPermission, readLocationOnce } from '../lib/location.ts';
 import { IS_FIELD_TEST_BUILD, MOUNTAINS } from '../lib/mountains.ts';
-import { COLLECTIONS, collectionOf, type CollectionId } from '../lib/collection.ts';
+import { collectionOf, type CollectionId } from '../lib/collection.ts';
 import { areaOf, areasOf } from '../lib/region.ts';
 import type { Mountain } from '../lib/verify.ts';
 
@@ -183,7 +183,14 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
 
       <div className="list-sort">
         <div className="toggle" role="tablist" aria-label="컬렉션">
-          {([{ id: null, label: '전체' }, ...COLLECTIONS] as { id: CollectionId | null; label: string }[]).map(
+          {/* 한 줄에 다 들어가게 짧은 이름을 쓴다. 정식 이름은 내 스탬프에 있다. */}
+          {(
+            [
+              { id: null, label: '전체' },
+              { id: 'top100', label: '100대' },
+              { id: 'local', label: '동네' },
+            ] as { id: CollectionId | null; label: string }[]
+          ).map(
             ({ id, label }) => (
               <button
                 key={label}
@@ -200,8 +207,8 @@ export function Home({ onSelect, stamps, openNearestOnce = false }: Props) {
         </div>
         <div className="toggle" role="tablist" aria-label="정렬">
           {([
-            ['near', '가까운 순'],
-            ['todo', '안 모은 산 먼저'],
+            ['near', '거리순'],
+            ['todo', '안 모은 순'],
           ] as const).map(([id, label]) => (
             <button
               key={id}

@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 
 import { byCategory, pickCategories, picksForMountain, type Pick } from './picks.ts';
+import { withoutExpired } from './picks.ts';
 
 const item = (id: string, category: Pick['category'], extra: Partial<Pick> = {}): Pick => ({
   id,
@@ -37,4 +38,14 @@ test('산 상세 추천은 계절·고도가 맞는 것을 앞에 두고 모자�
 test('목록이 비면 빈 배열', () => {
   assert.deepEqual(picksForMountain([], { season: 'spring', elevationM: 800 }), []);
   assert.deepEqual(pickCategories([]), []);
+});
+
+test('끝난 하루특가는 뺀다', () => {
+  const now = Date.parse('2026-09-07T12:00:00+09:00');
+  const items = [
+    { id: 'a', name: 'a', category: '음식' as const, link: 'x' },
+    { id: 'b', name: 'b', category: '음식' as const, link: 'x', dealEndsAt: '2026-09-07T23:59:59+09:00' },
+    { id: 'c', name: 'c', category: '음식' as const, link: 'x', dealEndsAt: '2026-09-06T23:59:59+09:00' },
+  ];
+  assert.deepEqual(withoutExpired(items, now).map((i) => i.id), ['a', 'b']);
 });
