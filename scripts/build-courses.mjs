@@ -80,7 +80,7 @@ function stats(points) {
   return { distance, ascent, descent, maxEle: top.ele, top };
 }
 
-function course(file, mountainId, seq) {
+function course(file, mountainId, seq, mountainName) {
   const { points, wpts } = parseGpx(readFileSync(file, 'utf8'));
   if (points.length < 10) return null;
   const s = stats(points);
@@ -94,6 +94,9 @@ function course(file, mountainId, seq) {
   const km = Math.round((s.distance / 100)) / 10;
   const name = entrance?.name ?? first?.name ?? `${km}km 코스`;
   const peak = wpts.filter((w) => w.category === 'PEAK').sort((a, b) => b.ele - a.ele)[0] ?? null;
+  // "원효봉 정상" → "원효봉", "정상"·"산정상" → 산 이름. 화면에서 "정상 원효봉 정상"이 되지 않게.
+  const peakName =
+    peak === null ? null : (peak.name.replace(/\s*(산)?정상(석)?\d*$/, '').trim() || mountainName);
   const minutes = Math.round((s.distance / 4500) * 60 + s.ascent / 10);
   const kcal = Math.round(70 * (1.05 * (s.distance / 1000) + 0.0125 * s.ascent));
   const difficulty = s.ascent < 300 ? '초급' : s.ascent < 600 ? '중급' : '상급';
@@ -105,7 +108,7 @@ function course(file, mountainId, seq) {
     mountainId,
     name,
     startName: entrance?.name ?? first?.name ?? null,
-    peakName: peak?.name ?? null,
+    peakName,
     peakEleM: peak === null ? null : Math.round(peak.ele),
     distanceM: Math.round(s.distance),
     ascentM: Math.round(s.ascent),
@@ -121,9 +124,20 @@ function course(file, mountainId, seq) {
   };
 }
 
-function coursesIn(dir, mountainId) {
+function coursesIn(dir, mountainId, mountainName) {
   const files = readdirSync(dir).filter((f) => f.endsWith('.gpx')).sort();
-  return files.map((f, i) => course(path.join(dir, f), mountainId, i + 1)).filter((c) => c !== null);
+  return files.map((f, i) => course(path.join(dir, f), mountainId, i + 1, mountainName)).filter((c) => c !== null);
+}
+
+// 같은 산에 같은 이름("6.4km 코스")이 여럿이면 (2), (3)을 붙인다.
+function dedupeNames(courses) {
+  const seen = new Map();
+  for (const c of courses) {
+    const n = (seen.get(c.name) ?? 0) + 1;
+    seen.set(c.name, n);
+    if (n > 1) c.name = `${c.name} (${n})`;
+  }
+  return courses;
 }
 
 const rows = [];
@@ -132,12 +146,12 @@ const topFolders = new Map(readdirSync(topDir).map((f) => [nfc(f), path.join(top
 for (const m of TOP100) {
   const dir = topFolders.get(m.name);
   if (dir === undefined) { report.push(`${m.name}: 폴더 없음`); continue; }
-  rows.push(...coursesIn(dir, m.id));
+  rows.push(...dedupeNames(coursesIn(dir, m.id, m.name)));
 }
 // 100대 명산인데 우리 목록에 없는 산(정상 좌표가 없어 빠진 4곳). 정상 좌표 후보를 보고한다.
 const extras = [...topFolders.keys()].filter((name) => !TOP100.some((m) => m.name === name));
 for (const name of extras) {
-  const cs = coursesIn(topFolders.get(name), `x-${name}`);
+  const cs = coursesIn(topFolders.get(name), `x-${name}`, name);
   const peaks = cs.map((c) => c._peak).filter((p) => p !== null).sort((a, b) => b.ele - a.ele);
   report.push(`목록 밖 ${name}: 코스 ${cs.length} · PEAK 후보 ${peaks[0] ? `${peaks[0].name} ${Math.round(peaks[0].ele)}m ${peaks[0].lat},${peaks[0].lng}` : '없음'}`);
 }
@@ -150,12 +164,12 @@ for (const m of LOCAL) {
   let picked = [];
   for (const [, dir] of candidates) {
     // 이름이 같은 다른 산(청계산이 5곳)을 거르려고 트랙 최고점이 우리 정상 1.5km 안인 것만 받는다.
-    const cs = coursesIn(dir, m.id).filter(
+    const cs = coursesIn(dir, m.id, m.name.replace(/\(.*\)$/, '')).filter(
       (c) => haversine(c._top.lat, c._top.lng, m.summitLat, m.summitLng) <= 1500,
     );
     picked.push(...cs);
   }
-  picked = picked.map((c, i) => ({ ...c, id: `${m.id}-${String(i + 1).padStart(2, '0')}` }));
+  picked = dedupeNames(picked.map((c, i) => ({ ...c, id: `${m.id}-${String(i + 1).padStart(2, '0')}` })));
   if (picked.length === 0) report.push(`${m.name}: 봉우리 코스 없음 (후보 폴더 ${candidates.length})`);
   rows.push(...picked);
 }
