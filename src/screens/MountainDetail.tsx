@@ -17,10 +17,12 @@ import {
   LocationIcon,
   PeopleIcon,
 } from '../components/icons.tsx';
+import { CourseSheet } from '../components/CourseSheet.tsx';
 import { FoldCard } from '../components/FoldCard.tsx';
 import { SeasonDots } from '../components/SeasonDots.tsx';
 import { Stamp } from '../components/Stamp.tsx';
 import { formatSeoulDate } from '../lib/day.ts';
+import { formatKm, formatMinutes, type CourseSummary } from '../lib/courses.ts';
 import { FACILITY_LABEL, FACILITY_ORDER, facilityCount, summarizeNames } from '../lib/facilities.ts';
 import { formatDistance } from '../lib/format.ts';
 import { IS_FIELD_TEST_BUILD } from '../lib/mountains.ts';
@@ -191,6 +193,8 @@ export function MountainDetail({
   const [suggested, setSuggested] = useState<'no' | 'sending' | 'done' | 'failed'>('no');
   // 내려와서 카드 안 전환. 한쪽이 비면 버튼을 숨기고 있는 쪽만 보여준다.
   const [placeKind, setPlaceKind] = useState<'food' | 'cafe'>('food');
+  // 코스 시트. 목록에서 하나를 누르면 뜬다.
+  const [openCourse, setOpenCourse] = useState<CourseSummary | null>(null);
   // 진행 중인 요청 자체를 들고 있는다. 버튼을 일찍 눌러도 새 요청을 또 만들지 않고
   // 먼저 시작한 요청을 기다린다 (야외에서 한 번 읽는 데 3~10초 걸린다).
   const prefetched = useRef<Promise<Reading | null> | null>(null);
@@ -668,6 +672,34 @@ export function MountainDetail({
         </FoldCard>
       )}
 
+      {(stats?.courses?.length ?? 0) > 0 && (
+        <FoldCard title="코스" hint={`${stats?.courses?.length ?? 0}개`}>
+          <ul className="course-list">
+            {(stats?.courses ?? []).map((course) => (
+              <li key={course.id}>
+                <button type="button" className="course-row" onClick={() => setOpenCourse(course)}>
+                  <span className="course-head">
+                    <strong>{course.name}</strong>
+                    <span className={`badge badge-${course.difficulty}`}>{course.difficulty}</span>
+                  </span>
+                  <span className="course-meta">
+                    {formatKm(course.distanceM)} · {formatMinutes(course.minutes)} · ↑{course.ascentM}m · {course.kcal}kcal
+                  </span>
+                  {course.peakName !== null && (
+                    <span className="course-meta">
+                      정상 {course.peakName}
+                      {course.peakEleM !== null && ` ${course.peakEleM}m`}
+                      {course.isLoop && ' · 왕복'}
+                    </span>
+                  )}
+                </button>
+              </li>
+            ))}
+          </ul>
+          <p className="footnote">한국등산트레킹지원센터 GPX 기록이에요. 시간·칼로리는 계산값이에요.</p>
+        </FoldCard>
+      )}
+
       {facilities !== undefined && facilityCount(facilities) > 0 && (
         <FoldCard title="시설" hint={`${facilityCount(facilities)}곳`}>
           <ul className="facility-list">
@@ -726,6 +758,8 @@ export function MountainDetail({
         </p>
         {verifyButton}
       </div>
+
+      {openCourse !== null && <CourseSheet course={openCourse} onClose={() => setOpenCourse(null)} />}
     </main>
   );
 }

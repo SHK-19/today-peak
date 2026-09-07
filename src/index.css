@@ -1493,3 +1493,102 @@ h3 {
   color: var(--color-text-subtle);
   word-break: keep-all;
 }
+
+/* ---------- 코스 ---------- */
+
+.course-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-row {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  min-height: 44px;
+  padding: var(--space-3) 0;
+  border: 0;
+  border-top: 1px solid var(--color-line);
+  background: transparent;
+  text-align: left;
+  font-size: var(--font-size-body-small);
+}
+
+.course-list li:first-child .course-row {
+  border-top: 0;
+}
+
+.course-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.course-head strong {
+  color: var(--color-text-strong);
+}
+
+.course-meta {
+  color: var(--color-text-subtle);
+}
+
+.badge-초급 { background: var(--color-soft-green); color: var(--brand-primary); }
+.badge-중급 { background: #f5ecd9; color: var(--color-warning); }
+.badge-상급 { background: #f3e0d8; color: var(--color-danger); }
+
+.sheet-tall {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.course-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-stats li {
+  display: grid;
+  gap: 2px;
+  padding: var(--space-3);
+  border-radius: var(--radius-control);
+  background: var(--color-bg-canvas);
+}
+
+.course-stats span {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-subtle);
+}
+
+.course-stats strong {
+  font-size: var(--font-size-subtitle);
+  color: var(--color-text-strong);
+}
+
+.course-route {
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-route li {
+  display: flex;
+  gap: var(--space-3);
+  min-height: 40px;
+  align-items: center;
+  font-size: var(--font-size-body-small);
+}
+
+.course-route span {
+  flex: none;
+  width: 56px;
+  color: var(--color-text-subtle);
+}
+
+.course-danger strong {
+  color: var(--color-danger);
+}

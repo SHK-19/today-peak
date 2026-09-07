@@ -1,3 +1,4 @@
+import type { CourseDetail, CourseSummary } from './courses.ts';
 import type { Facilities } from './facilities.ts';
 import type { NearbyPlaces } from './places.ts';
 import { expireSession, getSessionToken } from './auth.ts';
@@ -36,6 +37,8 @@ export type MountainStats = {
   places?: NearbyPlaces;
   /** 주차장·화장실·대피소·약수터 이름. 100대 명산만 있다. */
   facilities?: Facilities;
+  /** 등산 코스 요약(거리 짧은 순). 지점 목록은 fetchCourse로 따로. */
+  courses?: CourseSummary[];
 };
 
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
@@ -94,4 +97,9 @@ export async function startHike(mountainId: string, reading: Reading): Promise<H
 
 export async function fetchMountainStats(mountainId: string): Promise<MountainStats> {
   return await call<MountainStats>(`/mountain-stats?mountainId=${encodeURIComponent(mountainId)}`);
+}
+
+// 코스 하나의 지점 목록. 코스를 눌렀을 때만 부른다 — 북한산은 36코스 × 40지점이라 미리 다 받기엔 무겁다.
+export async function fetchCourse(courseId: string): Promise<CourseDetail> {
+  return await call<CourseDetail>(`/mountain-stats?courseId=${encodeURIComponent(courseId)}`);
 }

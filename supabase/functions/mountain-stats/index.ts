@@ -15,6 +15,24 @@ import { readUserKey, serviceClient } from '../_shared/session.ts';
 
 const HIKING_WINDOW_MS = 6 * 60 * 60 * 1000;
 
+// courses 행 → 화면 요약. 컬럼 이름만 바꾼다.
+// deno-lint-ignore no-explicit-any
+function courseSummary(row: any) {
+  return {
+    id: row.id,
+    name: row.name,
+    startName: row.start_name,
+    peakName: row.peak_name,
+    peakEleM: row.peak_ele_m,
+    distanceM: row.distance_m,
+    ascentM: row.ascent_m,
+    minutes: row.minutes,
+    kcal: row.kcal,
+    difficulty: row.difficulty,
+    isLoop: row.is_loop,
+  };
+}
+
 // 산에서 내려와 들르는 음식점. 네이버 지역 검색을 그때그때 부르고 저장하지 않는다.
 // 키가 없거나 네이버가 실패하면 빈 배열 — 집계와 마찬가지로 없으면 줄을 안 그리면 그만이다.
 async function nearbyPlaces(mountainId: string): Promise<NearbyPlaces> {
@@ -73,14 +91,30 @@ Deno.serve(async (request: Request) => {
     return json({ error: 'unauthorized' }, 401, origin);
   }
 
-  const mountainId = new URL(request.url).searchParams.get('mountainId');
+  const params = new URL(request.url).searchParams;
+
+  // 코스 하나의 상세(지점 포함). 코스를 눌렀을 때만 온다. 함수 6개 상한 때문에 여기 얹는다.
+  const courseId = params.get('courseId');
+  if (courseId !== null && courseId !== '') {
+    const { data, error } = await serviceClient().from('courses').select('*').eq('id', courseId).maybeSingle();
+    if (error !== null) {
+      console.error(`courses 조회 실패 · ${error.message}`);
+      return json({ error: 'server_error' }, 500, origin);
+    }
+    if (data === null) {
+      return json({ error: 'not_found' }, 404, origin);
+    }
+    return json({ ...courseSummary(data), descentM: data.descent_m, maxEleM: data.max_ele_m, pois: data.pois }, 200, origin);
+  }
+
+  const mountainId = params.get('mountainId');
   if (mountainId === null || mountainId === '') {
     return json({ error: 'invalid_request' }, 400, origin);
   }
 
   const now = Date.now();
   const supabase = serviceClient();
-  const [hiking, today, total, places, facilityRows] = await Promise.all([
+  const [hiking, today, total, places, facilityRows, courseRows] = await Promise.all([
     supabase
       .from('hike_starts')
       .select('*', { count: 'exact', head: true })
@@ -97,6 +131,11 @@ Deno.serve(async (request: Request) => {
       .eq('mountain_id', mountainId),
     nearbyPlaces(mountainId),
     supabase.from('facilities').select('kind, name').eq('mountain_id', mountainId).order('name'),
+    supabase
+      .from('courses')
+      .select('id, name, start_name, peak_name, peak_ele_m, distance_m, ascent_m, minutes, kcal, difficulty, is_loop')
+      .eq('mountain_id', mountainId)
+      .order('distance_m'),
   ]);
 
   const failed = [hiking, today, total].find((result) => result.error !== null);
@@ -115,6 +154,10 @@ Deno.serve(async (request: Request) => {
     console.error(`facilities 조회 실패 · ${facilityRows.error.message}`);
   }
 
+  if (courseRows.error !== null) {
+    console.error(`courses 조회 실패 · ${courseRows.error.message}`);
+  }
+
   return json(
     {
       hikingNow: hiking.count ?? 0,
@@ -122,6 +165,7 @@ Deno.serve(async (request: Request) => {
       totalStamps: total.count ?? 0,
       places,
       facilities,
+      courses: (courseRows.data ?? []).map(courseSummary),
     },
     200,
     origin,
