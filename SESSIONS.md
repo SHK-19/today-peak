@@ -632,4 +632,4 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
   `VITE_AD_GROUP_ID=… VITE_AD_BANNER_ID= npm run build`로 .env를 덮어서 — .env엔 테스트 ID를 그대로 둔다.
 - 24 검수 요청(REVIEWING). 주요 기능 3개도 함께: 가까운 산 찾기 / 내 스탬프(?tab=stamps) / 오늘 정상 인증하기(?verify=1).
   승인돼도 자동 출시 아님 — 콘솔 웹 '앱 출시 > 출시하기'는 사용자가 누른다. 앱정보(스크린샷·설명)도 별도 IN_REVIEW.
-- 다음 번들: 배너 광고 그룹 ID 받으면 VITE_AD_BANNER_ID로 배너 켜서 25.
+- 9/8 번들 24 검수는 CANCELED(사유 없음). 배너 운영 ID 받아 `npm run build:review`(.env의 AD_*_LIVE_ID로 덮음)로 번들 25 → REVIEWING (deploymentId 01a07ec8-b84b-7314-9cf4-9c51a14bf22d). 승인 후 콘솔 웹에서 출시하기.
