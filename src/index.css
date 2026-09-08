@@ -1678,7 +1678,8 @@ em.tf {
 
 /* 배너 광고 자리. 너비는 화면 전체(SDK 요구), 카드 사이에 여백을 두고 놓는다. */
 .ad-banner {
+  /* SDK 카드가 자기 안쪽 여백을 갖고 있어 우리 쪽 여백은 최소로. min-height를 두면
+     카드보다 큰 빈 칸이 위아래로 남았다(2026-09-08 실기기). */
   width: 100%;
-  min-height: 96px;
-  margin: var(--space-2) 0 var(--space-4);
+  margin: 0 0 var(--space-1);
 }
