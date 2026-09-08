@@ -635,3 +635,16 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
 - 9/8 번들 24 검수는 CANCELED(사유 없음). 배너 운영 ID 받아 `npm run build:review`(.env의 AD_*_LIVE_ID로 덮음)로 번들 25 → REVIEWING → 취소. 배너 여백 수정(집계 카드 하단 24→12) 후 번들 26(테스트 ID) 테스트, **번들 27(운영 ID) 검수 요청 REVIEWING** (deploymentId 01a07ed6-0bab-7156-92c0-9d0713e59ba0). 승인 후 콘솔 웹에서 출시하기.
 - 실기기 지도 안 뜸: SDK 3.1.1부터 origin이 `apps`/`private-apps`.tossmini.com 인데 NCP 웹 서비스 URL엔 `web`/`private-web`만 등록돼 있었다(curl Referer로 401 확인). 콘솔에 두 URL 추가로 해결(코드 변경 없음).
 - review_cancel은 '검토 진행 중 취소 불가' 에러를 내지만 직후 목록엔 CANCELED로 찍혔다. 24도 요청 후 CANCELED가 됐던 것과 같은 현상 — 원인 미상.
+
+### 프로모션·스마트 발송 셋업 (2026-09-08 오후)
+
+- 프로모션 3개 RUNNING(총 30,000원, 10/31 종료): 정상 인증 10P/10,000원(01M1ZP54ATKFV8RR6PR9XF0WTX), 산행 시작 3P/5,000원(01M1ZP57ACGE87M8J3SA2P3NWN),
+  첫 산행 30P/15,000원 혜택탭 "첫 산행 시작하기"(01M1ZP7REFRRF1DWACTXDYXM93). 1인 하루 한도 20/9/30원. 코드는 Supabase 시크릿 PROMO_SUMMIT/START/FIRST_CODE.
+- 배운 것: 프로모션 예산은 줄일 수 없다(증액만). 처음 5만 원짜리를 만들었다가 종료(TERMINATED)하고 다시 만들었다 — 종료하면 미사용 예산이 월렛으로 돌아온다.
+  혜택탭 미션 이름은 12자 이내. 생성 직후 자동 승인되는 경우가 많다. 시작 게이트는 TEST_ 코드 지급 1회(isTested).
+- 지급 검증은 login GET `?promotion=<userKey>` 프로브(PROMO_PROBE_CODE의 TEST_ 코드만). 검증 후 시크릿 삭제. 인증서가 서버에만 있어 로컬에서는 못 부른다.
+- 지급 코드: `_shared/toss.ts`(mTLS 클라이언트를 login에서 분리). start-hike는 시작 3P + 첫 산행(hike_starts 0건)이면 30P, verify-summit은 10P.
+  응답 rewardP → 화면 문구. mountain-stats.rewards로 사전 고지("예산이 다 쓰이면 예고 없이 끝나요").
+- 스마트 발송: 알림동의문 121085(SCHEDULED, 월·수·금·토) + 기능성 정기 푸시 `today-peak-hike-reminder`(07:00, "산행 알림 / 오늘 정상에서 산행 기록을 남길 수 있어요.") AI 검수 통과.
+  앱은 내 스탬프 탭 카드에서 `Notification.requestAgreement`로 동의만 받는다(발송은 토스). 광고성 재방문 캠페인은 최근 30일 100명 이상부터, 콘솔 웹 전용.
+- 남은 것: 포인트 문구·알림 카드가 들어간 번들(28)은 27 검수 결과 뒤에.
