@@ -9,7 +9,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "deploy": "ait deploy",
-    "test": "node --test src/lib/"
+    "test": "node --test src/lib/",
+    "build:review": "zsh scripts/build-review.sh"
   },
   "dependencies": {
     "react": "^19.2.8",

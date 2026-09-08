@@ -35,6 +35,9 @@ const KEEP = new Set([
   'ENTRY', 'PARK', 'TRANS', 'TOILET', 'SPRING', 'SHELTER', 'STORE', 'FOOD', 'CAMP',
   'CULTURAL', 'VIEW', 'SCENERY', 'REST', 'INFO', 'DANGER', 'PEAK',
 ]);
+// 산과 무관한 기록. 트랭글 이용자가 다른 산에서 남긴 GPX가 산 폴더에 섞여 있다.
+// 북한산 0053·0055는 서울 성곽·북악산 걷기(사직단→청운대, 부암동→북악팔각정)다.
+const EXCLUDE_FILES = new Set(['북한산_0000000053.gpx', '북한산_0000000055.gpx']);
 const GENERIC_NAME = /^(갈림길|화장실|주차장|버스\s?정류장|버스|정상|안내소|쉼터|이정표|입구|들머리|등산로\s?입구|탐방로\s?입구)$/;
 
 function haversine(lat1, lng1, lat2, lng2) {
@@ -164,7 +167,7 @@ async function course(file, mountainId, seq, mountainName) {
 }
 
 async function coursesIn(dir, mountainId, mountainName) {
-  const files = readdirSync(dir).filter((f) => f.endsWith('.gpx')).sort();
+  const files = readdirSync(dir).filter((f) => f.endsWith('.gpx') && !EXCLUDE_FILES.has(nfc(f))).sort();
   const out = [];
   for (const [i, f] of files.entries()) {
     const c = await course(path.join(dir, f), mountainId, i + 1, mountainName);
