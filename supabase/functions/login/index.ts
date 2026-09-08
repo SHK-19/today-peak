@@ -11,7 +11,7 @@ import { SESSION_TTL_MS, signSessionToken } from '../../../src/lib/session-token
 import { json, preflight } from '../_shared/http.ts';
 import { serviceClient } from '../_shared/session.ts';
 
-import { TOSS_API, createHttpClient, grantReward, tossClient, type TossResult } from '../_shared/toss.ts';
+import { TOSS_API, createHttpClient, grantWithCode, tossClient, type TossResult } from '../_shared/toss.ts';
 
 async function exchangeCode(
   client: unknown,
@@ -83,14 +83,16 @@ Deno.serve(async (request: Request) => {
     // ?handshake=1일 때만 토스 서버까지 실제로 붙어본다. 그냥 GET에 외부 호출이 딸려가지 않게.
     const params = new URL(request.url).searchParams;
     const handshake = params.get('handshake') === '1';
-    // ?promotion=<userKey>: 프로모션 지급 프로브. PROMO_PROBE_CODE 시크릿이 TEST_ 코드로
-    // 설정돼 있을 때만 동작한다(실제 코드는 거부). 테스트가 끝나면 시크릿을 지운다.
+    // ?promotion=<userKey>: 프로모션 지급 프로브. PROMO_PROBE_CODE 시크릿(쉼표로 여러 개)의
+    // TEST_ 코드마다 1P를 시험 지급한다. 실제 코드는 건너뛴다. 테스트가 끝나면 시크릿을 지운다.
     const probeUser = params.get('promotion');
-    const probeCode = Deno.env.get('PROMO_PROBE_CODE') ?? '';
-    const promotion =
-      probeUser !== null && probeCode.startsWith('TEST_')
-        ? { rewardP: await grantReward(Number(probeUser), 'probe') }
-        : {};
+    const probe: Record<string, number> = {};
+    if (probeUser !== null) {
+      for (const code of (Deno.env.get('PROMO_PROBE_CODE') ?? '').split(',')) {
+        if (code.startsWith('TEST_')) probe[code] = await grantWithCode(Number(probeUser), code, 1, code);
+      }
+    }
+    const promotion = probeUser !== null ? { probe } : {};
     return json(
       {
         deno: Deno.version.deno,

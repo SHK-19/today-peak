@@ -29,15 +29,13 @@ export function tossClient(): unknown {
 }
 
 // 프로모션 코드는 시크릿. 비어 있으면 그 지급은 조용히 건너뛴다(프로모션 전이거나 종료 후).
-// probe: login GET 진단용. TEST_ 코드로 지급 API가 도는지 확인할 때만 쓴다.
-export type Promotion = 'start' | 'summit' | 'first' | 'probe';
+export type Promotion = 'start' | 'summit' | 'first';
 const PROMOTION_ENV: Record<Promotion, string> = {
   start: 'PROMO_START_CODE',
   summit: 'PROMO_SUMMIT_CODE',
   first: 'PROMO_FIRST_CODE',
-  probe: 'PROMO_PROBE_CODE',
 };
-export const PROMOTION_AMOUNT: Record<Promotion, number> = { start: 3, summit: 10, first: 30, probe: 1 };
+export const PROMOTION_AMOUNT: Record<Promotion, number> = { start: 3, summit: 10, first: 30 };
 
 // 코드가 설정된 프로모션과 금액. 화면 고지 문구용.
 export function activeRewards(): Partial<Record<Promotion, number>> {
@@ -60,12 +58,8 @@ async function post<T>(client: unknown, path: string, userKey: number, body: unk
   return (await response.json()) as TossResult<T>;
 }
 
-// 지급 성공이면 금액, 아니면 0. 어떤 이유로든 던지지 않는다 — 포인트는 부가 기능이라
-// 스탬프·산행 시작 응답을 막으면 안 된다. 실패는 로그로만 남긴다.
-export async function grantReward(userKey: number, promotion: Promotion): Promise<number> {
-  const code = Deno.env.get(PROMOTION_ENV[promotion]);
-  if (code === undefined || code === '') return 0;
-  const amount = PROMOTION_AMOUNT[promotion];
+// 코드 하나로 지급. 성공이면 금액, 아니면 0. 어떤 이유로든 던지지 않는다.
+export async function grantWithCode(userKey: number, code: string, amount: number, label: string): Promise<number> {
   try {
     const client = tossClient();
     const keyResult = await post<{ key: string }>(
@@ -75,7 +69,7 @@ export async function grantReward(userKey: number, promotion: Promotion): Promis
       {},
     );
     if (keyResult.resultType !== 'SUCCESS') {
-      console.error(`promotion get-key 실패 · ${promotion} · ${JSON.stringify(keyResult)}`);
+      console.error(`promotion get-key 실패 · ${label} · ${JSON.stringify(keyResult)}`);
       return 0;
     }
     const result = await post<{ key: string }>(
@@ -85,13 +79,20 @@ export async function grantReward(userKey: number, promotion: Promotion): Promis
       { promotionCode: code, key: keyResult.success.key, amount },
     );
     if (result.resultType !== 'SUCCESS') {
-      console.error(`promotion 지급 실패 · ${promotion} · ${JSON.stringify(result)}`);
+      console.error(`promotion 지급 실패 · ${label} · ${JSON.stringify(result)}`);
       return 0;
     }
-    console.log(`promotion 지급 · ${promotion} · ${amount}P · userKey=${userKey}`);
+    console.log(`promotion 지급 · ${label} · ${amount}P · userKey=${userKey}`);
     return amount;
   } catch (error) {
-    console.error(`promotion 오류 · ${promotion} · ${error instanceof Error ? error.message : String(error)}`);
+    console.error(`promotion 오류 · ${label} · ${error instanceof Error ? error.message : String(error)}`);
     return 0;
   }
+}
+
+// 포인트는 부가 기능이라 스탬프·산행 시작 응답을 막으면 안 된다. 실패는 로그로만 남긴다.
+export async function grantReward(userKey: number, promotion: Promotion): Promise<number> {
+  const code = Deno.env.get(PROMOTION_ENV[promotion]);
+  if (code === undefined || code === '') return 0;
+  return await grantWithCode(userKey, code, PROMOTION_AMOUNT[promotion], promotion);
 }
