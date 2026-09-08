@@ -296,7 +296,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  margin: 0 var(--space-5) var(--space-5);
+  margin: 0 var(--space-5) var(--space-3);
   padding: var(--space-4);
   border-radius: var(--radius-control);
   background: var(--color-bg-canvas);
@@ -596,7 +596,7 @@ h3 {
 .stats {
   display: grid;
   gap: var(--space-3);
-  margin: 0 var(--space-5) var(--space-5);
+  margin: 0 var(--space-5) var(--space-3);
   padding: var(--space-4);
   border: 1px solid var(--color-line);
   border-radius: var(--radius-control);
@@ -1681,5 +1681,5 @@ em.tf {
   /* SDK 카드가 자기 안쪽 여백을 갖고 있어 우리 쪽 여백은 최소로. min-height를 두면
      카드보다 큰 빈 칸이 위아래로 남았다(2026-09-08 실기기). */
   width: 100%;
-  margin: 0 0 var(--space-1);
+  margin: 0 0 var(--space-3);
 }
