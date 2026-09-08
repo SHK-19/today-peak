@@ -632,4 +632,6 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
   `VITE_AD_GROUP_ID=… VITE_AD_BANNER_ID= npm run build`로 .env를 덮어서 — .env엔 테스트 ID를 그대로 둔다.
 - 24 검수 요청(REVIEWING). 주요 기능 3개도 함께: 가까운 산 찾기 / 내 스탬프(?tab=stamps) / 오늘 정상 인증하기(?verify=1).
   승인돼도 자동 출시 아님 — 콘솔 웹 '앱 출시 > 출시하기'는 사용자가 누른다. 앱정보(스크린샷·설명)도 별도 IN_REVIEW.
-- 9/8 번들 24 검수는 CANCELED(사유 없음). 배너 운영 ID 받아 `npm run build:review`(.env의 AD_*_LIVE_ID로 덮음)로 번들 25 → REVIEWING (deploymentId 01a07ec8-b84b-7314-9cf4-9c51a14bf22d). 승인 후 콘솔 웹에서 출시하기.
+- 9/8 번들 24 검수는 CANCELED(사유 없음). 배너 운영 ID 받아 `npm run build:review`(.env의 AD_*_LIVE_ID로 덮음)로 번들 25 → REVIEWING → 취소. 배너 여백 수정(집계 카드 하단 24→12) 후 번들 26(테스트 ID) 테스트, **번들 27(운영 ID) 검수 요청 REVIEWING** (deploymentId 01a07ed6-0bab-7156-92c0-9d0713e59ba0). 승인 후 콘솔 웹에서 출시하기.
+- 실기기 지도 안 뜸: SDK 3.1.1부터 origin이 `apps`/`private-apps`.tossmini.com 인데 NCP 웹 서비스 URL엔 `web`/`private-web`만 등록돼 있었다(curl Referer로 401 확인). 콘솔에 두 URL 추가로 해결(코드 변경 없음).
+- review_cancel은 '검토 진행 중 취소 불가' 에러를 내지만 직후 목록엔 CANCELED로 찍혔다. 24도 요청 후 CANCELED가 됐던 것과 같은 현상 — 원인 미상.
