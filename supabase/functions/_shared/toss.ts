@@ -37,7 +37,7 @@ const PROMOTION_ENV: Record<Promotion, string> = {
   first: 'PROMO_FIRST_CODE',
   probe: 'PROMO_PROBE_CODE',
 };
-export const PROMOTION_AMOUNT: Record<Promotion, number> = { start: 3, summit: 10, first: 50, probe: 1 };
+export const PROMOTION_AMOUNT: Record<Promotion, number> = { start: 3, summit: 10, first: 30, probe: 1 };
 
 // 코드가 설정된 프로모션과 금액. 화면 고지 문구용.
 export function activeRewards(): Partial<Record<Promotion, number>> {
