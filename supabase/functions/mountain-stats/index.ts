@@ -11,6 +11,7 @@ import {
 import { MOUNTAINS } from '../_shared/mountains.ts';
 import { json, preflight } from '../_shared/http.ts';
 import { readUserKey, serviceClient } from '../_shared/session.ts';
+import { activeRewards } from '../_shared/toss.ts';
 
 const HIKING_WINDOW_MS = 6 * 60 * 60 * 1000;
 
@@ -157,6 +158,8 @@ Deno.serve(async (request: Request) => {
       totalStamps: total.count ?? 0,
       places,
       courses: (courseRows.data ?? []).map(courseSummary),
+      // 화면이 사전 고지 문구를 보여줄지 정하는 근거. 코드가 없으면 빈 객체.
+      rewards: activeRewards(),
     },
     200,
     origin,

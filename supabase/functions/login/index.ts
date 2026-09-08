@@ -11,28 +11,7 @@ import { SESSION_TTL_MS, signSessionToken } from '../../../src/lib/session-token
 import { json, preflight } from '../_shared/http.ts';
 import { serviceClient } from '../_shared/session.ts';
 
-const TOSS_API = 'https://apps-in-toss-api.toss.im';
-
-type TossResult<T> = { resultType: 'SUCCESS'; success: T } | { resultType: 'FAIL'; error?: unknown };
-
-// Deno.createHttpClient는 unstable이라 타입에 없을 수 있다. 런타임에서 직접 확인한다.
-const createHttpClient = (
-  Deno as unknown as {
-    createHttpClient?: (options: { cert: string; key: string }) => unknown;
-  }
-).createHttpClient;
-
-function tossClient(): unknown {
-  const cert = Deno.env.get('TOSS_MTLS_CERT');
-  const key = Deno.env.get('TOSS_MTLS_KEY');
-  if (cert === undefined || key === undefined) {
-    throw new Error('mtls_not_configured');
-  }
-  if (createHttpClient === undefined) {
-    throw new Error('mtls_unsupported');
-  }
-  return createHttpClient({ cert, key });
-}
+import { TOSS_API, createHttpClient, grantReward, tossClient, type TossResult } from '../_shared/toss.ts';
 
 async function exchangeCode(
   client: unknown,
@@ -102,13 +81,23 @@ Deno.serve(async (request: Request) => {
   // 토스 서버까지 붙여보고 무엇으로 실패하는지를 본다.
   if (request.method === 'GET') {
     // ?handshake=1일 때만 토스 서버까지 실제로 붙어본다. 그냥 GET에 외부 호출이 딸려가지 않게.
-    const handshake = new URL(request.url).searchParams.get('handshake') === '1';
+    const params = new URL(request.url).searchParams;
+    const handshake = params.get('handshake') === '1';
+    // ?promotion=<userKey>: 프로모션 지급 프로브. PROMO_PROBE_CODE 시크릿이 TEST_ 코드로
+    // 설정돼 있을 때만 동작한다(실제 코드는 거부). 테스트가 끝나면 시크릿을 지운다.
+    const probeUser = params.get('promotion');
+    const probeCode = Deno.env.get('PROMO_PROBE_CODE') ?? '';
+    const promotion =
+      probeUser !== null && probeCode.startsWith('TEST_')
+        ? { rewardP: await grantReward(Number(probeUser), 'probe') }
+        : {};
     return json(
       {
         deno: Deno.version.deno,
         exists: createHttpClient !== undefined,
         certConfigured: Deno.env.get('TOSS_MTLS_CERT') !== undefined,
         ...(handshake ? await probeMtls() : {}),
+        ...promotion,
       },
       200,
       origin,

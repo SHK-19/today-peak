@@ -7,6 +7,7 @@ import { json, preflight } from '../_shared/http.ts';
 import { MOUNTAINS } from '../_shared/mountains.ts';
 import { parseReading } from '../_shared/reading.ts';
 import { readUserKey, serviceClient } from '../_shared/session.ts';
+import { grantReward } from '../_shared/toss.ts';
 
 Deno.serve(async (request: Request) => {
   const origin = request.headers.get('origin');
@@ -61,6 +62,11 @@ Deno.serve(async (request: Request) => {
     .eq('mountain_id', mountain.id)
     .gte('started_at', new Date(seoulDayStartMs(now)).toISOString())
     .limit(1);
+  // 첫 산행 프로모션(1인 1회)용. insert 전에 본다.
+  const { count: priorStarts } = await supabase
+    .from('hike_starts')
+    .select('id', { count: 'exact', head: true })
+    .eq('user_id', userKey);
 
   if (selectError !== null) {
     console.error(`hike_starts 조회 실패 · ${selectError.message}`);
@@ -82,5 +88,9 @@ Deno.serve(async (request: Request) => {
   }
 
   console.log(`hike start · userKey=${userKey} · ${mountain.id} · ${start.name}`);
-  return json({ status: 'ok', trailheadName: start.name }, 200, origin);
+  // 토스 포인트. 저장이 끝난 뒤에만, 실패해도 시작은 성공이다.
+  const rewardP =
+    (await grantReward(userKey, 'start')) +
+    (priorStarts === 0 ? await grantReward(userKey, 'first') : 0);
+  return json({ status: 'ok', trailheadName: start.name, rewardP }, 200, origin);
 });

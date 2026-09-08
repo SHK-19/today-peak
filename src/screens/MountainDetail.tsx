@@ -84,6 +84,17 @@ type Props = {
   onBack: () => void;
 };
 
+// 프로모션 사전 고지. 예산이 끝나면 지급이 멈추므로 그 말을 항상 붙인다.
+function rewardMessage(rewards: MountainStats['rewards']): string | null {
+  if (rewards === undefined) return null;
+  const parts: string[] = [];
+  if (rewards.first !== undefined) parts.push(`첫 산행 시작 ${rewards.first}P`);
+  if (rewards.start !== undefined) parts.push(`산행 시작 ${rewards.start}P`);
+  if (rewards.summit !== undefined) parts.push(`정상 인증 ${rewards.summit}P`);
+  if (parts.length === 0) return null;
+  return `${parts.join(' · ')}가 토스 포인트로 들어와요. 예산이 다 쓰이면 예고 없이 끝나요.`;
+}
+
 function hikeMessage(state: HikeState): string | null {
   switch (state.status) {
     case 'idle':
@@ -94,7 +105,9 @@ function hikeMessage(state: HikeState): string | null {
     case 'done':
       switch (state.outcome.status) {
         case 'ok':
-          return `${state.outcome.trailheadName}에서 산행을 시작했어요.`;
+          return state.outcome.rewardP !== undefined && state.outcome.rewardP > 0
+            ? `${state.outcome.trailheadName}에서 산행을 시작했어요. 토스 포인트 ${state.outcome.rewardP}P를 받았어요.`
+            : `${state.outcome.trailheadName}에서 산행을 시작했어요.`;
         case 'already_today':
           return '오늘은 이미 산행 시작을 기록했어요.';
         case 'too_far':
@@ -369,6 +382,9 @@ export function MountainDetail({
                 시작부터 {formatDuration(durationMin(state.outcome.hikeStartedAt, now))} 만에 정상
               </p>
             )}
+            {state.outcome.rewardP !== undefined && state.outcome.rewardP > 0 && (
+              <p className="ticket-season">토스 포인트 {state.outcome.rewardP}P를 받았어요</p>
+            )}
             <FieldNote reading={state.reading} outcome={state.outcome} />
           </div>
           <div className="ticket-stub">
@@ -557,6 +573,7 @@ export function MountainDetail({
 
   // ---- 기본: 정상에서 보는 화면. 큰 글자, 큰 버튼, 한 번의 탭.
   const hikeNote = hikeMessage(hike);
+  const rewardNote = rewardMessage(stats?.rewards);
   const canStartHike = canCheckIn(mountain);
   // 집계 줄이 하나도 없으면 버튼 위 구분선을 그리지 않는다.
   // 이 산의 계절·고도에 맞는 추천 물건 3개. 큐레이션이 비면 카드를 그리지 않는다.
@@ -646,6 +663,8 @@ export function MountainDetail({
                     ? '등산로 입구에서 누르고 정상까지 가면 걸린 시간이 스탬프에 남아요. 안 눌러도 정상 인증은 돼요.'
                     : '산 근처에서 누르고 정상까지 가면 걸린 시간이 스탬프에 남아요. 안 눌러도 정상 인증은 돼요.')}
               </p>
+              {/* 포인트 사전 고지. 서버가 진행 중인 프로모션을 알려줄 때만 보인다. */}
+              {rewardNote !== null && <p className="footnote">{rewardNote}</p>}
             </div>
           )}
         </div>

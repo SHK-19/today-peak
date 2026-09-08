@@ -7,6 +7,7 @@ import type { Stamp as StampRecord } from '../lib/api.ts';
 import { COLLECTIONS, collectionOf, type CollectionId } from '../lib/collection.ts';
 import { formatSeoulDate } from '../lib/day.ts';
 import { groupByRegion } from '../lib/region.ts';
+import { askReminder, canAskReminder, reminderAgreed, type ReminderResult } from '../lib/notify.ts';
 import { askReview, canReview } from '../lib/review.ts';
 import { groupSeasons, latestSeason, seasonCount } from '../lib/seasons.ts';
 import type { Mountain } from '../lib/verify.ts';
@@ -33,6 +34,9 @@ export function MyStamps({ mountains: allMountains, stamps, failed, onRetry }: P
   const count = stamps === null ? 0 : seasons.size;
   const fourSeasons = [...seasons.values()].filter((record) => seasonCount(record) === 4).length;
   const [open, setOpen] = useState<Mountain | null>(null);
+  const [reminder, setReminder] = useState<ReminderResult | 'agreed' | null>(
+    reminderAgreed() ? 'agreed' : null,
+  );
 
   return (
     <main className="page page-tabbed">
@@ -133,6 +137,30 @@ export function MyStamps({ mountains: allMountains, stamps, failed, onRetry }: P
           );
         })}
       </div>
+
+      {/* 산행 알림 동의. 토스가 동의 화면을 띄우고 월·수·금·토 아침에 보낸다. 포인트와 엮지 않는다. */}
+      {canAskReminder() && (
+        <section className="review-ask">
+          <p>
+            {reminder === 'agreed' || reminder === 'newAgreement' || reminder === 'alreadyAgreed'
+              ? '월·수·금·토 아침 7시에 산행 알림을 보내드려요. 해제는 토스 앱 설정 > 알림에서 할 수 있어요.'
+              : reminder === 'agreementRejected'
+                ? '알림을 받지 않기로 했어요. 마음이 바뀌면 다시 눌러주세요.'
+                : reminder === 'error'
+                  ? '알림 설정을 열지 못했어요. 잠시 후 다시 눌러주세요.'
+                  : '월·수·금·토 아침 7시에 산행 알림을 받을 수 있어요.'}
+          </p>
+          {reminder !== 'agreed' && reminder !== 'newAgreement' && reminder !== 'alreadyAgreed' && (
+            <button
+              type="button"
+              className="btn btn-secondary"
+              onClick={() => void askReminder().then(setReminder)}
+            >
+              산행 알림 받기
+            </button>
+          )}
+        </section>
+      )}
 
       {/* 리뷰는 여기서만 직접 물어본다. 스탬프를 보고 있을 때가 가장 기분 좋은 순간이다. */}
       {canReview() && (

@@ -7,6 +7,7 @@ import { json, preflight } from '../_shared/http.ts';
 import { MOUNTAINS } from '../_shared/mountains.ts';
 import { parseReading } from '../_shared/reading.ts';
 import { readUserKey, serviceClient } from '../_shared/session.ts';
+import { grantReward } from '../_shared/toss.ts';
 
 Deno.serve(async (request: Request) => {
   const origin = request.headers.get('origin');
@@ -119,10 +120,12 @@ Deno.serve(async (request: Request) => {
   );
 
   console.log(`stamp · userKey=${userKey} · ${mountain.id} · ${Math.round(result.distanceM)}m`);
+  // 토스 포인트. 스탬프가 저장된 뒤에만, 실패해도 인증은 성공이다.
+  const rewardP = await grantReward(userKey, 'summit');
   return json(
     hikeStartedAt === undefined
-      ? { status: 'ok', distanceM: result.distanceM }
-      : { status: 'ok', distanceM: result.distanceM, hikeStartedAt },
+      ? { status: 'ok', distanceM: result.distanceM, rewardP }
+      : { status: 'ok', distanceM: result.distanceM, hikeStartedAt, rewardP },
     200,
     origin,
   );

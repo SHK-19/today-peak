@@ -7,7 +7,8 @@ const API_BASE = import.meta.env.VITE_API_BASE ?? '';
 
 export type SummitOutcome =
   // hikeStartedAt: 같은 산에서 24시간 안에 누른 산행 시작. 있으면 티켓에 걸린 시간을 적는다.
-  | { status: 'ok'; distanceM: number; hikeStartedAt?: string }
+  // rewardP: 서버가 지급한 토스 포인트. 0이면 프로모션이 없거나 지급이 안 된 것.
+  | { status: 'ok'; distanceM: number; hikeStartedAt?: string; rewardP?: number }
   | { status: 'already_today'; distanceM: number }
   | { status: 'rejected'; reason: VerifyReason; distanceM: number }
   | { status: 'stale_reading' };
@@ -36,6 +37,8 @@ export type MountainStats = {
   places?: NearbyPlaces;
   /** 등산 코스 요약(거리 짧은 순). 지점 목록은 fetchCourse로 따로. */
   courses?: CourseSummary[];
+  /** 진행 중인 토스 포인트 프로모션과 금액. 없으면 비어 있다. */
+  rewards?: { start?: number; summit?: number; first?: number };
 };
 
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
@@ -79,7 +82,7 @@ export async function fetchMyStamps(): Promise<Stamp[]> {
 }
 
 export type HikeStartOutcome =
-  | { status: 'ok'; trailheadName: string }
+  | { status: 'ok'; trailheadName: string; rewardP?: number }
   | { status: 'already_today'; trailheadName: string }
   | { status: 'too_far'; trailheadName: string; distanceM: number }
   | { status: 'stale_reading' };
