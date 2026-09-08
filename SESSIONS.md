@@ -648,3 +648,7 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
 - 스마트 발송: 알림동의문 121085(SCHEDULED, 월·수·금·토) + 기능성 정기 푸시 `today-peak-hike-reminder`(07:00, "산행 알림 / 오늘 정상에서 산행 기록을 남길 수 있어요.") AI 검수 통과.
   앱은 내 스탬프 탭 카드에서 `Notification.requestAgreement`로 동의만 받는다(발송은 토스). 광고성 재방문 캠페인은 최근 30일 100명 이상부터, 콘솔 웹 전용.
 - 남은 것: 포인트 문구·알림 카드가 들어간 번들(28)은 27 검수 결과 뒤에.
+- 광고 성과 분석 세팅: 핵심 지표에 전환 템플릿 "인앱 광고 시청 유저"(IAA_IMPRESSION, SUB, id 37169). 앱은 `src/lib/track.ts`로 `Analytics.log`
+  이벤트 7종(summit_verified·hike_start·ad_interstitial·ad_banner·pick_click·share·reminder). 이벤트가 콘솔에 잡히면(번들 라이브 후 하루)
+  summit_verified를 대표(MAIN) 전환, hike_start를 보조로 `event_act_type_set`(EVENT_LOG)으로 만든다. 전환 지표는 최대 3개.
+  광고 리포트는 `iaa_report_performance`(노출·eCPM·수익)·`iaa_report_analytics`(funnel·빈도). 광고성 푸시 캠페인은 콘솔 웹 전용.

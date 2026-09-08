@@ -1,5 +1,7 @@
 import { loadFullScreenAd, showFullScreenAd } from '@apps-in-toss/web-framework';
 
+import { track } from './track.ts';
+
 // 전면 광고. 인증 성공 화면에서 미리 불러두고, "내 스탬프"로 넘어갈 때 한 번 보여준다.
 // 인증 버튼 앞에는 절대 두지 않는다 — 정상에서 신호가 약한데 광고가 인증을 막으면 안 되고,
 // 광고를 봐야 스탬프를 주는 구조는 정책 위반이다. 광고가 실패하면 그냥 넘어간다.
@@ -49,15 +51,18 @@ export function showInterstitial(): Promise<void> {
         finish();
         return;
       }
+      track('ad_interstitial', { result: 'shown' });
       const cleanup = showFullScreenAd({
         options: { adGroupId: AD_GROUP_ID },
         onEvent: (event) => {
           if (event.type === 'dismissed' || event.type === 'failedToShow') {
+            track('ad_interstitial', { result: event.type === 'dismissed' ? 'dismissed' : 'failed' });
             cleanup();
             finish();
           }
         },
         onError: () => {
+          track('ad_interstitial', { result: 'failed' });
           cleanup();
           finish();
         },

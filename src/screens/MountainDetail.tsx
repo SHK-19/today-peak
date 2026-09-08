@@ -32,6 +32,8 @@ import { PICK_DISCLOSURE, picksForMountain, type Pick } from '../lib/picks.ts';
 import { preloadInterstitial, showInterstitial } from '../lib/ads.ts';
 import { askReviewOnce } from '../lib/review.ts';
 import { openPick, shareMountain } from '../lib/share.ts';
+import { collectionOf } from '../lib/collection.ts';
+import { track } from '../lib/track.ts';
 import { seasonOf } from '../lib/stamp-art.ts';
 import { canCheckIn } from '../lib/trailhead.ts';
 import { durationMin, formatDuration } from '../lib/visits.ts';
@@ -253,7 +255,15 @@ export function MountainDetail({
         return;
       }
       const reading = await readLocationForCheckIn();
-      setHike({ status: 'done', outcome: await startHike(mountain.id, reading) });
+      const outcome = await startHike(mountain.id, reading);
+      if (outcome.status === 'ok') {
+        track('hike_start', {
+          mountain_id: mountain.id,
+          first: (outcome.rewardP ?? 0) > 3,
+          reward_p: outcome.rewardP ?? 0,
+        });
+      }
+      setHike({ status: 'done', outcome });
     } catch {
       setHike({ status: 'failed' });
     }
@@ -276,6 +286,11 @@ export function MountainDetail({
       const outcome = await verifySummitOnServer(mountain.id, reading);
       setState({ status: 'result', reading, outcome, confirmed: true, saveFailed: false });
       if (outcome.status === 'ok') {
+        track('summit_verified', {
+          mountain_id: mountain.id,
+          collection: collectionOf(mountain),
+          reward_p: outcome.rewardP ?? 0,
+        });
         stampedHere.current = true;
         onVerified();
         askReviewOnce();

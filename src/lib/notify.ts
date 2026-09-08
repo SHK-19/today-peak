@@ -1,5 +1,7 @@
 import { Notification } from '@apps-in-toss/web-framework';
 
+import { track } from './track.ts';
+
 // 기능성 정기 푸시 "산행 알림"(월·수·금·토 7시). 콘솔 스마트 발송의 템플릿 코드.
 // 동의는 토스가 자체 화면으로 받고, 발송도 토스가 한다. 우리는 동의 화면을 띄우기만 한다.
 const TEMPLATE_CODE = 'today-peak-hike-reminder';
@@ -29,6 +31,7 @@ export function askReminder(): Promise<ReminderResult> {
     let cleanup = () => {};
     const finish = (result: ReminderResult) => {
       cleanup();
+      track('reminder', { result });
       if (result === 'newAgreement' || result === 'alreadyAgreed') {
         try {
           localStorage.setItem(AGREED_KEY, '1');

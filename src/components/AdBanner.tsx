@@ -1,6 +1,8 @@
 import { TossAds } from '@apps-in-toss/web-framework';
 import { useEffect, useRef, useState } from 'react';
 
+import { track } from '../lib/track.ts';
+
 // 산 상세 중간의 배너 광고. SDK가 "Ad" 표기·디자인을 그리고 우리는 자리만 준다.
 // 광고가 없거나(NoFill) 실패하면 자리를 접는다 — 빈 칸을 남기지 않는다.
 // 정책: 같은 화면에 같은 포맷 2개 금지, 버튼과 붙여 두지 않기(위아래 여백), 스크롤 화면에만.
@@ -61,8 +63,16 @@ export function AdBanner() {
           tone: 'grey',
           variant: 'card',
           callbacks: {
-            onNoFill: () => setShown(false),
-            onAdFailedToRender: () => setShown(false),
+            onAdRendered: () => track('ad_banner', { result: 'rendered' }),
+            onAdClicked: () => track('ad_banner', { result: 'clicked' }),
+            onNoFill: () => {
+              track('ad_banner', { result: 'nofill' });
+              setShown(false);
+            },
+            onAdFailedToRender: () => {
+              track('ad_banner', { result: 'failed' });
+              setShown(false);
+            },
           },
         });
       } catch {
