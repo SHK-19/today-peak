@@ -652,3 +652,4 @@ trailheads가 빈 산엔 버튼 없음. 시작 없이 정상 인증 성공.
   이벤트 7종(summit_verified·hike_start·ad_interstitial·ad_banner·pick_click·share·reminder). 이벤트가 콘솔에 잡히면(번들 라이브 후 하루)
   summit_verified를 대표(MAIN) 전환, hike_start를 보조로 `event_act_type_set`(EVENT_LOG)으로 만든다. 전환 지표는 최대 3개.
   광고 리포트는 `iaa_report_performance`(노출·eCPM·수익)·`iaa_report_analytics`(funnel·빈도). 광고성 푸시 캠페인은 콘솔 웹 전용.
+- 번들 27 라이브(9/8 오후). 번들 28(v0.6: 포인트 문구·고지, 알림 카드, 분석 이벤트, 배너 여백) 검수 요청 — deploymentId 01a07f81-5513-7b0d-b6a9-e0ad4c609cde.
