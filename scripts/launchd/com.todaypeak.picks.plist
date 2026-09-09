@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 3시간마다 오늘 Pick 갱신(00:30부터 8회). 설치:
+<!-- 6시간마다 오늘 Pick 갱신(하루 4회). 설치:
        cp scripts/launchd/com.todaypeak.picks.plist ~/Library/LaunchAgents/
        launchctl unload ~/Library/LaunchAgents/com.todaypeak.picks.plist 2>/dev/null
        launchctl load ~/Library/LaunchAgents/com.todaypeak.picks.plist
@@ -20,14 +20,10 @@
   </array>
   <key>StartCalendarInterval</key>
   <array>
-    <dict><key>Hour</key><integer>0</integer><key>Minute</key><integer>30</integer></dict>
-    <dict><key>Hour</key><integer>3</integer><key>Minute</key><integer>30</integer></dict>
     <dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>30</integer></dict>
-    <dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>30</integer></dict>
     <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>30</integer></dict>
-    <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>30</integer></dict>
     <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>30</integer></dict>
-    <dict><key>Hour</key><integer>21</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>0</integer><key>Minute</key><integer>30</integer></dict>
   </array>
   <key>StandardOutPath</key><string>/tmp/todaypeak-picks.log</string>
   <key>StandardErrorPath</key><string>/tmp/todaypeak-picks.log</string>

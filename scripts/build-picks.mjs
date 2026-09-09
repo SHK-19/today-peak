@@ -131,12 +131,36 @@ try {
   console.log(`하루특가 조회 실패 → 건너뜀: ${error.message.slice(0, 100)}`);
 }
 
-// ---- 링크 발급. 초당 제한(429)에 걸리지 않게 호출 사이를 띄운다.
+// ---- 링크 발급. 상품마다 링크가 고정이라(같은 tacaItemId면 늘 같은 shortUrl) 이미 받아둔 건 다시 부르지 않는다.
+// 2026-09-09 확인: 9/7 로그의 126개 중 120개가 그대로였고, 다른 6개는 매일 바뀌는 하루특가였다.
+// 그래서 3시간마다 돌려도 실제 발급 호출은 새로 들어온 상품 몇 개뿐이다.
+const knownLinks = new Map();
+try {
+  const previous = JSON.parse(readFileSync(new URL('src/data/picks.json', ROOT), 'utf8'));
+  for (const p of previous.items) {
+    const id = /^(?:sl|deal)-(\d+)$/.exec(p.id)?.[1];
+    if (id !== undefined) knownLinks.set(Number(id), p.link);
+  }
+} catch {
+  // 첫 실행이면 파일이 없다. 전부 새로 발급한다.
+}
+let issued = 0;
+async function linkFor(tacaItemId) {
+  const known = knownLinks.get(tacaItemId);
+  if (known !== undefined) return known;
+  await new Promise((resolve) => setTimeout(resolve, 400)); // 새로 발급할 때만 초당 제한을 피해 쉬어 간다
+  issued += 1;
+  const link = await api('/openapi/links', {
+    method: 'POST',
+    body: JSON.stringify({ tacaItemId, publisherId: PUBLISHER_ID }),
+  });
+  return link.shortUrl;
+}
+
 const picks = [];
 const gone = []; // 품절·삭제로 없어진 상품. 정상이고, 큐레이션을 사람이 보충해야 한다.
 let failedCount = 0; // 401·네트워크 같은 일시적 오류. 이게 많으면 결과를 믿을 수 없다.
 for (const w of wanted) {
-  await new Promise((resolve) => setTimeout(resolve, 400));
   const d = details.get(w.tacaItemId !== null ? `item:${w.tacaItemId}` : `taca:${w.tacaId}`);
   if (d === undefined) {
     gone.push(`item:${w.tacaItemId ?? w.tacaId} (상품 없음)`);
@@ -144,10 +168,7 @@ for (const w of wanted) {
   }
   let link;
   try {
-    link = await api('/openapi/links', {
-      method: 'POST',
-      body: JSON.stringify({ tacaItemId: d.tacaItemId, publisherId: PUBLISHER_ID }),
-    });
+    link = await linkFor(d.tacaItemId);
   } catch (error) {
     console.log(`링크 발급 실패 → 제외: ${d.displayName} (${error.message.slice(0, 120)})`);
     failedCount += 1;
@@ -162,7 +183,7 @@ for (const w of wanted) {
     id: `sl-${d.tacaItemId}`,
     name: d.displayName,
     category: w.category,
-    link: link.shortUrl,
+    link,
     imageUrl: d.thumbnailUrl,
     priceText: `${Number(d.displayPrice).toLocaleString('ko-KR')}원`,
     // 정가보다 싸면 할인율. 하루특가 표시는 안 한다 — 번들은 정적이고 특가는 그날 끝난다.
@@ -174,10 +195,9 @@ for (const w of wanted) {
 
 // 하루특가도 링크를 발급해 앞에 둔다. 카테고리는 이름으로 대충 나눈다 — 하루 지나면 사라지는 항목이다.
 for (const d of deals) {
-  await new Promise((resolve) => setTimeout(resolve, 400));
   let link;
   try {
-    link = await api('/openapi/links', { method: 'POST', body: JSON.stringify({ tacaItemId: d.tacaItemId, publisherId: PUBLISHER_ID }) });
+    link = await linkFor(d.tacaItemId);
   } catch {
     continue;
   }
@@ -187,7 +207,7 @@ for (const d of deals) {
     id: `deal-${d.tacaItemId}`,
     name,
     category,
-    link: link.shortUrl,
+    link,
     imageUrl: d.thumbnailUrl,
     priceText: `${Number(d.displayPrice).toLocaleString('ko-KR')}원`,
     ...(Number(d.discountRate) >= 10 ? { discountRate: Number(d.discountRate) } : {}),
@@ -195,7 +215,7 @@ for (const d of deals) {
   });
 }
 
-console.log(`큐레이션 ${wanted.length}개 → 상품 ${details.size}개 → 링크 ${picks.length}개 (하루특가 ${deals.length})`);
+console.log(`큐레이션 ${wanted.length}개 → 상품 ${details.size}개 → 링크 ${picks.length}개 (하루특가 ${deals.length}, 새로 발급 ${issued})`);
 for (const p of picks) console.log(`  [${p.category}] ${p.name} · ${p.priceText} · ${p.link}`);
 
 if (gone.length > 0) {
