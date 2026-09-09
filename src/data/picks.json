@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-09T14:05:42.108Z",
+  "updatedAt": "2026-09-09T14:06:26.039Z",
   "items": [
     {
       "id": "deal-2642034095",
@@ -10,6 +10,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDUzNjlm/QUpKWk5zdnBKSnl6Y3N0dGRyV3gwcytuV28wMHlxZTBHWnBjMHUwdGZHMFc.png",
       "priceText": "20,900원",
       "discountRate": 30,
+      "dealEndsAt": "2026-09-09T23:59:59+09:00"
+    },
+    {
+      "id": "deal-143224599",
+      "name": "대한민국농수산 구운란, 대란, 30구, 1판",
+      "category": "음식",
+      "link": "https://toss.im/_m/Rzx1Bhu2",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/Njc4ZTE4/TThmOGMxc2NRK2RzZWE4T3hPYmRISnFXeVBtZFdYVkRhcS9xcnFkVU5IUT0.png",
+      "priceText": "12,900원",
+      "discountRate": 53,
       "dealEndsAt": "2026-09-09T23:59:59+09:00"
     },
     {
@@ -30,6 +40,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/M2I4NzVh/QU94eTc5eDNZaml3WGk1aGlZNDRQWmp4bk1ZdFpuak9IS1ZBR2krZGN1SEg.png",
       "priceText": "11,900원",
       "discountRate": 26,
+      "dealEndsAt": "2026-09-09T23:59:59+09:00"
+    },
+    {
+      "id": "deal-81250983",
+      "name": "호정가 흑임자약과, 1kg, 1세트",
+      "category": "음식",
+      "link": "https://toss.im/_m/v0cHf5c1",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2NjZGEz/SzFyVmFWdGN0V2xtbWJOc05heHN0dHNrNVNUSXhwVGJaelE4Mm1PMFMzST0.png",
+      "priceText": "10,900원",
+      "discountRate": 31,
       "dealEndsAt": "2026-09-09T23:59:59+09:00"
     },
     {
