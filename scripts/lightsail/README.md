@@ -9,6 +9,18 @@
 - 리전: **서울(ap-northeast-2)** — API가 국내에 있고 지연이 짧다
 - 이미지: Linux/Unix → OS Only → **Ubuntu 24.04 LTS**
 - 플랜: **$5/월** (1GB). 이 작업은 1.8초짜리라 최소 플랜으로 충분하다
+- Instance name: `today-peak-picks` — **생성 후 이름을 못 바꾼다**
+- Automatic snapshots: **끈다.** 상태가 전부 git + `.env`라 복구가 빠르고, 스냅샷은 용량만큼 과금된다
+- Advanced settings → Launch script에 아래를 넣으면 4번의 설치 단계가 자동으로 끝난다:
+
+      #!/bin/bash
+      apt-get update
+      apt-get install -y git zsh
+      curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+      apt-get install -y nodejs
+
+- SSH key: **Create custom key**(이름 `today-peak`)로 새로 만들고 `.pem`을 받는다.
+  **다운로드는 이때 한 번뿐이다.** `~/Code/keys/today-peak.pem`에 두고 `chmod 400`
 - 생성 후 **Networking → Create static IP → 인스턴스에 attach**
   고정 IP는 인스턴스에 붙어 있는 동안 무료다. 떼어두면 과금되니 반드시 붙여둘 것
 
@@ -29,9 +41,14 @@
 
 ## 4. 서버 설정
 
+1번에서 launch script를 넣었으면 git·zsh·node는 이미 설치돼 있다(`node -v`로 확인).
+없다면 수동으로:
+
     sudo apt update && sudo apt install -y git zsh
     curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
     sudo apt install -y nodejs
+
+이어서:
 
     git clone git@github.com:SHK-19/today-peak.git ~/today-peak
     cd ~/today-peak
