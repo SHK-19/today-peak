@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 매일 07:30 오늘 Pick 갱신. 설치:
+<!-- 3시간마다 오늘 Pick 갱신(00:30부터 8회). 설치:
        cp scripts/launchd/com.todaypeak.picks.plist ~/Library/LaunchAgents/
+       launchctl unload ~/Library/LaunchAgents/com.todaypeak.picks.plist 2>/dev/null
        launchctl load ~/Library/LaunchAgents/com.todaypeak.picks.plist
-     해제: launchctl unload ~/Library/LaunchAgents/com.todaypeak.picks.plist -->
+     해제: launchctl unload ~/Library/LaunchAgents/com.todaypeak.picks.plist
+
+     잠자기 중에 지나간 시각은 깨어날 때 한 번 실행된다(여러 번 밀렸어도 1회).
+     그 시각에 맥을 깨우려면 따로 예약해야 한다(sudo 필요, 사용자가 직접):
+       sudo pmset repeat wakeorpower MTWRFSU 00:25:00
+     완전히 꺼진 맥은 켤 수 없다 - Apple Silicon은 예약 부팅을 지원하지 않는다. -->
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -13,7 +19,16 @@
     <string>/Users/sanghun_kim/Code/today_peak/scripts/daily-picks.sh</string>
   </array>
   <key>StartCalendarInterval</key>
-  <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>30</integer></dict>
+  <array>
+    <dict><key>Hour</key><integer>0</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>3</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>21</integer><key>Minute</key><integer>30</integer></dict>
+  </array>
   <key>StandardOutPath</key><string>/tmp/todaypeak-picks.log</string>
   <key>StandardErrorPath</key><string>/tmp/todaypeak-picks.log</string>
 </dict>

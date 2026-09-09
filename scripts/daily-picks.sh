@@ -8,6 +8,6 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 node scripts/build-picks.mjs --write
 if ! git diff --quiet -- docs/picks.json src/data/picks.json; then
   git add docs/picks.json src/data/picks.json
-  git commit -q -m "오늘 Pick 자동 갱신 $(date +%Y-%m-%d)"
+  git commit -q -m "오늘 Pick 자동 갱신 $(date '+%Y-%m-%d %H:%M')"
   git push -q origin main
 fi
