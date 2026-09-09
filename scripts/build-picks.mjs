@@ -58,8 +58,8 @@ for (const line of lines) {
 
 // ---- 토큰 (파일에 저장, 만료 하루 전까지 재사용)
 const tokenPath = new URL('.sharelink-token.json', ROOT);
-async function token() {
-  if (existsSync(tokenPath)) {
+async function token(force = false) {
+  if (!force && existsSync(tokenPath)) {
     const saved = JSON.parse(readFileSync(tokenPath, 'utf8'));
     if (saved.expiresAt - Date.now() > 24 * 60 * 60 * 1000) return saved.accessToken;
   }
@@ -79,13 +79,22 @@ async function token() {
   return body.access_token;
 }
 
-const TOKEN = await token();
-async function api(path, init = {}) {
+let TOKEN = await token();
+async function call(path, init) {
   const response = await fetch(`https://sharelink.toss.im${path}`, {
     ...init,
     headers: { authorization: `Bearer ${TOKEN}`, 'content-type': 'application/json', ...(init.headers ?? {}) },
   });
-  const body = await response.json().catch(() => ({}));
+  return { response, body: await response.json().catch(() => ({})) };
+}
+async function api(path, init = {}) {
+  let { response, body } = await call(path, init);
+  // 401이면 토큰을 새로 받아 한 번 더. 네트워크가 끊겼다 붙으면 그 뒤 호출이 전부 401이 된다
+  // (2026-09-08 자동 실행이 이걸로 8번째부터 끝까지 실패했다).
+  if (response.status === 401) {
+    TOKEN = await token(true);
+    ({ response, body } = await call(path, init));
+  }
   if (!response.ok || body.resultType !== 'SUCCESS') {
     throw new Error(`${path} ${response.status} ${JSON.stringify(body).slice(0, 300)}`);
   }
@@ -124,10 +133,15 @@ try {
 
 // ---- 링크 발급. 초당 제한(429)에 걸리지 않게 호출 사이를 띄운다.
 const picks = [];
+const gone = []; // 품절·삭제로 없어진 상품. 정상이고, 큐레이션을 사람이 보충해야 한다.
+let failedCount = 0; // 401·네트워크 같은 일시적 오류. 이게 많으면 결과를 믿을 수 없다.
 for (const w of wanted) {
   await new Promise((resolve) => setTimeout(resolve, 400));
   const d = details.get(w.tacaItemId !== null ? `item:${w.tacaItemId}` : `taca:${w.tacaId}`);
-  if (d === undefined) continue;
+  if (d === undefined) {
+    gone.push(`item:${w.tacaItemId ?? w.tacaId} (상품 없음)`);
+    continue;
+  }
   let link;
   try {
     link = await api('/openapi/links', {
@@ -136,9 +150,11 @@ for (const w of wanted) {
     });
   } catch (error) {
     console.log(`링크 발급 실패 → 제외: ${d.displayName} (${error.message.slice(0, 120)})`);
+    failedCount += 1;
     continue;
   }
   if (d.isSoldOut) {
+    gone.push(`${d.displayName} (품절)`);
     console.log(`품절 → 제외: ${d.displayName}`);
     continue;
   }
@@ -182,7 +198,19 @@ for (const d of deals) {
 console.log(`큐레이션 ${wanted.length}개 → 상품 ${details.size}개 → 링크 ${picks.length}개 (하루특가 ${deals.length})`);
 for (const p of picks) console.log(`  [${p.category}] ${p.name} · ${p.priceText} · ${p.link}`);
 
+if (gone.length > 0) {
+  console.log(`\n없어진 상품 ${gone.length}개 — picks-curation.txt에서 빼고 새로 채울 것:`);
+  for (const g of gone) console.log(`  ${g}`);
+}
+
 if (process.argv[2] === '--write') {
+  // 중간에 API가 끊기면 살아남은 앞부분만 파일을 덮어써 오늘 Pick이 통째로 비어 버린다
+  // (2026-09-08 자동 실행이 8번째부터 401로 실패해 126개 → 7개). 일시적 오류가 여럿이면 쓰지 않는다.
+  // 품절·삭제로 사라진 건 정상이라 세지 않는다 — 그것까지 막으면 갱신이 영영 멈춘다.
+  if (failedCount > wanted.length * 0.05) {
+    console.error(`일시적 오류로 ${failedCount}개 실패 → 쓰지 않는다. 기존 파일 유지.`);
+    process.exit(1);
+  }
   const body = { _note: '자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.', updatedAt: new Date().toISOString(), items: picks };
   writeFileSync(new URL('src/data/picks.json', ROOT), `${JSON.stringify(body, null, 2)}\n`);
   writeFileSync(new URL('docs/picks.json', ROOT), `${JSON.stringify(body)}\n`);
