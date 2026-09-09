@@ -61,9 +61,13 @@
 
 ## 5. cron 등록 (하루 4회)
 
-    crontab -e
+**먼저 서버 시간대를 한국으로 맞춘다.** cron은 시스템 시간대로 돌아서, UTC인 채로 두면
+아래 시각이 9시간 밀린다(명령 안의 `TZ=`는 스크립트 출력에만 적용된다).
 
-에 아래 한 줄:
+    sudo timedatectl set-timezone Asia/Seoul
+    sudo systemctl restart cron
+
+그다음 `crontab -e`에 아래 한 줄:
 
     30 0,6,12,18 * * * cd ~/today-peak && TZ=Asia/Seoul /bin/zsh scripts/daily-picks.sh >> /tmp/todaypeak-picks.log 2>&1
 
