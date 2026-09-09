@@ -5,6 +5,9 @@
 set -e
 cd "$(dirname "$0")/.."
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+# 사람이 고친 큐레이션·스크립트를 먼저 받는다. 이걸 빼면 뒤처진 채로 커밋해 push가 거부되고
+# 그 뒤로 계속 실패한다(서버와 맥이 같은 main에 push하기 때문).
+git pull -q --rebase origin main
 node scripts/build-picks.mjs --write
 if ! git diff --quiet -- docs/picks.json src/data/picks.json; then
   git add docs/picks.json src/data/picks.json
