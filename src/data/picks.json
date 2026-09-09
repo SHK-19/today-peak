@@ -1,7 +1,17 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-09T15:30:09.891Z",
+  "updatedAt": "2026-09-09T21:30:06.227Z",
   "items": [
+    {
+      "id": "deal-558788755",
+      "name": "페이보잇 치즈폭탄 스파게티 미트토마토, 340g, 4개",
+      "category": "음식",
+      "link": "https://toss.im/_m/54XJRlmt",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/N2IxNWM2/VCtDWnNtMmJPeVNXTTN1enVaODVqemU3WVpzYmVPV200MEhFdEIxZ210QT0.png",
+      "priceText": "19,900원",
+      "discountRate": 49,
+      "dealEndsAt": "2026-09-10T23:59:59+09:00"
+    },
     {
       "id": "deal-2634077039",
       "name": "햇 호풍미 꿀고구마, 특상, 2kg, 1박스",
@@ -13,23 +23,23 @@
       "dealEndsAt": "2026-09-10T23:59:59+09:00"
     },
     {
-      "id": "deal-149101033",
-      "name": "일동후디스 하이뮨 프로틴 밸런스 액티브 밤티라미수 제로, 250ml, 18개",
+      "id": "deal-1469154921",
+      "name": "가람상점 완숙 찰 토마토 못난이 주스용, 랜덤과, 5kg, 1개",
       "category": "음식",
-      "link": "https://toss.im/_m/51K5uX1m",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-28/0c4bf6fe-c2e8-40ee-aeb6-ce062de0c2ce.jpeg",
-      "priceText": "19,900원",
-      "discountRate": 64,
+      "link": "https://toss.im/_m/PILg6XYg",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/M2QwNWIy/VkptSmpsNlRxU2JFM3BHa1d3cWZkU05aTmt5K29YWmUxRG92VnVSN3ZTYz0.png",
+      "priceText": "15,800원",
+      "discountRate": 65,
       "dealEndsAt": "2026-09-10T23:59:59+09:00"
     },
     {
-      "id": "deal-2635775009",
-      "name": "크리스탈 생수, 무라벨, 500ml, 40개",
-      "category": "음식",
-      "link": "https://toss.im/_m/BNXMi1Mk",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODNjOTA0/QUk4Wkp5Yk95NDJHWERrNFBIQjVuajZrL0orR1BQRmowelBsYngrUXJMajU.png",
-      "priceText": "7,300원",
-      "discountRate": 63,
+      "id": "deal-2588220177",
+      "name": "순수공감 프라임 물티슈, 캡형, 70gsm, 72매, 10팩",
+      "category": "안전",
+      "link": "https://toss.im/_m/fYulplxe",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-07/9ddc1e81-e47e-45bb-b22d-fcf14f772c82.jpeg",
+      "priceText": "9,900원",
+      "discountRate": 64,
       "dealEndsAt": "2026-09-10T23:59:59+09:00"
     },
     {
@@ -43,22 +53,12 @@
       "dealEndsAt": "2026-09-10T23:59:59+09:00"
     },
     {
-      "id": "deal-1469154921",
-      "name": "가람상점 완숙 찰 토마토 못난이 주스용, 랜덤과, 5kg, 1개",
+      "id": "deal-149101033",
+      "name": "일동후디스 하이뮨 프로틴 밸런스 액티브 밤티라미수 제로, 250ml, 18개",
       "category": "음식",
-      "link": "https://toss.im/_m/PILg6XYg",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/M2QwNWIy/VkptSmpsNlRxU2JFM3BHa1d3cWZkU05aTmt5K29YWmUxRG92VnVSN3ZTYz0.png",
-      "priceText": "15,900원",
-      "discountRate": 65,
-      "dealEndsAt": "2026-09-10T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2588220177",
-      "name": "순수공감 프라임 물티슈, 캡형, 70gsm, 72매, 10팩",
-      "category": "안전",
-      "link": "https://toss.im/_m/fYulplxe",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-07/9ddc1e81-e47e-45bb-b22d-fcf14f772c82.jpeg",
-      "priceText": "9,900원",
+      "link": "https://toss.im/_m/51K5uX1m",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-28/0c4bf6fe-c2e8-40ee-aeb6-ce062de0c2ce.jpeg",
+      "priceText": "19,900원",
       "discountRate": 64,
       "dealEndsAt": "2026-09-10T23:59:59+09:00"
     },
