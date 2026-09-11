@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-11T03:30:07.127Z",
+  "updatedAt": "2026-09-11T09:30:05.304Z",
   "items": [
     {
       "id": "deal-2288487147",
@@ -335,8 +335,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/lRPzesIe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "11,800원",
-      "discountRate": 43
+      "priceText": "12,400원",
+      "discountRate": 40
     },
     {
       "id": "sl-2274809577",
@@ -485,7 +485,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,880원",
+      "priceText": "14,870원",
       "discountRate": 17
     },
     {
@@ -778,15 +778,6 @@
       "discountRate": 48
     },
     {
-      "id": "sl-1002354437",
-      "name": "힘내고 허니너트바, 35g, 12개입, 3박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/7aejuG7s",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/OWM0NzE4/QU5LV2tYWlVrVXZiMzBiVjZqcVI1VDVMVVk2TnJISmZObXZKWUtuQWUvNkY.png",
-      "priceText": "17,900원",
-      "discountRate": 66
-    },
-    {
       "id": "sl-442743829",
       "name": "김규흔 한과 하루한끼 영양바, 25g, 25개입, 1박스",
       "category": "음식",
@@ -850,7 +841,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/jkGqPRkd",
       "imageUrl": "https://shopping.toss.im/1b3/live/product/419628951/1b384069-29db-46d4-8eff-e0f0e3c85573.jpg",
-      "priceText": "5,099원",
+      "priceText": "5,055원",
+      "discountRate": 11,
       "seasons": [
         "spring",
         "autumn",
@@ -990,7 +982,7 @@
       "category": "의류",
       "link": "https://toss.im/_m/n16XSMUD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTljYjgz/TlVwVE5PdWRucU9LMjl5T0ROU01iSGRqTzBxaXRtTWJDNzBPT05zSjJ1VT0.png",
-      "priceText": "5,608원",
+      "priceText": "5,580원",
       "discountRate": 26,
       "seasons": [
         "summer"
@@ -1307,19 +1299,6 @@
       "imageUrl": "https://shopping.toss.im/live/product/1146447/7d7fc8f8-7ba8-4fc2-bd48-471cbd2d0036.jpeg",
       "priceText": "14,000원",
       "discountRate": 21
-    },
-    {
-      "id": "sl-259397395",
-      "name": "KIM'S CLUB 촉촉한 꿀고구마말랭이, 60g, 5개",
-      "category": "음식",
-      "link": "https://toss.im/_m/5Ko7XgPu",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-10-15/2b1950c7-d5e6-4d50-b2e3-2b6273155a49.png",
-      "priceText": "9,900원",
-      "discountRate": 33,
-      "seasons": [
-        "autumn",
-        "winter"
-      ]
     }
   ]
 }
