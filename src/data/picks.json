@@ -1,25 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-11T15:30:10.270Z",
+  "updatedAt": "2026-09-11T21:30:06.347Z",
   "items": [
     {
-      "id": "deal-2626061059",
-      "name": "뉴트리포유 듀얼 이뮨 멀티비타민 미네랄, 선물형, 30병입, 1개",
+      "id": "deal-2511369781",
+      "name": "햅푸드 구운계란, 대란, 30구, 1개",
       "category": "음식",
-      "link": "https://toss.im/_m/70vx4KSy",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZWRhOTlh/VGpzU2NJbk4rY1p0R1NJMDBlQ2RqanBHUm1tRzlnbXRNeXl1OTgyOGs1az0.png",
-      "priceText": "39,900원",
-      "discountRate": 66,
-      "dealEndsAt": "2026-09-12T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2645587633",
-      "name": "샤오미 인페이스 에그 이온 피부 마사지기, CF-03D, 핑크, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/D7DqSZQu",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-04/2f47f2d2-0425-4223-9a3a-66ab2f491697.jpeg",
-      "priceText": "14,900원",
-      "discountRate": 57,
+      "link": "https://toss.im/_m/lRPzesIe",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
+      "priceText": "10,400원",
+      "discountRate": 50,
       "dealEndsAt": "2026-09-12T23:59:59+09:00"
     },
     {
@@ -40,46 +30,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-07-09/e0325247-78d9-4c0e-abce-fec8fb278bb3.jpeg",
       "priceText": "7,900원",
       "discountRate": 72,
-      "dealEndsAt": "2026-09-12T23:59:59+09:00"
-    },
-    {
-      "id": "deal-11536795",
-      "name": "더 맛있는 방울 토마토 스테비아, 500g, 2개",
-      "category": "음식",
-      "link": "https://toss.im/_m/pvzKmH8q",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZWRhMGRj/QUtiZExQT2VTZGJZMnpiTEhIbW1uZVpteTJaajh6bVl1VGg1Y2trWlpFMm0.png",
-      "priceText": "10,900원",
-      "discountRate": 58,
-      "dealEndsAt": "2026-09-12T23:59:59+09:00"
-    },
-    {
-      "id": "deal-81640295",
-      "name": "머거본 민속통육포, 100g, 4개",
-      "category": "음식",
-      "link": "https://toss.im/_m/R6gpH8lm",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MjIxZjM4/QUwyOFBuenAwNVBMMjB0bHFYM0w1NnQwTzFnVWphUzZYckxRL243QzBPV2g.png",
-      "priceText": "14,500원",
-      "discountRate": 30,
-      "dealEndsAt": "2026-09-12T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2511369781",
-      "name": "햅푸드 구운계란, 대란, 30구, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/lRPzesIe",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "10,400원",
-      "discountRate": 50,
-      "dealEndsAt": "2026-09-12T23:59:59+09:00"
-    },
-    {
-      "id": "deal-9123949",
-      "name": "해남 베니하루카 꿀고구마, 못난이, 10kg, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/RUFLk5Cj",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/Mjg1MDQ4/QU1kc0lQZUdkUkRmUlZuMWdoOXBQOWszNWRCTHhLdVpKc21KdGhSb0kwbkw.png",
-      "priceText": "16,900원",
-      "discountRate": 52,
       "dealEndsAt": "2026-09-12T23:59:59+09:00"
     },
     {
