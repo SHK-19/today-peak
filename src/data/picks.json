@@ -1,7 +1,17 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-12T15:30:08.046Z",
+  "updatedAt": "2026-09-12T21:30:07.643Z",
   "items": [
+    {
+      "id": "deal-2243145477",
+      "name": "종근당건강 락토핏 코어맥스, 60포, 5개 +코어맥스, 30포, 1개 + 아임비타 멀티비타민 이뮨샷, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/fBvVLJXk",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-20/38a9ebe2-923e-4d15-a201-4d0b1e0f430e.jpeg",
+      "priceText": "55,986원",
+      "discountRate": 62,
+      "dealEndsAt": "2026-09-13T23:59:59+09:00"
+    },
     {
       "id": "deal-85921305",
       "name": "교동 오징어무국, 500g, 3팩",
@@ -13,13 +23,23 @@
       "dealEndsAt": "2026-09-13T23:59:59+09:00"
     },
     {
-      "id": "deal-2243145477",
-      "name": "종근당건강 락토핏 코어맥스, 60포, 5개 +코어맥스, 30포, 1개 + 아임비타 멀티비타민 이뮨샷, 1개",
+      "id": "deal-189441513",
+      "name": "감동 제주 극조생 햇 감귤, 소과, 4.5kg, 1박스",
       "category": "음식",
-      "link": "https://toss.im/_m/fBvVLJXk",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-20/38a9ebe2-923e-4d15-a201-4d0b1e0f430e.jpeg",
-      "priceText": "55,986원",
-      "discountRate": 62,
+      "link": "https://toss.im/_m/dejtZMcA",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-03/72be6d65-c051-4803-a450-8e7faf9bdb9b.jpeg",
+      "priceText": "13,900원",
+      "discountRate": 51,
+      "dealEndsAt": "2026-09-13T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2633518971",
+      "name": "힘내고 허니너트바, 35g, 36개",
+      "category": "음식",
+      "link": "https://toss.im/_m/3SfAeyWy",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/21618f07-dec2-4f17-8b9a-f7c962bfe6ac.jpeg",
+      "priceText": "15,900원",
+      "discountRate": 70,
       "dealEndsAt": "2026-09-13T23:59:59+09:00"
     },
     {
@@ -726,6 +746,15 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZmJlNzBl/QU9OT25iRzRTMmUybVo3eGxzdFBMbXRHdEo1TTlwUzRhVUhweVg2ZnBUYVc.png",
       "priceText": "12,800원",
       "discountRate": 48
+    },
+    {
+      "id": "sl-1002354437",
+      "name": "힘내고 허니너트바, 35g, 12개입, 3박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/7aejuG7s",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/OWM0NzE4/QU5LV2tYWlVrVXZiMzBiVjZqcVI1VDVMVVk2TnJISmZObXZKWUtuQWUvNkY.png",
+      "priceText": "25,900원",
+      "discountRate": 52
     },
     {
       "id": "sl-442743829",
