@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-11T21:30:06.347Z",
+  "updatedAt": "2026-09-12T03:30:07.332Z",
   "items": [
     {
       "id": "deal-2511369781",
@@ -8,8 +8,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/lRPzesIe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "10,400원",
-      "discountRate": 50,
+      "priceText": "7,300원",
+      "discountRate": 65,
       "dealEndsAt": "2026-09-12T23:59:59+09:00"
     },
     {
@@ -285,8 +285,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/lRPzesIe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "10,400원",
-      "discountRate": 50
+      "priceText": "7,300원",
+      "discountRate": 65
     },
     {
       "id": "sl-2274809577",
@@ -1136,8 +1136,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/jtaNDtH3",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MWVjYTUy/ZVBUT05NMUxzM3VuUzQzUEc3UnNaTnowTXpHbFM1bWI2WnRzYkJyMGs1TT0.png",
-      "priceText": "23,000원",
-      "discountRate": 36,
+      "priceText": "21,900원",
+      "discountRate": 39,
       "seasons": [
         "summer"
       ]
