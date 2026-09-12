@@ -1,36 +1,36 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-12T09:30:06.315Z",
+  "updatedAt": "2026-09-12T15:30:08.046Z",
   "items": [
     {
-      "id": "deal-32959569",
-      "name": "인기과자 14종 올인원 세트, 1개",
+      "id": "deal-85921305",
+      "name": "교동 오징어무국, 500g, 3팩",
       "category": "음식",
-      "link": "https://toss.im/_m/XHlEIzDs",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YzVhZWUz/QUl1RUk5eU1FK0RqWDdGOGwrRFFQNnpzQlVuOEQxRUM4MHcxejJ3M1RMMGI.png",
-      "priceText": "13,790원",
-      "discountRate": 31,
-      "dealEndsAt": "2026-09-12T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2442898037",
-      "name": "한입과득 청송 홍로 사과, 가정용, 2kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/Zls4v9K9",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-09/e0325247-78d9-4c0e-abce-fec8fb278bb3.jpeg",
-      "priceText": "7,900원",
-      "discountRate": 72,
-      "dealEndsAt": "2026-09-12T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2511369781",
-      "name": "햅푸드 구운계란, 대란, 30구, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/lRPzesIe",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
+      "link": "https://toss.im/_m/tPObzm8q",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NjQ0NWQy/TXo5ek1DTXlibmFGYzhSU2hDS3NCa3psbjV0NTNEK0M1WDB5OHRRODZNST0.png",
       "priceText": "11,200원",
-      "discountRate": 46,
-      "dealEndsAt": "2026-09-12T23:59:59+09:00"
+      "discountRate": 32,
+      "dealEndsAt": "2026-09-13T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2243145477",
+      "name": "종근당건강 락토핏 코어맥스, 60포, 5개 +코어맥스, 30포, 1개 + 아임비타 멀티비타민 이뮨샷, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/fBvVLJXk",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-20/38a9ebe2-923e-4d15-a201-4d0b1e0f430e.jpeg",
+      "priceText": "55,986원",
+      "discountRate": 62,
+      "dealEndsAt": "2026-09-13T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2558819489",
+      "name": "불도깨비 칠리 치즈스틱, 500g, 1개",
+      "category": "장비",
+      "link": "https://toss.im/_m/r1YbCOHi",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-24/eb34e696-dad0-4ba7-af96-0fc35170de17.png",
+      "priceText": "9,900원",
+      "discountRate": 54,
+      "dealEndsAt": "2026-09-13T23:59:59+09:00"
     },
     {
       "id": "sl-1268069353",
@@ -215,8 +215,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Jf0vjY06",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmFkNDg1/YTNNaXA1eW1lVUdtR2MrMnYwcjJEc205bTdGMlRrMWp1clVpUHdYQnExST0.png",
-      "priceText": "13,900원",
-      "discountRate": 42
+      "priceText": "12,900원",
+      "discountRate": 46
     },
     {
       "id": "sl-2484194021",
@@ -285,8 +285,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/lRPzesIe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "11,200원",
-      "discountRate": 46
+      "priceText": "12,200원",
+      "discountRate": 41
     },
     {
       "id": "sl-2274809577",
@@ -1103,8 +1103,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/hXkdlDaA",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDFhMjc2/QU5wbkV6NnAxbi9wZmhuVXRydGVOUjVLK0liaGRvWk5adm94cWo4RXdhMVM.png",
-      "priceText": "14,900원",
-      "discountRate": 37
+      "priceText": "13,900원",
+      "discountRate": 42
     },
     {
       "id": "sl-1735847359",
