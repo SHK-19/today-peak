@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-12T03:30:07.332Z",
+  "updatedAt": "2026-09-12T09:30:06.315Z",
   "items": [
-    {
-      "id": "deal-2511369781",
-      "name": "햅푸드 구운계란, 대란, 30구, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/lRPzesIe",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "7,300원",
-      "discountRate": 65,
-      "dealEndsAt": "2026-09-12T23:59:59+09:00"
-    },
     {
       "id": "deal-32959569",
       "name": "인기과자 14종 올인원 세트, 1개",
@@ -30,6 +20,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-07-09/e0325247-78d9-4c0e-abce-fec8fb278bb3.jpeg",
       "priceText": "7,900원",
       "discountRate": 72,
+      "dealEndsAt": "2026-09-12T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2511369781",
+      "name": "햅푸드 구운계란, 대란, 30구, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/lRPzesIe",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
+      "priceText": "11,200원",
+      "discountRate": 46,
       "dealEndsAt": "2026-09-12T23:59:59+09:00"
     },
     {
@@ -285,8 +285,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/lRPzesIe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "7,300원",
-      "discountRate": 65
+      "priceText": "11,200원",
+      "discountRate": 46
     },
     {
       "id": "sl-2274809577",
@@ -294,7 +294,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/lsig6l5m",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDZlNDU3/TXhsM205bXNveFBPYzB4c09jazAyK2M4d3k4WWNqeHc1WVBzemhwOEV6TT0.png",
-      "priceText": "6,870원",
+      "priceText": "6,850원",
       "discountRate": 31,
       "seasons": [
         "spring",
