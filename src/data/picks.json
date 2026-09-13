@@ -1,15 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-13T03:30:06.574Z",
+  "updatedAt": "2026-09-13T09:30:06.989Z",
   "items": [
     {
-      "id": "deal-2640978333",
-      "name": "고무장갑, 대(L), 5개",
-      "category": "의류",
-      "link": "https://toss.im/_m/HHbbYyzj",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-14/e435fef2-ec05-4edd-b352-bfc928f94ddb.jpeg",
-      "priceText": "7,899원",
-      "discountRate": 60,
+      "id": "deal-2243145477",
+      "name": "종근당건강 락토핏 코어맥스, 60포, 5개 +코어맥스, 30포, 1개 + 아임비타 멀티비타민 이뮨샷, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/fBvVLJXk",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-20/38a9ebe2-923e-4d15-a201-4d0b1e0f430e.jpeg",
+      "priceText": "55,986원",
+      "discountRate": 62,
       "dealEndsAt": "2026-09-13T23:59:59+09:00"
     },
     {
@@ -23,13 +23,13 @@
       "dealEndsAt": "2026-09-13T23:59:59+09:00"
     },
     {
-      "id": "deal-2633518971",
-      "name": "힘내고 허니너트바, 35g, 36개",
-      "category": "음식",
-      "link": "https://toss.im/_m/3SfAeyWy",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/21618f07-dec2-4f17-8b9a-f7c962bfe6ac.jpeg",
-      "priceText": "15,900원",
-      "discountRate": 70,
+      "id": "deal-2640978333",
+      "name": "고무장갑, 대(L), 5개",
+      "category": "의류",
+      "link": "https://toss.im/_m/HHbbYyzj",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-14/e435fef2-ec05-4edd-b352-bfc928f94ddb.jpeg",
+      "priceText": "7,899원",
+      "discountRate": 60,
       "dealEndsAt": "2026-09-13T23:59:59+09:00"
     },
     {
@@ -602,19 +602,6 @@
       "discountRate": 51
     },
     {
-      "id": "sl-148603887",
-      "name": "철이네 제주 노지 감귤, 특상품, 중대과, 3kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/fjeWXTZz",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-08/5cd9536d-e8a1-4523-98a5-74406563c1f5.jpeg",
-      "priceText": "12,900원",
-      "discountRate": 57,
-      "seasons": [
-        "autumn",
-        "winter"
-      ]
-    },
-    {
       "id": "sl-2605058187",
       "name": "애슐리 주먹밥 체험팩, 7가지맛, 100g, 7개",
       "category": "음식",
@@ -736,15 +723,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZmJlNzBl/QU9OT25iRzRTMmUybVo3eGxzdFBMbXRHdEo1TTlwUzRhVUhweVg2ZnBUYVc.png",
       "priceText": "12,800원",
       "discountRate": 48
-    },
-    {
-      "id": "sl-1002354437",
-      "name": "힘내고 허니너트바, 35g, 12개입, 3박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/7aejuG7s",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/OWM0NzE4/QU5LV2tYWlVrVXZiMzBiVjZqcVI1VDVMVVk2TnJISmZObXZKWUtuQWUvNkY.png",
-      "priceText": "25,900원",
-      "discountRate": 52
     },
     {
       "id": "sl-442743829",
