@@ -1,15 +1,35 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-13T15:30:09.336Z",
+  "updatedAt": "2026-09-13T21:30:08.444Z",
   "items": [
     {
-      "id": "deal-790619029",
-      "name": "동아제약 셀파렉스 바로 칼슘마그네슘비타민D, 10정, 10박스",
+      "id": "deal-727989761",
+      "name": "사바나나 바나나칩, 100g, 5봉",
       "category": "음식",
-      "link": "https://toss.im/_m/vLuEA7a1",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-08/c6f259ac-e9b0-4950-8592-89821b97d6ab.jpeg",
-      "priceText": "7,900원",
-      "discountRate": 84,
+      "link": "https://toss.im/_m/VAzm74Ly",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
+      "priceText": "13,900원",
+      "discountRate": 57,
+      "dealEndsAt": "2026-09-14T23:59:59+09:00"
+    },
+    {
+      "id": "deal-484257175",
+      "name": "맥심 모카골드 마일드 커피믹스, 12g, 210개입, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/TtNx898A",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-01-21/339f54d7-ac8d-4d0d-ba5c-b9716cec35b7.png",
+      "priceText": "30,300원",
+      "discountRate": 13,
+      "dealEndsAt": "2026-09-14T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2651298389",
+      "name": "제주 서귀포 감귤, 특품, 소과, 5kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/fxYlvf81",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-31/86a2246c-f034-4d82-b1b7-1fcb60db2dea.png",
+      "priceText": "14,900원",
+      "discountRate": 73,
       "dealEndsAt": "2026-09-14T23:59:59+09:00"
     },
     {
@@ -23,13 +43,13 @@
       "dealEndsAt": "2026-09-14T23:59:59+09:00"
     },
     {
-      "id": "deal-484257175",
-      "name": "맥심 모카골드 마일드 커피믹스, 12g, 210개입, 1개",
+      "id": "deal-2604851897",
+      "name": "라라스윗 저당 바나나콘, 33g, 10개",
       "category": "음식",
-      "link": "https://toss.im/_m/TtNx898A",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-01-21/339f54d7-ac8d-4d0d-ba5c-b9716cec35b7.png",
-      "priceText": "30,300원",
-      "discountRate": 13,
+      "link": "https://toss.im/_m/3K4WWNuD",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-16/52d8c855-462c-4aef-a1ca-dbac8a02743e.jpeg",
+      "priceText": "8,900원",
+      "discountRate": 53,
       "dealEndsAt": "2026-09-14T23:59:59+09:00"
     },
     {
@@ -788,8 +808,7 @@
       "category": "장비",
       "link": "https://toss.im/_m/jkGqPRkd",
       "imageUrl": "https://shopping.toss.im/1b3/live/product/419628951/1b384069-29db-46d4-8eff-e0f0e3c85573.jpg",
-      "priceText": "5,055원",
-      "discountRate": 11,
+      "priceText": "5,099원",
       "seasons": [
         "spring",
         "autumn",
@@ -929,7 +948,7 @@
       "category": "의류",
       "link": "https://toss.im/_m/n16XSMUD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTljYjgz/TlVwVE5PdWRucU9LMjl5T0ROU01iSGRqTzBxaXRtTWJDNzBPT05zSjJ1VT0.png",
-      "priceText": "5,580원",
+      "priceText": "5,608원",
       "discountRate": 26,
       "seasons": [
         "summer"
