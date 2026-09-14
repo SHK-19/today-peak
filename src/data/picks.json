@@ -1,15 +1,25 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-14T15:30:09.356Z",
+  "updatedAt": "2026-09-14T21:30:08.625Z",
   "items": [
     {
-      "id": "deal-101803559",
-      "name": "마더스홈 매일 빨아쓰는 피그먼트 순면 베개커버, 밴드형, 민트그린, 40x60cm, 2개",
-      "category": "안전",
-      "link": "https://toss.im/_m/Hq2DOy16",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-30/9724dd6e-89a2-4d5b-a08e-0c8a2cb9e50f.jpeg",
-      "priceText": "9,900원",
-      "discountRate": 52,
+      "id": "deal-95354191",
+      "name": "종근당건강 락토핏 당케어, 100포, 3개 + 락토핏 골드, 30포, 1개 + 프로메가 알티지오메가3듀얼, 15일분",
+      "category": "음식",
+      "link": "https://toss.im/_m/7efMCrz3",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/12251a6b-52f2-454b-a7a2-4505757a22ed.jpeg",
+      "priceText": "57,567원",
+      "discountRate": 80,
+      "dealEndsAt": "2026-09-15T23:59:59+09:00"
+    },
+    {
+      "id": "deal-176088993",
+      "name": "삼육김 광천 올리브 녹차김 도시락김, 4g, 16봉, 2개",
+      "category": "음식",
+      "link": "https://toss.im/_m/FrdwQdqj",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/OTZhMDAx/QUxacmVTeXMyLzh6bXRCTk05K05sdGJKTkRiTVduVFMwbXR0S2xaaTFQMHA.png",
+      "priceText": "9,400원",
+      "discountRate": 41,
       "dealEndsAt": "2026-09-15T23:59:59+09:00"
     },
     {
@@ -23,26 +33,6 @@
       "dealEndsAt": "2026-09-15T23:59:59+09:00"
     },
     {
-      "id": "deal-95354191",
-      "name": "종근당건강 락토핏 당케어, 100포, 3개 + 락토핏 골드, 30포, 1개 + 프로메가 알티지오메가3듀얼, 15일분",
-      "category": "음식",
-      "link": "https://toss.im/_m/7efMCrz3",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/12251a6b-52f2-454b-a7a2-4505757a22ed.jpeg",
-      "priceText": "57,567원",
-      "discountRate": 80,
-      "dealEndsAt": "2026-09-15T23:59:59+09:00"
-    },
-    {
-      "id": "deal-56194621",
-      "name": "베베앙 로얄 물티슈, 70매, 10팩",
-      "category": "안전",
-      "link": "https://toss.im/_m/vzmThfh2",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MGRmNTA2/QU5UbGIyK2RyZTVjMnpCNlcvNmsydFA2eFArWUFIOFFzMjF6dFNlVXpKU2s.png",
-      "priceText": "10,900원",
-      "discountRate": 56,
-      "dealEndsAt": "2026-09-15T23:59:59+09:00"
-    },
-    {
       "id": "deal-2155181513",
       "name": "무설탕 비타민C 캔디, 12가지맛, 1kg, 1개",
       "category": "음식",
@@ -50,6 +40,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-18/ebcb6989-5b28-471f-a096-21755dd423bd.png",
       "priceText": "11,900원",
       "discountRate": 52,
+      "dealEndsAt": "2026-09-15T23:59:59+09:00"
+    },
+    {
+      "id": "deal-36469633",
+      "name": "스파클 생수 무라벨, 1L, 36개",
+      "category": "음식",
+      "link": "https://toss.im/_m/HKzicYoi",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODgyYWFi/UEhQZ2NRT1BNWS9zZk1aeEg0ZGpqdkE4K0hFZm9UdU84Tnk4Y1I3UjU2RT0.png",
+      "priceText": "10,990원",
+      "discountRate": 38,
       "dealEndsAt": "2026-09-15T23:59:59+09:00"
     },
     {
