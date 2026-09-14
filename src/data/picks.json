@@ -1,25 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-14T03:30:08.254Z",
+  "updatedAt": "2026-09-14T09:30:07.953Z",
   "items": [
     {
-      "id": "deal-727989761",
-      "name": "사바나나 바나나칩, 100g, 5봉",
+      "id": "deal-2651298389",
+      "name": "제주 서귀포 감귤, 특품, 소과, 5kg, 1박스",
       "category": "음식",
-      "link": "https://toss.im/_m/VAzm74Ly",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
-      "priceText": "13,900원",
-      "discountRate": 57,
-      "dealEndsAt": "2026-09-14T23:59:59+09:00"
-    },
-    {
-      "id": "deal-12731647",
-      "name": "경남제약 로얄플러스 멀티비타민, 900mg, 60정, 2개",
-      "category": "음식",
-      "link": "https://toss.im/_m/NJYqZHEp",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MGEwMTQ4/QU5xOGZUdVB6bng3bHVSR3A2VDFpMDVIMFhhbWg4SEhuajhFVnFVUFJLbFo.png",
-      "priceText": "8,500원",
-      "discountRate": 91,
+      "link": "https://toss.im/_m/fxYlvf81",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-31/86a2246c-f034-4d82-b1b7-1fcb60db2dea.png",
+      "priceText": "14,900원",
+      "discountRate": 73,
       "dealEndsAt": "2026-09-14T23:59:59+09:00"
     },
     {
@@ -33,13 +23,13 @@
       "dealEndsAt": "2026-09-14T23:59:59+09:00"
     },
     {
-      "id": "deal-2651298389",
-      "name": "제주 서귀포 감귤, 특품, 소과, 5kg, 1박스",
+      "id": "deal-12731647",
+      "name": "경남제약 로얄플러스 멀티비타민, 900mg, 60정, 2개",
       "category": "음식",
-      "link": "https://toss.im/_m/fxYlvf81",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-31/86a2246c-f034-4d82-b1b7-1fcb60db2dea.png",
-      "priceText": "14,900원",
-      "discountRate": 73,
+      "link": "https://toss.im/_m/NJYqZHEp",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MGEwMTQ4/QU5xOGZUdVB6bng3bHVSR3A2VDFpMDVIMFhhbWg4SEhuajhFVnFVUFJLbFo.png",
+      "priceText": "8,500원",
+      "discountRate": 91,
       "dealEndsAt": "2026-09-14T23:59:59+09:00"
     },
     {
@@ -61,15 +51,6 @@
       "priceText": "19,900원",
       "discountRate": 65,
       "dealEndsAt": "2026-09-14T23:59:59+09:00"
-    },
-    {
-      "id": "sl-1268069353",
-      "name": "살림살림 고강도 알루미늄 3단조절 등산스틱, 2개",
-      "category": "장비",
-      "link": "https://toss.im/_m/5bcu4ds9",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MWIwNWNk/TUR5VW84ZkRWU3dlQ1V2R0tqNHVNWi9CcTFvb0huSEMwV3V0T2EwaktWWT0.png",
-      "priceText": "13,205원",
-      "discountRate": 33
     },
     {
       "id": "sl-1568257163",
@@ -293,8 +274,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/VyvY6yHf",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZWNhY2Nm/SnM0dkE3dXhheDc4azNZb0t6WTM3RS82ckdGQStRMGhtaVNNVlRvRHdEdz0.png",
-      "priceText": "8,900원",
-      "discountRate": 31,
+      "priceText": "10,900원",
+      "discountRate": 15,
       "seasons": [
         "spring",
         "summer"
@@ -465,7 +446,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,870원",
+      "priceText": "14,860원",
       "discountRate": 17
     },
     {
@@ -483,7 +464,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/Lv1LONfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/e8def6ef-db30-4dd2-9f9b-8aa6695cb9bd.jpeg",
-      "priceText": "28,500원",
+      "priceText": "28,550원",
       "discountRate": 58
     },
     {
@@ -654,7 +635,7 @@
       "category": "안전",
       "link": "https://toss.im/_m/Bir395X4",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OTk2YWFk/ZU5JVHphc05TYnUwSEtzMFN1T1Y2MjBHbXBTNUtJdGFKclZ2SS9KaUptWT0.png",
-      "priceText": "12,500원",
+      "priceText": "15,500원",
       "discountRate": 30
     },
     {
@@ -720,7 +701,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/pFHXxSgm",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-04/0db90d67-8d26-4d2c-af1d-a7f5c769faa8.jpeg",
-      "priceText": "11,900원",
+      "priceText": "11,800원",
       "discountRate": 43,
       "seasons": [
         "summer"
