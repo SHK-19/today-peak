@@ -1,56 +1,56 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-14T09:30:07.953Z",
+  "updatedAt": "2026-09-14T15:30:09.356Z",
   "items": [
     {
-      "id": "deal-2651298389",
-      "name": "제주 서귀포 감귤, 특품, 소과, 5kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/fxYlvf81",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-31/86a2246c-f034-4d82-b1b7-1fcb60db2dea.png",
-      "priceText": "14,900원",
-      "discountRate": 73,
-      "dealEndsAt": "2026-09-14T23:59:59+09:00"
+      "id": "deal-101803559",
+      "name": "마더스홈 매일 빨아쓰는 피그먼트 순면 베개커버, 밴드형, 민트그린, 40x60cm, 2개",
+      "category": "안전",
+      "link": "https://toss.im/_m/Hq2DOy16",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-30/9724dd6e-89a2-4d5b-a08e-0c8a2cb9e50f.jpeg",
+      "priceText": "9,900원",
+      "discountRate": 52,
+      "dealEndsAt": "2026-09-15T23:59:59+09:00"
     },
     {
-      "id": "deal-106849359",
-      "name": "돈시몬 착즙 토마토 주스, 1L, 6개",
+      "id": "deal-1776162009",
+      "name": "베네틴 플랜트 프로틴 쉐이크 아이솔레이트 초코맛, 2kg, 1개",
       "category": "음식",
-      "link": "https://toss.im/_m/xMzbhcbC",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/M2Q3NzI2/WTQ0czJaN1Q4elR1ZDl0bWUyU2I1MmxzNTNkNWJIczllV3g5L1hsc3h0OD0.png",
-      "priceText": "19,900원",
-      "discountRate": 55,
-      "dealEndsAt": "2026-09-14T23:59:59+09:00"
-    },
-    {
-      "id": "deal-12731647",
-      "name": "경남제약 로얄플러스 멀티비타민, 900mg, 60정, 2개",
-      "category": "음식",
-      "link": "https://toss.im/_m/NJYqZHEp",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MGEwMTQ4/QU5xOGZUdVB6bng3bHVSR3A2VDFpMDVIMFhhbWg4SEhuajhFVnFVUFJLbFo.png",
-      "priceText": "8,500원",
-      "discountRate": 91,
-      "dealEndsAt": "2026-09-14T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2604851897",
-      "name": "라라스윗 저당 바나나콘, 33g, 10개",
-      "category": "음식",
-      "link": "https://toss.im/_m/3K4WWNuD",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-16/52d8c855-462c-4aef-a1ca-dbac8a02743e.jpeg",
-      "priceText": "8,900원",
+      "link": "https://toss.im/_m/JULONSO4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-10/9eea311d-daf6-48e9-9dc7-7861250a3491.png",
+      "priceText": "24,900원",
       "discountRate": 53,
-      "dealEndsAt": "2026-09-14T23:59:59+09:00"
+      "dealEndsAt": "2026-09-15T23:59:59+09:00"
     },
     {
-      "id": "deal-138048425",
-      "name": "하이뮨 프로틴밸런스 액티브 다크초코, 330ml, 12개",
+      "id": "deal-95354191",
+      "name": "종근당건강 락토핏 당케어, 100포, 3개 + 락토핏 골드, 30포, 1개 + 프로메가 알티지오메가3듀얼, 15일분",
       "category": "음식",
-      "link": "https://toss.im/_m/bIXeWHSy",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-03/0a361c03-695c-44c9-bb69-ccfb55995fd7.jpeg",
-      "priceText": "19,900원",
-      "discountRate": 65,
-      "dealEndsAt": "2026-09-14T23:59:59+09:00"
+      "link": "https://toss.im/_m/7efMCrz3",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/12251a6b-52f2-454b-a7a2-4505757a22ed.jpeg",
+      "priceText": "57,567원",
+      "discountRate": 80,
+      "dealEndsAt": "2026-09-15T23:59:59+09:00"
+    },
+    {
+      "id": "deal-56194621",
+      "name": "베베앙 로얄 물티슈, 70매, 10팩",
+      "category": "안전",
+      "link": "https://toss.im/_m/vzmThfh2",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MGRmNTA2/QU5UbGIyK2RyZTVjMnpCNlcvNmsydFA2eFArWUFIOFFzMjF6dFNlVXpKU2s.png",
+      "priceText": "10,900원",
+      "discountRate": 56,
+      "dealEndsAt": "2026-09-15T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2155181513",
+      "name": "무설탕 비타민C 캔디, 12가지맛, 1kg, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/HkVkQm51",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-18/ebcb6989-5b28-471f-a096-21755dd423bd.png",
+      "priceText": "11,900원",
+      "discountRate": 52,
+      "dealEndsAt": "2026-09-15T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -459,6 +459,15 @@
       "discountRate": 49
     },
     {
+      "id": "sl-1414687545",
+      "name": "헬로 바이오 생유산균 19 프로바이오틱스, 30캡슐, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/Jdh2deVy",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-06/a01ff36a-8275-452a-87fc-162b30b39269.jpeg",
+      "priceText": "6,500원",
+      "discountRate": 34
+    },
+    {
       "id": "sl-2607858145",
       "name": "종근당건강 락토핏 골드, 2g, 140포, 1개 + 증정 락토핏 골드, 30포",
       "category": "음식",
@@ -599,8 +608,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/VAzm74Ly",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
-      "priceText": "13,900원",
-      "discountRate": 57
+      "priceText": "14,900원",
+      "discountRate": 54
     },
     {
       "id": "sl-2605058187",
@@ -861,8 +870,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/DzdMm2xo",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/7d6b6b76-f29f-4974-931b-769cc9a90c8c.png",
-      "priceText": "14,750원",
-      "discountRate": 62
+      "priceText": "9,900원",
+      "discountRate": 75
     },
     {
       "id": "sl-167905953",
