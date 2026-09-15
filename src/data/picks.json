@@ -1,25 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-15T15:30:09.368Z",
+  "updatedAt": "2026-09-15T21:30:06.906Z",
   "items": [
     {
-      "id": "deal-103560339",
-      "name": "하이뮨 프로틴 밸런스 액티브 제로, 밀크쉐이크, 250ml, 18개",
+      "id": "deal-2017807971",
+      "name": "더주 몸통 마른 오징어, 5-9미, 220g 내외, 1개",
       "category": "음식",
-      "link": "https://toss.im/_m/1ngIyLeC",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-08/38707c9d-953b-46d9-b959-be7f709ad2e5.jpeg",
-      "priceText": "19,900원",
-      "discountRate": 65,
-      "dealEndsAt": "2026-09-16T23:59:59+09:00"
-    },
-    {
-      "id": "deal-684968727",
-      "name": "맥심 모카골드 마일드 커피믹스, 12g, 180개입, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/VWpp5R6A",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-01-22/a6cc3dd0-4a94-4179-adf4-6a416cd9e82a.png",
-      "priceText": "27,500원",
-      "discountRate": 21,
+      "link": "https://toss.im/_m/FEEEcQnt",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDU5Y2Y0/SHEya1Z0ODB5RmJjeHN2bVZyRVJNUWhXK3VaVlN6cFowcUtsNEd0Q1hJYz0.png",
+      "priceText": "11,900원",
+      "discountRate": 33,
       "dealEndsAt": "2026-09-16T23:59:59+09:00"
     },
     {
@@ -40,6 +30,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzQ2YjA3/QUpwUDIzeGgzT3g4dGJ6QmJhVzBiZUgydFoySGJiQjZ4NlZEZ3A1NlVWVnk.png",
       "priceText": "8,990원",
       "discountRate": 43,
+      "dealEndsAt": "2026-09-16T23:59:59+09:00"
+    },
+    {
+      "id": "deal-103560339",
+      "name": "하이뮨 프로틴 밸런스 액티브 제로, 밀크쉐이크, 250ml, 18개",
+      "category": "음식",
+      "link": "https://toss.im/_m/1ngIyLeC",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-08/38707c9d-953b-46d9-b959-be7f709ad2e5.jpeg",
+      "priceText": "19,900원",
+      "discountRate": 65,
       "dealEndsAt": "2026-09-16T23:59:59+09:00"
     },
     {
