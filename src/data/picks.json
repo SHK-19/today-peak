@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-14T21:30:08.625Z",
+  "updatedAt": "2026-09-15T03:30:08.129Z",
   "items": [
-    {
-      "id": "deal-95354191",
-      "name": "종근당건강 락토핏 당케어, 100포, 3개 + 락토핏 골드, 30포, 1개 + 프로메가 알티지오메가3듀얼, 15일분",
-      "category": "음식",
-      "link": "https://toss.im/_m/7efMCrz3",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/12251a6b-52f2-454b-a7a2-4505757a22ed.jpeg",
-      "priceText": "57,567원",
-      "discountRate": 80,
-      "dealEndsAt": "2026-09-15T23:59:59+09:00"
-    },
     {
       "id": "deal-176088993",
       "name": "삼육김 광천 올리브 녹차김 도시락김, 4g, 16봉, 2개",
@@ -20,6 +10,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTZhMDAx/QUxacmVTeXMyLzh6bXRCTk05K05sdGJKTkRiTVduVFMwbXR0S2xaaTFQMHA.png",
       "priceText": "9,400원",
       "discountRate": 41,
+      "dealEndsAt": "2026-09-15T23:59:59+09:00"
+    },
+    {
+      "id": "deal-95354191",
+      "name": "종근당건강 락토핏 당케어, 100포, 3개 + 락토핏 골드, 30포, 1개 + 프로메가 알티지오메가3듀얼, 15일분",
+      "category": "음식",
+      "link": "https://toss.im/_m/7efMCrz3",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/12251a6b-52f2-454b-a7a2-4505757a22ed.jpeg",
+      "priceText": "57,567원",
+      "discountRate": 80,
       "dealEndsAt": "2026-09-15T23:59:59+09:00"
     },
     {
@@ -296,8 +296,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/lRPzesIe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "12,000원",
-      "discountRate": 42
+      "priceText": "12,500원",
+      "discountRate": 40
     },
     {
       "id": "sl-2274809577",
@@ -329,8 +329,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/XQVGwdAo",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MDVjM2U2/WWVhVDhiZXo5SXVVK1ptQ0ROZHJaLzJTTnNzMndGWGovOUFJRFJnWVpPND0.png",
-      "priceText": "15,900원",
-      "discountRate": 30
+      "priceText": "13,900원",
+      "discountRate": 39
     },
     {
       "id": "sl-1980204115",
@@ -646,6 +646,19 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OTk2YWFk/ZU5JVHphc05TYnUwSEtzMFN1T1Y2MjBHbXBTNUtJdGFKclZ2SS9KaUptWT0.png",
       "priceText": "15,500원",
       "discountRate": 30
+    },
+    {
+      "id": "sl-563739749",
+      "name": "정관장 홍삼진고데일리스틱, 10g, 20포, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/10cLLhT6",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MGVjOTdh/QU5tWk41MC9oTXprNUc3T2RwOG1jM2JoRzdtYnVadk81VWJrRmlRZmdlbmI.png",
+      "priceText": "23,200원",
+      "discountRate": 42,
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
     },
     {
       "id": "sl-1468764941",
