@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-15T03:30:08.129Z",
+  "updatedAt": "2026-09-15T09:30:07.707Z",
   "items": [
     {
       "id": "deal-176088993",
@@ -13,16 +13,6 @@
       "dealEndsAt": "2026-09-15T23:59:59+09:00"
     },
     {
-      "id": "deal-95354191",
-      "name": "종근당건강 락토핏 당케어, 100포, 3개 + 락토핏 골드, 30포, 1개 + 프로메가 알티지오메가3듀얼, 15일분",
-      "category": "음식",
-      "link": "https://toss.im/_m/7efMCrz3",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/12251a6b-52f2-454b-a7a2-4505757a22ed.jpeg",
-      "priceText": "57,567원",
-      "discountRate": 80,
-      "dealEndsAt": "2026-09-15T23:59:59+09:00"
-    },
-    {
       "id": "deal-1776162009",
       "name": "베네틴 플랜트 프로틴 쉐이크 아이솔레이트 초코맛, 2kg, 1개",
       "category": "음식",
@@ -30,6 +20,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-09-10/9eea311d-daf6-48e9-9dc7-7861250a3491.png",
       "priceText": "24,900원",
       "discountRate": 53,
+      "dealEndsAt": "2026-09-15T23:59:59+09:00"
+    },
+    {
+      "id": "deal-95354191",
+      "name": "종근당건강 락토핏 당케어, 100포, 3개 + 락토핏 골드, 30포, 1개 + 프로메가 알티지오메가3듀얼, 15일분",
+      "category": "음식",
+      "link": "https://toss.im/_m/7efMCrz3",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/12251a6b-52f2-454b-a7a2-4505757a22ed.jpeg",
+      "priceText": "57,567원",
+      "discountRate": 80,
       "dealEndsAt": "2026-09-15T23:59:59+09:00"
     },
     {
@@ -1268,6 +1268,19 @@
       "imageUrl": "https://shopping.toss.im/live/product/1146447/7d7fc8f8-7ba8-4fc2-bd48-471cbd2d0036.jpeg",
       "priceText": "14,000원",
       "discountRate": 21
+    },
+    {
+      "id": "sl-259397395",
+      "name": "KIM'S CLUB 촉촉한 꿀고구마말랭이, 60g, 5개",
+      "category": "음식",
+      "link": "https://toss.im/_m/5Ko7XgPu",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-10-15/2b1950c7-d5e6-4d50-b2e3-2b6273155a49.png",
+      "priceText": "9,900원",
+      "discountRate": 33,
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
     }
   ]
 }
