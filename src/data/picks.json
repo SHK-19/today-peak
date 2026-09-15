@@ -1,56 +1,46 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-15T09:30:07.707Z",
+  "updatedAt": "2026-09-15T15:30:09.368Z",
   "items": [
     {
-      "id": "deal-176088993",
-      "name": "삼육김 광천 올리브 녹차김 도시락김, 4g, 16봉, 2개",
+      "id": "deal-103560339",
+      "name": "하이뮨 프로틴 밸런스 액티브 제로, 밀크쉐이크, 250ml, 18개",
       "category": "음식",
-      "link": "https://toss.im/_m/FrdwQdqj",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/OTZhMDAx/QUxacmVTeXMyLzh6bXRCTk05K05sdGJKTkRiTVduVFMwbXR0S2xaaTFQMHA.png",
-      "priceText": "9,400원",
-      "discountRate": 41,
-      "dealEndsAt": "2026-09-15T23:59:59+09:00"
+      "link": "https://toss.im/_m/1ngIyLeC",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-08/38707c9d-953b-46d9-b959-be7f709ad2e5.jpeg",
+      "priceText": "19,900원",
+      "discountRate": 65,
+      "dealEndsAt": "2026-09-16T23:59:59+09:00"
     },
     {
-      "id": "deal-1776162009",
-      "name": "베네틴 플랜트 프로틴 쉐이크 아이솔레이트 초코맛, 2kg, 1개",
+      "id": "deal-684968727",
+      "name": "맥심 모카골드 마일드 커피믹스, 12g, 180개입, 1개",
       "category": "음식",
-      "link": "https://toss.im/_m/JULONSO4",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-10/9eea311d-daf6-48e9-9dc7-7861250a3491.png",
-      "priceText": "24,900원",
-      "discountRate": 53,
-      "dealEndsAt": "2026-09-15T23:59:59+09:00"
+      "link": "https://toss.im/_m/VWpp5R6A",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-01-22/a6cc3dd0-4a94-4179-adf4-6a416cd9e82a.png",
+      "priceText": "27,500원",
+      "discountRate": 21,
+      "dealEndsAt": "2026-09-16T23:59:59+09:00"
     },
     {
-      "id": "deal-95354191",
-      "name": "종근당건강 락토핏 당케어, 100포, 3개 + 락토핏 골드, 30포, 1개 + 프로메가 알티지오메가3듀얼, 15일분",
+      "id": "deal-297277743",
+      "name": "촉촉한 고구마, 50g, 10봉",
       "category": "음식",
-      "link": "https://toss.im/_m/7efMCrz3",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/12251a6b-52f2-454b-a7a2-4505757a22ed.jpeg",
-      "priceText": "57,567원",
-      "discountRate": 80,
-      "dealEndsAt": "2026-09-15T23:59:59+09:00"
+      "link": "https://toss.im/_m/1h2e9Wxx",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-11-04/3c6bfaee-b83b-4f30-a213-501ffde208b9.jpeg",
+      "priceText": "10,500원",
+      "discountRate": 49,
+      "dealEndsAt": "2026-09-16T23:59:59+09:00"
     },
     {
-      "id": "deal-2155181513",
-      "name": "무설탕 비타민C 캔디, 12가지맛, 1kg, 1개",
+      "id": "deal-99224191",
+      "name": "호정가 찹쌀약과 세트, 1kg, 1박스",
       "category": "음식",
-      "link": "https://toss.im/_m/HkVkQm51",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-18/ebcb6989-5b28-471f-a096-21755dd423bd.png",
-      "priceText": "11,900원",
-      "discountRate": 52,
-      "dealEndsAt": "2026-09-15T23:59:59+09:00"
-    },
-    {
-      "id": "deal-36469633",
-      "name": "스파클 생수 무라벨, 1L, 36개",
-      "category": "음식",
-      "link": "https://toss.im/_m/HKzicYoi",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODgyYWFi/UEhQZ2NRT1BNWS9zZk1aeEg0ZGpqdkE4K0hFZm9UdU84Tnk4Y1I3UjU2RT0.png",
-      "priceText": "10,990원",
-      "discountRate": 38,
-      "dealEndsAt": "2026-09-15T23:59:59+09:00"
+      "link": "https://toss.im/_m/56iTY9Ku",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzQ2YjA3/QUpwUDIzeGgzT3g4dGJ6QmJhVzBiZUgydFoySGJiQjZ4NlZEZ3A1NlVWVnk.png",
+      "priceText": "8,990원",
+      "discountRate": 43,
+      "dealEndsAt": "2026-09-16T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -226,8 +216,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Jf0vjY06",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmFkNDg1/YTNNaXA1eW1lVUdtR2MrMnYwcjJEc205bTdGMlRrMWp1clVpUHdYQnExST0.png",
-      "priceText": "12,990원",
-      "discountRate": 45
+      "priceText": "12,900원",
+      "discountRate": 46
     },
     {
       "id": "sl-2484194021",
@@ -548,8 +538,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/RrqcxZgh",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmE4NmVh/QU9NeGpQbmtaRTN1TWVUelR0YXhwN09RNGZIa0R6dnc1T1RrSHh2anVRNXY.png",
-      "priceText": "10,900원",
-      "discountRate": 28
+      "priceText": "11,900원",
+      "discountRate": 22
     },
     {
       "id": "sl-2602285881",
@@ -883,8 +873,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/DzdMm2xo",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/7d6b6b76-f29f-4974-931b-769cc9a90c8c.png",
-      "priceText": "9,900원",
-      "discountRate": 75
+      "priceText": "12,850원",
+      "discountRate": 67
     },
     {
       "id": "sl-167905953",
@@ -1122,8 +1112,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/hXkdlDaA",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDFhMjc2/QU5wbkV6NnAxbi9wZmhuVXRydGVOUjVLK0liaGRvWk5adm94cWo4RXdhMVM.png",
-      "priceText": "13,990원",
-      "discountRate": 41
+      "priceText": "13,900원",
+      "discountRate": 42
     },
     {
       "id": "sl-1735847359",
@@ -1200,8 +1190,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/nXfGwh6h",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
-      "priceText": "9,810원",
-      "discountRate": 53,
+      "priceText": "15,210원",
+      "discountRate": 27,
       "seasons": [
         "autumn",
         "winter"
@@ -1268,19 +1258,6 @@
       "imageUrl": "https://shopping.toss.im/live/product/1146447/7d7fc8f8-7ba8-4fc2-bd48-471cbd2d0036.jpeg",
       "priceText": "14,000원",
       "discountRate": 21
-    },
-    {
-      "id": "sl-259397395",
-      "name": "KIM'S CLUB 촉촉한 꿀고구마말랭이, 60g, 5개",
-      "category": "음식",
-      "link": "https://toss.im/_m/5Ko7XgPu",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-10-15/2b1950c7-d5e6-4d50-b2e3-2b6273155a49.png",
-      "priceText": "9,900원",
-      "discountRate": 33,
-      "seasons": [
-        "autumn",
-        "winter"
-      ]
     }
   ]
 }
