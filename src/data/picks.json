@@ -1,7 +1,17 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-16T15:30:08.930Z",
+  "updatedAt": "2026-09-16T21:30:07.949Z",
   "items": [
+    {
+      "id": "deal-2570438725",
+      "name": "종근당건강 락토핏 골드, 140포, 2개 + 증정 락토핏 골드, 30포 + 증정 아임비타 면역비타민C, 30포",
+      "category": "음식",
+      "link": "https://toss.im/_m/rVJvJgkh",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-03/74828108-78eb-4328-bf27-62b32a559495.jpeg",
+      "priceText": "52,546원",
+      "discountRate": 64,
+      "dealEndsAt": "2026-09-17T23:59:59+09:00"
+    },
     {
       "id": "deal-2650881203",
       "name": "셀렉스 프로틴 당솔브 혈당밸런스, 미숫가루맛, 266g, 2통",
@@ -13,13 +23,13 @@
       "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
-      "id": "deal-11327029",
-      "name": "푸르밀 바나나우유, 225ml, 24개",
+      "id": "deal-2651616167",
+      "name": "웅진 건강차 5종, 하늘보리 4개 + 누룽지차 4개 + 옥수수수염차 4개 + 결명자차 4개 + 헛개차 4개, 500ml, 20개",
       "category": "음식",
-      "link": "https://toss.im/_m/Vv1r6pjm",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWQxNGQx/VEN0WDB0bzl4M0l3anpuaW5SR2g1MjJFaExsSlpIMFNUVFBjTlFaNUFvdz0.png",
-      "priceText": "17,800원",
-      "discountRate": 38,
+      "link": "https://toss.im/_m/xnNV20cn",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-08/a80e1ce2-28ed-4924-875e-7acba81e5b87.jpeg",
+      "priceText": "12,900원",
+      "discountRate": 31,
       "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
@@ -33,13 +43,13 @@
       "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
-      "id": "deal-2570438725",
-      "name": "종근당건강 락토핏 골드, 140포, 2개 + 증정 락토핏 골드, 30포 + 증정 아임비타 면역비타민C, 30포",
+      "id": "deal-2654448369",
+      "name": "베베쿡 양파콩콩, 30g 5개 + 더 맛있는 빼빼롱뻥 구운옥수수, 40g, 5개",
       "category": "음식",
-      "link": "https://toss.im/_m/rVJvJgkh",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-03/74828108-78eb-4328-bf27-62b32a559495.jpeg",
-      "priceText": "52,546원",
-      "discountRate": 64,
+      "link": "https://toss.im/_m/Fy9sSyWl",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/36fd89fc-428a-49d3-992d-7cc3b540708f.jpeg",
+      "priceText": "6,990원",
+      "discountRate": 63,
       "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
