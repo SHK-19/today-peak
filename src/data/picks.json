@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-15T21:30:06.906Z",
+  "updatedAt": "2026-09-16T03:30:07.239Z",
   "items": [
-    {
-      "id": "deal-2017807971",
-      "name": "더주 몸통 마른 오징어, 5-9미, 220g 내외, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/FEEEcQnt",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDU5Y2Y0/SHEya1Z0ODB5RmJjeHN2bVZyRVJNUWhXK3VaVlN6cFowcUtsNEd0Q1hJYz0.png",
-      "priceText": "11,900원",
-      "discountRate": 33,
-      "dealEndsAt": "2026-09-16T23:59:59+09:00"
-    },
     {
       "id": "deal-297277743",
       "name": "촉촉한 고구마, 50g, 10봉",
@@ -23,13 +13,23 @@
       "dealEndsAt": "2026-09-16T23:59:59+09:00"
     },
     {
+      "id": "deal-2017807971",
+      "name": "더주 몸통 마른 오징어, 5-9미, 220g 내외, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/FEEEcQnt",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDU5Y2Y0/SHEya1Z0ODB5RmJjeHN2bVZyRVJNUWhXK3VaVlN6cFowcUtsNEd0Q1hJYz0.png",
+      "priceText": "11,900원",
+      "discountRate": 33,
+      "dealEndsAt": "2026-09-16T23:59:59+09:00"
+    },
+    {
       "id": "deal-99224191",
       "name": "호정가 찹쌀약과 세트, 1kg, 1박스",
       "category": "음식",
       "link": "https://toss.im/_m/56iTY9Ku",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzQ2YjA3/QUpwUDIzeGgzT3g4dGJ6QmJhVzBiZUgydFoySGJiQjZ4NlZEZ3A1NlVWVnk.png",
-      "priceText": "8,990원",
-      "discountRate": 43,
+      "priceText": "8,900원",
+      "discountRate": 44,
       "dealEndsAt": "2026-09-16T23:59:59+09:00"
     },
     {
@@ -1190,8 +1190,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/nXfGwh6h",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
-      "priceText": "15,210원",
-      "discountRate": 27,
+      "priceText": "9,810원",
+      "discountRate": 53,
       "seasons": [
         "autumn",
         "winter"
