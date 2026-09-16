@@ -1,46 +1,56 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-16T09:30:07.663Z",
+  "updatedAt": "2026-09-16T15:30:08.930Z",
   "items": [
     {
-      "id": "deal-297277743",
-      "name": "촉촉한 고구마, 50g, 10봉",
+      "id": "deal-2650881203",
+      "name": "셀렉스 프로틴 당솔브 혈당밸런스, 미숫가루맛, 266g, 2통",
       "category": "음식",
-      "link": "https://toss.im/_m/1h2e9Wxx",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-11-04/3c6bfaee-b83b-4f30-a213-501ffde208b9.jpeg",
-      "priceText": "10,500원",
-      "discountRate": 49,
-      "dealEndsAt": "2026-09-16T23:59:59+09:00"
+      "link": "https://toss.im/_m/3pGYXgOo",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-07/029efb73-9a15-40b3-b43b-abf6214e3af8.jpeg",
+      "priceText": "15,900원",
+      "discountRate": 68,
+      "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
-      "id": "deal-2017807971",
-      "name": "더주 몸통 마른 오징어, 5-9미, 220g 내외, 1개",
+      "id": "deal-11327029",
+      "name": "푸르밀 바나나우유, 225ml, 24개",
       "category": "음식",
-      "link": "https://toss.im/_m/FEEEcQnt",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDU5Y2Y0/SHEya1Z0ODB5RmJjeHN2bVZyRVJNUWhXK3VaVlN6cFowcUtsNEd0Q1hJYz0.png",
-      "priceText": "11,900원",
-      "discountRate": 33,
-      "dealEndsAt": "2026-09-16T23:59:59+09:00"
+      "link": "https://toss.im/_m/Vv1r6pjm",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWQxNGQx/VEN0WDB0bzl4M0l3anpuaW5SR2g1MjJFaExsSlpIMFNUVFBjTlFaNUFvdz0.png",
+      "priceText": "17,800원",
+      "discountRate": 38,
+      "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
-      "id": "deal-99224191",
-      "name": "호정가 찹쌀약과 세트, 1kg, 1박스",
+      "id": "deal-324912303",
+      "name": "샤오커오라 비타민C 종합사탕, 500g, 1개",
       "category": "음식",
-      "link": "https://toss.im/_m/56iTY9Ku",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzQ2YjA3/QUpwUDIzeGgzT3g4dGJ6QmJhVzBiZUgydFoySGJiQjZ4NlZEZ3A1NlVWVnk.png",
-      "priceText": "8,900원",
-      "discountRate": 44,
-      "dealEndsAt": "2026-09-16T23:59:59+09:00"
+      "link": "https://toss.im/_m/pYUAgcGk",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2NhZTQz/QUpkdTBrdG01N2VSK1Z0ZHZKMnhia3hPN0pteU1mcG1pZEtoMnh6c1JDZmo.png",
+      "priceText": "12,900원",
+      "discountRate": 26,
+      "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
-      "id": "deal-103560339",
-      "name": "하이뮨 프로틴 밸런스 액티브 제로, 밀크쉐이크, 250ml, 18개",
+      "id": "deal-2570438725",
+      "name": "종근당건강 락토핏 골드, 140포, 2개 + 증정 락토핏 골드, 30포 + 증정 아임비타 면역비타민C, 30포",
       "category": "음식",
-      "link": "https://toss.im/_m/1ngIyLeC",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-08/38707c9d-953b-46d9-b959-be7f709ad2e5.jpeg",
-      "priceText": "19,900원",
-      "discountRate": 65,
-      "dealEndsAt": "2026-09-16T23:59:59+09:00"
+      "link": "https://toss.im/_m/rVJvJgkh",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-03/74828108-78eb-4328-bf27-62b32a559495.jpeg",
+      "priceText": "52,546원",
+      "discountRate": 64,
+      "dealEndsAt": "2026-09-17T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2141401261",
+      "name": "블루나 본 물티슈 오리지널, 100매, 10팩",
+      "category": "안전",
+      "link": "https://toss.im/_m/NhzuxaWb",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDk3MWE4/TzIza2Zua3BILzk5Q2R2V3VnbG10WDZSUDcyQWs3bGJoUkxkVzRSTS9Zbz0.png",
+      "priceText": "9,490원",
+      "discountRate": 40,
+      "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -216,8 +226,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Jf0vjY06",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmFkNDg1/YTNNaXA1eW1lVUdtR2MrMnYwcjJEc205bTdGMlRrMWp1clVpUHdYQnExST0.png",
-      "priceText": "12,900원",
-      "discountRate": 46
+      "priceText": "12,990원",
+      "discountRate": 45
     },
     {
       "id": "sl-2484194021",
@@ -600,19 +610,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
       "priceText": "14,900원",
       "discountRate": 54
-    },
-    {
-      "id": "sl-148603887",
-      "name": "철이네 제주 노지 감귤, 특상품, 중대과, 3kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/fjeWXTZz",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-08/5cd9536d-e8a1-4523-98a5-74406563c1f5.jpeg",
-      "priceText": "9,900원",
-      "discountRate": 67,
-      "seasons": [
-        "autumn",
-        "winter"
-      ]
     },
     {
       "id": "sl-2605058187",
@@ -1125,8 +1122,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/hXkdlDaA",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDFhMjc2/QU5wbkV6NnAxbi9wZmhuVXRydGVOUjVLK0liaGRvWk5adm94cWo4RXdhMVM.png",
-      "priceText": "13,900원",
-      "discountRate": 42
+      "priceText": "13,990원",
+      "discountRate": 41
     },
     {
       "id": "sl-1735847359",
