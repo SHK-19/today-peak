@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-16T03:30:07.239Z",
+  "updatedAt": "2026-09-16T09:30:07.663Z",
   "items": [
     {
       "id": "deal-297277743",
@@ -286,8 +286,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/lRPzesIe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "12,500원",
-      "discountRate": 40
+      "priceText": "12,800원",
+      "discountRate": 39
     },
     {
       "id": "sl-2274809577",
@@ -403,7 +403,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/pJCSSxSk",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MmE3ZmRm/QUprT2poc3N5M0hrOC9RZUM1eUx3L1JESmp3UCtOVEw4QThMUEEveDlNdnc.png",
-      "priceText": "21,670원",
+      "priceText": "21,650원",
       "discountRate": 19,
       "seasons": [
         "summer"
@@ -520,8 +520,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/FkzUHGW9",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MzIzNjk4/QUt0MDdUWkYrNXk1MUU1anpudVJuQ3VPUlBtVUlacEhhMWZ2bUxhK0ZIZE4.png",
-      "priceText": "22,930원",
-      "discountRate": 18
+      "priceText": "22,100원",
+      "discountRate": 21
     },
     {
       "id": "sl-2163534637",
@@ -600,6 +600,19 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
       "priceText": "14,900원",
       "discountRate": 54
+    },
+    {
+      "id": "sl-148603887",
+      "name": "철이네 제주 노지 감귤, 특상품, 중대과, 3kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/fjeWXTZz",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-08/5cd9536d-e8a1-4523-98a5-74406563c1f5.jpeg",
+      "priceText": "9,900원",
+      "discountRate": 67,
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
     },
     {
       "id": "sl-2605058187",
@@ -814,8 +827,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/LNHTVX5h",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OTJhMzFi/QU9hSGpwcndoNGVlakVPTmZuTk9JZmxua1R3OEpHSGw0ekVlc3g2YWNjN0Q.png",
-      "priceText": "13,900원",
-      "discountRate": 30
+      "priceText": "13,400원",
+      "discountRate": 32
     },
     {
       "id": "sl-1568234361",
