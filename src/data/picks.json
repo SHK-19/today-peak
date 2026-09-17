@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-17T15:30:10.179Z",
+  "updatedAt": "2026-09-17T21:30:08.728Z",
   "items": [
     {
       "id": "deal-137461931",
@@ -13,33 +13,13 @@
       "dealEndsAt": "2026-09-18T23:59:59+09:00"
     },
     {
-      "id": "deal-2450913223",
-      "name": "하루한콩 구운 병아리콩, 군옥수수맛, 15g, 22개입, 1개",
+      "id": "deal-550565957",
+      "name": "지리산수 생수, 라벨랜덤, 2L, 18개",
       "category": "음식",
-      "link": "https://toss.im/_m/Dlk7OYqD",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-09/e57076fd-010b-40ca-9945-50f1c7759e58.jpeg",
-      "priceText": "8,900원",
-      "discountRate": 44,
-      "dealEndsAt": "2026-09-18T23:59:59+09:00"
-    },
-    {
-      "id": "deal-43443031",
-      "name": "리얼닥터 프리미엄 오메가3, 180캡슐, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/DxGiuiaB",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MDZkOWNk/QU1hOEpQazQwZDVreDBON214QzhwUHg4MGROTGgwTnB0VkMraG5xK1VYbUY.png",
-      "priceText": "17,900원",
-      "discountRate": 74,
-      "dealEndsAt": "2026-09-18T23:59:59+09:00"
-    },
-    {
-      "id": "deal-150587421",
-      "name": "자연품애 사과, 주스용, 랜덤과, 10kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/rHm1Iytx",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YzJiYmY2/QStGYVNvQ1NvOG81empEME5KWEtUWnQ5OXZubmFXcytZN1NYaXlVTE1IST0.png",
-      "priceText": "13,900원",
-      "discountRate": 55,
+      "link": "https://toss.im/_m/N6kVyoVv",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/ZTE2NGNm/T1RrV25oNlRqenppeDNEbm0ya1BIQzRmY0dYSGpGamJjTFN6RnBselpHUT0.png",
+      "priceText": "9,400원",
+      "discountRate": 64,
       "dealEndsAt": "2026-09-18T23:59:59+09:00"
     },
     {
@@ -53,13 +33,33 @@
       "dealEndsAt": "2026-09-18T23:59:59+09:00"
     },
     {
-      "id": "deal-92152707",
-      "name": "페페브루노 엑스트라버진 올리브 오일, 1L, 1개",
+      "id": "deal-150587421",
+      "name": "자연품애 사과, 주스용, 랜덤과, 10kg, 1박스",
       "category": "음식",
-      "link": "https://toss.im/_m/1fjC1Pts",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZjllOWU2/QUpmRE85aG9IZVFubC9BYnlYQVA1TFR2K0p0TEVBTmt0T3ZzdTB1VlVIeTA.png",
-      "priceText": "14,500원",
-      "discountRate": 58,
+      "link": "https://toss.im/_m/rHm1Iytx",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YzJiYmY2/QStGYVNvQ1NvOG81empEME5KWEtUWnQ5OXZubmFXcytZN1NYaXlVTE1IST0.png",
+      "priceText": "13,900원",
+      "discountRate": 55,
+      "dealEndsAt": "2026-09-18T23:59:59+09:00"
+    },
+    {
+      "id": "deal-86973821",
+      "name": "풍년보감 고려홍삼정 밸런스타임, 벌크포장, 10g, 100포",
+      "category": "음식",
+      "link": "https://toss.im/_m/FZWzoLZu",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODYyOTZj/QUxGVTU4TjVlL0Q0SGlzT0grR0ZiTW1EQjNuendxTjQ0ZUtENy95eFZNZkQ.png",
+      "priceText": "14,900원",
+      "discountRate": 70,
+      "dealEndsAt": "2026-09-18T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2450913223",
+      "name": "하루한콩 구운 병아리콩, 군옥수수맛, 15g, 22개입, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/Dlk7OYqD",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-09/e57076fd-010b-40ca-9945-50f1c7759e58.jpeg",
+      "priceText": "8,900원",
+      "discountRate": 44,
       "dealEndsAt": "2026-09-18T23:59:59+09:00"
     },
     {
