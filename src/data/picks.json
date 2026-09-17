@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-17T03:30:07.783Z",
+  "updatedAt": "2026-09-17T09:30:07.626Z",
   "items": [
     {
       "id": "deal-2570438725",
@@ -43,16 +43,6 @@
       "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
-      "id": "deal-2654448369",
-      "name": "베베쿡 양파콩콩, 30g 5개 + 더 맛있는 빼빼롱뻥 구운옥수수, 40g, 5개",
-      "category": "음식",
-      "link": "https://toss.im/_m/Fy9sSyWl",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/36fd89fc-428a-49d3-992d-7cc3b540708f.jpeg",
-      "priceText": "6,990원",
-      "discountRate": 63,
-      "dealEndsAt": "2026-09-17T23:59:59+09:00"
-    },
-    {
       "id": "deal-2141401261",
       "name": "블루나 본 물티슈 오리지널, 100매, 10팩",
       "category": "안전",
@@ -60,6 +50,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NDk3MWE4/TzIza2Zua3BILzk5Q2R2V3VnbG10WDZSUDcyQWs3bGJoUkxkVzRSTS9Zbz0.png",
       "priceText": "9,490원",
       "discountRate": 40,
+      "dealEndsAt": "2026-09-17T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2654448369",
+      "name": "베베쿡 양파콩콩, 30g 5개 + 더 맛있는 빼빼롱뻥 구운옥수수, 40g, 5개",
+      "category": "음식",
+      "link": "https://toss.im/_m/Fy9sSyWl",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/36fd89fc-428a-49d3-992d-7cc3b540708f.jpeg",
+      "priceText": "6,990원",
+      "discountRate": 63,
       "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
@@ -474,8 +474,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Jdh2deVy",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-04-06/a01ff36a-8275-452a-87fc-162b30b39269.jpeg",
-      "priceText": "6,500원",
-      "discountRate": 34
+      "priceText": "6,900원",
+      "discountRate": 30
     },
     {
       "id": "sl-2607858145",
@@ -492,8 +492,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/R8DzhxFC",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/0f5e6814-a515-4a1b-829c-7a6a882fde63.jpeg",
-      "priceText": "14,900원",
-      "discountRate": 50
+      "priceText": "9,900원",
+      "discountRate": 67
     },
     {
       "id": "sl-173414675",
@@ -733,8 +733,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/pFHXxSgm",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-04/0db90d67-8d26-4d2c-af1d-a7f5c769faa8.jpeg",
-      "priceText": "11,800원",
-      "discountRate": 43,
+      "priceText": "18,900원",
       "seasons": [
         "summer"
       ]
@@ -868,6 +867,15 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-27/2ed5296f-05a7-49e0-ab33-76268f59190d.jpeg",
       "priceText": "9,200원",
       "discountRate": 58
+    },
+    {
+      "id": "sl-2349769011",
+      "name": "캠핑 휴대용 접이식 방석 쿠션, 블랙, 1개",
+      "category": "장비",
+      "link": "https://toss.im/_m/bq599V4m",
+      "imageUrl": "https://shopping.toss.im/08e/live/product/715108537/08ee5770-f56f-4e07-b18d-76cb8fb954ce.jpg",
+      "priceText": "7,180원",
+      "discountRate": 10
     },
     {
       "id": "sl-2523779719",
@@ -1168,8 +1176,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/RSFsbEB4",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/d289f62f-61d3-4143-b707-8a62b8fc5858.png",
-      "priceText": "12,900원",
-      "discountRate": 71,
+      "priceText": "11,900원",
+      "discountRate": 73,
       "seasons": [
         "autumn"
       ]
