@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-16T21:30:07.949Z",
+  "updatedAt": "2026-09-17T03:30:07.783Z",
   "items": [
     {
       "id": "deal-2570438725",
@@ -33,13 +33,13 @@
       "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
-      "id": "deal-324912303",
-      "name": "샤오커오라 비타민C 종합사탕, 500g, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/pYUAgcGk",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2NhZTQz/QUpkdTBrdG01N2VSK1Z0ZHZKMnhia3hPN0pteU1mcG1pZEtoMnh6c1JDZmo.png",
-      "priceText": "12,900원",
-      "discountRate": 26,
+      "id": "deal-2400686671",
+      "name": "도톰 쿠션양말, 중목, 블랙 5개 + 화이트 5개, 10개",
+      "category": "의류",
+      "link": "https://toss.im/_m/RiGkbXB9",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-04-17/4b6fbabc-b3b2-4839-94b7-3cd70d356edc.jpeg",
+      "priceText": "8,900원",
+      "discountRate": 64,
       "dealEndsAt": "2026-09-17T23:59:59+09:00"
     },
     {
@@ -594,8 +594,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/FNmLg3bv",
       "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
-      "priceText": "14,200원",
-      "discountRate": 40,
+      "priceText": "14,900원",
+      "discountRate": 37,
       "seasons": [
         "spring",
         "summer",
@@ -618,8 +618,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/VAzm74Ly",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
-      "priceText": "14,900원",
-      "discountRate": 54
+      "priceText": "17,760원",
+      "discountRate": 45
     },
     {
       "id": "sl-2605058187",
@@ -868,15 +868,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-27/2ed5296f-05a7-49e0-ab33-76268f59190d.jpeg",
       "priceText": "9,200원",
       "discountRate": 58
-    },
-    {
-      "id": "sl-2349769011",
-      "name": "캠핑 휴대용 접이식 방석 쿠션, 블랙, 1개",
-      "category": "장비",
-      "link": "https://toss.im/_m/bq599V4m",
-      "imageUrl": "https://shopping.toss.im/08e/live/product/715108537/08ee5770-f56f-4e07-b18d-76cb8fb954ce.jpg",
-      "priceText": "7,180원",
-      "discountRate": 10
     },
     {
       "id": "sl-2523779719",
