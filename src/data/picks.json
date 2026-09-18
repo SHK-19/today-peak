@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-17T21:30:08.728Z",
+  "updatedAt": "2026-09-18T03:30:07.877Z",
   "items": [
     {
       "id": "deal-137461931",
@@ -23,16 +23,6 @@
       "dealEndsAt": "2026-09-18T23:59:59+09:00"
     },
     {
-      "id": "deal-122659625",
-      "name": "리벤스 로얄플러스 물티슈, 캡형, 70매, 10팩",
-      "category": "안전",
-      "link": "https://toss.im/_m/NzHjXjdw",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDdjNzBj/TDJXKys3VE9kLy9hM3YrL3l0UC96NkY3M3Y0M0lXbjdKNkcyODFyVS8rMD0.png",
-      "priceText": "10,800원",
-      "discountRate": 65,
-      "dealEndsAt": "2026-09-18T23:59:59+09:00"
-    },
-    {
       "id": "deal-150587421",
       "name": "자연품애 사과, 주스용, 랜덤과, 10kg, 1박스",
       "category": "음식",
@@ -40,6 +30,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/YzJiYmY2/QStGYVNvQ1NvOG81empEME5KWEtUWnQ5OXZubmFXcytZN1NYaXlVTE1IST0.png",
       "priceText": "13,900원",
       "discountRate": 55,
+      "dealEndsAt": "2026-09-18T23:59:59+09:00"
+    },
+    {
+      "id": "deal-122659625",
+      "name": "리벤스 로얄플러스 물티슈, 캡형, 70매, 10팩",
+      "category": "안전",
+      "link": "https://toss.im/_m/NzHjXjdw",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDdjNzBj/TDJXKys3VE9kLy9hM3YrL3l0UC96NkY3M3Y0M0lXbjdKNkcyODFyVS8rMD0.png",
+      "priceText": "10,800원",
+      "discountRate": 65,
       "dealEndsAt": "2026-09-18T23:59:59+09:00"
     },
     {
@@ -206,8 +206,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/RVagWNE9",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
-      "priceText": "8,800원",
-      "discountRate": 63,
+      "priceText": "16,500원",
+      "discountRate": 31,
       "seasons": [
         "spring",
         "summer",
@@ -820,7 +820,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/jkGqPRkd",
       "imageUrl": "https://shopping.toss.im/1b3/live/product/419628951/1b384069-29db-46d4-8eff-e0f0e3c85573.jpg",
-      "priceText": "5,099원",
+      "priceText": "5,055원",
+      "discountRate": 11,
       "seasons": [
         "spring",
         "autumn",
@@ -960,7 +961,7 @@
       "category": "의류",
       "link": "https://toss.im/_m/n16XSMUD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTljYjgz/TlVwVE5PdWRucU9LMjl5T0ROU01iSGRqTzBxaXRtTWJDNzBPT05zSjJ1VT0.png",
-      "priceText": "5,608원",
+      "priceText": "5,580원",
       "discountRate": 26,
       "seasons": [
         "summer"
