@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-18T15:30:08.488Z",
+  "updatedAt": "2026-09-18T21:30:08.748Z",
   "items": [
-    {
-      "id": "deal-806100093",
-      "name": "스카이 케어 음이온 BLDC 헤어 드라이기, SKY-CA-D10A, 세라믹화이트, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/PemZfmpw",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZGZhNjg5/UjBOOE9RNjFpOGY0emh5MlJ5UG1PUnkwR2M3d3pnM2p6akhpT0FlUkhjYz0.png",
-      "priceText": "25,900원",
-      "discountRate": 48,
-      "dealEndsAt": "2026-09-19T23:59:59+09:00"
-    },
     {
       "id": "deal-9134117",
       "name": "하루 한 포 홍삼정스틱 100, 10g, 100포입, 2개",
@@ -20,6 +10,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/YmY0N2M5/WHVOeDRkM2p6NFRoNjQ0Y2U1eWVQSThjZU9FNFZFUG5xMVRqaDhQUXZSND0.png",
       "priceText": "29,900원",
       "discountRate": 57,
+      "dealEndsAt": "2026-09-19T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2133762237",
+      "name": "HBAF 하루견과 베리믹스, 20g, 50개입, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/dPlBUlNy",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MjljZGQy/ZENlUEsvdCsyU2ZCZWQrR0hLZHlIZzcwb21TdXdZS2NQTWNkZk9KUWZLTT0.png",
+      "priceText": "14,900원",
+      "discountRate": 42,
       "dealEndsAt": "2026-09-19T23:59:59+09:00"
     },
     {
