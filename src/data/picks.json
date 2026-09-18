@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-18T03:30:07.877Z",
+  "updatedAt": "2026-09-18T09:30:07.505Z",
   "items": [
-    {
-      "id": "deal-137461931",
-      "name": "칸타타 아이스 커피 헤이즐넛, 190ml, 20개",
-      "category": "음식",
-      "link": "https://toss.im/_m/tjjDYo01",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-07/821d7458-0bc5-4755-be45-eb0485958d8e.jpeg",
-      "priceText": "10,400원",
-      "discountRate": 18,
-      "dealEndsAt": "2026-09-18T23:59:59+09:00"
-    },
     {
       "id": "deal-550565957",
       "name": "지리산수 생수, 라벨랜덤, 2L, 18개",
@@ -430,18 +420,6 @@
       ]
     },
     {
-      "id": "sl-161704225",
-      "name": "포카리스웨트, 340ml, 24캔",
-      "category": "음식",
-      "link": "https://toss.im/_m/rhNI8Bgm",
-      "imageUrl": "https://shopping.toss.im/live/product/109963/1345ba43-78ac-4710-b84b-ad49a2d65133.png",
-      "priceText": "16,858원",
-      "discountRate": 41,
-      "seasons": [
-        "summer"
-      ]
-    },
-    {
       "id": "sl-54575799",
       "name": "스파클 생수, 무라벨, 2L, 12개",
       "category": "음식",
@@ -456,7 +434,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,860원",
+      "priceText": "14,850원",
       "discountRate": 17
     },
     {
@@ -476,15 +454,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-04-06/a01ff36a-8275-452a-87fc-162b30b39269.jpeg",
       "priceText": "6,900원",
       "discountRate": 30
-    },
-    {
-      "id": "sl-2607858145",
-      "name": "종근당건강 락토핏 골드, 2g, 140포, 1개 + 증정 락토핏 골드, 30포",
-      "category": "음식",
-      "link": "https://toss.im/_m/Lv1LONfB",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/e8def6ef-db30-4dd2-9f9b-8aa6695cb9bd.jpeg",
-      "priceText": "28,550원",
-      "discountRate": 58
     },
     {
       "id": "sl-669449033",
@@ -585,8 +554,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/nLsKMhvs",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/N2M2Yjk1/QVB4SmZEbkJTVXJOcEptMU03MHk5OG04ZHMzblRsUTVQb3RVc3pZY2RNZkc.png",
-      "priceText": "9,900원",
-      "discountRate": 47
+      "priceText": "10,300원",
+      "discountRate": 45
     },
     {
       "id": "sl-171388715",
