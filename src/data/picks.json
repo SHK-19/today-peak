@@ -1,56 +1,36 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-18T09:30:07.505Z",
+  "updatedAt": "2026-09-18T15:30:08.488Z",
   "items": [
     {
-      "id": "deal-550565957",
-      "name": "지리산수 생수, 라벨랜덤, 2L, 18개",
+      "id": "deal-806100093",
+      "name": "스카이 케어 음이온 BLDC 헤어 드라이기, SKY-CA-D10A, 세라믹화이트, 1개",
       "category": "음식",
-      "link": "https://toss.im/_m/N6kVyoVv",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/ZTE2NGNm/T1RrV25oNlRqenppeDNEbm0ya1BIQzRmY0dYSGpGamJjTFN6RnBselpHUT0.png",
-      "priceText": "9,400원",
-      "discountRate": 64,
-      "dealEndsAt": "2026-09-18T23:59:59+09:00"
+      "link": "https://toss.im/_m/PemZfmpw",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZGZhNjg5/UjBOOE9RNjFpOGY0emh5MlJ5UG1PUnkwR2M3d3pnM2p6akhpT0FlUkhjYz0.png",
+      "priceText": "25,900원",
+      "discountRate": 48,
+      "dealEndsAt": "2026-09-19T23:59:59+09:00"
     },
     {
-      "id": "deal-150587421",
-      "name": "자연품애 사과, 주스용, 랜덤과, 10kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/rHm1Iytx",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YzJiYmY2/QStGYVNvQ1NvOG81empEME5KWEtUWnQ5OXZubmFXcytZN1NYaXlVTE1IST0.png",
-      "priceText": "13,900원",
-      "discountRate": 55,
-      "dealEndsAt": "2026-09-18T23:59:59+09:00"
+      "id": "deal-9134117",
+      "name": "하루 한 포 홍삼정스틱 100, 10g, 100포입, 2개",
+      "category": "장비",
+      "link": "https://toss.im/_m/zinFvC9v",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YmY0N2M5/WHVOeDRkM2p6NFRoNjQ0Y2U1eWVQSThjZU9FNFZFUG5xMVRqaDhQUXZSND0.png",
+      "priceText": "29,900원",
+      "discountRate": 57,
+      "dealEndsAt": "2026-09-19T23:59:59+09:00"
     },
     {
-      "id": "deal-122659625",
-      "name": "리벤스 로얄플러스 물티슈, 캡형, 70매, 10팩",
-      "category": "안전",
-      "link": "https://toss.im/_m/NzHjXjdw",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDdjNzBj/TDJXKys3VE9kLy9hM3YrL3l0UC96NkY3M3Y0M0lXbjdKNkcyODFyVS8rMD0.png",
-      "priceText": "10,800원",
-      "discountRate": 65,
-      "dealEndsAt": "2026-09-18T23:59:59+09:00"
-    },
-    {
-      "id": "deal-86973821",
-      "name": "풍년보감 고려홍삼정 밸런스타임, 벌크포장, 10g, 100포",
+      "id": "deal-240280587",
+      "name": "라이프턴 퍼스트 엑스트라버진 올리브오일 식물성 캡슐, 30캡슐, 6박스",
       "category": "음식",
-      "link": "https://toss.im/_m/FZWzoLZu",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODYyOTZj/QUxGVTU4TjVlL0Q0SGlzT0grR0ZiTW1EQjNuendxTjQ0ZUtENy95eFZNZkQ.png",
-      "priceText": "14,900원",
-      "discountRate": 70,
-      "dealEndsAt": "2026-09-18T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2450913223",
-      "name": "하루한콩 구운 병아리콩, 군옥수수맛, 15g, 22개입, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/Dlk7OYqD",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-09/e57076fd-010b-40ca-9945-50f1c7759e58.jpeg",
-      "priceText": "8,900원",
-      "discountRate": 44,
-      "dealEndsAt": "2026-09-18T23:59:59+09:00"
+      "link": "https://toss.im/_m/TPb0Zins",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-10-10/e03b4240-ae99-4957-ace3-a2c05b52c3bb.jpeg",
+      "priceText": "19,900원",
+      "discountRate": 88,
+      "dealEndsAt": "2026-09-19T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -226,8 +206,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Jf0vjY06",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmFkNDg1/YTNNaXA1eW1lVUdtR2MrMnYwcjJEc205bTdGMlRrMWp1clVpUHdYQnExST0.png",
-      "priceText": "12,990원",
-      "discountRate": 45
+      "priceText": "13,900원",
+      "discountRate": 42
     },
     {
       "id": "sl-2484194021",
@@ -415,6 +395,18 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MmE3ZmRm/QUprT2poc3N5M0hrOC9RZUM1eUx3L1JESmp3UCtOVEw4QThMUEEveDlNdnc.png",
       "priceText": "21,650원",
       "discountRate": 19,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "id": "sl-161704225",
+      "name": "포카리스웨트, 340ml, 24캔",
+      "category": "음식",
+      "link": "https://toss.im/_m/rhNI8Bgm",
+      "imageUrl": "https://shopping.toss.im/live/product/109963/1345ba43-78ac-4710-b84b-ad49a2d65133.png",
+      "priceText": "16,858원",
+      "discountRate": 41,
       "seasons": [
         "summer"
       ]
@@ -1101,8 +1093,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/hXkdlDaA",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDFhMjc2/QU5wbkV6NnAxbi9wZmhuVXRydGVOUjVLK0liaGRvWk5adm94cWo4RXdhMVM.png",
-      "priceText": "13,990원",
-      "discountRate": 41
+      "priceText": "14,900원",
+      "discountRate": 37
     },
     {
       "id": "sl-1735847359",
