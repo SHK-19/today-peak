@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-18T21:30:08.748Z",
+  "updatedAt": "2026-09-19T03:30:07.276Z",
   "items": [
     {
       "id": "deal-9134117",
@@ -13,16 +13,6 @@
       "dealEndsAt": "2026-09-19T23:59:59+09:00"
     },
     {
-      "id": "deal-2133762237",
-      "name": "HBAF 하루견과 베리믹스, 20g, 50개입, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/dPlBUlNy",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MjljZGQy/ZENlUEsvdCsyU2ZCZWQrR0hLZHlIZzcwb21TdXdZS2NQTWNkZk9KUWZLTT0.png",
-      "priceText": "14,900원",
-      "discountRate": 42,
-      "dealEndsAt": "2026-09-19T23:59:59+09:00"
-    },
-    {
       "id": "deal-240280587",
       "name": "라이프턴 퍼스트 엑스트라버진 올리브오일 식물성 캡슐, 30캡슐, 6박스",
       "category": "음식",
@@ -30,6 +20,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2025-10-10/e03b4240-ae99-4957-ace3-a2c05b52c3bb.jpeg",
       "priceText": "19,900원",
       "discountRate": 88,
+      "dealEndsAt": "2026-09-19T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2133762237",
+      "name": "HBAF 하루견과 베리믹스, 20g, 50개입, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/dPlBUlNy",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MjljZGQy/ZENlUEsvdCsyU2ZCZWQrR0hLZHlIZzcwb21TdXdZS2NQTWNkZk9KUWZLTT0.png",
+      "priceText": "14,900원",
+      "discountRate": 42,
       "dealEndsAt": "2026-09-19T23:59:59+09:00"
     },
     {
