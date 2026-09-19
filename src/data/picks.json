@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-19T15:30:10.904Z",
+  "updatedAt": "2026-09-19T21:30:07.191Z",
   "items": [
     {
       "id": "deal-2495260511",
@@ -13,13 +13,13 @@
       "dealEndsAt": "2026-09-20T23:59:59+09:00"
     },
     {
-      "id": "deal-2640972863",
-      "name": "웅진식품 더 빅토리아 쿨라임 탄산음료, 500ml, 20개",
+      "id": "deal-99224717",
+      "name": "호정가 뉴트리션 하루영양바, 25g, 20개입, 1박스",
       "category": "음식",
-      "link": "https://toss.im/_m/LHtuTbYq",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/Y2Q0ZmIx/Y2hZbTBwek1acXVXOFp5dlVDMVZ1MDI4TlhMMHA2OVRHV2haait3NVRMQT0.png",
-      "priceText": "12,900원",
-      "discountRate": 31,
+      "link": "https://toss.im/_m/bkmPohqe",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODBhZDg5/QU12MVVNWThKaWw1OUluZXRxOWFkbzdML3FTeGR0WlpacnNoS2wxRXdldFM.png",
+      "priceText": "10,900원",
+      "discountRate": 45,
       "dealEndsAt": "2026-09-20T23:59:59+09:00"
     },
     {
@@ -29,36 +29,6 @@
       "link": "https://toss.im/_m/pnNL8XHp",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MzEzMTE2/QUpheU02WnM0ZmkwazliR25JalJHaG1Nd2VzZGpsRmhVVmRjbHpaeDRveGw.png",
       "priceText": "8,990원",
-      "dealEndsAt": "2026-09-20T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2280710225",
-      "name": "종근당건강 프로메가 알티지 오메가3 듀얼S, 60캡슐, 5박스 + 증정 아임비타 면역 비타민C, 30포, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/LR3NWQyn",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-23/1ca91ba3-3fbc-4d2a-a465-97195ba48b2a.jpeg",
-      "priceText": "53,550원",
-      "discountRate": 57,
-      "dealEndsAt": "2026-09-20T23:59:59+09:00"
-    },
-    {
-      "id": "deal-178529915",
-      "name": "헤어유레카 CLPP 단백질 트리트먼트, 1L, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/H2YtsIIk",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-12-16/1aad062f-3026-4675-9b87-15aa042d873f.jpeg",
-      "priceText": "14,900원",
-      "discountRate": 57,
-      "dealEndsAt": "2026-09-20T23:59:59+09:00"
-    },
-    {
-      "id": "deal-581190989",
-      "name": "헬로바이오 비타민C 3000 레드라벨, 3g, 90포, 2박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/fxR5e7zi",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-05-21/6d8677de-c59d-4284-ab2c-030a19c8e55e.jpeg",
-      "priceText": "14,900원",
-      "discountRate": 50,
       "dealEndsAt": "2026-09-20T23:59:59+09:00"
     },
     {
@@ -79,16 +49,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-05-29/695974d4-4a3e-48d5-84bf-14c13dbcd099.jpeg",
       "priceText": "12,900원",
       "discountRate": 50,
-      "dealEndsAt": "2026-09-20T23:59:59+09:00"
-    },
-    {
-      "id": "deal-99224717",
-      "name": "호정가 뉴트리션 하루영양바, 25g, 20개입, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/bkmPohqe",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODBhZDg5/QU12MVVNWThKaWw1OUluZXRxOWFkbzdML3FTeGR0WlpacnNoS2wxRXdldFM.png",
-      "priceText": "10,900원",
-      "discountRate": 45,
       "dealEndsAt": "2026-09-20T23:59:59+09:00"
     },
     {
