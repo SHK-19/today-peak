@@ -1,36 +1,95 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-19T09:30:07.590Z",
+  "updatedAt": "2026-09-19T15:30:10.904Z",
   "items": [
     {
-      "id": "deal-9134117",
-      "name": "하루 한 포 홍삼정스틱 100, 10g, 100포입, 2개",
-      "category": "장비",
-      "link": "https://toss.im/_m/zinFvC9v",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YmY0N2M5/WHVOeDRkM2p6NFRoNjQ0Y2U1eWVQSThjZU9FNFZFUG5xMVRqaDhQUXZSND0.png",
-      "priceText": "29,900원",
+      "id": "deal-2495260511",
+      "name": "매일야채 고농축 토마토 125ml 24개 + 호박 125ml 24개, 48개",
+      "category": "음식",
+      "link": "https://toss.im/_m/TxPn4VXv",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-16/cec491e5-2586-4201-adda-bf9a28e11fe9.jpeg",
+      "priceText": "23,900원",
+      "discountRate": 61,
+      "dealEndsAt": "2026-09-20T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2640972863",
+      "name": "웅진식품 더 빅토리아 쿨라임 탄산음료, 500ml, 20개",
+      "category": "음식",
+      "link": "https://toss.im/_m/LHtuTbYq",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/Y2Q0ZmIx/Y2hZbTBwek1acXVXOFp5dlVDMVZ1MDI4TlhMMHA2OVRHV2haait3NVRMQT0.png",
+      "priceText": "12,900원",
+      "discountRate": 31,
+      "dealEndsAt": "2026-09-20T23:59:59+09:00"
+    },
+    {
+      "id": "deal-175489091",
+      "name": "파머스넷 호박고구마, 한입, 5kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/pnNL8XHp",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MzEzMTE2/QUpheU02WnM0ZmkwazliR25JalJHaG1Nd2VzZGpsRmhVVmRjbHpaeDRveGw.png",
+      "priceText": "8,990원",
+      "dealEndsAt": "2026-09-20T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2280710225",
+      "name": "종근당건강 프로메가 알티지 오메가3 듀얼S, 60캡슐, 5박스 + 증정 아임비타 면역 비타민C, 30포, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/LR3NWQyn",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-23/1ca91ba3-3fbc-4d2a-a465-97195ba48b2a.jpeg",
+      "priceText": "53,550원",
       "discountRate": 57,
-      "dealEndsAt": "2026-09-19T23:59:59+09:00"
+      "dealEndsAt": "2026-09-20T23:59:59+09:00"
     },
     {
-      "id": "deal-240280587",
-      "name": "라이프턴 퍼스트 엑스트라버진 올리브오일 식물성 캡슐, 30캡슐, 6박스",
+      "id": "deal-178529915",
+      "name": "헤어유레카 CLPP 단백질 트리트먼트, 1L, 1개",
       "category": "음식",
-      "link": "https://toss.im/_m/TPb0Zins",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-10-10/e03b4240-ae99-4957-ace3-a2c05b52c3bb.jpeg",
-      "priceText": "19,900원",
-      "discountRate": 88,
-      "dealEndsAt": "2026-09-19T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2133762237",
-      "name": "HBAF 하루견과 베리믹스, 20g, 50개입, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/dPlBUlNy",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MjljZGQy/ZENlUEsvdCsyU2ZCZWQrR0hLZHlIZzcwb21TdXdZS2NQTWNkZk9KUWZLTT0.png",
+      "link": "https://toss.im/_m/H2YtsIIk",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-12-16/1aad062f-3026-4675-9b87-15aa042d873f.jpeg",
       "priceText": "14,900원",
-      "discountRate": 42,
-      "dealEndsAt": "2026-09-19T23:59:59+09:00"
+      "discountRate": 57,
+      "dealEndsAt": "2026-09-20T23:59:59+09:00"
+    },
+    {
+      "id": "deal-581190989",
+      "name": "헬로바이오 비타민C 3000 레드라벨, 3g, 90포, 2박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/fxR5e7zi",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-05-21/6d8677de-c59d-4284-ab2c-030a19c8e55e.jpeg",
+      "priceText": "14,900원",
+      "discountRate": 50,
+      "dealEndsAt": "2026-09-20T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2637785481",
+      "name": "산들에담다 GAP 노지 감귤, 특품, 로얄과, 5kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/lHfbppYg",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-28/12aca3f7-0d09-47b5-bcb8-a9dc0453c75d.png",
+      "priceText": "13,790원",
+      "discountRate": 76,
+      "dealEndsAt": "2026-09-20T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2139655317",
+      "name": "페스츄리 바비큐 오징어, 200g, 2개",
+      "category": "음식",
+      "link": "https://toss.im/_m/pPD4j42r",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-05-29/695974d4-4a3e-48d5-84bf-14c13dbcd099.jpeg",
+      "priceText": "12,900원",
+      "discountRate": 50,
+      "dealEndsAt": "2026-09-20T23:59:59+09:00"
+    },
+    {
+      "id": "deal-99224717",
+      "name": "호정가 뉴트리션 하루영양바, 25g, 20개입, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/bkmPohqe",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODBhZDg5/QU12MVVNWThKaWw1OUluZXRxOWFkbzdML3FTeGR0WlpacnNoS2wxRXdldFM.png",
+      "priceText": "10,900원",
+      "discountRate": 45,
+      "dealEndsAt": "2026-09-20T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -206,8 +265,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Jf0vjY06",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmFkNDg1/YTNNaXA1eW1lVUdtR2MrMnYwcjJEc205bTdGMlRrMWp1clVpUHdYQnExST0.png",
-      "priceText": "13,900원",
-      "discountRate": 42
+      "priceText": "12,900원",
+      "discountRate": 46
     },
     {
       "id": "sl-2484194021",
@@ -1066,8 +1125,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/pPD4j42r",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-05-29/695974d4-4a3e-48d5-84bf-14c13dbcd099.jpeg",
-      "priceText": "13,900원",
-      "discountRate": 46
+      "priceText": "12,900원",
+      "discountRate": 50
     },
     {
       "id": "sl-79888185",
@@ -1093,8 +1152,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/hXkdlDaA",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDFhMjc2/QU5wbkV6NnAxbi9wZmhuVXRydGVOUjVLK0liaGRvWk5adm94cWo4RXdhMVM.png",
-      "priceText": "14,900원",
-      "discountRate": 37
+      "priceText": "13,900원",
+      "discountRate": 42
     },
     {
       "id": "sl-1735847359",
@@ -1173,19 +1232,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
       "priceText": "9,810원",
       "discountRate": 53,
-      "seasons": [
-        "autumn",
-        "winter"
-      ]
-    },
-    {
-      "id": "sl-2621746065",
-      "name": "햇 밤고구마, 한입, 3kg, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/lVmT8Vki",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/43e2546f-426d-469d-ab51-d3fb341f57b4.jpeg",
-      "priceText": "6,900원",
-      "discountRate": 50,
       "seasons": [
         "autumn",
         "winter"
