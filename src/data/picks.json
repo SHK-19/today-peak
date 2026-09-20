@@ -1,15 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-19T21:30:07.191Z",
+  "updatedAt": "2026-09-20T03:30:07.548Z",
   "items": [
     {
-      "id": "deal-2495260511",
-      "name": "매일야채 고농축 토마토 125ml 24개 + 호박 125ml 24개, 48개",
+      "id": "deal-2280710225",
+      "name": "종근당건강 프로메가 알티지 오메가3 듀얼S, 60캡슐, 5박스 + 증정 아임비타 면역 비타민C, 30포, 1개",
       "category": "음식",
-      "link": "https://toss.im/_m/TxPn4VXv",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-16/cec491e5-2586-4201-adda-bf9a28e11fe9.jpeg",
-      "priceText": "23,900원",
-      "discountRate": 61,
+      "link": "https://toss.im/_m/LR3NWQyn",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-23/1ca91ba3-3fbc-4d2a-a465-97195ba48b2a.jpeg",
+      "priceText": "53,550원",
+      "discountRate": 57,
       "dealEndsAt": "2026-09-20T23:59:59+09:00"
     },
     {
@@ -32,16 +32,6 @@
       "dealEndsAt": "2026-09-20T23:59:59+09:00"
     },
     {
-      "id": "deal-2637785481",
-      "name": "산들에담다 GAP 노지 감귤, 특품, 로얄과, 5kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/lHfbppYg",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-28/12aca3f7-0d09-47b5-bcb8-a9dc0453c75d.png",
-      "priceText": "13,790원",
-      "discountRate": 76,
-      "dealEndsAt": "2026-09-20T23:59:59+09:00"
-    },
-    {
       "id": "deal-2139655317",
       "name": "페스츄리 바비큐 오징어, 200g, 2개",
       "category": "음식",
@@ -49,6 +39,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-05-29/695974d4-4a3e-48d5-84bf-14c13dbcd099.jpeg",
       "priceText": "12,900원",
       "discountRate": 50,
+      "dealEndsAt": "2026-09-20T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2637785481",
+      "name": "산들에담다 GAP 노지 감귤, 특품, 로얄과, 5kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/lHfbppYg",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-28/12aca3f7-0d09-47b5-bcb8-a9dc0453c75d.png",
+      "priceText": "13,790원",
+      "discountRate": 76,
       "dealEndsAt": "2026-09-20T23:59:59+09:00"
     },
     {
@@ -600,24 +600,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
       "priceText": "17,760원",
       "discountRate": 45
-    },
-    {
-      "id": "sl-2605058187",
-      "name": "애슐리 주먹밥 체험팩, 7가지맛, 100g, 7개",
-      "category": "음식",
-      "link": "https://toss.im/_m/HX12blfB",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
-      "priceText": "12,900원",
-      "discountRate": 34
-    },
-    {
-      "id": "sl-142778727",
-      "name": "애슐리 주먹밥 2종, 콘치즈 닭갈비 + 치즈 케이준치킨, 100g, 10개, 1세트",
-      "category": "음식",
-      "link": "https://toss.im/_m/1QpjO6E",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-16/2e770c8c-89dc-4452-bbfb-d3d79c8cdae1.jpeg",
-      "priceText": "16,990원",
-      "discountRate": 25
     },
     {
       "id": "sl-303265905",
@@ -1192,6 +1174,19 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
       "priceText": "9,810원",
       "discountRate": 53,
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "id": "sl-2621746065",
+      "name": "햇 밤고구마, 한입, 3kg, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/lVmT8Vki",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/43e2546f-426d-469d-ab51-d3fb341f57b4.jpeg",
+      "priceText": "6,900원",
+      "discountRate": 50,
       "seasons": [
         "autumn",
         "winter"
