@@ -1,27 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-20T15:30:09.275Z",
+  "updatedAt": "2026-09-20T21:30:08.158Z",
   "items": [
-    {
-      "id": "deal-2072688769",
-      "name": "과일꾼 난각번호 1번 무항생제 유정란 자연방사 계란, 20구, 3개",
-      "category": "음식",
-      "link": "https://toss.im/_m/lbHYnuag",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-27/57ad0269-4114-41fb-86f0-5edbb44e386d.jpeg",
-      "priceText": "26,800원",
-      "discountRate": 59,
-      "dealEndsAt": "2026-09-21T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2454519263",
-      "name": "일양약품 비타민C 1000, 1100mg, 200정, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/5g3Hyhxe",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OWJmNGUy/QVBaTXpaTnptWm16a3JSdGJEMllabHVWbkpMTU13eTJ6SmJzTTV1ZHBNMGs.png",
-      "priceText": "9,000원",
-      "discountRate": 26,
-      "dealEndsAt": "2026-09-21T23:59:59+09:00"
-    },
     {
       "id": "deal-80332723",
       "name": "서울약사신협 프로바이오틱스 생유산균 골드, 2.5g, 120포, 2개",
@@ -33,13 +13,33 @@
       "dealEndsAt": "2026-09-21T23:59:59+09:00"
     },
     {
-      "id": "deal-119339587",
-      "name": "풍년보감 고려홍삼정 투데이굿타임, 15g, 100포 + 쇼핑백, 1개, 1세트",
+      "id": "deal-248982199",
+      "name": "자가발열 허리보호대, 블랙, 프리, 1개",
+      "category": "장비",
+      "link": "https://toss.im/_m/p6WWxqW",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-11-03/d4f102ea-fa46-4571-a8c0-0569afb1ffb5.jpeg",
+      "priceText": "13,900원",
+      "discountRate": 52,
+      "dealEndsAt": "2026-09-21T23:59:59+09:00"
+    },
+    {
+      "id": "deal-1113227931",
+      "name": "꼬기다 스틱 닭가슴살, 5종혼합, 100g, 20개",
+      "category": "장비",
+      "link": "https://toss.im/_m/RYNHEkxC",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDIyODk1/QU94QnhTczZuREpoak53T1IxS0d5Rnd4T1NHODNpTXBpY1MrWGdNQnk4QjI.png",
+      "priceText": "29,900원",
+      "discountRate": 54,
+      "dealEndsAt": "2026-09-21T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2653667163",
+      "name": "계약재배된 제주직송 제주 노지감귤, 가정용, 2kg, 1박스",
       "category": "음식",
-      "link": "https://toss.im/_m/ZmzOqVIa",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NGQxMjlk/U2ZZeTZlRkw1MXJGTzk0N3R1bHQxczg3Z2JzK3dWclVldFRTclg1UUwxTT0.png",
-      "priceText": "16,900원",
-      "discountRate": 66,
+      "link": "https://toss.im/_m/9PWJpmdA",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/2acf4b44-c7a6-4d36-a553-bacd1a15444b.jpeg",
+      "priceText": "7,900원",
+      "discountRate": 55,
       "dealEndsAt": "2026-09-21T23:59:59+09:00"
     },
     {
@@ -99,8 +99,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/1d0lJZbn",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OWVkN2Iw/SmNpRE1LOHZ1K2ZKQzgwWUNXbnd6a21MbVJoWmE0YkJta25HZklaVE9ZUT0.png",
-      "priceText": "9,300원",
-      "discountRate": 15,
+      "priceText": "8,640원",
+      "discountRate": 21,
       "seasons": [
         "spring",
         "summer",
@@ -773,8 +773,7 @@
       "category": "장비",
       "link": "https://toss.im/_m/jkGqPRkd",
       "imageUrl": "https://shopping.toss.im/1b3/live/product/419628951/1b384069-29db-46d4-8eff-e0f0e3c85573.jpg",
-      "priceText": "5,055원",
-      "discountRate": 11,
+      "priceText": "5,099원",
       "seasons": [
         "spring",
         "autumn",
@@ -914,7 +913,7 @@
       "category": "의류",
       "link": "https://toss.im/_m/n16XSMUD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTljYjgz/TlVwVE5PdWRucU9LMjl5T0ROU01iSGRqTzBxaXRtTWJDNzBPT05zSjJ1VT0.png",
-      "priceText": "5,580원",
+      "priceText": "5,608원",
       "discountRate": 26,
       "seasons": [
         "summer"
