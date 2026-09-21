@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-20T21:30:08.158Z",
+  "updatedAt": "2026-09-21T03:30:07.037Z",
   "items": [
     {
       "id": "deal-80332723",
@@ -13,26 +13,6 @@
       "dealEndsAt": "2026-09-21T23:59:59+09:00"
     },
     {
-      "id": "deal-248982199",
-      "name": "자가발열 허리보호대, 블랙, 프리, 1개",
-      "category": "장비",
-      "link": "https://toss.im/_m/p6WWxqW",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-11-03/d4f102ea-fa46-4571-a8c0-0569afb1ffb5.jpeg",
-      "priceText": "13,900원",
-      "discountRate": 52,
-      "dealEndsAt": "2026-09-21T23:59:59+09:00"
-    },
-    {
-      "id": "deal-1113227931",
-      "name": "꼬기다 스틱 닭가슴살, 5종혼합, 100g, 20개",
-      "category": "장비",
-      "link": "https://toss.im/_m/RYNHEkxC",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDIyODk1/QU94QnhTczZuREpoak53T1IxS0d5Rnd4T1NHODNpTXBpY1MrWGdNQnk4QjI.png",
-      "priceText": "29,900원",
-      "discountRate": 54,
-      "dealEndsAt": "2026-09-21T23:59:59+09:00"
-    },
-    {
       "id": "deal-2653667163",
       "name": "계약재배된 제주직송 제주 노지감귤, 가정용, 2kg, 1박스",
       "category": "음식",
@@ -40,6 +20,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/2acf4b44-c7a6-4d36-a553-bacd1a15444b.jpeg",
       "priceText": "7,900원",
       "discountRate": 55,
+      "dealEndsAt": "2026-09-21T23:59:59+09:00"
+    },
+    {
+      "id": "deal-248982199",
+      "name": "자가발열 허리보호대, 블랙, 프리, 1개",
+      "category": "장비",
+      "link": "https://toss.im/_m/p6WWxqW",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-11-03/d4f102ea-fa46-4571-a8c0-0569afb1ffb5.jpeg",
+      "priceText": "13,900원",
+      "discountRate": 52,
       "dealEndsAt": "2026-09-21T23:59:59+09:00"
     },
     {
@@ -312,15 +302,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NmMzMDI4/QU1scGxrNXZuTkxNbkxWNjJYNDRsVHFqc2pvNXVQSGh1RmRTUGFGb0s4eG0.png",
       "priceText": "12,000원",
       "discountRate": 18
-    },
-    {
-      "id": "sl-1005944115",
-      "name": "건짐 반건조 오징어, 350g 내외, 5마리",
-      "category": "음식",
-      "link": "https://toss.im/_m/XQVGwdAo",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MDVjM2U2/WWVhVDhiZXo5SXVVK1ptQ0ROZHJaLzJTTnNzMndGWGovOUFJRFJnWVpPND0.png",
-      "priceText": "13,900원",
-      "discountRate": 39
     },
     {
       "id": "sl-1980204115",
