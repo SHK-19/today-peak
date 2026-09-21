@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-21T03:30:07.037Z",
+  "updatedAt": "2026-09-21T09:30:07.722Z",
   "items": [
     {
       "id": "deal-80332723",
@@ -417,7 +417,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,850원",
+      "priceText": "14,840원",
       "discountRate": 17
     },
     {
@@ -801,15 +801,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-27/2ed5296f-05a7-49e0-ab33-76268f59190d.jpeg",
       "priceText": "9,200원",
       "discountRate": 58
-    },
-    {
-      "id": "sl-2349769011",
-      "name": "캠핑 휴대용 접이식 방석 쿠션, 블랙, 1개",
-      "category": "장비",
-      "link": "https://toss.im/_m/bq599V4m",
-      "imageUrl": "https://shopping.toss.im/08e/live/product/715108537/08ee5770-f56f-4e07-b18d-76cb8fb954ce.jpg",
-      "priceText": "7,180원",
-      "discountRate": 10
     },
     {
       "id": "sl-2523779719",
@@ -1211,6 +1202,19 @@
       "imageUrl": "https://shopping.toss.im/live/product/1146447/7d7fc8f8-7ba8-4fc2-bd48-471cbd2d0036.jpeg",
       "priceText": "14,000원",
       "discountRate": 21
+    },
+    {
+      "id": "sl-259397395",
+      "name": "KIM'S CLUB 촉촉한 꿀고구마말랭이, 60g, 5개",
+      "category": "음식",
+      "link": "https://toss.im/_m/5Ko7XgPu",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-10-15/2b1950c7-d5e6-4d50-b2e3-2b6273155a49.png",
+      "priceText": "9,900원",
+      "discountRate": 33,
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
     }
   ]
 }
