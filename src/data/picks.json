@@ -1,36 +1,46 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-21T09:30:07.722Z",
+  "updatedAt": "2026-09-21T15:30:09.468Z",
   "items": [
     {
-      "id": "deal-80332723",
-      "name": "서울약사신협 프로바이오틱스 생유산균 골드, 2.5g, 120포, 2개",
+      "id": "deal-2484194021",
+      "name": "이춘복의 비법 고소한 치즈육포, 30g, 10봉",
       "category": "음식",
-      "link": "https://toss.im/_m/tfHSmdGd",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MzU5Y2Ey/UGpGNDRmbkpwc2JkYWNmV284dDRQSGcrenduSGxyTHBmMFJqK3oxQjNOWT0.png",
-      "priceText": "20,900원",
-      "discountRate": 54,
-      "dealEndsAt": "2026-09-21T23:59:59+09:00"
+      "link": "https://toss.im/_m/f1PrbQv8",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTRjYWY4/QVBEei9Qc1AvbnRXL09lSHEvRlJlVStPTnNoMGMrNm5pNC9SZkh6MEVjT1g.png",
+      "priceText": "11,900원",
+      "discountRate": 25,
+      "dealEndsAt": "2026-09-22T23:59:59+09:00"
     },
     {
-      "id": "deal-2653667163",
-      "name": "계약재배된 제주직송 제주 노지감귤, 가정용, 2kg, 1박스",
+      "id": "deal-10337449",
+      "name": "초례청 찹쌀 꿀약과, 40g, 20개",
       "category": "음식",
-      "link": "https://toss.im/_m/9PWJpmdA",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/2acf4b44-c7a6-4d36-a553-bacd1a15444b.jpeg",
-      "priceText": "7,900원",
-      "discountRate": 55,
-      "dealEndsAt": "2026-09-21T23:59:59+09:00"
+      "link": "https://toss.im/_m/1mRjtFdc",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-17/6498ef23-bf17-493a-839c-9ec9a82acb54.png",
+      "priceText": "8,900원",
+      "discountRate": 34,
+      "dealEndsAt": "2026-09-22T23:59:59+09:00"
     },
     {
-      "id": "deal-248982199",
-      "name": "자가발열 허리보호대, 블랙, 프리, 1개",
-      "category": "장비",
-      "link": "https://toss.im/_m/p6WWxqW",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-11-03/d4f102ea-fa46-4571-a8c0-0569afb1ffb5.jpeg",
-      "priceText": "13,900원",
-      "discountRate": 52,
-      "dealEndsAt": "2026-09-21T23:59:59+09:00"
+      "id": "deal-150768091",
+      "name": "커피빈 카페라떼 컵커피, 300ml, 20개",
+      "category": "음식",
+      "link": "https://toss.im/_m/H02YdZdb",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/OGVkYjQ4/QUprek00Nnp4bXd4TTJ6RGpqWnhtbm5GanJKc3pNdzVNODdNNVpZNWJGNXQ.png",
+      "priceText": "23,000원",
+      "discountRate": 47,
+      "dealEndsAt": "2026-09-22T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2476490871",
+      "name": "청우 옛날과자 10봉 세트, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/NMSa5NI9",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MTQxOGY2/SHdjL0J5WFE3eVhna3JKTHJaTEswdE5rY3V5M0ZLM1N2bFRqcmJwVUhYQT0.png",
+      "priceText": "9,900원",
+      "discountRate": 37,
+      "dealEndsAt": "2026-09-22T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -215,8 +225,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/f1PrbQv8",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/YTRjYWY4/QVBEei9Qc1AvbnRXL09lSHEvRlJlVStPTnNoMGMrNm5pNC9SZkh6MEVjT1g.png",
-      "priceText": "12,900원",
-      "discountRate": 18
+      "priceText": "11,900원",
+      "discountRate": 25
     },
     {
       "id": "sl-83885933",
@@ -276,8 +286,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/lRPzesIe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "12,800원",
-      "discountRate": 39
+      "priceText": "13,500원",
+      "discountRate": 35
     },
     {
       "id": "sl-2274809577",
@@ -309,8 +319,8 @@
       "category": "안전",
       "link": "https://toss.im/_m/bcMxJEPp",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Zjk3NTE0/UWJFbXcvSHVuTE1zUHJscDA5dHpscHR4MnBTV3k2VkxhVFE4OVdrMDJ6UT0.png",
-      "priceText": "15,890원",
-      "discountRate": 77,
+      "priceText": "17,900원",
+      "discountRate": 74,
       "seasons": [
         "spring",
         "summer",
@@ -439,6 +449,15 @@
       "discountRate": 30
     },
     {
+      "id": "sl-2607858145",
+      "name": "종근당건강 락토핏 골드, 2g, 140포, 1개 + 증정 락토핏 골드, 30포",
+      "category": "음식",
+      "link": "https://toss.im/_m/Lv1LONfB",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/e8def6ef-db30-4dd2-9f9b-8aa6695cb9bd.jpeg",
+      "priceText": "28,500원",
+      "discountRate": 58
+    },
+    {
       "id": "sl-173414675",
       "name": "오가닉프렌즈 하루한포 엑스트라버진 유기농 올리브오일 100%, 10g, 14포, 2개",
       "category": "음식",
@@ -492,8 +511,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/RrqcxZgh",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmE4NmVh/QU9NeGpQbmtaRTN1TWVUelR0YXhwN09RNGZIa0R6dnc1T1RrSHh2anVRNXY.png",
-      "priceText": "9,900원",
-      "discountRate": 35
+      "priceText": "11,900원",
+      "discountRate": 22
     },
     {
       "id": "sl-2602285881",
@@ -519,8 +538,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/nLsKMhvs",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/N2M2Yjk1/QVB4SmZEbkJTVXJOcEptMU03MHk5OG04ZHMzblRsUTVQb3RVc3pZY2RNZkc.png",
-      "priceText": "10,300원",
-      "discountRate": 45
+      "priceText": "11,900원",
+      "discountRate": 37
     },
     {
       "id": "sl-171388715",
@@ -1209,8 +1228,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/5Ko7XgPu",
       "imageUrl": "https://shopping.toss.im/live/temp/2025-10-15/2b1950c7-d5e6-4d50-b2e3-2b6273155a49.png",
-      "priceText": "9,900원",
-      "discountRate": 33,
+      "priceText": "11,900원",
+      "discountRate": 20,
       "seasons": [
         "autumn",
         "winter"
