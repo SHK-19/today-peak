@@ -1,15 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-22T03:30:07.052Z",
+  "updatedAt": "2026-09-22T09:30:08.174Z",
   "items": [
     {
-      "id": "deal-2484194021",
-      "name": "이춘복의 비법 고소한 치즈육포, 30g, 10봉",
+      "id": "deal-383550653",
+      "name": "뉴트리디데이 메가 칼슘 마그네슘 아연 비타민D, 100정, 3개",
       "category": "음식",
-      "link": "https://toss.im/_m/f1PrbQv8",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTRjYWY4/QVBEei9Qc1AvbnRXL09lSHEvRlJlVStPTnNoMGMrNm5pNC9SZkh6MEVjT1g.png",
-      "priceText": "11,900원",
-      "discountRate": 25,
+      "link": "https://toss.im/_m/1YKTNXfr",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-21/a681b49d-d984-465a-8f6c-639e814bf80e.jpeg",
+      "priceText": "17,900원",
+      "discountRate": 71,
       "dealEndsAt": "2026-09-22T23:59:59+09:00"
     },
     {
@@ -23,16 +23,6 @@
       "dealEndsAt": "2026-09-22T23:59:59+09:00"
     },
     {
-      "id": "deal-2476490871",
-      "name": "청우 옛날과자 10봉 세트, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/NMSa5NI9",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MTQxOGY2/SHdjL0J5WFE3eVhna3JKTHJaTEswdE5rY3V5M0ZLM1N2bFRqcmJwVUhYQT0.png",
-      "priceText": "9,900원",
-      "discountRate": 37,
-      "dealEndsAt": "2026-09-22T23:59:59+09:00"
-    },
-    {
       "id": "deal-1380458593",
       "name": "인기 스낵 14종 세트, 1박스",
       "category": "음식",
@@ -40,6 +30,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDE4YmUx/SG55ejFsRG5uZmJnUS9NN2RERm5MVUo1VnhrcTBTYUg2RldiMXY5QTFPZz0.png",
       "priceText": "15,000원",
       "discountRate": 27,
+      "dealEndsAt": "2026-09-22T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2476490871",
+      "name": "청우 옛날과자 10봉 세트, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/NMSa5NI9",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MTQxOGY2/SHdjL0J5WFE3eVhna3JKTHJaTEswdE5rY3V5M0ZLM1N2bFRqcmJwVUhYQT0.png",
+      "priceText": "9,900원",
+      "discountRate": 37,
       "dealEndsAt": "2026-09-22T23:59:59+09:00"
     },
     {
@@ -245,6 +245,18 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NjQ0NDFm/UFo2MDZ3M3dtbnpjWTg3SDMrdHg0NGgwL3NGOUpEbzRjYVBtSTQ1VTVjdz0.png",
       "priceText": "10,400원",
       "discountRate": 48
+    },
+    {
+      "id": "sl-2567903989",
+      "name": "경북 홍로사과, 14-16과, 2kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/dSdrXIAe",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/477ae75a-02ab-449d-ab8d-131c9c98fb91.jpeg",
+      "priceText": "8,900원",
+      "discountRate": 59,
+      "seasons": [
+        "autumn"
+      ]
     },
     {
       "id": "sl-10150471",
@@ -563,6 +575,19 @@
       "discountRate": 45
     },
     {
+      "id": "sl-148603887",
+      "name": "철이네 제주 노지 감귤, 특상품, 중대과, 3kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/fjeWXTZz",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-22/c78fd46d-13a7-4936-8f99-cae062aa5309.jpeg",
+      "priceText": "13,900원",
+      "discountRate": 53,
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    },
+    {
       "id": "sl-2605058187",
       "name": "애슐리 주먹밥 체험팩, 7가지맛, 100g, 7개",
       "category": "음식",
@@ -596,7 +621,7 @@
       "link": "https://toss.im/_m/Bir395X4",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OTk2YWFk/ZU5JVHphc05TYnUwSEtzMFN1T1Y2MjBHbXBTNUtJdGFKclZ2SS9KaUptWT0.png",
       "priceText": "15,500원",
-      "discountRate": 30
+      "discountRate": 47
     },
     {
       "id": "sl-563739749",
