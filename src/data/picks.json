@@ -1,37 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-21T21:30:07.144Z",
+  "updatedAt": "2026-09-22T03:30:07.052Z",
   "items": [
-    {
-      "id": "deal-2476490871",
-      "name": "청우 옛날과자 10봉 세트, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/NMSa5NI9",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MTQxOGY2/SHdjL0J5WFE3eVhna3JKTHJaTEswdE5rY3V5M0ZLM1N2bFRqcmJwVUhYQT0.png",
-      "priceText": "9,900원",
-      "discountRate": 37,
-      "dealEndsAt": "2026-09-22T23:59:59+09:00"
-    },
-    {
-      "id": "deal-150768091",
-      "name": "커피빈 카페라떼 컵커피, 300ml, 20개",
-      "category": "음식",
-      "link": "https://toss.im/_m/H02YdZdb",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/OGVkYjQ4/QUprek00Nnp4bXd4TTJ6RGpqWnhtbm5GanJKc3pNdzVNODdNNVpZNWJGNXQ.png",
-      "priceText": "23,000원",
-      "discountRate": 47,
-      "dealEndsAt": "2026-09-22T23:59:59+09:00"
-    },
-    {
-      "id": "deal-1380458593",
-      "name": "인기 스낵 14종 세트, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/DTfEWuAy",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDE4YmUx/SG55ejFsRG5uZmJnUS9NN2RERm5MVUo1VnhrcTBTYUg2RldiMXY5QTFPZz0.png",
-      "priceText": "15,000원",
-      "discountRate": 27,
-      "dealEndsAt": "2026-09-22T23:59:59+09:00"
-    },
     {
       "id": "deal-2484194021",
       "name": "이춘복의 비법 고소한 치즈육포, 30g, 10봉",
@@ -43,13 +13,33 @@
       "dealEndsAt": "2026-09-22T23:59:59+09:00"
     },
     {
-      "id": "deal-1322590729",
-      "name": "닥터오레고닌 오리밤 멀티스틱, 10g, 3개",
-      "category": "장비",
-      "link": "https://toss.im/_m/BBI4E0hx",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-30/bc0e9496-a896-4810-892f-b4b66ed61a60.jpeg",
-      "priceText": "7,900원",
-      "discountRate": 82,
+      "id": "deal-271978187",
+      "name": "산과들에 순수다움 하루견과, 20g, 50봉, 1세트",
+      "category": "음식",
+      "link": "https://toss.im/_m/bYxMuyVg",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YWM3OGY3/TG14NVpDM2psNTdhTnJlY0IvUGErVTlMYkZucFBKVWpOZnpLcG43Qk0xaz0.png",
+      "priceText": "25,900원",
+      "discountRate": 31,
+      "dealEndsAt": "2026-09-22T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2476490871",
+      "name": "청우 옛날과자 10봉 세트, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/NMSa5NI9",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MTQxOGY2/SHdjL0J5WFE3eVhna3JKTHJaTEswdE5rY3V5M0ZLM1N2bFRqcmJwVUhYQT0.png",
+      "priceText": "9,900원",
+      "discountRate": 37,
+      "dealEndsAt": "2026-09-22T23:59:59+09:00"
+    },
+    {
+      "id": "deal-1380458593",
+      "name": "인기 스낵 14종 세트, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/DTfEWuAy",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDE4YmUx/SG55ejFsRG5uZmJnUS9NN2RERm5MVUo1VnhrcTBTYUg2RldiMXY5QTFPZz0.png",
+      "priceText": "15,000원",
+      "discountRate": 27,
       "dealEndsAt": "2026-09-22T23:59:59+09:00"
     },
     {
@@ -255,18 +245,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NjQ0NDFm/UFo2MDZ3M3dtbnpjWTg3SDMrdHg0NGgwL3NGOUpEbzRjYVBtSTQ1VTVjdz0.png",
       "priceText": "10,400원",
       "discountRate": 48
-    },
-    {
-      "id": "sl-2567903989",
-      "name": "경북 홍로사과, 14-16과, 2kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/dSdrXIAe",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/477ae75a-02ab-449d-ab8d-131c9c98fb91.jpeg",
-      "priceText": "8,900원",
-      "discountRate": 59,
-      "seasons": [
-        "autumn"
-      ]
     },
     {
       "id": "sl-10150471",
