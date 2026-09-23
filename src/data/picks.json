@@ -1,46 +1,56 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-23T09:30:06.674Z",
+  "updatedAt": "2026-09-23T15:30:08.456Z",
   "items": [
     {
-      "id": "deal-210243315",
-      "name": "휴비딕 무릎보호대, HS-2, 모던 그레이, 2개",
-      "category": "장비",
-      "link": "https://toss.im/_m/dcj8X6Bt",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MzAwY2Mx/QUtIbjc0NDBQSHV3aEV3cU1kWHFyOEJRRHdCK1diaWhmaDRKU1JMeWdlUmQ.png",
-      "priceText": "13,900원",
-      "discountRate": 78,
-      "dealEndsAt": "2026-09-23T23:59:59+09:00"
-    },
-    {
-      "id": "deal-132835109",
-      "name": "40000KM 스포츠 커버 양말, 화이트, 20켤레",
-      "category": "의류",
-      "link": "https://toss.im/_m/Z9sKP2re",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-14/4eec7839-4ef0-4933-91a8-71f09a619b22.jpeg",
-      "priceText": "11,900원",
-      "discountRate": 60,
-      "dealEndsAt": "2026-09-23T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2656113063",
-      "name": "리프레쉬 맥반석오징어, 13-25미 내외, 300g, 1봉",
+      "id": "deal-2309397491",
+      "name": "산파트리지오 유기농 엑스트라버진 올리브오일, 500ml, 2병",
       "category": "음식",
-      "link": "https://toss.im/_m/Rl8BAZD5",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-07/9c81eb45-6040-431f-b33c-02f399d09cdc.jpeg",
-      "priceText": "14,900원",
-      "discountRate": 44,
-      "dealEndsAt": "2026-09-23T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/lzNWczji",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZmUyOTZm/QUxoNHJoMW5nMi8wNWNMZCtBSXZObWU5ZUhaanVyekxua1ZSdlhuRlVMNXc.png",
+      "priceText": "18,900원",
+      "discountRate": 52,
+      "dealEndsAt": "2026-09-24T23:59:59+09:00"
     },
     {
-      "id": "deal-2013755761",
-      "name": "리콜라 스위스 캔디 아이시멘톨 스틱, 31.5g, 15개",
-      "category": "장비",
-      "link": "https://toss.im/_m/fC2woGHy",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTJmYTRk/TTVuYk0yY3puTXlaTTJ6TU5tWXpNWm0zWm0xc3pKbXpiTTJjWm1XWlo1az0.png",
-      "priceText": "9,900원",
-      "discountRate": 71,
-      "dealEndsAt": "2026-09-23T23:59:59+09:00"
+      "id": "deal-2211772279",
+      "name": "대한민국농수산 바나나, 3kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/HEfRVuPf",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-09/d22aa28d-944e-4074-bd28-cf4de49d4c99.png",
+      "priceText": "8,900원",
+      "discountRate": 70,
+      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+    },
+    {
+      "id": "deal-443549445",
+      "name": "G7 베트남 퓨어블랙 커피, 2g, 200개입, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/zpQZvPjd",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTc1ZThl/QUpsaHJSdGs4OWpHZTA0MlBKNDB3YkhnOFI1TFB4dHB0TFZPbHNuQ3NHbFc.png",
+      "priceText": "29,900원",
+      "discountRate": 33,
+      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2620699395",
+      "name": "방수 매직밴드, 2x100cm, 2개",
+      "category": "안전",
+      "link": "https://toss.shopping/_m/PFKeZ9qc",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NmQyMGNk/QUpubm1NeVc4N2FmaEtSMngwcllheHMxYURTTmlNMkkyRXJVVTFSaktweW4.png",
+      "priceText": "7,989원",
+      "discountRate": 59,
+      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+    },
+    {
+      "id": "deal-183855123",
+      "name": "올바른 슈퍼 프로바이오틱스 생유산균 19 비타민D, 30포, 2박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/LlBfP5k8",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-11/61535351-7e00-43fe-beda-ae65d776c7de.png",
+      "priceText": "8,900원",
+      "discountRate": 77,
+      "dealEndsAt": "2026-09-24T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -216,8 +226,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Jf0vjY06",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmFkNDg1/YTNNaXA1eW1lVUdtR2MrMnYwcjJEc205bTdGMlRrMWp1clVpUHdYQnExST0.png",
-      "priceText": "13,900원",
-      "discountRate": 42
+      "priceText": "16,900원",
+      "discountRate": 29
     },
     {
       "id": "sl-2484194021",
@@ -520,8 +530,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/3pmmoPvi",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
-      "priceText": "9,590원",
-      "discountRate": 20
+      "priceText": "10,800원",
+      "discountRate": 10
     },
     {
       "id": "sl-82144865",
@@ -1080,8 +1090,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/hXkdlDaA",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDFhMjc2/QU5wbkV6NnAxbi9wZmhuVXRydGVOUjVLK0liaGRvWk5adm94cWo4RXdhMVM.png",
-      "priceText": "14,900원",
-      "discountRate": 37
+      "priceText": "16,900원",
+      "discountRate": 29
     },
     {
       "id": "sl-1735847359",
