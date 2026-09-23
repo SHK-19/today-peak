@@ -1,25 +1,25 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-22T21:30:07.688Z",
+  "updatedAt": "2026-09-23T03:30:08.244Z",
   "items": [
     {
-      "id": "deal-88066999",
-      "name": "HBAF 시즈닝 아몬드, 허니버터 120g 1개 + 와사비 120g 1개 + 군옥수수 120g 1개 + 마늘빵 120g 1개 + 카라멜 120g 1개, 1세트",
-      "category": "음식",
-      "link": "https://toss.im/_m/tzVVkBgB",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NWJkNDJi/Y3p2SG5IR3Z0TndCNFV0cXpPYjJOMjlNdk9HenROTXQySlFQK0t3Uk1KYz0.png",
+      "id": "deal-210243315",
+      "name": "휴비딕 무릎보호대, HS-2, 모던 그레이, 2개",
+      "category": "장비",
+      "link": "https://toss.im/_m/dcj8X6Bt",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MzAwY2Mx/QUtIbjc0NDBQSHV3aEV3cU1kWHFyOEJRRHdCK1diaWhmaDRKU1JMeWdlUmQ.png",
       "priceText": "13,900원",
-      "discountRate": 48,
+      "discountRate": 78,
       "dealEndsAt": "2026-09-23T23:59:59+09:00"
     },
     {
-      "id": "deal-183834725",
-      "name": "코피코 커피 캔디, 800g, 2개",
-      "category": "음식",
-      "link": "https://toss.im/_m/7YOoWETb",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MDRlMmI0/TWt2ZXlhMjBzWWl4eExITXpiazVNWE5QT1laek84WnpuTVk1alJ4T09Zdz0.png",
-      "priceText": "14,500원",
-      "discountRate": 39,
+      "id": "deal-132835109",
+      "name": "40000KM 스포츠 커버 양말, 화이트, 20켤레",
+      "category": "의류",
+      "link": "https://toss.im/_m/Z9sKP2re",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-14/4eec7839-4ef0-4933-91a8-71f09a619b22.jpeg",
+      "priceText": "11,900원",
+      "discountRate": 60,
       "dealEndsAt": "2026-09-23T23:59:59+09:00"
     },
     {
@@ -286,8 +286,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/lRPzesIe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "13,500원",
-      "discountRate": 35
+      "priceText": "12,000원",
+      "discountRate": 42
     },
     {
       "id": "sl-2274809577",
@@ -620,7 +620,7 @@
       "category": "안전",
       "link": "https://toss.im/_m/Bir395X4",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OTk2YWFk/ZU5JVHphc05TYnUwSEtzMFN1T1Y2MjBHbXBTNUtJdGFKclZ2SS9KaUptWT0.png",
-      "priceText": "15,500원",
+      "priceText": "12,500원",
       "discountRate": 47
     },
     {
@@ -786,7 +786,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/jkGqPRkd",
       "imageUrl": "https://shopping.toss.im/1b3/live/product/419628951/1b384069-29db-46d4-8eff-e0f0e3c85573.jpg",
-      "priceText": "5,099원",
+      "priceText": "5,055원",
+      "discountRate": 11,
       "seasons": [
         "spring",
         "autumn",
@@ -917,7 +918,7 @@
       "category": "의류",
       "link": "https://toss.im/_m/n16XSMUD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTljYjgz/TlVwVE5PdWRucU9LMjl5T0ROU01iSGRqTzBxaXRtTWJDNzBPT05zSjJ1VT0.png",
-      "priceText": "5,608원",
+      "priceText": "5,580원",
       "discountRate": 26,
       "seasons": [
         "summer"
