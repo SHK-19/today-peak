@@ -1,15 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-23T15:30:08.456Z",
+  "updatedAt": "2026-09-23T21:30:07.990Z",
   "items": [
     {
-      "id": "deal-2309397491",
-      "name": "산파트리지오 유기농 엑스트라버진 올리브오일, 500ml, 2병",
+      "id": "deal-443549445",
+      "name": "G7 베트남 퓨어블랙 커피, 2g, 200개입, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/lzNWczji",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZmUyOTZm/QUxoNHJoMW5nMi8wNWNMZCtBSXZObWU5ZUhaanVyekxua1ZSdlhuRlVMNXc.png",
-      "priceText": "18,900원",
-      "discountRate": 52,
+      "link": "https://toss.shopping/_m/zpQZvPjd",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTc1ZThl/QUpsaHJSdGs4OWpHZTA0MlBKNDB3YkhnOFI1TFB4dHB0TFZPbHNuQ3NHbFc.png",
+      "priceText": "29,900원",
+      "discountRate": 33,
       "dealEndsAt": "2026-09-24T23:59:59+09:00"
     },
     {
@@ -23,32 +23,22 @@
       "dealEndsAt": "2026-09-24T23:59:59+09:00"
     },
     {
-      "id": "deal-443549445",
-      "name": "G7 베트남 퓨어블랙 커피, 2g, 200개입, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/zpQZvPjd",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTc1ZThl/QUpsaHJSdGs4OWpHZTA0MlBKNDB3YkhnOFI1TFB4dHB0TFZPbHNuQ3NHbFc.png",
-      "priceText": "29,900원",
-      "discountRate": 33,
-      "dealEndsAt": "2026-09-24T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2620699395",
-      "name": "방수 매직밴드, 2x100cm, 2개",
-      "category": "안전",
-      "link": "https://toss.shopping/_m/PFKeZ9qc",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NmQyMGNk/QUpubm1NeVc4N2FmaEtSMngwcllheHMxYURTTmlNMkkyRXJVVTFSaktweW4.png",
-      "priceText": "7,989원",
-      "discountRate": 59,
-      "dealEndsAt": "2026-09-24T23:59:59+09:00"
-    },
-    {
       "id": "deal-183855123",
       "name": "올바른 슈퍼 프로바이오틱스 생유산균 19 비타민D, 30포, 2박스",
       "category": "음식",
       "link": "https://toss.shopping/_m/LlBfP5k8",
       "imageUrl": "https://shopping.toss.im/live/temp/2025-08-11/61535351-7e00-43fe-beda-ae65d776c7de.png",
       "priceText": "8,900원",
+      "discountRate": 77,
+      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2658469877",
+      "name": "성분에디터 그린토마토 NMN 포어 리프팅 앰플 더블+빗거울 기획세트, 40ml, 2개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/NyvqJVSy",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-18/36cc9601-25c8-4b0a-99b9-8e0d538f76ed.jpeg",
+      "priceText": "16,900원",
       "discountRate": 77,
       "dealEndsAt": "2026-09-24T23:59:59+09:00"
     },
