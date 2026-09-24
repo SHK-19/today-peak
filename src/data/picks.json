@@ -1,7 +1,17 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-23T21:30:07.990Z",
+  "updatedAt": "2026-09-24T03:30:08.063Z",
   "items": [
+    {
+      "id": "deal-84687525",
+      "name": "세척 사과, 한입과, 14과 내외, 2kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/5VgDFEEC",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MTE3NTNm/QVBrV0JoeDhEN0lVaS8yZXBMRk5ZNmVLWlBKMkFsdFpzellRTXMvQTl1dkk.png",
+      "priceText": "8,900원",
+      "discountRate": 34,
+      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+    },
     {
       "id": "deal-443549445",
       "name": "G7 베트남 퓨어블랙 커피, 2g, 200개입, 1개",
@@ -10,6 +20,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NTc1ZThl/QUpsaHJSdGs4OWpHZTA0MlBKNDB3YkhnOFI1TFB4dHB0TFZPbHNuQ3NHbFc.png",
       "priceText": "29,900원",
       "discountRate": 33,
+      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2620699395",
+      "name": "방수 매직밴드, 2x100cm, 2개",
+      "category": "안전",
+      "link": "https://toss.shopping/_m/PFKeZ9qc",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NmQyMGNk/QUpubm1NeVc4N2FmaEtSMngwcllheHMxYURTTmlNMkkyRXJVVTFSaktweW4.png",
+      "priceText": "7,989원",
+      "discountRate": 59,
       "dealEndsAt": "2026-09-24T23:59:59+09:00"
     },
     {
