@@ -1,66 +1,76 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-24T09:30:06.992Z",
+  "updatedAt": "2026-09-24T15:30:10.307Z",
   "items": [
     {
-      "id": "deal-84687525",
-      "name": "세척 사과, 한입과, 14과 내외, 2kg, 1박스",
+      "id": "deal-358729637",
+      "name": "종근당건강 아임비타 멀티비타민 이뮨샷 유니버스 에디션, 20병, 1박스",
       "category": "음식",
-      "link": "https://toss.shopping/_m/5VgDFEEC",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MTE3NTNm/QVBrV0JoeDhEN0lVaS8yZXBMRk5ZNmVLWlBKMkFsdFpzellRTXMvQTl1dkk.png",
-      "priceText": "8,900원",
-      "discountRate": 34,
-      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+      "link": "https://toss.im/_m/tFb2rJis",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/ff0732a0-a5d2-4a95-b5c0-1d877504a49c.jpeg",
+      "priceText": "29,970원",
+      "discountRate": 74,
+      "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
-      "id": "deal-443549445",
-      "name": "G7 베트남 퓨어블랙 커피, 2g, 200개입, 1개",
+      "id": "deal-84251737",
+      "name": "서울약사신협 초임계 알티지 오메가3 식물성캡슐, 1030mg, 30캡슐, 3개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/zpQZvPjd",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTc1ZThl/QUpsaHJSdGs4OWpHZTA0MlBKNDB3YkhnOFI1TFB4dHB0TFZPbHNuQ3NHbFc.png",
-      "priceText": "29,900원",
-      "discountRate": 33,
-      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/Bu6Lere8",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZTJiNTQx/ZWQ4dExkcGYrcTFUV3VaU25GNVpXczZsenUwaG9TMjVoY1RONWxWUWNsaz0.png",
+      "priceText": "17,500원",
+      "discountRate": 50,
+      "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
-      "id": "deal-2620699395",
-      "name": "방수 매직밴드, 2x100cm, 2개",
-      "category": "안전",
-      "link": "https://toss.shopping/_m/PFKeZ9qc",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NmQyMGNk/QUpubm1NeVc4N2FmaEtSMngwcllheHMxYURTTmlNMkkyRXJVVTFSaktweW4.png",
-      "priceText": "7,989원",
+      "id": "deal-141163359",
+      "name": "인테로 어나더레벨 단백질 쉐이크, 아몬드봉봉 630g 1개 + 콘시리얼 630g 1개, 1세트",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/z09640Z6",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDI5MGFm/QUo1VTdENkQ3VzVEZlhpWWZDN3htb2Y5WVRCNlB5RnJ3K0RHb2VoYWxsNkY.png",
+      "priceText": "30,400원",
       "discountRate": 59,
-      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+      "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
-      "id": "deal-2211772279",
-      "name": "대한민국농수산 바나나, 3kg, 1박스",
+      "id": "deal-326928667",
+      "name": "산해직송 쪄서가는 백찰옥수수, 특대, 10개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/HEfRVuPf",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-09/d22aa28d-944e-4074-bd28-cf4de49d4c99.png",
-      "priceText": "8,900원",
-      "discountRate": 70,
-      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+      "link": "https://toss.im/_m/rWpUeQV1",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YzI3MjMx/QkJwWUExOEFRQTBjQlZWODFCOGRYWlY4L0E4ZitzQkw5Z0lYeFFnbFREND0.png",
+      "priceText": "10,900원",
+      "discountRate": 56,
+      "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
-      "id": "deal-183855123",
-      "name": "올바른 슈퍼 프로바이오틱스 생유산균 19 비타민D, 30포, 2박스",
+      "id": "deal-194042979",
+      "name": "해남 호풍미 호박고구마, 대, 5kg, 1박스",
       "category": "음식",
-      "link": "https://toss.shopping/_m/LlBfP5k8",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-11/61535351-7e00-43fe-beda-ae65d776c7de.png",
-      "priceText": "8,900원",
-      "discountRate": 77,
-      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/FH7yYRL4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-02-02/29aedeab-abc6-4b2c-86f7-31bcc48005aa.jpeg",
+      "priceText": "10,900원",
+      "discountRate": 65,
+      "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
-      "id": "deal-2658469877",
-      "name": "성분에디터 그린토마토 NMN 포어 리프팅 앰플 더블+빗거울 기획세트, 40ml, 2개",
+      "id": "deal-1240674855",
+      "name": "푸드앳홈 오징어 젓갈, 1kg, 1팩",
       "category": "음식",
-      "link": "https://toss.shopping/_m/NyvqJVSy",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-18/36cc9601-25c8-4b0a-99b9-8e0d538f76ed.jpeg",
-      "priceText": "16,900원",
-      "discountRate": 77,
-      "dealEndsAt": "2026-09-24T23:59:59+09:00"
+      "link": "https://toss.im/_m/BQBsLlSj",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-19/9abb176c-76ab-4a1a-b475-0d9f6c22482f.jpeg",
+      "priceText": "9,500원",
+      "discountRate": 58,
+      "dealEndsAt": "2026-09-25T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2226153335",
+      "name": "홍로 세척사과, 16-25과 내외, 3kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/RSFsbEB4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/d289f62f-61d3-4143-b707-8a62b8fc5858.png",
+      "priceText": "11,800원",
+      "discountRate": 73,
+      "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -1145,7 +1155,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/RSFsbEB4",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/d289f62f-61d3-4143-b707-8a62b8fc5858.png",
-      "priceText": "11,900원",
+      "priceText": "11,800원",
       "discountRate": 73,
       "seasons": [
         "autumn"
