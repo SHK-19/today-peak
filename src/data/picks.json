@@ -1,15 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-24T15:30:10.307Z",
+  "updatedAt": "2026-09-24T21:30:06.793Z",
   "items": [
     {
-      "id": "deal-358729637",
-      "name": "종근당건강 아임비타 멀티비타민 이뮨샷 유니버스 에디션, 20병, 1박스",
+      "id": "deal-326928667",
+      "name": "산해직송 쪄서가는 백찰옥수수, 특대, 10개",
       "category": "음식",
-      "link": "https://toss.im/_m/tFb2rJis",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/ff0732a0-a5d2-4a95-b5c0-1d877504a49c.jpeg",
-      "priceText": "29,970원",
-      "discountRate": 74,
+      "link": "https://toss.im/_m/rWpUeQV1",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YzI3MjMx/QkJwWUExOEFRQTBjQlZWODFCOGRYWlY4L0E4ZitzQkw5Z0lYeFFnbFREND0.png",
+      "priceText": "10,900원",
+      "discountRate": 56,
       "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
@@ -23,33 +23,23 @@
       "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
-      "id": "deal-141163359",
-      "name": "인테로 어나더레벨 단백질 쉐이크, 아몬드봉봉 630g 1개 + 콘시리얼 630g 1개, 1세트",
+      "id": "deal-2653131787",
+      "name": "제주 서귀포 노지 감귤 극조생귤, 5kg, 1박스",
       "category": "음식",
-      "link": "https://toss.shopping/_m/z09640Z6",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDI5MGFm/QUo1VTdENkQ3VzVEZlhpWWZDN3htb2Y5WVRCNlB5RnJ3K0RHb2VoYWxsNkY.png",
-      "priceText": "30,400원",
+      "link": "https://toss.shopping/_m/fUK92wLt",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-10/b3f1bb03-79a7-4833-b262-a8d5804d89cb.jpeg",
+      "priceText": "10,900원",
+      "discountRate": 52,
+      "dealEndsAt": "2026-09-25T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2522647797",
+      "name": "널담 고단백 저당 쫀득빵, 군옥수수 85g 3개 + 다크초코 85g 3개, 6개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/pXgiTGEs",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MzY5YTE2/RGNPWkxYTmp6aG1jbkRabVlXUER6Y2N0amFXNWlUSTVZbktiazU0YWJHQT0.png",
+      "priceText": "10,900원",
       "discountRate": 59,
-      "dealEndsAt": "2026-09-25T23:59:59+09:00"
-    },
-    {
-      "id": "deal-326928667",
-      "name": "산해직송 쪄서가는 백찰옥수수, 특대, 10개",
-      "category": "음식",
-      "link": "https://toss.im/_m/rWpUeQV1",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YzI3MjMx/QkJwWUExOEFRQTBjQlZWODFCOGRYWlY4L0E4ZitzQkw5Z0lYeFFnbFREND0.png",
-      "priceText": "10,900원",
-      "discountRate": 56,
-      "dealEndsAt": "2026-09-25T23:59:59+09:00"
-    },
-    {
-      "id": "deal-194042979",
-      "name": "해남 호풍미 호박고구마, 대, 5kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/FH7yYRL4",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-02-02/29aedeab-abc6-4b2c-86f7-31bcc48005aa.jpeg",
-      "priceText": "10,900원",
-      "discountRate": 65,
       "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
@@ -60,6 +50,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-03-19/9abb176c-76ab-4a1a-b475-0d9f6c22482f.jpeg",
       "priceText": "9,500원",
       "discountRate": 58,
+      "dealEndsAt": "2026-09-25T23:59:59+09:00"
+    },
+    {
+      "id": "deal-194042979",
+      "name": "해남 호풍미 호박고구마, 대, 5kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/FH7yYRL4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-02-02/29aedeab-abc6-4b2c-86f7-31bcc48005aa.jpeg",
+      "priceText": "10,900원",
+      "discountRate": 65,
       "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
