@@ -1,15 +1,25 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-25T03:30:07.276Z",
+  "updatedAt": "2026-09-25T09:30:07.694Z",
   "items": [
     {
-      "id": "deal-326928667",
-      "name": "산해직송 쪄서가는 백찰옥수수, 특대, 10개",
+      "id": "deal-358729637",
+      "name": "종근당건강 아임비타 멀티비타민 이뮨샷 유니버스 에디션, 20병, 1박스",
       "category": "음식",
-      "link": "https://toss.im/_m/rWpUeQV1",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YzI3MjMx/QkJwWUExOEFRQTBjQlZWODFCOGRYWlY4L0E4ZitzQkw5Z0lYeFFnbFREND0.png",
-      "priceText": "10,900원",
-      "discountRate": 56,
+      "link": "https://toss.im/_m/tFb2rJis",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/ff0732a0-a5d2-4a95-b5c0-1d877504a49c.jpeg",
+      "priceText": "29,970원",
+      "discountRate": 74,
+      "dealEndsAt": "2026-09-25T23:59:59+09:00"
+    },
+    {
+      "id": "deal-84251737",
+      "name": "서울약사신협 초임계 알티지 오메가3 식물성캡슐, 1030mg, 30캡슐, 3개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/Bu6Lere8",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZTJiNTQx/ZWQ4dExkcGYrcTFUV3VaU25GNVpXczZsenUwaG9TMjVoY1RONWxWUWNsaz0.png",
+      "priceText": "17,500원",
+      "discountRate": 50,
       "dealEndsAt": "2026-09-25T23:59:59+09:00"
     },
     {
@@ -557,8 +567,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/FNmLg3bv",
       "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
-      "priceText": "14,200원",
-      "discountRate": 40,
+      "priceText": "14,900원",
+      "discountRate": 37,
       "seasons": [
         "spring",
         "summer",
