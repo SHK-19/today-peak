@@ -1,25 +1,25 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-25T15:30:08.548Z",
+  "updatedAt": "2026-09-25T21:30:08.143Z",
   "items": [
     {
-      "id": "deal-2559163799",
-      "name": "일상미당 구운란, 대란, 30구, 2세트",
+      "id": "deal-264318287",
+      "name": "영진약품 초임계 알티지오메가3 퓨어골드, 30.96g, 30캡슐, 3박스",
       "category": "음식",
-      "link": "https://toss.shopping/_m/BkT6k2Gi",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NGFhODMx/QUpwenFsYmk2RmZId2sweGlodFNoVjhlNHJuSllQMUgwSnFWU2dOaEw5STM.png",
-      "priceText": "21,300원",
-      "discountRate": 36,
+      "link": "https://toss.shopping/_m/L6nOIaY4",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/OGFjNzI4/QU01Ym1aUXpqNmVHdlk0NzJXMkdINDc0ZWVTMEVyQnNNOGp4K0h2QzlCZUU.png",
+      "priceText": "18,900원",
+      "discountRate": 93,
       "dealEndsAt": "2026-09-26T23:59:59+09:00"
     },
     {
-      "id": "deal-158033185",
-      "name": "산기슭 홍로사과, 가정용, 꼬마, 15과내외, 2kg, 1박스",
+      "id": "deal-104470241",
+      "name": "황금비율 진미채견과볶음, 500g, 1팩",
       "category": "음식",
-      "link": "https://toss.shopping/_m/1hMktmpd",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-05/291f6efb-9a91-48b3-9235-f15f045bfffa.jpeg",
-      "priceText": "9,500원",
-      "discountRate": 34,
+      "link": "https://toss.shopping/_m/vgJkAYs3",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NGI0MzM3/QUphYXk0eFk4enVSTXR2STFwUGJUWktEU3VGS2wwcTBZbGxwY2FNc29jK0Q.png",
+      "priceText": "12,900원",
+      "discountRate": 48,
       "dealEndsAt": "2026-09-26T23:59:59+09:00"
     },
     {
@@ -33,16 +33,6 @@
       "dealEndsAt": "2026-09-26T23:59:59+09:00"
     },
     {
-      "id": "deal-1964260313",
-      "name": "샤오커오라 비타민C 종합사탕, 100g, 5개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/hhsAMVbb",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTFiZmE3/RUtRMm5EQ29rY3F6QXhUOEQzQjIrcWJUYUVDV1NZMkVQeVRCL0pHSEpqWT0.png",
-      "priceText": "12,900원",
-      "discountRate": 37,
-      "dealEndsAt": "2026-09-26T23:59:59+09:00"
-    },
-    {
       "id": "deal-140087083",
       "name": "이디야커피 스페셜 골드블렌드 리치크레마 커피믹스, 11g, 200개입, 1개",
       "category": "음식",
@@ -53,13 +43,33 @@
       "dealEndsAt": "2026-09-26T23:59:59+09:00"
     },
     {
-      "id": "deal-569656339",
-      "name": "종근당 건강 락토핏 골드, 2g, 50포, 6개 + 락토핏 골드, 30포, 1박스 + 아임비타 면역비타민C100, 30포, 1개",
+      "id": "deal-2651609355",
+      "name": "메리플라워 여성 중목 양말 5종, FREE, 10켤레",
+      "category": "의류",
+      "link": "https://toss.shopping/_m/VbITiu92",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/d143c129-bc49-402f-a565-fecdad055eb4.jpeg",
+      "priceText": "8,900원",
+      "discountRate": 55,
+      "dealEndsAt": "2026-09-26T23:59:59+09:00"
+    },
+    {
+      "id": "deal-432494761",
+      "name": "꿀이구마 호두 아몬드 율무차, 18g, 100스틱, 1개",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/nDHTQKJ",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-12-15/8d6c5b6a-91b6-4187-b01b-62f4eae12997.jpeg",
+      "priceText": "13,900원",
+      "discountRate": 41,
+      "dealEndsAt": "2026-09-26T23:59:59+09:00"
+    },
+    {
+      "id": "deal-1964260313",
+      "name": "샤오커오라 비타민C 종합사탕, 100g, 5개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/Dax0pKU5",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-23/0f10a141-fcc7-47da-829b-5a4d40bdc270.jpeg",
-      "priceText": "60,729원",
-      "discountRate": 51,
+      "link": "https://toss.shopping/_m/hhsAMVbb",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTFiZmE3/RUtRMm5EQ29rY3F6QXhUOEQzQjIrcWJUYUVDV1NZMkVQeVRCL0pHSEpqWT0.png",
+      "priceText": "12,900원",
+      "discountRate": 37,
       "dealEndsAt": "2026-09-26T23:59:59+09:00"
     },
     {
@@ -411,8 +421,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/rhNI8Bgm",
       "imageUrl": "https://shopping.toss.im/live/product/109963/1345ba43-78ac-4710-b84b-ad49a2d65133.png",
-      "priceText": "19,590원",
-      "discountRate": 32,
+      "priceText": "16,858원",
+      "discountRate": 41,
       "seasons": [
         "summer"
       ]
@@ -432,7 +442,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "16,900원"
+      "priceText": "14,830원",
+      "discountRate": 17
     },
     {
       "id": "sl-88019043",
