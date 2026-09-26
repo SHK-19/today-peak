@@ -1,27 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-26T03:30:07.483Z",
+  "updatedAt": "2026-09-26T09:30:05.685Z",
   "items": [
-    {
-      "id": "deal-172410971",
-      "name": "엔도르시 구름 키링 스웨이드 백팩 숄더백, 커피, FREE, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/R3U0y5HD",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YmFhYzhh/VXo4MlptcVJ6TTJzWnVzdGt6eXpNM0dKVE14dTUyN05yZFNiTTVWVVpFdz0.png",
-      "priceText": "17,800원",
-      "discountRate": 54,
-      "dealEndsAt": "2026-09-26T23:59:59+09:00"
-    },
-    {
-      "id": "deal-1964260313",
-      "name": "샤오커오라 비타민C 종합사탕, 100g, 5개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/hhsAMVbb",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTFiZmE3/RUtRMm5EQ29rY3F6QXhUOEQzQjIrcWJUYUVDV1NZMkVQeVRCL0pHSEpqWT0.png",
-      "priceText": "12,900원",
-      "discountRate": 37,
-      "dealEndsAt": "2026-09-26T23:59:59+09:00"
-    },
     {
       "id": "deal-166431743",
       "name": "익스트림 단백질 20g 슬림쉐이크, 더블초코, 45g, 7포, 1세트",
@@ -33,13 +13,13 @@
       "dealEndsAt": "2026-09-26T23:59:59+09:00"
     },
     {
-      "id": "deal-140087083",
-      "name": "이디야커피 스페셜 골드블렌드 리치크레마 커피믹스, 11g, 200개입, 1개",
+      "id": "deal-172410971",
+      "name": "엔도르시 구름 키링 스웨이드 백팩 숄더백, 커피, FREE, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/5dLSVyG8",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/N2YwYmJi/WnVzZUQ5NmY0ZVN4Wk95YjVWQ2Jid0t2Ykt6K3E3RFRRMlJiYkpWUXRKTT0.png",
-      "priceText": "22,000원",
-      "discountRate": 34,
+      "link": "https://toss.shopping/_m/R3U0y5HD",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YmFhYzhh/VXo4MlptcVJ6TTJzWnVzdGt6eXpNM0dKVE14dTUyN05yZFNiTTVWVVpFdz0.png",
+      "priceText": "17,800원",
+      "discountRate": 54,
       "dealEndsAt": "2026-09-26T23:59:59+09:00"
     },
     {
@@ -50,6 +30,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2025-12-15/8d6c5b6a-91b6-4187-b01b-62f4eae12997.jpeg",
       "priceText": "13,900원",
       "discountRate": 41,
+      "dealEndsAt": "2026-09-26T23:59:59+09:00"
+    },
+    {
+      "id": "deal-140087083",
+      "name": "이디야커피 스페셜 골드블렌드 리치크레마 커피믹스, 11g, 200개입, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/5dLSVyG8",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/N2YwYmJi/WnVzZUQ5NmY0ZVN4Wk95YjVWQ2Jid0t2Ykt6K3E3RFRRMlJiYkpWUXRKTT0.png",
+      "priceText": "22,000원",
+      "discountRate": 34,
       "dealEndsAt": "2026-09-26T23:59:59+09:00"
     },
     {
@@ -1163,19 +1153,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-07-28/8d7513c0-2ee9-4180-bb51-8d7b9c67e0ae.png",
       "priceText": "12,900원",
       "discountRate": 27
-    },
-    {
-      "id": "sl-2607784071",
-      "name": "해남 촉촉한 햇호박고구마, 한입, 3kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/nXfGwh6h",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
-      "priceText": "9,810원",
-      "discountRate": 53,
-      "seasons": [
-        "autumn",
-        "winter"
-      ]
     },
     {
       "id": "sl-2621746065",
