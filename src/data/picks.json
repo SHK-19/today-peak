@@ -1,76 +1,46 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-26T09:30:05.685Z",
+  "updatedAt": "2026-09-26T15:30:07.731Z",
   "items": [
     {
-      "id": "deal-166431743",
-      "name": "익스트림 단백질 20g 슬림쉐이크, 더블초코, 45g, 7포, 1세트",
+      "id": "deal-1733649725",
+      "name": "썬키스트 애사비 제로 스파클링 사과, 500ml, 24개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/jEqCXRqc",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-28/ed3268db-5022-4b1c-b0f1-628a2121bf0e.jpeg",
-      "priceText": "11,890원",
-      "discountRate": 66,
-      "dealEndsAt": "2026-09-26T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/tkH0KYQA",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-14/914d4821-4c6a-4a29-bb8a-645ef661f669.jpeg",
+      "priceText": "22,900원",
+      "discountRate": 25,
+      "dealEndsAt": "2026-09-27T23:59:59+09:00"
     },
     {
-      "id": "deal-172410971",
-      "name": "엔도르시 구름 키링 스웨이드 백팩 숄더백, 커피, FREE, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/R3U0y5HD",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YmFhYzhh/VXo4MlptcVJ6TTJzWnVzdGt6eXpNM0dKVE14dTUyN05yZFNiTTVWVVpFdz0.png",
-      "priceText": "17,800원",
-      "discountRate": 54,
-      "dealEndsAt": "2026-09-26T23:59:59+09:00"
-    },
-    {
-      "id": "deal-432494761",
-      "name": "꿀이구마 호두 아몬드 율무차, 18g, 100스틱, 1개",
+      "id": "deal-172608045",
+      "name": "풍년보감 고려홍삼정 에브리데이100P 홍삼스틱, 15g, 100포, 1개",
       "category": "장비",
-      "link": "https://toss.shopping/_m/nDHTQKJ",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-12-15/8d6c5b6a-91b6-4187-b01b-62f4eae12997.jpeg",
-      "priceText": "13,900원",
-      "discountRate": 41,
-      "dealEndsAt": "2026-09-26T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/rXTONcaA",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-05-15/8572aebb-4909-45db-a730-000f903207a9.jpeg",
+      "priceText": "18,700원",
+      "discountRate": 64,
+      "dealEndsAt": "2026-09-27T23:59:59+09:00"
     },
     {
-      "id": "deal-140087083",
-      "name": "이디야커피 스페셜 골드블렌드 리치크레마 커피믹스, 11g, 200개입, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/5dLSVyG8",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/N2YwYmJi/WnVzZUQ5NmY0ZVN4Wk95YjVWQ2Jid0t2Ykt6K3E3RFRRMlJiYkpWUXRKTT0.png",
-      "priceText": "22,000원",
-      "discountRate": 34,
-      "dealEndsAt": "2026-09-26T23:59:59+09:00"
+      "id": "deal-9030153",
+      "name": "비비맥스 이중파일 등산양말, 남성용,색상랜덤, 10켤레",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/rHqYG2vx",
+      "imageUrl": "https://shopping.toss.im/6deb7999-5488-47a1-a7fb-c457c427af9a.jpg",
+      "priceText": "10,700원",
+      "discountRate": 28,
+      "dealEndsAt": "2026-09-27T23:59:59+09:00"
     },
     {
-      "id": "deal-90705543",
-      "name": "리벤스 시그니처 크라운 골드 고평량 캡형 아기 물티슈, 70매, 10팩",
-      "category": "안전",
-      "link": "https://toss.shopping/_m/Pvc22cqt",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWIxZmU0/T3haLzd5bWUzdDZ0YnUrN3BHWC9mOFRrOC83ZTVmMjNXcEhmYzF2Ui8rMD0.png",
-      "priceText": "10,800원",
-      "discountRate": 58,
-      "dealEndsAt": "2026-09-26T23:59:59+09:00"
-    },
-    {
-      "id": "deal-104470241",
-      "name": "황금비율 진미채견과볶음, 500g, 1팩",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/vgJkAYs3",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NGI0MzM3/QUphYXk0eFk4enVSTXR2STFwUGJUWktEU3VGS2wwcTBZbGxwY2FNc29jK0Q.png",
-      "priceText": "12,900원",
-      "discountRate": 48,
-      "dealEndsAt": "2026-09-26T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2651609355",
-      "name": "메리플라워 여성 중목 양말 5종, FREE, 10켤레",
-      "category": "의류",
-      "link": "https://toss.shopping/_m/VbITiu92",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/d143c129-bc49-402f-a565-fecdad055eb4.jpeg",
-      "priceText": "8,900원",
-      "discountRate": 55,
-      "dealEndsAt": "2026-09-26T23:59:59+09:00"
+      "id": "deal-143240207",
+      "name": "브메르 손목 보호대, 심리스, 블랙, FREE, 1개",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/dMM0vBfw",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-14/afb2d18f-6bf3-42a7-ac56-3fa51085b355.png",
+      "priceText": "6,900원",
+      "discountRate": 78,
+      "dealEndsAt": "2026-09-27T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -120,8 +90,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/FYJZvyWl",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZjE3YzE3/QU1tY2QzKzhUSmxtNXhqNG5qalBUQStjWjJlWlo1MllaV1daenpPeXlEVE0.png",
-      "priceText": "10,088원",
-      "discountRate": 49
+      "priceText": "10,400원",
+      "discountRate": 48
     },
     {
       "id": "sl-1467863751",
@@ -496,8 +466,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/pPIHwU87",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NDE3OGYy/Sm9RRTlLVndaRXZaYXhxMTJwM1ROdFpTMFVpT1AvcURGYkl2MEdrTFRXMD0.png",
-      "priceText": "15,800원",
-      "discountRate": 73,
+      "priceText": "19,000원",
+      "discountRate": 68,
       "seasons": [
         "winter"
       ]
@@ -613,8 +583,8 @@
       "category": "안전",
       "link": "https://toss.im/_m/zKrmkKw3",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZmZmMTE0/QUpiRjF2T3ozbTBtYXhPTnJHMW5ONHl3ZkhJZWx1RmEwNGJ4blBOUzFLMXQ.png",
-      "priceText": "8,800원",
-      "discountRate": 70
+      "priceText": "7,800원",
+      "discountRate": 73
     },
     {
       "id": "sl-162655229",
