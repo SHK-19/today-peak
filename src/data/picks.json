@@ -1,15 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-27T03:30:06.933Z",
+  "updatedAt": "2026-09-27T09:30:05.864Z",
   "items": [
     {
-      "id": "deal-9030153",
-      "name": "비비맥스 이중파일 등산양말, 남성용,색상랜덤, 10켤레",
-      "category": "장비",
-      "link": "https://toss.shopping/_m/rHqYG2vx",
-      "imageUrl": "https://shopping.toss.im/6deb7999-5488-47a1-a7fb-c457c427af9a.jpg",
-      "priceText": "10,700원",
-      "discountRate": 28,
+      "id": "deal-1733649725",
+      "name": "썬키스트 애사비 제로 스파클링 사과, 500ml, 24개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/tkH0KYQA",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-14/914d4821-4c6a-4a29-bb8a-645ef661f669.jpeg",
+      "priceText": "22,900원",
+      "discountRate": 25,
       "dealEndsAt": "2026-09-27T23:59:59+09:00"
     },
     {
@@ -20,6 +20,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MjBiZGE4/QmhseXlLTDJud0Y0Wm9zWnBOdFNwRHprTWthZm1jSm5qWmtDSjNqay9kZz0.png",
       "priceText": "10,700원",
       "discountRate": 43,
+      "dealEndsAt": "2026-09-27T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2651788481",
+      "name": "마운틴앤필드 다크초콜릿아몬드, 20g, 20개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/v7wq02db",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-24/4deed396-8f66-498c-9755-d0436fef4ce7.jpeg",
+      "priceText": "11,900원",
+      "discountRate": 33,
       "dealEndsAt": "2026-09-27T23:59:59+09:00"
     },
     {
@@ -40,16 +50,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZmZmMTE0/QUpiRjF2T3ozbTBtYXhPTnJHMW5ONHl3ZkhJZWx1RmEwNGJ4blBOUzFLMXQ.png",
       "priceText": "7,800원",
       "discountRate": 73,
-      "dealEndsAt": "2026-09-27T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2651788481",
-      "name": "마운틴앤필드 다크초콜릿아몬드, 20g, 20개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/v7wq02db",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-24/4deed396-8f66-498c-9755-d0436fef4ce7.jpeg",
-      "priceText": "11,900원",
-      "discountRate": 33,
       "dealEndsAt": "2026-09-27T23:59:59+09:00"
     },
     {
