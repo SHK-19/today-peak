@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-28T15:30:09.178Z",
+  "updatedAt": "2026-09-28T21:30:09.140Z",
   "items": [
     {
       "id": "deal-2383531165",
@@ -23,13 +23,53 @@
       "dealEndsAt": "2026-09-29T23:59:59+09:00"
     },
     {
-      "id": "deal-1156454497",
-      "name": "보라톡스 파비플로라 알파CD 보라워터 스틱, 18g, 15포, 5박스",
+      "id": "deal-101803559",
+      "name": "마더스홈 매일 빨아쓰는 피그먼트 순면 베개커버, 밴드형, 민트그린, 40x60cm, 2개",
+      "category": "안전",
+      "link": "https://toss.im/_m/Hq2DOy16",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-30/9724dd6e-89a2-4d5b-a08e-0c8a2cb9e50f.jpeg",
+      "priceText": "9,900원",
+      "discountRate": 52,
+      "dealEndsAt": "2026-09-29T23:59:59+09:00"
+    },
+    {
+      "id": "deal-853318613",
+      "name": "한미 프로틴 마스터, 190ml, 24팩",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/Pi2w1OJo",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MjdhMzJi/VFp1MlpUczJaNW5rVDVwMk05blBUbkxobVphTWJYYlBXTlNuQzdlOGV2UT0.png",
+      "priceText": "14,900원",
+      "discountRate": 68,
+      "dealEndsAt": "2026-09-29T23:59:59+09:00"
+    },
+    {
+      "id": "deal-339734779",
+      "name": "스페시핏 싱크대 배수구 크리너, 스틱 1개 + 클린포, 12개입, 2개",
       "category": "장비",
-      "link": "https://toss.shopping/_m/xtVm5OR9",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-03/a1986409-5c7f-40a3-9c3b-3546ef0779f9.jpeg",
-      "priceText": "35,900원",
-      "discountRate": 85,
+      "link": "https://toss.shopping/_m/BU9d1Gbm",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-05-25/9c71c529-7d88-4a10-94ed-63d4a14ee45f.jpeg",
+      "priceText": "7,800원",
+      "discountRate": 73,
+      "dealEndsAt": "2026-09-29T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2261813091",
+      "name": "숨 소원에디션 포켓미니 물티슈, 8매, 10팩",
+      "category": "안전",
+      "link": "https://toss.shopping/_m/BPAg0vZk",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YmY5YTQy/QUlieHpzWnA2emE4T25PNGV6TU1ieUhIbHBiaHpPblB5NWJCelNreFBISTI.png",
+      "priceText": "4,900원",
+      "discountRate": 58,
+      "dealEndsAt": "2026-09-29T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2641870739",
+      "name": "과일꾼 제주 극조생 감귤, 로얄과, 5kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/7k7rJVui",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-20/3d9798f4-0c1e-4614-ba47-f091bb6aa7be.jpeg",
+      "priceText": "11,900원",
+      "discountRate": 77,
       "dealEndsAt": "2026-09-29T23:59:59+09:00"
     },
     {
