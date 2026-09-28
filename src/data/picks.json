@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-28T03:30:08.303Z",
+  "updatedAt": "2026-09-28T09:30:08.136Z",
   "items": [
     {
       "id": "deal-2657124525",
@@ -14,32 +14,12 @@
     },
     {
       "id": "deal-2645616861",
-      "name": "하이뮨 액티브 프로틴 쉐이크 너티초코, 45g, 7팩",
+      "name": "일동후디스 하이뮨 액티브 프로틴 쉐이크 너티초코 파우치, 45g, 7팩",
       "category": "음식",
       "link": "https://toss.shopping/_m/pLxC4Zz4",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-06-10/05a2c44e-6fba-4f7a-8f2a-5f3e88897a5d.jpeg",
       "priceText": "17,900원",
       "discountRate": 39,
-      "dealEndsAt": "2026-09-28T23:59:59+09:00"
-    },
-    {
-      "id": "deal-88299315",
-      "name": "캔음료 보관랙 디스펜서, 중, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/FRsQdYSD",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YzE1YTY0/QUtsUlpPbnc5ckphVzVtTkxTMlRkc2xwTlZaWUJUdVZWVnRicStWcWtGS3U.png",
-      "priceText": "4,800원",
-      "discountRate": 75,
-      "dealEndsAt": "2026-09-28T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2661266661",
-      "name": "해남 노란속살 비세척 호박고구마, 특상, 5kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/Vbh4kKj3",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-27/d9bfa038-5ac2-492a-b5a1-32a3c9248b93.png",
-      "priceText": "14,600원",
-      "discountRate": 36,
       "dealEndsAt": "2026-09-28T23:59:59+09:00"
     },
     {
@@ -278,11 +258,20 @@
       "priceText": "15,900원"
     },
     {
+      "id": "sl-83885933",
+      "name": "머거본 달콤한 직화육포, 20g, 10봉지",
+      "category": "음식",
+      "link": "https://toss.im/_m/jnLVK8gc",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWNhMTY0/SjFJOFllUEdlOU80clFlR1orTnJHeDFTaGpnTTRjNTBIbUd4bWFWV2VlWT0.png",
+      "priceText": "11,000원",
+      "discountRate": 38
+    },
+    {
       "id": "sl-1221294259",
       "name": "하루견과 The오리지널, 20g, 10봉",
       "category": "음식",
       "link": "https://toss.im/_m/xaT5Ihld",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NjQ0NDFm/UFo2MDZ3M3dtbnpjWTg3SDMrdHg0NGgwL3NGOUpEbzRjYVBtSTQ1VTVjdz0.png",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-28/24f3a059-d302-4026-a43b-817ff2342ca0.jpeg",
       "priceText": "10,400원",
       "discountRate": 48
     },
@@ -467,7 +456,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,820원",
+      "priceText": "14,810원",
       "discountRate": 17
     },
     {
@@ -1191,6 +1180,19 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-07-28/8d7513c0-2ee9-4180-bb51-8d7b9c67e0ae.png",
       "priceText": "12,900원",
       "discountRate": 27
+    },
+    {
+      "id": "sl-2607784071",
+      "name": "해남 촉촉한 햇호박고구마, 한입, 3kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.im/_m/nXfGwh6h",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
+      "priceText": "9,810원",
+      "discountRate": 53,
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
     },
     {
       "id": "sl-2621746065",
