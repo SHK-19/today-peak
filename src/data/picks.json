@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-29T03:30:07.749Z",
+  "updatedAt": "2026-09-29T09:30:09.084Z",
   "items": [
     {
       "id": "deal-2383531165",
@@ -13,13 +13,13 @@
       "dealEndsAt": "2026-09-29T23:59:59+09:00"
     },
     {
-      "id": "deal-853318613",
-      "name": "한미 프로틴 마스터, 190ml, 24팩",
+      "id": "deal-525229533",
+      "name": "속초식 추억의 옥수수술빵, 350g, 3개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/Pi2w1OJo",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MjdhMzJi/VFp1MlpUczJaNW5rVDVwMk05blBUbkxobVphTWJYYlBXTlNuQzdlOGV2UT0.png",
-      "priceText": "14,900원",
-      "discountRate": 68,
+      "link": "https://toss.shopping/_m/d2Vj0vPa",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MDQyNzIy/QUxMbzRwRjNSRmtuYzJIR0E5dmczRE9vUlBvblhBODZSeHFNZ2NCclhpVlY.png",
+      "priceText": "9,900원",
+      "discountRate": 52,
       "dealEndsAt": "2026-09-29T23:59:59+09:00"
     },
     {
@@ -380,15 +380,6 @@
       ]
     },
     {
-      "id": "sl-1973716003",
-      "name": "광동 타우린 2000, 120ml, 20개",
-      "category": "음식",
-      "link": "https://toss.im/_m/16p8MzGi",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-28/36d1469d-afdf-47d5-bbdc-1a7ada62c7b4.jpeg",
-      "priceText": "12,690원",
-      "discountRate": 29
-    },
-    {
       "id": "sl-91520647",
       "name": "동아제약 박카스 F, 120ml, 20병",
       "category": "음식",
@@ -436,7 +427,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,806원",
+      "priceText": "14,796원",
       "discountRate": 17
     },
     {
@@ -1077,18 +1068,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDFhMjc2/QU5wbkV6NnAxbi9wZmhuVXRydGVOUjVLK0liaGRvWk5adm94cWo4RXdhMVM.png",
       "priceText": "16,900원",
       "discountRate": 29
-    },
-    {
-      "id": "sl-1735847359",
-      "name": "제주 삼다수, 라벨랜덤, 500ml, 20개",
-      "category": "음식",
-      "link": "https://toss.im/_m/NWUis65B",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-17/ab553aef-85bf-42c8-8935-fe1b3ed02d8e.jpeg",
-      "priceText": "8,980원",
-      "discountRate": 28,
-      "seasons": [
-        "summer"
-      ]
     },
     {
       "id": "sl-2608899377",
