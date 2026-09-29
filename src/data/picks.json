@@ -1,37 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-29T15:30:12.636Z",
+  "updatedAt": "2026-09-29T21:30:08.394Z",
   "items": [
-    {
-      "id": "deal-2590594351",
-      "name": "블루나 본 물티슈 오리지널 플러스, 캡형, 55gsm, 100매, 10팩",
-      "category": "안전",
-      "link": "https://toss.shopping/_m/9N5wT76l",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-07/78a9fe07-d20b-48d1-b62f-9f126e57a141.jpeg",
-      "priceText": "10,890원",
-      "discountRate": 48,
-      "dealEndsAt": "2026-09-30T23:59:59+09:00"
-    },
-    {
-      "id": "deal-95354191",
-      "name": "종근당건강 락토핏 당케어, 100포, 3개 + 락토핏 골드, 30포, 1개 + 프로메가 알티지오메가3듀얼, 15일분",
-      "category": "음식",
-      "link": "https://toss.im/_m/7efMCrz3",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/12251a6b-52f2-454b-a7a2-4505757a22ed.jpeg",
-      "priceText": "58,805원",
-      "discountRate": 80,
-      "dealEndsAt": "2026-09-30T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2623133513",
-      "name": "베베쿡 사르르쿵 바나나, 15g, 3개 + 사르르쿵 딸기, 15g, 3개 + 꼬소미콘칩 구운옥수수맛, 15g, 3개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/x6kZh9qc",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/ea6c4e7b-c15a-4c97-8630-d96f9bb57724.jpeg",
-      "priceText": "7,490원",
-      "discountRate": 58,
-      "dealEndsAt": "2026-09-30T23:59:59+09:00"
-    },
     {
       "id": "deal-2442898037",
       "name": "한입과득 청송 홍로 사과, 가정용, 2kg, 1박스",
@@ -43,13 +13,23 @@
       "dealEndsAt": "2026-09-30T23:59:59+09:00"
     },
     {
-      "id": "deal-1469154921",
-      "name": "가람상점 완숙 찰 토마토 못난이 주스용, 랜덤과, 5kg, 1개",
+      "id": "deal-2651298391",
+      "name": "제주 서귀포 감귤, 특품, 로얄과, 5kg, 1박스",
       "category": "음식",
-      "link": "https://toss.im/_m/PILg6XYg",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/M2QwNWIy/VkptSmpsNlRxU2JFM3BHa1d3cWZkU05aTmt5K29YWmUxRG92VnVSN3ZTYz0.png",
-      "priceText": "17,900원",
-      "discountRate": 61,
+      "link": "https://toss.shopping/_m/Ji8xptnc",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-31/86a2246c-f034-4d82-b1b7-1fcb60db2dea.png",
+      "priceText": "13,500원",
+      "discountRate": 76,
+      "dealEndsAt": "2026-09-30T23:59:59+09:00"
+    },
+    {
+      "id": "deal-12731647",
+      "name": "경남제약 로얄플러스 멀티비타민, 900mg, 60정, 2개",
+      "category": "음식",
+      "link": "https://toss.im/_m/NJYqZHEp",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MGEwMTQ4/QU5xOGZUdVB6bng3bHVSR3A2VDFpMDVIMFhhbWg4SEhuajhFVnFVUFJLbFo.png",
+      "priceText": "8,500원",
+      "discountRate": 91,
       "dealEndsAt": "2026-09-30T23:59:59+09:00"
     },
     {
