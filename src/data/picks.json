@@ -1,25 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-30T15:30:12.560Z",
+  "updatedAt": "2026-09-30T21:30:10.051Z",
   "items": [
     {
-      "id": "deal-215975853",
-      "name": "플라이밀 단백질 쉐이크, 쿠키앤크림, 630g, 1개",
+      "id": "deal-146053119",
+      "name": "로마나 달콤바삭 황금 고구마칩, 320g, 6개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/tcqY2K6g",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MmU2NzQ5/ZXVtNXBiVldLa3ZQUE5VOE1Nazg1ODhXNDFyUzZkMmtwUThqUzFxVTNiWT0.png",
-      "priceText": "24,900원",
-      "discountRate": 37,
-      "dealEndsAt": "2026-10-01T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2570438725",
-      "name": "종근당건강 락토핏 골드, 140포, 2개 + 증정 락토핏 골드, 30포 + 증정 아임비타 면역비타민C, 30포",
-      "category": "음식",
-      "link": "https://toss.im/_m/rVJvJgkh",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-03/74828108-78eb-4328-bf27-62b32a559495.jpeg",
-      "priceText": "53,105원",
-      "discountRate": 64,
+      "link": "https://toss.shopping/_m/7hUeTQJa",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODc3NzYw/VnVPalJ2RldYTjVhbkpvV09GYVhWT1phWXBHaDBwbGswMURXbTV5MEtTMD0.png",
+      "priceText": "19,880원",
+      "discountRate": 66,
       "dealEndsAt": "2026-10-01T23:59:59+09:00"
     },
     {
@@ -33,13 +23,13 @@
       "dealEndsAt": "2026-10-01T23:59:59+09:00"
     },
     {
-      "id": "deal-2640177923",
-      "name": "탐나유 호풍미 호박고구마, 한입, 5kg, 1개",
+      "id": "deal-2604851897",
+      "name": "라라스윗 저당 바나나콘, 33g, 10개",
       "category": "음식",
-      "link": "https://toss.im/_m/td5cdQG9",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-11-24/0ec0e42c-1e04-4bd9-a0d7-e4192d0c5546.jpeg",
-      "priceText": "11,300원",
-      "discountRate": 54,
+      "link": "https://toss.im/_m/3K4WWNuD",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-16/52d8c855-462c-4aef-a1ca-dbac8a02743e.jpeg",
+      "priceText": "8,900원",
+      "discountRate": 53,
       "dealEndsAt": "2026-10-01T23:59:59+09:00"
     },
     {
@@ -53,16 +43,6 @@
       "dealEndsAt": "2026-10-01T23:59:59+09:00"
     },
     {
-      "id": "deal-2155181513",
-      "name": "무설탕 비타민C 캔디, 12가지맛, 1kg, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/HkVkQm51",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-18/ebcb6989-5b28-471f-a096-21755dd423bd.png",
-      "priceText": "11,900원",
-      "discountRate": 52,
-      "dealEndsAt": "2026-10-01T23:59:59+09:00"
-    },
-    {
       "id": "deal-92989509",
       "name": "롯데칠성음료 펩시 제로슈거 라임, 업소용, 245ml, 30개",
       "category": "음식",
@@ -70,6 +50,46 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/YTI5M2Zm/QU9LVVlwd3p2NzlCdld1TVk5enZudUZXcTFFcnN4Q3JuS3ZVUUw2dlZKOWg.png",
       "priceText": "14,150원",
       "discountRate": 30,
+      "dealEndsAt": "2026-10-01T23:59:59+09:00"
+    },
+    {
+      "id": "deal-36469633",
+      "name": "스파클 생수 무라벨, 1L, 36개",
+      "category": "음식",
+      "link": "https://toss.im/_m/HKzicYoi",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODgyYWFi/UEhQZ2NRT1BNWS9zZk1aeEg0ZGpqdkE4K0hFZm9UdU84Tnk4Y1I3UjU2RT0.png",
+      "priceText": "10,990원",
+      "discountRate": 38,
+      "dealEndsAt": "2026-10-01T23:59:59+09:00"
+    },
+    {
+      "id": "deal-650223223",
+      "name": "레모나 레몬맛 젤리, 43g, 20개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/j4T2WPZ6",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OWZkYzFi/QUxNc0xMYnRtOW1aR3NlMlpuTHdhYm5GUFBiYk9QdUdac2JHT1psYm1lWm0.png",
+      "priceText": "9,900원",
+      "discountRate": 67,
+      "dealEndsAt": "2026-10-01T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2602285881",
+      "name": "크라운제과 인기스낵모음, 12팩, 1개",
+      "category": "음식",
+      "link": "https://toss.im/_m/3pmmoPvi",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
+      "priceText": "8,990원",
+      "discountRate": 25,
+      "dealEndsAt": "2026-10-01T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2662678907",
+      "name": "후디스 소화편한 우유 바나나, 190ml, 24개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/VqivwFu4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-02-27/537ae6af-1c21-4be0-abaa-f3bfe11535e5.jpeg",
+      "priceText": "11,900원",
+      "discountRate": 64,
       "dealEndsAt": "2026-10-01T23:59:59+09:00"
     },
     {
@@ -1158,8 +1178,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/nXfGwh6h",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
-      "priceText": "9,810원",
-      "discountRate": 53,
+      "priceText": "10,900원",
+      "discountRate": 47,
       "seasons": [
         "autumn",
         "winter"
