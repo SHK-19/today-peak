@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-09-29T21:30:08.394Z",
+  "updatedAt": "2026-09-30T03:30:07.898Z",
   "items": [
     {
       "id": "deal-2442898037",
@@ -839,15 +839,6 @@
       "discountRate": 67
     },
     {
-      "id": "sl-167905953",
-      "name": "아웃도어 공구가방 힙색, 캠핑, FREE, 블랙, 1개",
-      "category": "장비",
-      "link": "https://toss.im/_m/3fsEI1At",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NTlkYjhm/QVBmNUdKT21uTytjVE5NTUEweEo3WWdvd3hESnRsbUFRSkpIWFBmZGRtL3Y.png",
-      "priceText": "7,900원",
-      "discountRate": 27
-    },
-    {
       "id": "sl-10423113",
       "name": "마마로 남성 등산 단목 양말, 혼합, 5개입, 1개",
       "category": "의류",
@@ -1144,8 +1135,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/nXfGwh6h",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
-      "priceText": "15,210원",
-      "discountRate": 27,
+      "priceText": "9,810원",
+      "discountRate": 53,
       "seasons": [
         "autumn",
         "winter"
