@@ -1,15 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-01T03:30:07.905Z",
+  "updatedAt": "2026-10-01T09:30:07.874Z",
   "items": [
     {
-      "id": "deal-137389615",
-      "name": "코리아푸드 마카로니 대롱과자, 1kg, 1개",
+      "id": "deal-2570438725",
+      "name": "종근당건강 락토핏 골드, 140포, 2개 + 증정 락토핏 골드, 30포 + 증정 아임비타 면역비타민C, 30포",
       "category": "음식",
-      "link": "https://toss.im/_m/Z9vawIBC",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzBjMTg4/QUxtSFhLUU5mQ2hYUWRwNUV2c1NGN09YQXQ4Syt5azNXN0xTeVhiSWRxb3E.png",
-      "priceText": "8,980원",
-      "discountRate": 30,
+      "link": "https://toss.shopping/_m/rVJvJgkh",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-03/74828108-78eb-4328-bf27-62b32a559495.jpeg",
+      "priceText": "50,310원",
+      "discountRate": 66,
       "dealEndsAt": "2026-10-01T23:59:59+09:00"
     },
     {
@@ -23,13 +23,13 @@
       "dealEndsAt": "2026-10-01T23:59:59+09:00"
     },
     {
-      "id": "deal-650223223",
-      "name": "레모나 레몬맛 젤리, 43g, 20개",
+      "id": "deal-137389615",
+      "name": "코리아푸드 마카로니 대롱과자, 1kg, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/j4T2WPZ6",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OWZkYzFi/QUxNc0xMYnRtOW1aR3NlMlpuTHdhYm5GUFBiYk9QdUdac2JHT1psYm1lWm0.png",
-      "priceText": "9,900원",
-      "discountRate": 67,
+      "link": "https://toss.im/_m/Z9vawIBC",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzBjMTg4/QUxtSFhLUU5mQ2hYUWRwNUV2c1NGN09YQXQ4Syt5azNXN0xTeVhiSWRxb3E.png",
+      "priceText": "8,980원",
+      "discountRate": 30,
       "dealEndsAt": "2026-10-01T23:59:59+09:00"
     },
     {
@@ -53,16 +53,6 @@
       "dealEndsAt": "2026-10-01T23:59:59+09:00"
     },
     {
-      "id": "deal-2662678907",
-      "name": "후디스 소화편한 우유 바나나, 190ml, 24개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/VqivwFu4",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-02-27/537ae6af-1c21-4be0-abaa-f3bfe11535e5.jpeg",
-      "priceText": "11,900원",
-      "discountRate": 64,
-      "dealEndsAt": "2026-10-01T23:59:59+09:00"
-    },
-    {
       "id": "deal-2602285881",
       "name": "크라운제과 인기스낵모음, 12팩, 1개",
       "category": "음식",
@@ -70,6 +60,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
       "priceText": "8,990원",
       "discountRate": 25,
+      "dealEndsAt": "2026-10-01T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2662678907",
+      "name": "후디스 소화편한 우유 바나나, 190ml, 24개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/VqivwFu4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-02-27/537ae6af-1c21-4be0-abaa-f3bfe11535e5.jpeg",
+      "priceText": "11,900원",
+      "discountRate": 64,
       "dealEndsAt": "2026-10-01T23:59:59+09:00"
     },
     {
@@ -197,7 +197,7 @@
     },
     {
       "id": "sl-220645623",
-      "name": "프루어 후드 판초우의, 브라운, one size",
+      "name": "프루어 경량 후드 판초우의, 브라운, ONE SIZE, 1개",
       "category": "의류",
       "link": "https://toss.im/_m/dRYb5N3B",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/M2FjNWE0/SzhRY2E5d2xzNmFxOHNZWVh3OW9TWEQ4OFliblJ3NHhIaHFzZWJDa2M0WT0.png",
@@ -532,8 +532,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/FkzUHGW9",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MzIzNjk4/QUt0MDdUWkYrNXk1MUU1anpudVJuQ3VPUlBtVUlacEhhMWZ2bUxhK0ZIZE4.png",
-      "priceText": "22,930원",
-      "discountRate": 18
+      "priceText": "22,100원",
+      "discountRate": 21
     },
     {
       "id": "sl-2163534637",
@@ -586,8 +586,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/FNmLg3bv",
       "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
-      "priceText": "17,000원",
-      "discountRate": 29,
+      "priceText": "14,200원",
+      "discountRate": 40,
       "seasons": [
         "spring",
         "summer",
@@ -637,7 +637,7 @@
       "category": "안전",
       "link": "https://toss.im/_m/zKrmkKw3",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZmZmMTE0/QUpiRjF2T3ozbTBtYXhPTnJHMW5ONHl3ZkhJZWx1RmEwNGJ4blBOUzFLMXQ.png",
-      "priceText": "8,800원",
+      "priceText": "8,700원",
       "discountRate": 70
     },
     {
@@ -764,7 +764,7 @@
       "category": "안전",
       "link": "https://toss.im/_m/dw3UqeLy",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Njk1Nzcy/QU5ha1JOZVVwRnJUTjdReTI3ZGtic0Z1UkRRbFExNjk3RTFiMzJ6ZG05a3I.png",
-      "priceText": "8,990원",
+      "priceText": "8,980원",
       "discountRate": 30
     },
     {
@@ -1184,8 +1184,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/3jl5Z7Wj",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MDcwYWEw/QVBXL3pSdWM4OGpqQXRjaDIvTWN2aGpUeG5BNEE5SkxvYWxTeEMvWGVvNTA.png",
-      "priceText": "21,900원",
-      "discountRate": 21
+      "priceText": "20,900원",
+      "discountRate": 25
     },
     {
       "id": "sl-140279105",
