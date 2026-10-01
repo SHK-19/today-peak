@@ -1,15 +1,45 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-01T15:30:10.764Z",
+  "updatedAt": "2026-10-01T21:30:10.922Z",
   "items": [
     {
-      "id": "deal-366071583",
-      "name": "맥스 앤 맥스 전자레인지 라면 용기, 아이보리 1L 1개 + 올리브그린 1L 1개 + 뚜껑, 2개",
+      "id": "deal-423535267",
+      "name": "꿀이구마 호박 찹쌀 약과, 30g, 30개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/fC2xBHUq",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-06/4d9c7749-b71a-4815-9622-50747aeb997a.jpeg",
-      "priceText": "5,950원",
-      "discountRate": 68,
+      "link": "https://toss.shopping/_m/H0L9wHmd",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWUxYTU0/QUxTbXp3NTArZHpoNGVPZlBUU3o1NW5TN1RqMnM5elljZU9ZNmNGbzREY08.png",
+      "priceText": "8,900원",
+      "discountRate": 35,
+      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2017807971",
+      "name": "더주 몸통 마른 오징어, 5-9미, 220g 내외, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/FEEEcQnt",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDU5Y2Y0/SHEya1Z0ODB5RmJjeHN2bVZyRVJNUWhXK3VaVlN6cFowcUtsNEd0Q1hJYz0.png",
+      "priceText": "11,900원",
+      "discountRate": 33,
+      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2600930043",
+      "name": "웅진 애사비 청귤하귤맛, 500ml, 24개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/xcSqvoC9",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/3adaf1d8-dfeb-4e92-a2a3-fb8ecc827572.jpeg",
+      "priceText": "14,400원",
+      "discountRate": 50,
+      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2278596363",
+      "name": "트루나 군고구마빠, 50g, 10팩",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/BYB97sK",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/OWJmOTRh/WGJvamtRVC81NWZEdXU3MUZXM0FpU0wyY1JkeTNZa1Q5OVY4WW4zSSt1MD0.png",
+      "priceText": "13,200원",
+      "discountRate": 34,
       "dealEndsAt": "2026-10-02T23:59:59+09:00"
     },
     {
@@ -23,33 +53,23 @@
       "dealEndsAt": "2026-10-02T23:59:59+09:00"
     },
     {
-      "id": "deal-16851449",
-      "name": "네모라인 피그먼트 밴드형 베개커버, 차콜, 40x60cm, 2개",
-      "category": "안전",
-      "link": "https://toss.shopping/_m/dRRD4kgm",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-06/2296d828-1c12-4fc0-9804-a4a3825c52cf.jpeg",
-      "priceText": "14,980원",
-      "discountRate": 49,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2295980627",
-      "name": "더블 토닝 화이트 글루타치온 콜라겐 스틱, 청사과맛, 14포, 2박스",
-      "category": "장비",
-      "link": "https://toss.shopping/_m/RrLvNX1g",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-19/b2a08dda-2fff-441d-85c5-2477d2166580.jpeg",
-      "priceText": "14,900원",
-      "discountRate": 73,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
-    },
-    {
-      "id": "deal-141953051",
-      "name": "매일야채 고농축 토마토의 힘, 125ml, 24개",
+      "id": "deal-2450913223",
+      "name": "하루한콩 구운 병아리콩, 군옥수수맛, 15g, 22개입, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/1tVjHRgc",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/OWFhZjVj/ZUhPMDUrZGV5aDVKTm16bXZFdnRPdEtSTnVFNVRhMDVONDJYNGNlMGFGND0.png",
-      "priceText": "18,800원",
-      "discountRate": 39,
+      "link": "https://toss.shopping/_m/Dlk7OYqD",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-09/e57076fd-010b-40ca-9945-50f1c7759e58.jpeg",
+      "priceText": "8,900원",
+      "discountRate": 44,
+      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+    },
+    {
+      "id": "deal-366071583",
+      "name": "맥스 앤 맥스 전자레인지 라면 용기, 아이보리 1L 1개 + 올리브그린 1L 1개 + 뚜껑, 2개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/fC2xBHUq",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-06/4d9c7749-b71a-4815-9622-50747aeb997a.jpeg",
+      "priceText": "5,950원",
+      "discountRate": 68,
       "dealEndsAt": "2026-10-02T23:59:59+09:00"
     },
     {
