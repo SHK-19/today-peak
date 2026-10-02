@@ -1,86 +1,96 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-02T09:30:08.249Z",
+  "updatedAt": "2026-10-02T15:30:12.643Z",
   "items": [
     {
-      "id": "deal-141953051",
-      "name": "매일야채 고농축 토마토의 힘, 125ml, 24개",
+      "id": "deal-240280585",
+      "name": "라이프턴 퍼스트 엑스트라버진 올리브오일 식물성 캡슐, 30캡슐, 3박스",
       "category": "음식",
-      "link": "https://toss.shopping/_m/1tVjHRgc",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/OWFhZjVj/ZUhPMDUrZGV5aDVKTm16bXZFdnRPdEtSTnVFNVRhMDVONDJYNGNlMGFGND0.png",
-      "priceText": "18,800원",
-      "discountRate": 39,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/RFzDDFUu",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDY5Mzgz/QVBRVmIycE5RSitYbTcvaGYvWEF2OEJsRmMvQ244cmlQNXUvSDhCa0Vlby8.png",
+      "priceText": "12,900원",
+      "discountRate": 85,
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
-      "id": "deal-2017807971",
-      "name": "더주 몸통 마른 오징어, 5-9미, 220g 내외, 1개",
+      "id": "deal-12151719",
+      "name": "생활소품 일회용 위생수세미, 그레이, 60매, 4개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/FEEEcQnt",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDU5Y2Y0/SHEya1Z0ODB5RmJjeHN2bVZyRVJNUWhXK3VaVlN6cFowcUtsNEd0Q1hJYz0.png",
+      "link": "https://toss.shopping/_m/92l83gXo",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTE4ZDdi/VGRCK0p6Z3ZiMmVISnJtY3VZM2Zjb1VuWm5MbUo3M2JHRnMwTjFsUXQ2VT0.png",
+      "priceText": "9,800원",
+      "discountRate": 57,
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+    },
+    {
+      "id": "deal-138286213",
+      "name": "G7 커피 퓨어블랙 라이트, 0.9g, 110개입, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/D7qtYmsh",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWFiNTFm/QU1zbEs3VzBtK3piUzJTYmEzS1VGNUd1VzJabWxUdnBUbWh1bHJFRzBHcE8.png",
+      "priceText": "9,900원",
+      "discountRate": 60,
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+    },
+    {
+      "id": "deal-1054395435",
+      "name": "당연구소 병아리콩과자 콩튀, 30g, 10봉",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/B2ti8Icb",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MmE5MjM4/QU5OR0Nsa0p1ZFN6OW1ZOUpOd2NTdGloMGFVMmVpOWE0WXorcEJrVFVGUG0.png",
+      "priceText": "8,500원",
+      "discountRate": 64,
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+    },
+    {
+      "id": "deal-189441513",
+      "name": "감동 제주 햇 감귤, 소과, 4.5kg, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/dejtZMcA",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-03/72be6d65-c051-4803-a450-8e7faf9bdb9b.jpeg",
       "priceText": "11,900원",
-      "discountRate": 33,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+      "discountRate": 55,
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
-      "id": "deal-2600930043",
-      "name": "웅진 애사비 청귤하귤맛, 500ml, 24개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/xcSqvoC9",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/3adaf1d8-dfeb-4e92-a2a3-fb8ecc827572.jpeg",
-      "priceText": "14,400원",
-      "discountRate": 50,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+      "id": "deal-2651864951",
+      "name": "순수공감 프라임 물티슈, 캡형, 70gsm, 72매, 20팩",
+      "category": "안전",
+      "link": "https://toss.shopping/_m/HXfc3dpC",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-08/9920fc7c-ed74-48e7-9ff1-0576305d41d3.jpeg",
+      "priceText": "18,900원",
+      "discountRate": 64,
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
-      "id": "deal-423535267",
-      "name": "꿀이구마 호박 찹쌀 약과, 30g, 30개",
+      "id": "deal-2664378077",
+      "name": "강일건어물 몸통오징어, 5마리, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/H0L9wHmd",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWUxYTU0/QUxTbXp3NTArZHpoNGVPZlBUU3o1NW5TN1RqMnM5elljZU9ZNmNGbzREY08.png",
-      "priceText": "8,900원",
+      "link": "https://toss.shopping/_m/pPU1zVGx",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-02-16/31ad7a89-d23f-4598-a8cd-7e48d90288ca.png",
+      "priceText": "11,900원",
       "discountRate": 35,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
-      "id": "deal-2278596363",
-      "name": "트루나 군고구마빠, 50g, 10팩",
+      "id": "deal-2625641039",
+      "name": "럭키푸드 구운계란 중란, 60구, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/BYB97sK",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/OWJmOTRh/WGJvamtRVC81NWZEdXU3MUZXM0FpU0wyY1JkeTNZa1Q5OVY4WW4zSSt1MD0.png",
-      "priceText": "13,200원",
+      "link": "https://toss.shopping/_m/HYf3UmTt",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-20/36d7e055-d5aa-46f7-87f2-afd2aa3b5d85.jpeg",
+      "priceText": "16,900원",
       "discountRate": 34,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
-      "id": "deal-2450913223",
-      "name": "하루한콩 구운 병아리콩, 군옥수수맛, 15g, 22개입, 1개",
+      "id": "deal-289078805",
+      "name": "코피코 커피맛 캔디 블리스터 팩, 384g, 2개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/Dlk7OYqD",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-09/e57076fd-010b-40ca-9945-50f1c7759e58.jpeg",
-      "priceText": "8,900원",
-      "discountRate": 44,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2658864885",
-      "name": "제주 극조생 햇 감귤, 대과, 5kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/bEJJuZLo",
-      "imageUrl": "https://shopping.toss.im/ml-vision/smart-crop/b6b44be7-8a02-4cb1-83a6-3d88c61688e6.jpg",
-      "priceText": "8,700원",
-      "discountRate": 63,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
-    },
-    {
-      "id": "deal-366071583",
-      "name": "맥스 앤 맥스 전자레인지 라면 용기, 아이보리 1L 1개 + 올리브그린 1L 1개 + 뚜껑, 2개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/fC2xBHUq",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-06/4d9c7749-b71a-4815-9622-50747aeb997a.jpeg",
-      "priceText": "5,950원",
-      "discountRate": 68,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/RfvZsUcl",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTViYjky/QU0yZk16bW1UTXpibVd3OXM1ODUyek5Nek15emt4a05tVms1Tm5sbk9kbU0.png",
+      "priceText": "13,900원",
+      "discountRate": 42,
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -241,8 +251,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,900원",
-      "discountRate": 15,
+      "priceText": "15,200원",
+      "discountRate": 19,
       "seasons": [
         "spring",
         "summer",
@@ -713,8 +723,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Dy9piPSk",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/YTE3ZWQ4/QU1zd3NtU1p0Q3JRTGxhMlJySm1zMWF5WmpibE9uUW85bXRVeDVtUG1WenI.png",
-      "priceText": "16,900원",
-      "discountRate": 15,
+      "priceText": "16,055원",
+      "discountRate": 19,
       "seasons": [
         "summer"
       ]
@@ -1125,10 +1135,23 @@
       "category": "음식",
       "link": "https://toss.im/_m/RSFsbEB4",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/d289f62f-61d3-4143-b707-8a62b8fc5858.png",
-      "priceText": "11,900원",
+      "priceText": "11,800원",
       "discountRate": 73,
       "seasons": [
         "autumn"
+      ]
+    },
+    {
+      "id": "sl-2227928565",
+      "name": "일품자연 대추방울토마토, 로얄과, 2kg, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/ffoXsGB9",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-10/0c756384-57e9-4f49-bead-9a9effdc97dc.png",
+      "priceText": "19,900원",
+      "discountRate": 35,
+      "seasons": [
+        "spring",
+        "summer"
       ]
     },
     {
