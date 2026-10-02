@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-01T21:30:10.922Z",
+  "updatedAt": "2026-10-02T03:30:07.813Z",
   "items": [
-    {
-      "id": "deal-423535267",
-      "name": "꿀이구마 호박 찹쌀 약과, 30g, 30개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/H0L9wHmd",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWUxYTU0/QUxTbXp3NTArZHpoNGVPZlBUU3o1NW5TN1RqMnM5elljZU9ZNmNGbzREY08.png",
-      "priceText": "8,900원",
-      "discountRate": 35,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
-    },
     {
       "id": "deal-2017807971",
       "name": "더주 몸통 마른 오징어, 5-9미, 220g 내외, 1개",
@@ -33,6 +23,16 @@
       "dealEndsAt": "2026-10-02T23:59:59+09:00"
     },
     {
+      "id": "deal-423535267",
+      "name": "꿀이구마 호박 찹쌀 약과, 30g, 30개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/H0L9wHmd",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWUxYTU0/QUxTbXp3NTArZHpoNGVPZlBUU3o1NW5TN1RqMnM5elljZU9ZNmNGbzREY08.png",
+      "priceText": "8,900원",
+      "discountRate": 35,
+      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+    },
+    {
       "id": "deal-2278596363",
       "name": "트루나 군고구마빠, 50g, 10팩",
       "category": "음식",
@@ -43,16 +43,6 @@
       "dealEndsAt": "2026-10-02T23:59:59+09:00"
     },
     {
-      "id": "deal-2658864885",
-      "name": "제주 극조생 햇 감귤, 대과, 5kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/bEJJuZLo",
-      "imageUrl": "https://shopping.toss.im/ml-vision/smart-crop/b6b44be7-8a02-4cb1-83a6-3d88c61688e6.jpg",
-      "priceText": "8,990원",
-      "discountRate": 62,
-      "dealEndsAt": "2026-10-02T23:59:59+09:00"
-    },
-    {
       "id": "deal-2450913223",
       "name": "하루한콩 구운 병아리콩, 군옥수수맛, 15g, 22개입, 1개",
       "category": "음식",
@@ -60,6 +50,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-07-09/e57076fd-010b-40ca-9945-50f1c7759e58.jpeg",
       "priceText": "8,900원",
       "discountRate": 44,
+      "dealEndsAt": "2026-10-02T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2658864885",
+      "name": "제주 극조생 햇 감귤, 대과, 5kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/bEJJuZLo",
+      "imageUrl": "https://shopping.toss.im/ml-vision/smart-crop/b6b44be7-8a02-4cb1-83a6-3d88c61688e6.jpg",
+      "priceText": "8,700원",
+      "discountRate": 63,
       "dealEndsAt": "2026-10-02T23:59:59+09:00"
     },
     {
@@ -231,8 +231,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,200원",
-      "discountRate": 19,
+      "priceText": "15,900원",
+      "discountRate": 15,
       "seasons": [
         "spring",
         "summer",
@@ -549,8 +549,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/3pmmoPvi",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
-      "priceText": "10,800원",
-      "discountRate": 10
+      "priceText": "9,400원",
+      "discountRate": 21
     },
     {
       "id": "sl-82144865",
@@ -1118,19 +1118,6 @@
       "discountRate": 73,
       "seasons": [
         "autumn"
-      ]
-    },
-    {
-      "id": "sl-2227928565",
-      "name": "일품자연 대추방울토마토, 로얄과, 2kg, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/ffoXsGB9",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-10/0c756384-57e9-4f49-bead-9a9effdc97dc.png",
-      "priceText": "19,900원",
-      "discountRate": 35,
-      "seasons": [
-        "spring",
-        "summer"
       ]
     },
     {
