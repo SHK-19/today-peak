@@ -1,35 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-03T15:30:09.984Z",
+  "updatedAt": "2026-10-03T21:30:09.039Z",
   "items": [
     {
-      "id": "deal-1225982827",
-      "name": "가람상점 대추방울토마토, 2kg, 1개",
+      "id": "deal-2666788433",
+      "name": "하루견과 The 오리지널, 20g, 100봉",
       "category": "음식",
-      "link": "https://toss.shopping/_m/x3CvI1fc",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTZmNWUw/V1NUampiQWd0dGcrWUl5Qkp3L2liTUxlL1JQY21aZ2Z1cUVId0xDNXV6cz0.png",
-      "priceText": "16,800원",
-      "discountRate": 39,
-      "dealEndsAt": "2026-10-04T23:59:59+09:00"
-    },
-    {
-      "id": "deal-43443031",
-      "name": "리얼닥터 오메가3, 1100mg, 180캡슐, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/B9g5U4nD",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-29/0a338eb4-4df2-497f-9406-8ba73e145088.jpeg",
-      "priceText": "18,300원",
-      "discountRate": 73,
-      "dealEndsAt": "2026-10-04T23:59:59+09:00"
-    },
-    {
-      "id": "deal-561205813",
-      "name": "웅진식품 가야G워터 생수 무라벨, 2L, 24개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/JCjanMCz",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDYzMmU4/QU9EeEdvNFNrVWdudUxRcUk1SE1tVUM2Ty9yR2ZmUm40MlRXVkNOVnF3MTQ.png",
-      "priceText": "10,400원",
-      "discountRate": 61,
+      "link": "https://toss.shopping/_m/HZflSY9d",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-28/24f3a059-d302-4026-a43b-817ff2342ca0.jpeg",
+      "priceText": "49,900원",
+      "discountRate": 50,
       "dealEndsAt": "2026-10-04T23:59:59+09:00"
     },
     {
@@ -50,6 +30,26 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2025-11-04/3c6bfaee-b83b-4f30-a213-501ffde208b9.jpeg",
       "priceText": "10,500원",
       "discountRate": 49,
+      "dealEndsAt": "2026-10-04T23:59:59+09:00"
+    },
+    {
+      "id": "deal-2666033871",
+      "name": "제주 노지 조생 감귤, 중대과, 10kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/JCdx650b",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-10-30/23d364ce-4b43-4f3f-9fee-5608815f8785.jpeg",
+      "priceText": "14,900원",
+      "discountRate": 70,
+      "dealEndsAt": "2026-10-04T23:59:59+09:00"
+    },
+    {
+      "id": "deal-561205813",
+      "name": "웅진식품 가야G워터 생수 무라벨, 2L, 24개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/JCjanMCz",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDYzMmU4/QU9EeEdvNFNrVWdudUxRcUk1SE1tVUM2Ty9yR2ZmUm40MlRXVkNOVnF3MTQ.png",
+      "priceText": "10,400원",
+      "discountRate": 61,
       "dealEndsAt": "2026-10-04T23:59:59+09:00"
     },
     {
