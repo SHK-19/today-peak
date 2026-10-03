@@ -1,15 +1,25 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-02T21:30:11.729Z",
+  "updatedAt": "2026-10-03T03:30:08.264Z",
   "items": [
     {
-      "id": "deal-1349684703",
-      "name": "파이토메이드 고칼슘&비타민D 두유 21곡 미숫가루, 190ml, 16개",
+      "id": "deal-1054395435",
+      "name": "당연구소 병아리콩과자 콩튀, 30g, 10봉",
       "category": "음식",
-      "link": "https://toss.shopping/_m/Dx4a5lm2",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-22/3cf715ee-ce57-4074-bc38-62f036aff893.jpeg",
-      "priceText": "6,800원",
-      "discountRate": 39,
+      "link": "https://toss.shopping/_m/B2ti8Icb",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MmE5MjM4/QU5OR0Nsa0p1ZFN6OW1ZOUpOd2NTdGloMGFVMmVpOWE0WXorcEJrVFVGUG0.png",
+      "priceText": "8,500원",
+      "discountRate": 64,
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+    },
+    {
+      "id": "deal-289078805",
+      "name": "코피코 커피맛 캔디 블리스터 팩, 384g, 2개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/RfvZsUcl",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTViYjky/QU0yZk16bW1UTXpibVd3OXM1ODUyek5Nek15emt4a05tVms1Tm5sbk9kbU0.png",
+      "priceText": "13,900원",
+      "discountRate": 42,
       "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
@@ -20,16 +30,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MWFiNTFm/QU1zbEs3VzBtK3piUzJTYmEzS1VGNUd1VzJabWxUdnBUbWh1bHJFRzBHcE8.png",
       "priceText": "9,900원",
       "discountRate": 60,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
-    },
-    {
-      "id": "deal-56006227",
-      "name": "듀오덤 스팟패치 단일형, 12mm, 120매입, 1개 + 밴드, 혼합형, 3매입, 1개",
-      "category": "안전",
-      "link": "https://toss.shopping/_m/TDexdsP",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-28/6d21be21-25bf-4364-899a-17c8e2eaddf3.png",
-      "priceText": "14,890원",
-      "discountRate": 48,
       "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
@@ -50,26 +50,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-20/36d7e055-d5aa-46f7-87f2-afd2aa3b5d85.jpeg",
       "priceText": "16,900원",
       "discountRate": 34,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
-    },
-    {
-      "id": "deal-1054395435",
-      "name": "당연구소 병아리콩과자 콩튀, 30g, 10봉",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/B2ti8Icb",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MmE5MjM4/QU5OR0Nsa0p1ZFN6OW1ZOUpOd2NTdGloMGFVMmVpOWE0WXorcEJrVFVGUG0.png",
-      "priceText": "8,500원",
-      "discountRate": 64,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
-    },
-    {
-      "id": "deal-289078805",
-      "name": "코피코 커피맛 캔디 블리스터 팩, 384g, 2개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/RfvZsUcl",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTViYjky/QU0yZk16bW1UTXpibVd3OXM1ODUyek5Nek15emt4a05tVms1Tm5sbk9kbU0.png",
-      "priceText": "13,900원",
-      "discountRate": 42,
       "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
@@ -668,19 +648,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OTk2YWFk/ZU5JVHphc05TYnUwSEtzMFN1T1Y2MjBHbXBTNUtJdGFKclZ2SS9KaUptWT0.png",
       "priceText": "12,900원",
       "discountRate": 46
-    },
-    {
-      "id": "sl-563739749",
-      "name": "정관장 홍삼진고데일리스틱, 10g, 20포, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/10cLLhT6",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MGVjOTdh/QU5tWk41MC9oTXprNUc3T2RwOG1jM2JoRzdtYnVadk81VWJrRmlRZmdlbmI.png",
-      "priceText": "23,200원",
-      "discountRate": 42,
-      "seasons": [
-        "autumn",
-        "winter"
-      ]
     },
     {
       "id": "sl-1468764941",
