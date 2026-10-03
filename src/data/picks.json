@@ -1,7 +1,17 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-03T03:30:08.264Z",
+  "updatedAt": "2026-10-03T09:30:08.548Z",
   "items": [
+    {
+      "id": "deal-2652304709",
+      "name": "국내산 홍옥사과, 중소과, 2kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/zlFHda7w",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-09/265e82aa-bc70-4c2c-a6ed-4d1220ef4b89.jpeg",
+      "priceText": "12,900원",
+      "discountRate": 68,
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+    },
     {
       "id": "deal-1054395435",
       "name": "당연구소 병아리콩과자 콩튀, 30g, 10봉",
@@ -53,16 +63,6 @@
       "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
-      "id": "deal-167795731",
-      "name": "스파클 생수 무라벨, 500ml, 100개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/1Nts9zzx",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YjNiNTRj/QUtMNytCWmVGSVhyMGZUUmZ0eHc4SDFWOUQrb093dm9WR01Mck5SbEEyN1U.png",
-      "priceText": "16,990원",
-      "discountRate": 43,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
-    },
-    {
       "id": "deal-2521451623",
       "name": "오즈랜드 리얼 생감자스틱, 20g, 18봉, 1박스",
       "category": "장비",
@@ -70,6 +70,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MWU3ZjEy/Y2VRNW1qTFozck91YkszaEhXbXpjYWFSMXFOVDBsOGVKS1Y2SExWTTk3UT0.png",
       "priceText": "8,500원",
       "discountRate": 46,
+      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+    },
+    {
+      "id": "deal-167795731",
+      "name": "스파클 생수 무라벨, 500ml, 100개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/1Nts9zzx",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YjNiNTRj/QUtMNytCWmVGSVhyMGZUUmZ0eHc4SDFWOUQrb093dm9WR01Mck5SbEEyN1U.png",
+      "priceText": "16,990원",
+      "discountRate": 43,
       "dealEndsAt": "2026-10-03T23:59:59+09:00"
     },
     {
