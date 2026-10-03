@@ -1,96 +1,56 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-03T09:30:08.548Z",
+  "updatedAt": "2026-10-03T15:30:09.984Z",
   "items": [
     {
-      "id": "deal-2652304709",
-      "name": "국내산 홍옥사과, 중소과, 2kg, 1박스",
+      "id": "deal-1225982827",
+      "name": "가람상점 대추방울토마토, 2kg, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/zlFHda7w",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-09/265e82aa-bc70-4c2c-a6ed-4d1220ef4b89.jpeg",
-      "priceText": "12,900원",
-      "discountRate": 68,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/x3CvI1fc",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTZmNWUw/V1NUampiQWd0dGcrWUl5Qkp3L2liTUxlL1JQY21aZ2Z1cUVId0xDNXV6cz0.png",
+      "priceText": "16,800원",
+      "discountRate": 39,
+      "dealEndsAt": "2026-10-04T23:59:59+09:00"
     },
     {
-      "id": "deal-1054395435",
-      "name": "당연구소 병아리콩과자 콩튀, 30g, 10봉",
+      "id": "deal-43443031",
+      "name": "리얼닥터 오메가3, 1100mg, 180캡슐, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/B2ti8Icb",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MmE5MjM4/QU5OR0Nsa0p1ZFN6OW1ZOUpOd2NTdGloMGFVMmVpOWE0WXorcEJrVFVGUG0.png",
-      "priceText": "8,500원",
-      "discountRate": 64,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/B9g5U4nD",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-29/0a338eb4-4df2-497f-9406-8ba73e145088.jpeg",
+      "priceText": "18,300원",
+      "discountRate": 73,
+      "dealEndsAt": "2026-10-04T23:59:59+09:00"
     },
     {
-      "id": "deal-289078805",
-      "name": "코피코 커피맛 캔디 블리스터 팩, 384g, 2개",
+      "id": "deal-561205813",
+      "name": "웅진식품 가야G워터 생수 무라벨, 2L, 24개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/RfvZsUcl",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTViYjky/QU0yZk16bW1UTXpibVd3OXM1ODUyek5Nek15emt4a05tVms1Tm5sbk9kbU0.png",
-      "priceText": "13,900원",
-      "discountRate": 42,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/JCjanMCz",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDYzMmU4/QU9EeEdvNFNrVWdudUxRcUk1SE1tVUM2Ty9yR2ZmUm40MlRXVkNOVnF3MTQ.png",
+      "priceText": "10,400원",
+      "discountRate": 61,
+      "dealEndsAt": "2026-10-04T23:59:59+09:00"
     },
     {
-      "id": "deal-138286213",
-      "name": "G7 커피 퓨어블랙 라이트, 0.9g, 110개입, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/D7qtYmsh",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWFiNTFm/QU1zbEs3VzBtK3piUzJTYmEzS1VGNUd1VzJabWxUdnBUbWh1bHJFRzBHcE8.png",
-      "priceText": "9,900원",
-      "discountRate": 60,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+      "id": "deal-122659625",
+      "name": "리벤스 로얄플러스 물티슈, 캡형, 70매, 10팩",
+      "category": "안전",
+      "link": "https://toss.shopping/_m/NzHjXjdw",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZDdjNzBj/TDJXKys3VE9kLy9hM3YrL3l0UC96NkY3M3Y0M0lXbjdKNkcyODFyVS8rMD0.png",
+      "priceText": "10,800원",
+      "discountRate": 65,
+      "dealEndsAt": "2026-10-04T23:59:59+09:00"
     },
     {
-      "id": "deal-142783981",
-      "name": "애슐리 주먹밥, 김치콘치즈 100g 5개 + 데리참치마요 100g 5개, 10개",
+      "id": "deal-297277743",
+      "name": "촉촉한 고구마, 50g, 10봉",
       "category": "음식",
-      "link": "https://toss.shopping/_m/b6XoaxwC",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDE0MTM5/QVBNWG1uTXJaMVRsaFF0dzdKWjBvNGZabWNTYlplTjEzSVp4d1VaRlJqNjU.png",
-      "priceText": "12,900원",
-      "discountRate": 43,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2625641039",
-      "name": "럭키푸드 구운계란 중란, 60구, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/HYf3UmTt",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-20/36d7e055-d5aa-46f7-87f2-afd2aa3b5d85.jpeg",
-      "priceText": "16,900원",
-      "discountRate": 34,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
-    },
-    {
-      "id": "deal-2521451623",
-      "name": "오즈랜드 리얼 생감자스틱, 20g, 18봉, 1박스",
-      "category": "장비",
-      "link": "https://toss.shopping/_m/PvPWSu5v",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MWU3ZjEy/Y2VRNW1qTFozck91YkszaEhXbXpjYWFSMXFOVDBsOGVKS1Y2SExWTTk3UT0.png",
-      "priceText": "8,500원",
-      "discountRate": 46,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
-    },
-    {
-      "id": "deal-167795731",
-      "name": "스파클 생수 무라벨, 500ml, 100개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/1Nts9zzx",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YjNiNTRj/QUtMNytCWmVGSVhyMGZUUmZ0eHc4SDFWOUQrb093dm9WR01Mck5SbEEyN1U.png",
-      "priceText": "16,990원",
-      "discountRate": 43,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
-    },
-    {
-      "id": "deal-149101033",
-      "name": "하이뮨 프로틴 밸런스 액티브 제로, 밤티라미수, 250ml, 18개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/51K5uX1m",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-28/0c4bf6fe-c2e8-40ee-aeb6-ce062de0c2ce.jpeg",
-      "priceText": "19,900원",
-      "discountRate": 64,
-      "dealEndsAt": "2026-10-03T23:59:59+09:00"
+      "link": "https://toss.shopping/_m/1h2e9Wxx",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-11-04/3c6bfaee-b83b-4f30-a213-501ffde208b9.jpeg",
+      "priceText": "10,500원",
+      "discountRate": 49,
+      "dealEndsAt": "2026-10-04T23:59:59+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -580,15 +540,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-04-06/ce501b0a-7d12-4607-9fe2-bbe45509801c.jpeg",
       "priceText": "12,700원",
       "discountRate": 20
-    },
-    {
-      "id": "sl-846699495",
-      "name": "청우, 계란과자, 40g, 6봉 + 마늘바게트, 65g, 4봉",
-      "category": "음식",
-      "link": "https://toss.im/_m/nLsKMhvs",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/N2M2Yjk1/QVB4SmZEbkJTVXJOcEptMU03MHk5OG04ZHMzblRsUTVQb3RVc3pZY2RNZkc.png",
-      "priceText": "11,900원",
-      "discountRate": 37
     },
     {
       "id": "sl-171388715",
