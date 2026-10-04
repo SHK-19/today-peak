@@ -1,7 +1,17 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-04T03:30:08.177Z",
+  "updatedAt": "2026-10-04T09:30:08.151Z",
   "items": [
+    {
+      "id": "deal-2666788433",
+      "name": "하루견과 The 오리지널, 20g, 100봉",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/HZflSY9d",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-28/24f3a059-d302-4026-a43b-817ff2342ca0.jpeg",
+      "priceText": "49,900원",
+      "discountRate": 50,
+      "dealEndsAt": "2026-10-04T23:59:59+09:00"
+    },
     {
       "id": "deal-297277743",
       "name": "촉촉한 고구마, 50g, 10봉",
@@ -537,8 +547,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/FNmLg3bv",
       "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
-      "priceText": "15,200원",
-      "discountRate": 36,
+      "priceText": "16,300원",
+      "discountRate": 32,
       "seasons": [
         "spring",
         "summer",
