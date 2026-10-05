@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-04T21:30:08.736Z",
+  "updatedAt": "2026-10-05T03:30:07.329Z",
   "items": [
     {
       "id": "sl-1568257163",
@@ -955,15 +955,6 @@
       "discountRate": 11
     },
     {
-      "id": "sl-1424245081",
-      "name": "바베큐 오징어 스틱, 10개, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/HpM1RbQp",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NTRjNzI1/QUoyOFZUeW5iNG5MUnVPK2txMi9haTAyNFduSVd6aTFjS25VNG9SS0RCV0w.png",
-      "priceText": "7,900원",
-      "discountRate": 38
-    },
-    {
       "id": "sl-2139655317",
       "name": "페스츄리 바비큐 오징어, 200g, 2개",
       "category": "음식",
@@ -1083,7 +1074,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/3jl5Z7Wj",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MDcwYWEw/QVBXL3pSdWM4OGpqQXRjaDIvTWN2aGpUeG5BNEE5SkxvYWxTeEMvWGVvNTA.png",
-      "priceText": "25,900원"
+      "priceText": "20,900원",
+      "discountRate": 25
     },
     {
       "id": "sl-140279105",
