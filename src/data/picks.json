@@ -1,7 +1,17 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-06T09:30:10.462Z",
+  "updatedAt": "2026-10-06T15:30:07.911Z",
   "items": [
+    {
+      "id": "deal-54176831",
+      "name": "유한메디카 당케어 엔 탑 혈당&유산균, 350mg, 30캡슐, 4개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/pMeZlPbw",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MmI0MWE5/YkpaYnhqWHZzWkdiYVVUNDRldnpoelFjY2o3SmxnM0JIblJQRTIrVXNQdz0.png",
+      "priceText": "15,000원",
+      "discountRate": 91,
+      "dealEndsAt": "2026-10-08T00:00:00+09:00"
+    },
     {
       "id": "sl-1568257163",
       "name": "트렉스타 패스파인더 초경량 5단 폴딩 등산스틱, 블랙, FREE, 안티쇼크, 고급케이스, 2개, 1세트",
@@ -161,8 +171,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,900원",
-      "discountRate": 15,
+      "priceText": "15,200원",
+      "discountRate": 19,
       "seasons": [
         "spring",
         "summer",
@@ -229,15 +239,6 @@
         "spring",
         "summer"
       ]
-    },
-    {
-      "id": "sl-2626110909",
-      "name": "바나나, 1kg, 1봉",
-      "category": "음식",
-      "link": "https://toss.im/_m/pPyblZWg",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/79e4dda9-4447-49a1-ab10-d960eb876252.png",
-      "priceText": "5,900원",
-      "discountRate": 50
     },
     {
       "id": "sl-2511369781",
@@ -479,8 +480,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/3pmmoPvi",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
-      "priceText": "9,400원",
-      "discountRate": 21
+      "priceText": "8,800원",
+      "discountRate": 26
     },
     {
       "id": "sl-82144865",
