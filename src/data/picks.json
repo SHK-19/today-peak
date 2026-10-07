@@ -1,16 +1,56 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-07T09:30:08.955Z",
+  "updatedAt": "2026-10-07T15:30:11.620Z",
   "items": [
     {
-      "id": "deal-54176831",
-      "name": "유한메디카 당케어 엔 탑 혈당&유산균, 350mg, 30캡슐, 4개",
+      "id": "deal-2636468163",
+      "name": "일양약품 PDRN 톤업 선크림, 50ml, 1개",
+      "category": "안전",
+      "link": "https://toss.shopping/_m/nyzvb7Gf",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-27/8e15c5c2-14c2-4aef-af99-b9a341a82a33.jpeg",
+      "priceText": "5,990원",
+      "discountRate": 60,
+      "dealEndsAt": "2026-10-09T00:00:00+09:00"
+    },
+    {
+      "id": "deal-141197171",
+      "name": "아빠표 구운계란, 중란, 30구, 2판",
       "category": "음식",
-      "link": "https://toss.shopping/_m/pMeZlPbw",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MmI0MWE5/YkpaYnhqWHZzWkdiYVVUNDRldnpoelFjY2o3SmxnM0JIblJQRTIrVXNQdz0.png",
-      "priceText": "15,000원",
-      "discountRate": 91,
-      "dealEndsAt": "2026-10-08T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/9T9qKRZb",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NjIzZjBk/QUpRNVg1TkljbTVRWUpiZVFQTm9uZkhqYjkrRGxqWUMzMnREb1U1VzNHdXc.png",
+      "priceText": "16,900원",
+      "discountRate": 35,
+      "dealEndsAt": "2026-10-09T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2521451623",
+      "name": "오즈랜드 리얼 생감자스틱, 20g, 18봉, 1박스",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/PvPWSu5v",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MWU3ZjEy/Y2VRNW1qTFozck91YkszaEhXbXpjYWFSMXFOVDBsOGVKS1Y2SExWTTk3UT0.png",
+      "priceText": "7,900원",
+      "discountRate": 50,
+      "dealEndsAt": "2026-10-09T00:00:00+09:00"
+    },
+    {
+      "id": "deal-86973821",
+      "name": "풍년보감 고려홍삼정 밸런스타임, 벌크포장, 10g, 100포",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/FZWzoLZu",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ODYyOTZj/QUxGVTU4TjVlL0Q0SGlzT0grR0ZiTW1EQjNuendxTjQ0ZUtENy95eFZNZkQ.png",
+      "priceText": "12,900원",
+      "discountRate": 74,
+      "dealEndsAt": "2026-10-09T00:00:00+09:00"
+    },
+    {
+      "id": "deal-10142851",
+      "name": "스파클 생수 무라벨, 500ml, 40병",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/XBYVcgv4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
+      "priceText": "5,900원",
+      "discountRate": 50,
+      "dealEndsAt": "2026-10-09T00:00:00+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -171,8 +211,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,900원",
-      "discountRate": 15,
+      "priceText": "15,200원",
+      "discountRate": 19,
       "seasons": [
         "spring",
         "summer",
@@ -906,8 +946,8 @@
       "category": "안전",
       "link": "https://toss.im/_m/rgLB7YAe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmQwNDdk/WTZsaG1jekprOWVaZTVreXM0bERVRk51TVNkKzRKMk5IaUYrTnRpVWd4TT0.png",
-      "priceText": "8,070원",
-      "discountRate": 88,
+      "priceText": "13,900원",
+      "discountRate": 71,
       "seasons": [
         "spring",
         "summer",
@@ -987,8 +1027,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/hXkdlDaA",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDFhMjc2/QU5wbkV6NnAxbi9wZmhuVXRydGVOUjVLK0liaGRvWk5adm94cWo4RXdhMVM.png",
-      "priceText": "16,900원",
-      "discountRate": 29
+      "priceText": "13,900원",
+      "discountRate": 42
     },
     {
       "id": "sl-1735847359",
@@ -1032,8 +1072,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/ffoXsGB9",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-06-10/0c756384-57e9-4f49-bead-9a9effdc97dc.png",
-      "priceText": "19,900원",
-      "discountRate": 35,
+      "priceText": "16,900원",
+      "discountRate": 45,
       "seasons": [
         "spring",
         "summer"
