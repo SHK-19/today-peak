@@ -1,25 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-07T15:30:11.620Z",
+  "updatedAt": "2026-10-07T21:30:08.672Z",
   "items": [
     {
-      "id": "deal-2636468163",
-      "name": "일양약품 PDRN 톤업 선크림, 50ml, 1개",
-      "category": "안전",
-      "link": "https://toss.shopping/_m/nyzvb7Gf",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-27/8e15c5c2-14c2-4aef-af99-b9a341a82a33.jpeg",
-      "priceText": "5,990원",
-      "discountRate": 60,
-      "dealEndsAt": "2026-10-09T00:00:00+09:00"
-    },
-    {
-      "id": "deal-141197171",
-      "name": "아빠표 구운계란, 중란, 30구, 2판",
+      "id": "deal-78000663",
+      "name": "아임에코 가벼운샘 생수, 1L, 12개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/9T9qKRZb",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NjIzZjBk/QUpRNVg1TkljbTVRWUpiZVFQTm9uZkhqYjkrRGxqWUMzMnREb1U1VzNHdXc.png",
-      "priceText": "16,900원",
-      "discountRate": 35,
+      "link": "https://toss.shopping/_m/3DKdGA7w",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-06/3b268136-a3b6-4290-a446-8d4865f0b095.png",
+      "priceText": "3,600원",
+      "discountRate": 48,
       "dealEndsAt": "2026-10-09T00:00:00+09:00"
     },
     {
@@ -30,6 +20,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MWU3ZjEy/Y2VRNW1qTFozck91YkszaEhXbXpjYWFSMXFOVDBsOGVKS1Y2SExWTTk3UT0.png",
       "priceText": "7,900원",
       "discountRate": 50,
+      "dealEndsAt": "2026-10-09T00:00:00+09:00"
+    },
+    {
+      "id": "deal-141197171",
+      "name": "아빠표 구운계란, 중란, 30구, 2판",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/9T9qKRZb",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NjIzZjBk/QUpRNVg1TkljbTVRWUpiZVFQTm9uZkhqYjkrRGxqWUMzMnREb1U1VzNHdXc.png",
+      "priceText": "16,900원",
+      "discountRate": 35,
       "dealEndsAt": "2026-10-09T00:00:00+09:00"
     },
     {
