@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-07T03:30:09.457Z",
+  "updatedAt": "2026-10-07T09:30:08.955Z",
   "items": [
     {
       "id": "deal-54176831",
@@ -203,8 +203,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/jnLVK8gc",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MWNhMTY0/SjFJOFllUEdlOU80clFlR1orTnJHeDFTaGpnTTRjNTBIbUd4bWFWV2VlWT0.png",
-      "priceText": "11,000원",
-      "discountRate": 38
+      "priceText": "12,900원",
+      "discountRate": 27
     },
     {
       "id": "sl-1221294259",
@@ -396,7 +396,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/RovB54gw",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MGM4NjZh/QU8xeHR5dzVXdFNUaitSRTNudGVNMXJLV3MyT04yVDFtNXBPU3M0bG9USjA.png",
-      "priceText": "15,800원",
+      "priceText": "15,700원",
       "discountRate": 49
     },
     {
@@ -654,7 +654,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/VdZ4myCu",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NjE0ZDAw/QU16cGxLMVAwS2tuZW5ZU241WDRpUkROYVNJbmRxa2s5TWx3VFpXbTJ0Sks.png",
-      "priceText": "16,900원",
+      "priceText": "19,900원",
       "discountRate": 43
     },
     {
@@ -761,15 +761,6 @@
       "discountRate": 58
     },
     {
-      "id": "sl-2349769011",
-      "name": "캠핑 휴대용 접이식 방석 쿠션, 블랙, 1개",
-      "category": "장비",
-      "link": "https://toss.shopping/_m/bq599V4m",
-      "imageUrl": "https://shopping.toss.im/08e/live/product/715108537/08ee5770-f56f-4e07-b18d-76cb8fb954ce.jpg",
-      "priceText": "7,180원",
-      "discountRate": 10
-    },
-    {
       "id": "sl-2523779719",
       "name": "접이식 카라비너 캠핑 방석 매트, 카키, 1개",
       "category": "장비",
@@ -780,7 +771,7 @@
     },
     {
       "id": "sl-2401738959",
-      "name": "브메르 노버클 슬개골 무릎보호대, 블랙, FREE, 2개",
+      "name": "브메르 일감생활 인체공학 고탄력 슬개골 보호대, 블랙, FREE, 2개",
       "category": "장비",
       "link": "https://toss.im/_m/DzdMm2xo",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/7d6b6b76-f29f-4974-931b-769cc9a90c8c.png",
