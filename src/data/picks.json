@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-06T21:30:08.816Z",
+  "updatedAt": "2026-10-07T03:30:09.457Z",
   "items": [
     {
       "id": "deal-54176831",
@@ -171,8 +171,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,200원",
-      "discountRate": 19,
+      "priceText": "15,900원",
+      "discountRate": 15,
       "seasons": [
         "spring",
         "summer",
@@ -480,8 +480,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/3pmmoPvi",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
-      "priceText": "8,800원",
-      "discountRate": 26
+      "priceText": "9,590원",
+      "discountRate": 20
     },
     {
       "id": "sl-82144865",
@@ -684,6 +684,15 @@
       "priceText": "48,900원",
       "discountRate": 77,
       "minElevationM": 800
+    },
+    {
+      "id": "sl-9708345",
+      "name": "블루마운트 MY9040 등산 배낭, 블랙, 1개",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/NMsgMTG8",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZjdkZjU5/QVBET3dUT1VuSGd6enA0ZnBsd2I0ZlNoOGNwR01MU2xlYS9CcVZyV1pCV3A.png",
+      "priceText": "19,800원",
+      "discountRate": 50
     },
     {
       "id": "sl-152297603",
@@ -1027,18 +1036,6 @@
       ]
     },
     {
-      "id": "sl-2226153335",
-      "name": "홍로 세척사과, 16-25과 내외, 3kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/RSFsbEB4",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/d289f62f-61d3-4143-b707-8a62b8fc5858.png",
-      "priceText": "11,900원",
-      "discountRate": 73,
-      "seasons": [
-        "autumn"
-      ]
-    },
-    {
       "id": "sl-2227928565",
       "name": "일품자연 대추방울토마토, 로얄과, 2kg, 1개",
       "category": "음식",
@@ -1079,8 +1076,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/lVmT8Vki",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/43e2546f-426d-469d-ab51-d3fb341f57b4.jpeg",
-      "priceText": "8,850원",
-      "discountRate": 36,
+      "priceText": "6,900원",
+      "discountRate": 50,
       "seasons": [
         "autumn",
         "winter"
