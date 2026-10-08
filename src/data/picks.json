@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-08T15:30:11.528Z",
+  "updatedAt": "2026-10-08T21:30:09.034Z",
   "items": [
-    {
-      "id": "deal-2641689643",
-      "name": "이모뜰 국내산 홍로사과, 대과, 5kg, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/flySQoi7",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-01/ec3e5bb6-d631-43ce-be7d-1ef46dc86ae0.png",
-      "priceText": "16,900원",
-      "discountRate": 47,
-      "dealEndsAt": "2026-10-10T00:00:00+09:00"
-    },
     {
       "id": "deal-326928667",
       "name": "산해직송 쪄서가는 백찰옥수수, 특대, 10개",
@@ -33,13 +23,13 @@
       "dealEndsAt": "2026-10-10T00:00:00+09:00"
     },
     {
-      "id": "deal-144310011",
-      "name": "네스카페 돌체구스토 커피머신 지니오 S 터치, 시나모롤 패키지, 화이트, 1개",
+      "id": "deal-2225956519",
+      "name": "포미 착즙 토마토주스, 750ml, 6개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/FVB7TBuD",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-22/2f1c961e-ffad-43fe-aa46-10efb211692a.png",
-      "priceText": "62,100원",
-      "discountRate": 68,
+      "link": "https://toss.shopping/_m/9FeohFuC",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-12/a815015e-35da-4f36-99e9-cea004ee770a.jpeg",
+      "priceText": "9,725원",
+      "discountRate": 63,
       "dealEndsAt": "2026-10-10T00:00:00+09:00"
     },
     {
@@ -50,6 +40,16 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZmZmMTE0/QUpiRjF2T3ozbTBtYXhPTnJHMW5ONHl3ZkhJZWx1RmEwNGJ4blBOUzFLMXQ.png",
       "priceText": "6,870원",
       "discountRate": 77,
+      "dealEndsAt": "2026-10-10T00:00:00+09:00"
+    },
+    {
+      "id": "deal-144310011",
+      "name": "네스카페 돌체구스토 커피머신 지니오 S 터치, 시나모롤 패키지, 화이트, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/FVB7TBuD",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-22/2f1c961e-ffad-43fe-aa46-10efb211692a.png",
+      "priceText": "62,100원",
+      "discountRate": 68,
       "dealEndsAt": "2026-10-10T00:00:00+09:00"
     },
     {
