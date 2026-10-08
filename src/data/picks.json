@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-07T21:30:08.672Z",
+  "updatedAt": "2026-10-08T03:30:08.637Z",
   "items": [
     {
       "id": "deal-78000663",
@@ -211,8 +211,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,200원",
-      "discountRate": 19,
+      "priceText": "15,900원",
+      "discountRate": 15,
       "seasons": [
         "spring",
         "summer",
@@ -376,8 +376,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/16p8MzGi",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-04-28/36d1469d-afdf-47d5-bbdc-1a7ada62c7b4.jpeg",
-      "priceText": "12,690원",
-      "discountRate": 29
+      "priceText": "11,781원",
+      "discountRate": 34
     },
     {
       "id": "sl-91520647",
@@ -533,21 +533,6 @@
       "discountRate": 20
     },
     {
-      "id": "sl-171388715",
-      "name": "크라운 연양갱 밤양갱+팥양갱, 50g, 32개",
-      "category": "음식",
-      "link": "https://toss.im/_m/FNmLg3bv",
-      "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
-      "priceText": "16,300원",
-      "discountRate": 32,
-      "seasons": [
-        "spring",
-        "summer",
-        "autumn",
-        "winter"
-      ]
-    },
-    {
       "id": "sl-1295922615",
       "name": "크라운 달달 양갱 세트, 밤양갱 5개 + 연양갱 5개, 50g, 1팩",
       "category": "음식",
@@ -694,8 +679,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/VdZ4myCu",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NjE0ZDAw/QU16cGxLMVAwS2tuZW5ZU241WDRpUkROYVNJbmRxa2s5TWx3VFpXbTJ0Sks.png",
-      "priceText": "19,900원",
-      "discountRate": 43
+      "priceText": "30,900원"
     },
     {
       "id": "sl-1384730319",
@@ -752,7 +736,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/jkGqPRkd",
       "imageUrl": "https://shopping.toss.im/1b3/live/product/419628951/1b384069-29db-46d4-8eff-e0f0e3c85573.jpg",
-      "priceText": "5,099원",
+      "priceText": "5,077원",
+      "discountRate": 10,
       "seasons": [
         "spring",
         "autumn",
@@ -874,8 +859,8 @@
       "category": "의류",
       "link": "https://toss.im/_m/n16XSMUD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTljYjgz/TlVwVE5PdWRucU9LMjl5T0ROU01iSGRqTzBxaXRtTWJDNzBPT05zSjJ1VT0.png",
-      "priceText": "5,608원",
-      "discountRate": 26,
+      "priceText": "5,553원",
+      "discountRate": 27,
       "seasons": [
         "summer"
       ]
@@ -1078,15 +1063,6 @@
         "spring",
         "summer"
       ]
-    },
-    {
-      "id": "sl-2547960175",
-      "name": "Dole 고산지 바나나, 3송이, 1박스",
-      "category": "음식",
-      "link": "https://toss.im/_m/FVW85CAe",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-28/8d7513c0-2ee9-4180-bb51-8d7b9c67e0ae.png",
-      "priceText": "12,900원",
-      "discountRate": 27
     },
     {
       "id": "sl-2607784071",
