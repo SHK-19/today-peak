@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-09T15:30:10.508Z",
+  "updatedAt": "2026-10-09T21:30:08.884Z",
   "items": [
-    {
-      "id": "deal-205874565",
-      "name": "땡큐파머스 구운란, 대란, 30구, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/f2cMo8bh",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZTZmNjA3/ZlJrb2MvMlh3Y0tDOG05ZUZsQjIzTkF1SlBrSDZDZ2ovUUg5QnNBVzI3UT0.png",
-      "priceText": "10,490원",
-      "discountRate": 53,
-      "dealEndsAt": "2026-10-11T00:00:00+09:00"
-    },
     {
       "id": "deal-688982819",
       "name": "발이 편한 카바 밴딩 중목 양말, 남성용, 화이트, 20켤레",
@@ -23,13 +13,13 @@
       "dealEndsAt": "2026-10-11T00:00:00+09:00"
     },
     {
-      "id": "deal-2133682729",
-      "name": "발이 편한 카바 밴딩 중목 양말, 남성용, 화이트, 10켤레",
+      "id": "deal-215847667",
+      "name": "베네피온 남성 패션 중목 스트라이프 양말, 7컬러, FREE, 7켤레, 1세트",
       "category": "의류",
-      "link": "https://toss.shopping/_m/DunEm1UD",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTdhZGIx/QU9Yd3N3RXhqMDVUaWg4emhjUjRJSVJScTUxNnFoUUNOZi91QUlRaTQ5OTY.png",
-      "priceText": "4,160원",
-      "discountRate": 79,
+      "link": "https://toss.shopping/_m/d2ohEBCj",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2E5MDEw/YlltNU1ZV3hlell1VnFVbjFxMzhKdWxjWHBaUzdZL1d0YlNIaTRydytGaz0.png",
+      "priceText": "5,430원",
+      "discountRate": 75,
       "dealEndsAt": "2026-10-11T00:00:00+09:00"
     },
     {
@@ -40,6 +30,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-10/b60d9a5c-9d9f-4124-bc14-d6244563f453.png",
       "priceText": "7,900원",
       "discountRate": 71,
+      "dealEndsAt": "2026-10-11T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2133682729",
+      "name": "발이 편한 카바 밴딩 중목 양말, 남성용, 화이트, 10켤레",
+      "category": "의류",
+      "link": "https://toss.shopping/_m/DunEm1UD",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTdhZGIx/QU9Yd3N3RXhqMDVUaWg4emhjUjRJSVJScTUxNnFoUUNOZi91QUlRaTQ5OTY.png",
+      "priceText": "4,160원",
+      "discountRate": 79,
       "dealEndsAt": "2026-10-11T00:00:00+09:00"
     },
     {
