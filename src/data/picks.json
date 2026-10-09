@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-08T21:30:09.034Z",
+  "updatedAt": "2026-10-09T03:30:09.213Z",
   "items": [
     {
       "id": "deal-326928667",
@@ -20,16 +20,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-10-06/9c7104db-f06c-460b-be7e-5c33f0afee6c.png",
       "priceText": "11,500원",
       "discountRate": 67,
-      "dealEndsAt": "2026-10-10T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2225956519",
-      "name": "포미 착즙 토마토주스, 750ml, 6개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/9FeohFuC",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-12/a815015e-35da-4f36-99e9-cea004ee770a.jpeg",
-      "priceText": "9,725원",
-      "discountRate": 63,
       "dealEndsAt": "2026-10-10T00:00:00+09:00"
     },
     {
@@ -1092,19 +1082,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
       "priceText": "9,810원",
       "discountRate": 53,
-      "seasons": [
-        "autumn",
-        "winter"
-      ]
-    },
-    {
-      "id": "sl-2621746065",
-      "name": "햇 밤고구마, 한입, 3kg, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/lVmT8Vki",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/43e2546f-426d-469d-ab51-d3fb341f57b4.jpeg",
-      "priceText": "6,900원",
-      "discountRate": 50,
       "seasons": [
         "autumn",
         "winter"
