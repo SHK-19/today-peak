@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-09T03:30:09.213Z",
+  "updatedAt": "2026-10-09T09:30:09.366Z",
   "items": [
     {
       "id": "deal-326928667",
@@ -437,8 +437,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,774원",
-      "discountRate": 17
+      "priceText": "14,752원",
+      "discountRate": 18
     },
     {
       "id": "sl-88019043",
@@ -1059,6 +1059,18 @@
       "discountRate": 30,
       "seasons": [
         "summer"
+      ]
+    },
+    {
+      "id": "sl-2226153335",
+      "name": "껍질째 먹는 세척사과, 16-25과 내외, 3kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/RSFsbEB4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/d289f62f-61d3-4143-b707-8a62b8fc5858.png",
+      "priceText": "11,900원",
+      "discountRate": 73,
+      "seasons": [
+        "autumn"
       ]
     },
     {
