@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-11T03:30:08.631Z",
+  "updatedAt": "2026-10-11T09:30:07.946Z",
   "items": [
     {
       "id": "deal-1157385337",
@@ -10,16 +10,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-03-16/6b3ac7b0-1f59-4ba6-b60e-c1eea0620d21.jpeg",
       "priceText": "15,900원",
       "discountRate": 73,
-      "dealEndsAt": "2026-10-12T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2442898043",
-      "name": "한입과득 청송 홍로 사과, 가정용, 3kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/NpbnX0b6",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-09/e0325247-78d9-4c0e-abce-fec8fb278bb3.jpeg",
-      "priceText": "8,730원",
-      "discountRate": 77,
       "dealEndsAt": "2026-10-12T00:00:00+09:00"
     },
     {
