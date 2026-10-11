@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-11T15:30:09.485Z",
+  "updatedAt": "2026-10-11T21:30:08.267Z",
   "items": [
     {
       "id": "deal-2558677631",
@@ -528,8 +528,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/VAzm74Ly",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
-      "priceText": "17,760원",
-      "discountRate": 45
+      "priceText": "15,800원",
+      "discountRate": 51
     },
     {
       "id": "sl-2605058187",
@@ -716,8 +716,7 @@
       "category": "장비",
       "link": "https://toss.im/_m/jkGqPRkd",
       "imageUrl": "https://shopping.toss.im/1b3/live/product/419628951/1b384069-29db-46d4-8eff-e0f0e3c85573.jpg",
-      "priceText": "5,077원",
-      "discountRate": 10,
+      "priceText": "5,099원",
       "seasons": [
         "spring",
         "autumn",
@@ -839,8 +838,8 @@
       "category": "의류",
       "link": "https://toss.im/_m/n16XSMUD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTljYjgz/TlVwVE5PdWRucU9LMjl5T0ROU01iSGRqTzBxaXRtTWJDNzBPT05zSjJ1VT0.png",
-      "priceText": "5,553원",
-      "discountRate": 27,
+      "priceText": "5,608원",
+      "discountRate": 26,
       "seasons": [
         "summer"
       ]
