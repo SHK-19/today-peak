@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-10T21:30:08.139Z",
+  "updatedAt": "2026-10-11T03:30:08.631Z",
   "items": [
     {
       "id": "deal-1157385337",
@@ -10,16 +10,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-03-16/6b3ac7b0-1f59-4ba6-b60e-c1eea0620d21.jpeg",
       "priceText": "15,900원",
       "discountRate": 73,
-      "dealEndsAt": "2026-10-12T00:00:00+09:00"
-    },
-    {
-      "id": "deal-727989761",
-      "name": "사바나나 바나나칩, 100g, 5봉",
-      "category": "음식",
-      "link": "https://toss.im/_m/VAzm74Ly",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
-      "priceText": "10,000원",
-      "discountRate": 69,
       "dealEndsAt": "2026-10-12T00:00:00+09:00"
     },
     {
@@ -60,16 +50,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-03-18/268e4c6a-1595-43e9-9c1b-f101e5774429.jpeg",
       "priceText": "4,800원",
       "discountRate": 52,
-      "dealEndsAt": "2026-10-12T00:00:00+09:00"
-    },
-    {
-      "id": "deal-1102595829",
-      "name": "탑프룻 망고젤리, 망고맛, 320g, 3개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/jV0rS4Nz",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/171d606c-d573-4b2d-a4a7-590cffb62613.jpeg",
-      "priceText": "8,900원",
-      "discountRate": 50,
       "dealEndsAt": "2026-10-12T00:00:00+09:00"
     },
     {
@@ -560,15 +540,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-03-28/8066e022-5c05-4fa1-8639-1c2a6c1d2d9b.jpeg",
       "priceText": "9,405원",
       "discountRate": 17
-    },
-    {
-      "id": "sl-727989761",
-      "name": "사바나나 바나나칩, 100g, 5봉",
-      "category": "음식",
-      "link": "https://toss.im/_m/VAzm74Ly",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
-      "priceText": "10,000원",
-      "discountRate": 69
     },
     {
       "id": "sl-2605058187",
