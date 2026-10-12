@@ -1,36 +1,56 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-12T09:30:09.922Z",
+  "updatedAt": "2026-10-12T15:30:10.199Z",
   "items": [
     {
-      "id": "deal-2558677631",
-      "name": "세상별미 호풍미고구마 당근고구마, 특상, 고당도, 햇, 산지직송, 3kg, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/nyFm8Nch",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/07a1a9b9-3802-4798-b86d-1582f7ea16bf.jpeg",
-      "priceText": "10,470원",
-      "discountRate": 56,
-      "dealEndsAt": "2026-10-13T00:00:00+09:00"
+      "id": "deal-1156454495",
+      "name": "보라톡스 파비플로라 알파CD 보라워터 스틱, 18g, 15포, 3박스",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/jpj8YZnw",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-03/8c435a7d-bdda-489c-9fdc-da666610b8e4.jpeg",
+      "priceText": "18,990원",
+      "discountRate": 87,
+      "dealEndsAt": "2026-10-14T00:00:00+09:00"
     },
     {
-      "id": "deal-2642157521",
-      "name": "제주 극조생 감귤, 대과 L-2L, 5kg, 1박스",
+      "id": "deal-2637785485",
+      "name": "산들에담다 GAP 노지 감귤, 특품, 로얄과, 10kg, 1박스",
       "category": "음식",
-      "link": "https://toss.shopping/_m/NHfVEYC9",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/9e39b5c9-d743-4595-8fb4-2b8c9457f407.jpeg",
-      "priceText": "7,900원",
-      "discountRate": 66,
-      "dealEndsAt": "2026-10-13T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/Fm6Tyx8q",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-28/12aca3f7-0d09-47b5-bcb8-a9dc0453c75d.png",
+      "priceText": "18,690원",
+      "discountRate": 79,
+      "dealEndsAt": "2026-10-14T00:00:00+09:00"
     },
     {
-      "id": "deal-12833195",
-      "name": "에브리워터 무라벨 생수, 2L, 24개",
+      "id": "deal-2602285881",
+      "name": "크라운제과 인기스낵모음, 12팩, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/V0EYrydc",
-      "imageUrl": "https://shopping.toss.im/live/product/715843/3bd40551-1399-4a9e-8b12-af94ace41dd1.png",
+      "link": "https://toss.shopping/_m/3pmmoPvi",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
+      "priceText": "8,260원",
+      "discountRate": 31,
+      "dealEndsAt": "2026-10-14T00:00:00+09:00"
+    },
+    {
+      "id": "deal-13017669",
+      "name": "베베앙 시그니처 물티슈 캡형, 100매, 10팩",
+      "category": "안전",
+      "link": "https://toss.shopping/_m/JdfEndCe",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
+      "priceText": "8,900원",
+      "discountRate": 60,
+      "dealEndsAt": "2026-10-14T00:00:00+09:00"
+    },
+    {
+      "id": "deal-200602521",
+      "name": "파이토메이드 고칼슘 앤 비타민D 두유 검은콩, 190ml, 24개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/NnFXRSnD",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-17/769aa5a1-0ada-4790-9d5e-91593dd7c601.jpeg",
       "priceText": "7,900원",
-      "discountRate": 67,
-      "dealEndsAt": "2026-10-13T00:00:00+09:00"
+      "discountRate": 50,
+      "dealEndsAt": "2026-10-14T00:00:00+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -191,8 +211,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,900원",
-      "discountRate": 15,
+      "priceText": "15,200원",
+      "discountRate": 19,
       "seasons": [
         "spring",
         "summer",
@@ -215,8 +235,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/f1PrbQv8",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/YTRjYWY4/QVBEei9Qc1AvbnRXL09lSHEvRlJlVStPTnNoMGMrNm5pNC9SZkh6MEVjT1g.png",
-      "priceText": "10,730원",
-      "discountRate": 32
+      "priceText": "11,500원",
+      "discountRate": 27
     },
     {
       "id": "sl-83885933",
@@ -444,8 +464,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/x6ftDl21",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDNlNDlk/QUxNbXpiR3pkanVQbXJQMVVnQ3RmUm9pNGQxcUlOU3kxU2F1RmRyMVZBSWc.png",
-      "priceText": "13,900원",
-      "discountRate": 65
+      "priceText": "12,700원",
+      "discountRate": 68
     },
     {
       "id": "sl-134342961",
@@ -501,8 +521,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/3pmmoPvi",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
-      "priceText": "8,800원",
-      "discountRate": 26
+      "priceText": "8,260원",
+      "discountRate": 31
     },
     {
       "id": "sl-82144865",
@@ -512,6 +532,21 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-04-06/ce501b0a-7d12-4607-9fe2-bbe45509801c.jpeg",
       "priceText": "12,700원",
       "discountRate": 20
+    },
+    {
+      "id": "sl-171388715",
+      "name": "크라운 연양갱 밤양갱+팥양갱, 50g, 32개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/FNmLg3bv",
+      "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
+      "priceText": "15,300원",
+      "discountRate": 36,
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ]
     },
     {
       "id": "sl-1295922615",
@@ -537,8 +572,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/HX12blfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
-      "priceText": "9,900원",
-      "discountRate": 49
+      "priceText": "8,390원",
+      "discountRate": 57
     },
     {
       "id": "sl-142778727",
@@ -788,8 +823,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/DzdMm2xo",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/7d6b6b76-f29f-4974-931b-769cc9a90c8c.png",
-      "priceText": "9,400원",
-      "discountRate": 76
+      "priceText": "7,970원",
+      "discountRate": 79
     },
     {
       "id": "sl-10423113",
