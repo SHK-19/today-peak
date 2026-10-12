@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-12T03:30:08.853Z",
+  "updatedAt": "2026-10-12T09:30:09.922Z",
   "items": [
     {
       "id": "deal-2558677631",
@@ -765,6 +765,15 @@
       "discountRate": 58
     },
     {
+      "id": "sl-2349769011",
+      "name": "캠핑 휴대용 접이식 방석 쿠션, 블랙, 1개",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/bq599V4m",
+      "imageUrl": "https://shopping.toss.im/08e/live/product/715108537/08ee5770-f56f-4e07-b18d-76cb8fb954ce.jpg",
+      "priceText": "7,180원",
+      "discountRate": 10
+    },
+    {
       "id": "sl-2523779719",
       "name": "접이식 카라비너 캠핑 방석 매트, 카키, 1개",
       "category": "장비",
@@ -1007,7 +1016,7 @@
     },
     {
       "id": "sl-2608899377",
-      "name": "이온더핏 제로 무라벨, 340ml, 20개",
+      "name": "웅진식품 이온더핏 제로, 무라벨, 340ml, 20개",
       "category": "음식",
       "link": "https://toss.im/_m/rS2kjYzD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzYxMTll/SXhqMDQ1eG1tR1pPTm1PQjgwbVlmbzlsU1dXVWpwTk1tMndiWldBK1pKcz0.png",
@@ -1041,6 +1050,15 @@
         "spring",
         "summer"
       ]
+    },
+    {
+      "id": "sl-2547960175",
+      "name": "Dole 고산지 바나나, 3송이, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/FVW85CAe",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-28/8d7513c0-2ee9-4180-bb51-8d7b9c67e0ae.png",
+      "priceText": "12,900원",
+      "discountRate": 27
     },
     {
       "id": "sl-2607784071",
