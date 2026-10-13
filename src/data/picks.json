@@ -1,36 +1,36 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-13T09:30:09.407Z",
+  "updatedAt": "2026-10-13T15:30:10.006Z",
   "items": [
     {
-      "id": "deal-1156454495",
-      "name": "보라톡스 파비플로라 알파CD 보라워터 스틱, 18g, 15포, 3박스",
-      "category": "장비",
-      "link": "https://toss.shopping/_m/jpj8YZnw",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-03/8c435a7d-bdda-489c-9fdc-da666610b8e4.jpeg",
-      "priceText": "18,990원",
-      "discountRate": 87,
-      "dealEndsAt": "2026-10-14T00:00:00+09:00"
+      "id": "deal-300831449",
+      "name": "헬로바이오 혈당엔 바나바 유산균, 250mg, 30캡슐, 3박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/Vq3cABDf",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-11-05/097b9526-a273-4245-97f8-dd0fac91bfba.jpeg",
+      "priceText": "10,320원",
+      "discountRate": 85,
+      "dealEndsAt": "2026-10-15T00:00:00+09:00"
     },
     {
-      "id": "deal-2637785485",
-      "name": "산들에담다 GAP 노지 감귤, 특품, 로얄과, 10kg, 1박스",
+      "id": "deal-138286213",
+      "name": "G7 커피 퓨어블랙 라이트, 0.9g, 110개입, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/Fm6Tyx8q",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-28/12aca3f7-0d09-47b5-bcb8-a9dc0453c75d.png",
-      "priceText": "18,690원",
-      "discountRate": 79,
-      "dealEndsAt": "2026-10-14T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/D7qtYmsh",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWFiNTFm/QU1zbEs3VzBtK3piUzJTYmEzS1VGNUd1VzJabWxUdnBUbWh1bHJFRzBHcE8.png",
+      "priceText": "9,080원",
+      "discountRate": 63,
+      "dealEndsAt": "2026-10-15T00:00:00+09:00"
     },
     {
-      "id": "deal-2602285881",
-      "name": "크라운제과 인기스낵모음, 12팩, 1개",
+      "id": "deal-366071583",
+      "name": "맥스 앤 맥스 전자레인지 라면 용기, 아이보리 1L 1개 + 올리브그린 1L 1개 + 뚜껑, 2개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/3pmmoPvi",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
-      "priceText": "8,260원",
-      "discountRate": 31,
-      "dealEndsAt": "2026-10-14T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/fC2xBHUq",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-06/4d9c7749-b71a-4815-9622-50747aeb997a.jpeg",
+      "priceText": "4,130원",
+      "discountRate": 78,
+      "dealEndsAt": "2026-10-15T00:00:00+09:00"
     },
     {
       "id": "sl-1568257163",
@@ -191,8 +191,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,900원",
-      "discountRate": 15,
+      "priceText": "15,200원",
+      "discountRate": 19,
       "seasons": [
         "spring",
         "summer",
@@ -501,8 +501,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/3pmmoPvi",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
-      "priceText": "8,260원",
-      "discountRate": 31
+      "priceText": "8,800원",
+      "discountRate": 26
     },
     {
       "id": "sl-82144865",
@@ -545,6 +545,15 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
       "priceText": "15,800원",
       "discountRate": 51
+    },
+    {
+      "id": "sl-2605058187",
+      "name": "애슐리 주먹밥 체험팩, 7가지맛, 100g, 7개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/HX12blfB",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
+      "priceText": "9,900원",
+      "discountRate": 49
     },
     {
       "id": "sl-142778727",
@@ -786,8 +795,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/DzdMm2xo",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/7d6b6b76-f29f-4974-931b-769cc9a90c8c.png",
-      "priceText": "7,970원",
-      "discountRate": 79
+      "priceText": "9,400원",
+      "discountRate": 76
     },
     {
       "id": "sl-10423113",
