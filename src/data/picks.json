@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-12T21:30:08.845Z",
+  "updatedAt": "2026-10-13T03:30:08.814Z",
   "items": [
     {
       "id": "deal-1156454495",
@@ -40,16 +40,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
       "priceText": "8,900원",
       "discountRate": 60,
-      "dealEndsAt": "2026-10-14T00:00:00+09:00"
-    },
-    {
-      "id": "deal-200602521",
-      "name": "파이토메이드 고칼슘 앤 비타민D 두유 검은콩, 190ml, 24개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/NnFXRSnD",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-17/769aa5a1-0ada-4790-9d5e-91593dd7c601.jpeg",
-      "priceText": "7,900원",
-      "discountRate": 50,
       "dealEndsAt": "2026-10-14T00:00:00+09:00"
     },
     {
@@ -211,8 +201,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,200원",
-      "discountRate": 19,
+      "priceText": "15,900원",
+      "discountRate": 15,
       "seasons": [
         "spring",
         "summer",
@@ -567,15 +557,6 @@
       "discountRate": 51
     },
     {
-      "id": "sl-2605058187",
-      "name": "애슐리 주먹밥 체험팩, 7가지맛, 100g, 7개",
-      "category": "음식",
-      "link": "https://toss.im/_m/HX12blfB",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
-      "priceText": "8,390원",
-      "discountRate": 57
-    },
-    {
       "id": "sl-142778727",
       "name": "애슐리 주먹밥 2종, 콘치즈 닭갈비 + 치즈 케이준치킨, 100g, 10개, 1세트",
       "category": "음식",
@@ -686,7 +667,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/HDQDe08r",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZmJlNzBl/QU9OT25iRzRTMmUybVo3eGxzdFBMbXRHdEo1TTlwUzRhVUhweVg2ZnBUYVc.png",
-      "priceText": "25,000원"
+      "priceText": "12,800원",
+      "discountRate": 48
     },
     {
       "id": "sl-442743829",
@@ -941,8 +923,8 @@
       "category": "안전",
       "link": "https://toss.im/_m/70zdzNGd",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YmQ4Y2Rh/QUtMa3JMUVp3OGVPdHVTSEhGMExlWWNmRC9HSGxTVjZ4bTVVY2NjdVZQR0g.png",
-      "priceText": "8,811원",
-      "discountRate": 31,
+      "priceText": "9,900원",
+      "discountRate": 37,
       "seasons": [
         "winter"
       ],
@@ -1026,7 +1008,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/x2ImQukx",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NjU1ZTdl/QUptWkRubk16Qm1aY3hubk9YTXhwbWJPWmpINU0rYVptUm5aem5ISE9UUG0.png",
-      "priceText": "28,490원"
+      "priceText": "23,500원",
+      "discountRate": 24
     },
     {
       "id": "sl-2034321721",
