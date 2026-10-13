@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-13T03:30:08.814Z",
+  "updatedAt": "2026-10-13T09:30:09.407Z",
   "items": [
     {
       "id": "deal-1156454495",
@@ -30,16 +30,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
       "priceText": "8,260원",
       "discountRate": 31,
-      "dealEndsAt": "2026-10-14T00:00:00+09:00"
-    },
-    {
-      "id": "deal-13017669",
-      "name": "베베앙 시그니처 물티슈 캡형, 100매, 10팩",
-      "category": "안전",
-      "link": "https://toss.shopping/_m/JdfEndCe",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-06-09/3d168097-a6da-4f99-9e12-5b8d3121e04e.jpeg",
-      "priceText": "8,900원",
-      "discountRate": 60,
       "dealEndsAt": "2026-10-14T00:00:00+09:00"
     },
     {
@@ -771,15 +761,6 @@
         "autumn",
         "winter"
       ]
-    },
-    {
-      "id": "sl-2636581431",
-      "name": "블랙울프 충전식 캡라이트 LED 헤드랜턴, Red, 1개",
-      "category": "장비",
-      "link": "https://toss.im/_m/zeO6XtPk",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-27/2ed5296f-05a7-49e0-ab33-76268f59190d.jpeg",
-      "priceText": "9,200원",
-      "discountRate": 58
     },
     {
       "id": "sl-2349769011",
