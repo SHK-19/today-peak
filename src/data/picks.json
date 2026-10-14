@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-14T03:30:08.505Z",
+  "updatedAt": "2026-10-14T09:30:09.015Z",
   "items": [
     {
       "id": "deal-300831449",
@@ -435,8 +435,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Lv1LONfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/e8def6ef-db30-4dd2-9f9b-8aa6695cb9bd.jpeg",
-      "priceText": "28,400원",
-      "discountRate": 59
+      "priceText": "27,548원",
+      "discountRate": 60
     },
     {
       "id": "sl-173414675",
@@ -588,8 +588,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/z23GflTa",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MzRlZWI0/UGx6Z3R2QnJTNVBaaTd3WnZEejVZMkwwWnNZUFIyYmM0RnhLOFI0UTJTND0.png",
-      "priceText": "21,900원",
-      "discountRate": 68
+      "priceText": "19,800원",
+      "discountRate": 71
     },
     {
       "id": "sl-2634417001",
@@ -770,15 +770,6 @@
         "autumn",
         "winter"
       ]
-    },
-    {
-      "id": "sl-2349769011",
-      "name": "캠핑 휴대용 접이식 방석 쿠션, 블랙, 1개",
-      "category": "장비",
-      "link": "https://toss.shopping/_m/bq599V4m",
-      "imageUrl": "https://shopping.toss.im/08e/live/product/715108537/08ee5770-f56f-4e07-b18d-76cb8fb954ce.jpg",
-      "priceText": "7,180원",
-      "discountRate": 10
     },
     {
       "id": "sl-2523779719",
