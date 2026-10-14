@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-14T15:30:09.326Z",
+  "updatedAt": "2026-10-14T21:30:08.559Z",
   "items": [
     {
       "id": "deal-175481219",
@@ -9,7 +9,17 @@
       "link": "https://toss.shopping/_m/P9b4XqV",
       "imageUrl": "https://shopping.toss.im/live/temp/2025-08-28/21a63a37-06b9-4512-a5b9-145587056e80.jpeg",
       "priceText": "7,620원",
-      "discountRate": 30,
+      "discountRate": 32,
+      "dealEndsAt": "2026-10-16T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2317495197",
+      "name": "G7 커피 퓨어블랙 라이트, 0.9g, 110개입, 3개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/zicZIM0m",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/ZDEwNDdm/QU1zbEs3VzBtK3piUzJTYmEzS1VGNUd1VzJabWxUdnBUbWh1bHJFRzBHcE8.png",
+      "priceText": "19,830원",
+      "discountRate": 73,
       "dealEndsAt": "2026-10-16T00:00:00+09:00"
     },
     {
