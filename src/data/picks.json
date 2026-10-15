@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-15T15:30:10.450Z",
+  "updatedAt": "2026-10-15T21:30:08.536Z",
   "items": [
-    {
-      "id": "deal-2571708423",
-      "name": "쵱선생 군고구마 말랭이, 495g, 2개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/HQjAtASj",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-07/fb1d6221-56de-499f-8d85-8cba107a9110.jpeg",
-      "priceText": "17,015원",
-      "discountRate": 46,
-      "dealEndsAt": "2026-10-17T00:00:00+09:00"
-    },
     {
       "id": "deal-2657232205",
       "name": "극조생 감귤 햇귤, 혼합과, 5kg, 1개",
@@ -724,7 +714,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/jkGqPRkd",
       "imageUrl": "https://shopping.toss.im/1b3/live/product/419628951/1b384069-29db-46d4-8eff-e0f0e3c85573.jpg",
-      "priceText": "5,099원",
+      "priceText": "5,077원",
+      "discountRate": 10,
       "seasons": [
         "spring",
         "autumn",
@@ -837,8 +828,8 @@
       "category": "의류",
       "link": "https://toss.im/_m/n16XSMUD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTljYjgz/TlVwVE5PdWRucU9LMjl5T0ROU01iSGRqTzBxaXRtTWJDNzBPT05zSjJ1VT0.png",
-      "priceText": "5,608원",
-      "discountRate": 26,
+      "priceText": "5,553원",
+      "discountRate": 27,
       "seasons": [
         "summer"
       ]
