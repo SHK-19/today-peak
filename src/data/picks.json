@@ -1,36 +1,46 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-15T09:30:09.772Z",
+  "updatedAt": "2026-10-15T15:30:10.450Z",
   "items": [
     {
-      "id": "deal-175481219",
-      "name": "파머스넷 해남 햇 밤고구마, 한입, 5kg, 1박스",
+      "id": "deal-2571708423",
+      "name": "쵱선생 군고구마 말랭이, 495g, 2개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/P9b4XqV",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-28/21a63a37-06b9-4512-a5b9-145587056e80.jpeg",
-      "priceText": "7,620원",
-      "discountRate": 30,
-      "dealEndsAt": "2026-10-16T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/HQjAtASj",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-07/fb1d6221-56de-499f-8d85-8cba107a9110.jpeg",
+      "priceText": "17,015원",
+      "discountRate": 46,
+      "dealEndsAt": "2026-10-17T00:00:00+09:00"
     },
     {
-      "id": "deal-2317495197",
-      "name": "G7 커피 퓨어블랙 라이트, 0.9g, 110개입, 3개",
+      "id": "deal-2657232205",
+      "name": "극조생 감귤 햇귤, 혼합과, 5kg, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/zicZIM0m",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/ZDEwNDdm/QU1zbEs3VzBtK3piUzJTYmEzS1VGNUd1VzJabWxUdnBUbWh1bHJFRzBHcE8.png",
-      "priceText": "19,830원",
-      "discountRate": 73,
-      "dealEndsAt": "2026-10-16T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/D7dKabPf",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-16/592d7cb9-6e89-4db8-81ce-9c105ec1c457.png",
+      "priceText": "8,800원",
+      "discountRate": 72,
+      "dealEndsAt": "2026-10-17T00:00:00+09:00"
     },
     {
-      "id": "deal-446375193",
-      "name": "맛꾼 구운란, 대란, 60구, 1개",
+      "id": "deal-2656113063",
+      "name": "리프레쉬 맥반석오징어, 13-25미 내외, 300g, 1봉",
       "category": "음식",
-      "link": "https://toss.shopping/_m/hhIWHT8B",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-01-27/1bf55bed-c772-4d55-9035-2a657f24e3b3.jpeg",
-      "priceText": "17,900원",
-      "discountRate": 43,
-      "dealEndsAt": "2026-10-16T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/Rl8BAZD5",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-07/9c81eb45-6040-431f-b33c-02f399d09cdc.jpeg",
+      "priceText": "14,560원",
+      "discountRate": 46,
+      "dealEndsAt": "2026-10-17T00:00:00+09:00"
+    },
+    {
+      "id": "deal-18135239",
+      "name": "소소락 북촌 항아리 얼큰수제비 6인분, 면다해 생수제비 1kg + 고추장 수제비소스 50g 6개, 1세트",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/foUewNTa",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U2MGNi/YVQ2UDJHZW9wVFcrSXRVa0RyNVUyRHp5V3JMd002NzI0ZU1oeVFZTFB3Yz0.png",
+      "priceText": "5,900원",
+      "discountRate": 65,
+      "dealEndsAt": "2026-10-17T00:00:00+09:00"
     },
     {
       "id": "sl-1268069353",
@@ -426,8 +436,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Lv1LONfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/e8def6ef-db30-4dd2-9f9b-8aa6695cb9bd.jpeg",
-      "priceText": "28,400원",
-      "discountRate": 59
+      "priceText": "27,440원",
+      "discountRate": 60
     },
     {
       "id": "sl-173414675",
@@ -727,8 +737,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/LNHTVX5h",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OTJhMzFi/QU9hSGpwcndoNGVlakVPTmZuTk9JZmxua1R3OEpHSGw0ekVlc3g2YWNjN0Q.png",
-      "priceText": "13,400원",
-      "discountRate": 32
+      "priceText": "13,900원",
+      "discountRate": 30
     },
     {
       "id": "sl-1568234361",
