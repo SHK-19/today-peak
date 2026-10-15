@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-15T03:30:09.643Z",
+  "updatedAt": "2026-10-15T09:30:09.772Z",
   "items": [
     {
       "id": "deal-175481219",
@@ -9,7 +9,7 @@
       "link": "https://toss.shopping/_m/P9b4XqV",
       "imageUrl": "https://shopping.toss.im/live/temp/2025-08-28/21a63a37-06b9-4512-a5b9-145587056e80.jpeg",
       "priceText": "7,620원",
-      "discountRate": 28,
+      "discountRate": 30,
       "dealEndsAt": "2026-10-16T00:00:00+09:00"
     },
     {
@@ -206,8 +206,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Jf0vjY06",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmFkNDg1/YTNNaXA1eW1lVUdtR2MrMnYwcjJEc205bTdGMlRrMWp1clVpUHdYQnExST0.png",
-      "priceText": "7,990원",
-      "discountRate": 66
+      "priceText": "16,900원",
+      "discountRate": 29
     },
     {
       "id": "sl-2484194021",
@@ -260,15 +260,6 @@
         "spring",
         "summer"
       ]
-    },
-    {
-      "id": "sl-2511369781",
-      "name": "햅푸드 구운계란, 대란, 30구, 1개",
-      "category": "음식",
-      "link": "https://toss.im/_m/lRPzesIe",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "11,900원",
-      "discountRate": 43
     },
     {
       "id": "sl-2274809577",
@@ -755,8 +746,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/Z4kzBhxj",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZGU1ZDAy/VG5JM002R2Eyd2cyMlptY0VzWmttYk1VMjg4T2NZem16T1pNYk1ic014TT0.png",
-      "priceText": "17,800원",
-      "discountRate": 31,
+      "priceText": "16,632원",
+      "discountRate": 35,
       "seasons": [
         "autumn",
         "winter"
