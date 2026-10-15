@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-14T21:30:08.559Z",
+  "updatedAt": "2026-10-15T03:30:09.643Z",
   "items": [
     {
       "id": "deal-175481219",
@@ -9,7 +9,7 @@
       "link": "https://toss.shopping/_m/P9b4XqV",
       "imageUrl": "https://shopping.toss.im/live/temp/2025-08-28/21a63a37-06b9-4512-a5b9-145587056e80.jpeg",
       "priceText": "7,620원",
-      "discountRate": 32,
+      "discountRate": 28,
       "dealEndsAt": "2026-10-16T00:00:00+09:00"
     },
     {
@@ -31,6 +31,15 @@
       "priceText": "17,900원",
       "discountRate": 43,
       "dealEndsAt": "2026-10-16T00:00:00+09:00"
+    },
+    {
+      "id": "sl-1268069353",
+      "name": "살림살림 고강도 알루미늄 3단조절 등산스틱, 2개",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/5bcu4ds9",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/MWIwNWNk/TUR5VW84ZkRWU3dlQ1V2R0tqNHVNWi9CcTFvb0huSEMwV3V0T2EwaktWWT0.png",
+      "priceText": "13,205원",
+      "discountRate": 33
     },
     {
       "id": "sl-1568257163",
@@ -73,15 +82,6 @@
         "autumn",
         "winter"
       ]
-    },
-    {
-      "id": "sl-105123055",
-      "name": "프로스펙스 액티브 슬개골 보호대, 블랙, 1개",
-      "category": "장비",
-      "link": "https://toss.im/_m/FYJZvyWl",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZjE3YzE3/QU1tY2QzKzhUSmxtNXhqNG5qalBUQStjWjJlWlo1MllaV1daenpPeXlEVE0.png",
-      "priceText": "10,088원",
-      "discountRate": 49
     },
     {
       "id": "sl-1467863751",
@@ -191,8 +191,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,200원",
-      "discountRate": 19,
+      "priceText": "15,900원",
+      "discountRate": 15,
       "seasons": [
         "spring",
         "summer",
@@ -435,8 +435,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Lv1LONfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/e8def6ef-db30-4dd2-9f9b-8aa6695cb9bd.jpeg",
-      "priceText": "27,548원",
-      "discountRate": 60
+      "priceText": "28,400원",
+      "discountRate": 59
     },
     {
       "id": "sl-173414675",
@@ -545,15 +545,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
       "priceText": "15,800원",
       "discountRate": 51
-    },
-    {
-      "id": "sl-2605058187",
-      "name": "애슐리 주먹밥 체험팩, 7가지맛, 100g, 7개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/HX12blfB",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
-      "priceText": "9,900원",
-      "discountRate": 49
     },
     {
       "id": "sl-142778727",
