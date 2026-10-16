@@ -1,25 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-16T03:30:10.917Z",
+  "updatedAt": "2026-10-16T09:30:09.186Z",
   "items": [
-    {
-      "id": "deal-2571708423",
-      "name": "쵱선생 군고구마 말랭이, 495g, 2개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/HQjAtASj",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-07/fb1d6221-56de-499f-8d85-8cba107a9110.jpeg",
-      "priceText": "17,015원",
-      "discountRate": 46,
-      "dealEndsAt": "2026-10-17T00:00:00+09:00"
-    },
     {
       "id": "deal-2657232205",
       "name": "극조생 감귤 햇귤, 혼합과, 5kg, 1개",
       "category": "음식",
       "link": "https://toss.shopping/_m/D7dKabPf",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-09-16/592d7cb9-6e89-4db8-81ce-9c105ec1c457.png",
-      "priceText": "8,800원",
-      "discountRate": 72,
+      "priceText": "7,800원",
+      "discountRate": 75,
       "dealEndsAt": "2026-10-17T00:00:00+09:00"
     },
     {
@@ -520,8 +510,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/FNmLg3bv",
       "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
-      "priceText": "13,300원",
-      "discountRate": 44,
+      "priceText": "13,500원",
+      "discountRate": 43,
       "seasons": [
         "spring",
         "summer",
@@ -803,6 +793,15 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/7d6b6b76-f29f-4974-931b-769cc9a90c8c.png",
       "priceText": "9,400원",
       "discountRate": 76
+    },
+    {
+      "id": "sl-167905953",
+      "name": "아웃도어 공구가방 힙색, 캠핑, FREE, 블랙, 1개",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/3fsEI1At",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NTlkYjhm/QVBmNUdKT21uTytjVE5NTUEweEo3WWdvd3hESnRsbUFRSkpIWFBmZGRtL3Y.png",
+      "priceText": "7,900원",
+      "discountRate": 27
     },
     {
       "id": "sl-10423113",
