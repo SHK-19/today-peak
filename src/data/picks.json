@@ -1,7 +1,17 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-15T21:30:08.536Z",
+  "updatedAt": "2026-10-16T03:30:10.917Z",
   "items": [
+    {
+      "id": "deal-2571708423",
+      "name": "쵱선생 군고구마 말랭이, 495g, 2개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/HQjAtASj",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-07/fb1d6221-56de-499f-8d85-8cba107a9110.jpeg",
+      "priceText": "17,015원",
+      "discountRate": 46,
+      "dealEndsAt": "2026-10-17T00:00:00+09:00"
+    },
     {
       "id": "deal-2657232205",
       "name": "극조생 감귤 햇귤, 혼합과, 5kg, 1개",
@@ -465,7 +475,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/FkzUHGW9",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MzIzNjk4/QUt0MDdUWkYrNXk1MUU1anpudVJuQ3VPUlBtVUlacEhhMWZ2bUxhK0ZIZE4.png",
-      "priceText": "22,930원",
+      "priceText": "22,890원",
       "discountRate": 18
     },
     {
@@ -510,8 +520,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/FNmLg3bv",
       "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
-      "priceText": "15,300원",
-      "discountRate": 36,
+      "priceText": "13,300원",
+      "discountRate": 44,
       "seasons": [
         "spring",
         "summer",
@@ -536,6 +546,15 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
       "priceText": "15,800원",
       "discountRate": 51
+    },
+    {
+      "id": "sl-2605058187",
+      "name": "애슐리 주먹밥 체험팩, 7가지맛, 100g, 7개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/HX12blfB",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
+      "priceText": "9,900원",
+      "discountRate": 49
     },
     {
       "id": "sl-142778727",
@@ -563,6 +582,19 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OTk2YWFk/ZU5JVHphc05TYnUwSEtzMFN1T1Y2MjBHbXBTNUtJdGFKclZ2SS9KaUptWT0.png",
       "priceText": "12,900원",
       "discountRate": 46
+    },
+    {
+      "id": "sl-563739749",
+      "name": "정관장 홍삼진고데일리스틱, 10g, 20포, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/10cLLhT6",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MGVjOTdh/QU5tWk41MC9oTXprNUc3T2RwOG1jM2JoRzdtYnVadk81VWJrRmlRZmdlbmI.png",
+      "priceText": "23,200원",
+      "discountRate": 42,
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
     },
     {
       "id": "sl-1468764941",
