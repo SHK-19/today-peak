@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-16T21:30:07.773Z",
+  "updatedAt": "2026-10-17T03:30:08.966Z",
   "items": [
     {
       "id": "deal-32959569",
@@ -500,8 +500,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/FNmLg3bv",
       "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
-      "priceText": "13,500원",
-      "discountRate": 43,
+      "priceText": "13,200원",
+      "discountRate": 45,
       "seasons": [
         "spring",
         "summer",
@@ -526,24 +526,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
       "priceText": "15,800원",
       "discountRate": 51
-    },
-    {
-      "id": "sl-2605058187",
-      "name": "애슐리 주먹밥 체험팩, 7가지맛, 100g, 7개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/HX12blfB",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
-      "priceText": "9,900원",
-      "discountRate": 49
-    },
-    {
-      "id": "sl-142778727",
-      "name": "애슐리 주먹밥 2종, 콘치즈 닭갈비 + 치즈 케이준치킨, 100g, 10개, 1세트",
-      "category": "음식",
-      "link": "https://toss.im/_m/1QpjO6E",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-16/2e770c8c-89dc-4452-bbfb-d3d79c8cdae1.jpeg",
-      "priceText": "15,900원",
-      "discountRate": 30
     },
     {
       "id": "sl-303265905",
