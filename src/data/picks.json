@@ -1,7 +1,17 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-17T15:30:11.217Z",
+  "updatedAt": "2026-10-17T21:30:08.624Z",
   "items": [
+    {
+      "id": "deal-175489091",
+      "name": "파머스넷 호박고구마, 한입, 5kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/pnNL8XHp",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MzEzMTE2/QUpheU02WnM0ZmkwazliR25JalJHaG1Nd2VzZGpsRmhVVmRjbHpaeDRveGw.png",
+      "priceText": "7,030원",
+      "discountRate": 24,
+      "dealEndsAt": "2026-10-19T00:00:00+09:00"
+    },
     {
       "id": "deal-2636117429",
       "name": "순수식품 rTG 알티지 오메가3 식물성캡슐, 1018mg, 60캡슐, 4박스",
@@ -10,16 +20,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-26/bc4240fb-233b-443f-8102-bf6e531186ed.jpeg",
       "priceText": "25,900원",
       "discountRate": 67,
-      "dealEndsAt": "2026-10-19T00:00:00+09:00"
-    },
-    {
-      "id": "deal-175489091",
-      "name": "파머스넷 호박고구마, 한입, 5kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/pnNL8XHp",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MzEzMTE2/QUpheU02WnM0ZmkwazliR25JalJHaG1Nd2VzZGpsRmhVVmRjbHpaeDRveGw.png",
-      "priceText": "7,030원",
-      "discountRate": 21,
       "dealEndsAt": "2026-10-19T00:00:00+09:00"
     },
     {
@@ -60,16 +60,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-02-02/29aedeab-abc6-4b2c-86f7-31bcc48005aa.jpeg",
       "priceText": "10,370원",
       "discountRate": 67,
-      "dealEndsAt": "2026-10-19T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2621363823",
-      "name": "맘스럽 시그니처코튼 물티슈, 100매입, 10팩, 1개",
-      "category": "안전",
-      "link": "https://toss.shopping/_m/bv7HvxDa",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/0a772c5e-a39c-483a-901f-cf08c10f1f4d.jpeg",
-      "priceText": "4,990원",
-      "discountRate": 66,
       "dealEndsAt": "2026-10-19T00:00:00+09:00"
     },
     {
