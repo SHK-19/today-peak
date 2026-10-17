@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-17T03:30:08.966Z",
+  "updatedAt": "2026-10-17T09:30:09.356Z",
   "items": [
     {
       "id": "deal-32959569",
@@ -10,16 +10,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/YzVhZWUz/QUl1RUk5eU1FK0RqWDdGOGwrRFFQNnpzQlVuOEQxRUM4MHcxejJ3M1RMMGI.png",
       "priceText": "12,670원",
       "discountRate": 37,
-      "dealEndsAt": "2026-10-18T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2637785481",
-      "name": "산들에담다 GAP 노지 감귤, 특품, 로얄과, 5kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/lHfbppYg",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-28/12aca3f7-0d09-47b5-bcb8-a9dc0453c75d.png",
-      "priceText": "9,990원",
-      "discountRate": 83,
       "dealEndsAt": "2026-10-18T00:00:00+09:00"
     },
     {
@@ -526,6 +516,24 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2U3NWE3/QU8wMjJQaktXOGJTVklsaktUNUp6a3lFeWJadFprVXAxcDFVMGV1cFZOZXI.png",
       "priceText": "15,800원",
       "discountRate": 51
+    },
+    {
+      "id": "sl-2605058187",
+      "name": "애슐리 주먹밥 체험팩, 7가지맛, 100g, 7개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/HX12blfB",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
+      "priceText": "9,900원",
+      "discountRate": 49
+    },
+    {
+      "id": "sl-142778727",
+      "name": "애슐리 주먹밥 2종, 콘치즈 닭갈비 + 치즈 케이준치킨, 100g, 10개, 1세트",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/1QpjO6E",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-07-16/2e770c8c-89dc-4452-bbfb-d3d79c8cdae1.jpeg",
+      "priceText": "15,900원",
+      "discountRate": 30
     },
     {
       "id": "sl-303265905",
