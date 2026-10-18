@@ -1,56 +1,46 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-18T09:30:06.634Z",
+  "updatedAt": "2026-10-18T15:30:09.405Z",
   "items": [
     {
-      "id": "deal-2636117429",
-      "name": "순수식품 rTG 알티지 오메가3 식물성캡슐, 1018mg, 60캡슐, 4박스",
+      "id": "deal-1438581065",
+      "name": "연세우유 세브란스 A2 프로틴, 초콜릿, 190ml, 32개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/7unrdnnn",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-26/bc4240fb-233b-443f-8102-bf6e531186ed.jpeg",
-      "priceText": "25,900원",
-      "discountRate": 67,
-      "dealEndsAt": "2026-10-19T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/zT4rsOis",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-10/f41ad4fd-098c-48fd-aba3-d7d617fdb407.jpeg",
+      "priceText": "26,560원",
+      "discountRate": 55,
+      "dealEndsAt": "2026-10-20T00:00:00+09:00"
     },
     {
-      "id": "deal-141163359",
-      "name": "인테로 어나더레벨 단백질 쉐이크, 아몬드봉봉 630g 1개 + 콘시리얼 630g 1개, 1세트",
+      "id": "deal-2620368191",
+      "name": "형기네 건오징어 몸통만, 5-7미, 150g, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/z09640Z6",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDI5MGFm/QUo1VTdENkQ3VzVEZlhpWWZDN3htb2Y5WVRCNlB5RnJ3K0RHb2VoYWxsNkY.png",
-      "priceText": "27,450원",
+      "link": "https://toss.shopping/_m/hQV3d1Zq",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-18/4f4737ed-0c96-4da0-bdfc-dae5adb784e1.jpeg",
+      "priceText": "8,750원",
       "discountRate": 63,
-      "dealEndsAt": "2026-10-19T00:00:00+09:00"
+      "dealEndsAt": "2026-10-20T00:00:00+09:00"
     },
     {
-      "id": "deal-1380458593",
-      "name": "인기 스낵 14종 세트, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/DTfEWuAy",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-18/02554d6c-a5e4-4878-9ff7-64eba895bb19.jpeg",
-      "priceText": "12,970원",
-      "discountRate": 37,
-      "dealEndsAt": "2026-10-19T00:00:00+09:00"
+      "id": "deal-1156454497",
+      "name": "보라톡스 파비플로라 알파CD 보라워터 스틱, 18g, 15포, 5박스",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/xtVm5OR9",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-03/a1986409-5c7f-40a3-9c3b-3546ef0779f9.jpeg",
+      "priceText": "27,380원",
+      "discountRate": 89,
+      "dealEndsAt": "2026-10-20T00:00:00+09:00"
     },
     {
-      "id": "deal-88276283",
-      "name": "요거프레소 컵커피, 카페라떼 200ml 10개 + 카페모카 200ml 10개, 20개",
+      "id": "deal-2651739807",
+      "name": "오즈랜드 두부과자, 40g, 12개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/rblDPTnd",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-13/91d9faf8-52be-4dca-9794-841e7949a539.png",
-      "priceText": "12,900원",
+      "link": "https://toss.shopping/_m/DJdMhG2q",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-10-16/15da9d6a-4f01-48df-8cff-b4c84a8779e0.jpeg",
+      "priceText": "7,990원",
       "discountRate": 66,
-      "dealEndsAt": "2026-10-19T00:00:00+09:00"
-    },
-    {
-      "id": "deal-194042979",
-      "name": "해남 호풍미 호박고구마, 대, 5kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/FH7yYRL4",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-02-02/29aedeab-abc6-4b2c-86f7-31bcc48005aa.jpeg",
-      "priceText": "10,370원",
-      "discountRate": 67,
-      "dealEndsAt": "2026-10-19T00:00:00+09:00"
+      "dealEndsAt": "2026-10-20T00:00:00+09:00"
     },
     {
       "id": "sl-1268069353",
@@ -235,8 +225,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/f1PrbQv8",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/YTRjYWY4/QVBEei9Qc1AvbnRXL09lSHEvRlJlVStPTnNoMGMrNm5pNC9SZkh6MEVjT1g.png",
-      "priceText": "11,500원",
-      "discountRate": 27
+      "priceText": "15,900원"
     },
     {
       "id": "sl-83885933",
@@ -253,8 +242,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/xaT5Ihld",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-09-28/24f3a059-d302-4026-a43b-817ff2342ca0.jpeg",
-      "priceText": "9,900원",
-      "discountRate": 50
+      "priceText": "10,800원",
+      "discountRate": 46
     },
     {
       "id": "sl-2567903989",
@@ -325,7 +314,7 @@
       "category": "안전",
       "link": "https://toss.im/_m/ngvzUlzt",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-09-13/12314f43-0024-45a8-8fc9-405bbc7ebaa4.png",
-      "priceText": "9,672원",
+      "priceText": "9,670원",
       "discountRate": 67,
       "seasons": [
         "winter"
@@ -446,8 +435,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Lv1LONfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/e8def6ef-db30-4dd2-9f9b-8aa6695cb9bd.jpeg",
-      "priceText": "28,400원",
-      "discountRate": 59
+      "priceText": "29,900원",
+      "discountRate": 56
     },
     {
       "id": "sl-173414675",
@@ -494,8 +483,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/7uwQie1b",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-06-08/58143e75-1c1e-4550-b944-7c65a952e2a5.png",
-      "priceText": "14,980원",
-      "discountRate": 24
+      "priceText": "13,980원",
+      "discountRate": 29
     },
     {
       "id": "sl-155910995",
@@ -503,8 +492,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/RrqcxZgh",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmE4NmVh/QU9NeGpQbmtaRTN1TWVUelR0YXhwN09RNGZIa0R6dnc1T1RrSHh2anVRNXY.png",
-      "priceText": "11,900원",
-      "discountRate": 22
+      "priceText": "9,460원",
+      "discountRate": 38
     },
     {
       "id": "sl-2602285881",
@@ -512,8 +501,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/3pmmoPvi",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
-      "priceText": "8,800원",
-      "discountRate": 26
+      "priceText": "9,590원",
+      "discountRate": 20
     },
     {
       "id": "sl-82144865",
@@ -530,8 +519,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/FNmLg3bv",
       "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
-      "priceText": "13,200원",
-      "discountRate": 45,
+      "priceText": "14,900원",
+      "discountRate": 37,
       "seasons": [
         "spring",
         "summer",
@@ -563,8 +552,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/HX12blfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
-      "priceText": "9,900원",
-      "discountRate": 49
+      "priceText": "13,900원",
+      "discountRate": 29
     },
     {
       "id": "sl-142778727",
@@ -572,8 +561,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/1QpjO6E",
       "imageUrl": "https://shopping.toss.im/live/temp/2025-07-16/2e770c8c-89dc-4452-bbfb-d3d79c8cdae1.jpeg",
-      "priceText": "15,900원",
-      "discountRate": 30
+      "priceText": "14,900원",
+      "discountRate": 34
     },
     {
       "id": "sl-303265905",
@@ -756,8 +745,7 @@
       "category": "장비",
       "link": "https://toss.im/_m/jkGqPRkd",
       "imageUrl": "https://shopping.toss.im/1b3/live/product/419628951/1b384069-29db-46d4-8eff-e0f0e3c85573.jpg",
-      "priceText": "5,077원",
-      "discountRate": 10,
+      "priceText": "5,099원",
       "seasons": [
         "spring",
         "autumn",
@@ -811,8 +799,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/DzdMm2xo",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/7d6b6b76-f29f-4974-931b-769cc9a90c8c.png",
-      "priceText": "9,400원",
-      "discountRate": 76
+      "priceText": "12,950원",
+      "discountRate": 67
     },
     {
       "id": "sl-167905953",
@@ -879,8 +867,8 @@
       "category": "의류",
       "link": "https://toss.im/_m/n16XSMUD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTljYjgz/TlVwVE5PdWRucU9LMjl5T0ROU01iSGRqTzBxaXRtTWJDNzBPT05zSjJ1VT0.png",
-      "priceText": "5,553원",
-      "discountRate": 27,
+      "priceText": "5,608원",
+      "discountRate": 26,
       "seasons": [
         "summer"
       ]
@@ -1099,8 +1087,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/nXfGwh6h",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
-      "priceText": "9,810원",
-      "discountRate": 53,
+      "priceText": "15,210원",
+      "discountRate": 27,
       "seasons": [
         "autumn",
         "winter"
@@ -1125,8 +1113,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/3jl5Z7Wj",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MDcwYWEw/QVBXL3pSdWM4OGpqQXRjaDIvTWN2aGpUeG5BNEE5SkxvYWxTeEMvWGVvNTA.png",
-      "priceText": "20,900원",
-      "discountRate": 25
+      "priceText": "20,400원",
+      "discountRate": 26
     },
     {
       "id": "sl-140279105",
