@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-19T03:30:06.924Z",
+  "updatedAt": "2026-10-19T09:30:08.065Z",
   "items": [
     {
       "id": "deal-2620368191",
@@ -223,8 +223,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/jnLVK8gc",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MWNhMTY0/SjFJOFllUEdlOU80clFlR1orTnJHeDFTaGpnTTRjNTBIbUd4bWFWV2VlWT0.png",
-      "priceText": "12,900원",
-      "discountRate": 27
+      "priceText": "11,500원",
+      "discountRate": 35
     },
     {
       "id": "sl-1221294259",
@@ -259,6 +259,15 @@
         "spring",
         "summer"
       ]
+    },
+    {
+      "id": "sl-2511369781",
+      "name": "햅푸드 구운계란, 대란, 30구, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/lRPzesIe",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
+      "priceText": "11,500원",
+      "discountRate": 45
     },
     {
       "id": "sl-2274809577",
@@ -365,8 +374,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/pJCSSxSk",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MmE3ZmRm/QUprT2poc3N5M0hrOC9RZUM1eUx3L1JESmp3UCtOVEw4QThMUEEveDlNdnc.png",
-      "priceText": "21,650원",
-      "discountRate": 19,
+      "priceText": "18,890원",
+      "discountRate": 29,
       "seasons": [
         "summer"
       ]
@@ -477,15 +486,6 @@
       "discountRate": 29
     },
     {
-      "id": "sl-155910995",
-      "name": "프링글스, 오리지날 1개 + 양파 1개 + 매운 1개 + 치즈 1개 + 버터 1개, 110g, 5개",
-      "category": "음식",
-      "link": "https://toss.im/_m/RrqcxZgh",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NmE4NmVh/QU9NeGpQbmtaRTN1TWVUelR0YXhwN09RNGZIa0R6dnc1T1RrSHh2anVRNXY.png",
-      "priceText": "9,460원",
-      "discountRate": 38
-    },
-    {
       "id": "sl-2602285881",
       "name": "크라운제과 인기스낵모음, 12팩, 1개",
       "category": "음식",
@@ -542,8 +542,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/HX12blfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
-      "priceText": "13,900원",
-      "discountRate": 29
+      "priceText": "9,990원",
+      "discountRate": 49
     },
     {
       "id": "sl-142778727",
@@ -551,8 +551,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/1QpjO6E",
       "imageUrl": "https://shopping.toss.im/live/temp/2025-07-16/2e770c8c-89dc-4452-bbfb-d3d79c8cdae1.jpeg",
-      "priceText": "14,900원",
-      "discountRate": 34
+      "priceText": "13,290원",
+      "discountRate": 41
     },
     {
       "id": "sl-303265905",
