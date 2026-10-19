@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-18T21:30:07.158Z",
+  "updatedAt": "2026-10-19T03:30:06.924Z",
   "items": [
-    {
-      "id": "deal-1438581065",
-      "name": "연세우유 세브란스 A2 프로틴, 초콜릿, 190ml, 32개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/zT4rsOis",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-10/f41ad4fd-098c-48fd-aba3-d7d617fdb407.jpeg",
-      "priceText": "26,560원",
-      "discountRate": 55,
-      "dealEndsAt": "2026-10-20T00:00:00+09:00"
-    },
     {
       "id": "deal-2620368191",
       "name": "형기네 건오징어 몸통만, 5-7미, 150g, 1개",
@@ -700,15 +690,6 @@
       "discountRate": 28
     },
     {
-      "id": "sl-138210571",
-      "name": "가드데이 프리미엄 물티슈, 캡형, 100매, 10팩",
-      "category": "안전",
-      "link": "https://toss.im/_m/dw3UqeLy",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/Njk1Nzcy/QU5ha1JOZVVwRnJUTjdReTI3ZGtic0Z1UkRRbFExNjk3RTFiMzJ6ZG05a3I.png",
-      "priceText": "8,980원",
-      "discountRate": 30
-    },
-    {
       "id": "sl-1899848197",
       "name": "트렉스타 마젤란 등산가방, 네이비, 32L, 1개",
       "category": "장비",
@@ -1087,8 +1068,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/nXfGwh6h",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
-      "priceText": "15,210원",
-      "discountRate": 27,
+      "priceText": "9,810원",
+      "discountRate": 53,
       "seasons": [
         "autumn",
         "winter"
