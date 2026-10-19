@@ -1,36 +1,46 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-19T09:30:08.065Z",
+  "updatedAt": "2026-10-19T15:30:11.306Z",
   "items": [
     {
-      "id": "deal-2620368191",
-      "name": "형기네 건오징어 몸통만, 5-7미, 150g, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/hQV3d1Zq",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-18/4f4737ed-0c96-4da0-bdfc-dae5adb784e1.jpeg",
-      "priceText": "8,750원",
-      "discountRate": 63,
-      "dealEndsAt": "2026-10-20T00:00:00+09:00"
+      "id": "deal-9032411",
+      "name": "여성용 프리미엄 4계절 무지 중목 양말, 화이트, 10켤레",
+      "category": "의류",
+      "link": "https://toss.shopping/_m/FLVzoufc",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZWI1Njcx/QUxLMlZXbXRWSXFXb3RSZEs5VldxdFZ6MW1vdFZRcXExTXQwcXExVnFwVlc.png",
+      "priceText": "7,360원",
+      "discountRate": 47,
+      "dealEndsAt": "2026-10-21T00:00:00+09:00"
     },
     {
-      "id": "deal-1156454497",
-      "name": "보라톡스 파비플로라 알파CD 보라워터 스틱, 18g, 15포, 5박스",
+      "id": "deal-1113227935",
+      "name": "꼬기다 스틱 닭가슴살, 5종혼합, 100g, 30개",
       "category": "장비",
-      "link": "https://toss.shopping/_m/xtVm5OR9",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-03/a1986409-5c7f-40a3-9c3b-3546ef0779f9.jpeg",
-      "priceText": "27,380원",
-      "discountRate": 89,
-      "dealEndsAt": "2026-10-20T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/bg1wmKW9",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDIyODk1/QU94QnhTczZuREpoak53T1IxS0d5Rnd4T1NHODNpTXBpY1MrWGdNQnk4QjI.png",
+      "priceText": "31,870원",
+      "discountRate": 67,
+      "dealEndsAt": "2026-10-21T00:00:00+09:00"
     },
     {
-      "id": "deal-2651739807",
-      "name": "오즈랜드 두부과자, 40g, 12개",
+      "id": "deal-12731647",
+      "name": "경남제약 로얄플러스 멀티비타민, 900mg, 60정, 2개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/DJdMhG2q",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-10-16/15da9d6a-4f01-48df-8cff-b4c84a8779e0.jpeg",
-      "priceText": "7,990원",
-      "discountRate": 66,
-      "dealEndsAt": "2026-10-20T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/NJYqZHEp",
+      "imageUrl": "https://shopping.toss.im/live/product/702293/5b7c291a-b388-45c7-b934-3bd8ad8b5073.jpg",
+      "priceText": "7,900원",
+      "discountRate": 92,
+      "dealEndsAt": "2026-10-21T00:00:00+09:00"
+    },
+    {
+      "id": "deal-1961145549",
+      "name": "리얼닥터 비피더스 생 유산균, 30캡슐, 3개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/Tct8E0X4",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NGZlYjUw/Yjluek04YTAzTTZiTm14bTR3dlROb3ptTGNuR3RJZVpHSmtmYzBlUjRFND0.png",
+      "priceText": "14,560원",
+      "discountRate": 75,
+      "dealEndsAt": "2026-10-21T00:00:00+09:00"
     },
     {
       "id": "sl-1268069353",
@@ -191,8 +201,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,900원",
-      "discountRate": 15,
+      "priceText": "15,200원",
+      "discountRate": 19,
       "seasons": [
         "spring",
         "summer",
@@ -484,6 +494,15 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-06-08/58143e75-1c1e-4550-b944-7c65a952e2a5.png",
       "priceText": "13,980원",
       "discountRate": 29
+    },
+    {
+      "id": "sl-155910995",
+      "name": "프링글스, 오리지날 1개 + 양파 1개 + 매운 1개 + 치즈 1개 + 버터 1개, 110g, 5개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/RrqcxZgh",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NmE4NmVh/QU9NeGpQbmtaRTN1TWVUelR0YXhwN09RNGZIa0R6dnc1T1RrSHh2anVRNXY.png",
+      "priceText": "9,890원",
+      "discountRate": 35
     },
     {
       "id": "sl-2602285881",
