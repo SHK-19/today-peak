@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-20T15:30:11.568Z",
+  "updatedAt": "2026-10-20T21:30:08.329Z",
   "items": [
-    {
-      "id": "deal-1715724739",
-      "name": "경북 안동 시나노골드 사과, 가정용, 대과, 5kg, 12-16과 , 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/5yfq7Yph",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-27/52666f36-c708-4f55-a1db-d94333f3b453.jpeg",
-      "priceText": "22,100원",
-      "discountRate": 68,
-      "dealEndsAt": "2026-10-22T00:00:00+09:00"
-    },
     {
       "id": "deal-2224998183",
       "name": "닥터피츠 메타프로 슬림핏 유산균, 2.5g, 30포, 3박스",
@@ -20,6 +10,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-06-10/c9fbc3c7-54a6-42d7-ba57-9ad7f6f3316e.jpeg",
       "priceText": "40,165원",
       "discountRate": 59,
+      "dealEndsAt": "2026-10-22T00:00:00+09:00"
+    },
+    {
+      "id": "deal-1715724739",
+      "name": "경북 안동 시나노골드 사과, 가정용, 대과, 5kg, 12-16과 , 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/5yfq7Yph",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-04-27/52666f36-c708-4f55-a1db-d94333f3b453.jpeg",
+      "priceText": "22,100원",
+      "discountRate": 68,
       "dealEndsAt": "2026-10-22T00:00:00+09:00"
     },
     {
