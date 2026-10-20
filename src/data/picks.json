@@ -1,25 +1,45 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-19T21:30:10.080Z",
+  "updatedAt": "2026-10-20T03:30:10.529Z",
   "items": [
     {
-      "id": "deal-150749285",
-      "name": "미오솔 엑스트라버진 올리브 오일, 500ml, 1병",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/vb4ipCCt",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YWFlZjgw/QUw1MmkxalZpMzFqS2p6SFBPbkRQT09WUE9xZGJYSTYwZFd1NDZNcVVGVlU.png",
-      "priceText": "8,600원",
-      "discountRate": 58,
+      "id": "deal-9032411",
+      "name": "여성용 프리미엄 4계절 무지 중목 양말, 화이트, 10켤레",
+      "category": "의류",
+      "link": "https://toss.shopping/_m/FLVzoufc",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZWI1Njcx/QUxLMlZXbXRWSXFXb3RSZEs5VldxdFZ6MW1vdFZRcXExTXQwcXExVnFwVlc.png",
+      "priceText": "7,360원",
+      "discountRate": 47,
       "dealEndsAt": "2026-10-21T00:00:00+09:00"
     },
     {
-      "id": "deal-2636693861",
-      "name": "갓성비 여성용 로맨틱 모던 스트라이프 양말, FREE(220-250mm), 5종1세트, 1세트",
-      "category": "의류",
-      "link": "https://toss.shopping/_m/fXvEPN7q",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-03/34890347-49d1-49ef-8c19-ce2178082114.jpeg",
-      "priceText": "7,500원",
-      "discountRate": 69,
+      "id": "deal-12731647",
+      "name": "경남제약 로얄플러스 멀티비타민, 900mg, 60정, 2개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/NJYqZHEp",
+      "imageUrl": "https://shopping.toss.im/live/product/702293/5b7c291a-b388-45c7-b934-3bd8ad8b5073.jpg",
+      "priceText": "7,900원",
+      "discountRate": 92,
+      "dealEndsAt": "2026-10-21T00:00:00+09:00"
+    },
+    {
+      "id": "deal-1113227935",
+      "name": "꼬기다 스틱 닭가슴살, 5종혼합, 100g, 30개",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/bg1wmKW9",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDIyODk1/QU94QnhTczZuREpoak53T1IxS0d5Rnd4T1NHODNpTXBpY1MrWGdNQnk4QjI.png",
+      "priceText": "31,870원",
+      "discountRate": 67,
+      "dealEndsAt": "2026-10-21T00:00:00+09:00"
+    },
+    {
+      "id": "deal-1961145549",
+      "name": "리얼닥터 비피더스 생 유산균, 30캡슐, 3개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/Tct8E0X4",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NGZlYjUw/Yjluek04YTAzTTZiTm14bTR3dlROb3ptTGNuR3RJZVpHSmtmYzBlUjRFND0.png",
+      "priceText": "14,560원",
+      "discountRate": 75,
       "dealEndsAt": "2026-10-21T00:00:00+09:00"
     },
     {
@@ -181,8 +201,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,200원",
-      "discountRate": 19,
+      "priceText": "15,900원",
+      "discountRate": 15,
       "seasons": [
         "spring",
         "summer",
