@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-20T03:30:10.529Z",
+  "updatedAt": "2026-10-20T09:30:08.400Z",
   "items": [
     {
       "id": "deal-9032411",
@@ -20,16 +20,6 @@
       "imageUrl": "https://shopping.toss.im/live/product/702293/5b7c291a-b388-45c7-b934-3bd8ad8b5073.jpg",
       "priceText": "7,900원",
       "discountRate": 92,
-      "dealEndsAt": "2026-10-21T00:00:00+09:00"
-    },
-    {
-      "id": "deal-1113227935",
-      "name": "꼬기다 스틱 닭가슴살, 5종혼합, 100g, 30개",
-      "category": "장비",
-      "link": "https://toss.shopping/_m/bg1wmKW9",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NDIyODk1/QU94QnhTczZuREpoak53T1IxS0d5Rnd4T1NHODNpTXBpY1MrWGdNQnk4QjI.png",
-      "priceText": "31,870원",
-      "discountRate": 67,
       "dealEndsAt": "2026-10-21T00:00:00+09:00"
     },
     {
@@ -247,10 +237,10 @@
     },
     {
       "id": "sl-2567903989",
-      "name": "경북 홍로사과, 14-16과, 2kg, 1박스",
+      "name": "아침애딴 경북 부사사과, 14-16과, 2kg, 1박스",
       "category": "음식",
       "link": "https://toss.im/_m/dSdrXIAe",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/477ae75a-02ab-449d-ab8d-131c9c98fb91.jpeg",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-10-20/1e4e15cb-a7d2-416c-a548-ba16a14f4428.jpeg",
       "priceText": "8,900원",
       "discountRate": 59,
       "seasons": [
@@ -578,7 +568,7 @@
       "name": "리벤스 라벤더 바이올렛 물티슈, 100매, 10팩",
       "category": "안전",
       "link": "https://toss.im/_m/zKrmkKw3",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZmZmMTE0/QUpiRjF2T3ozbTBtYXhPTnJHMW5ONHl3ZkhJZWx1RmEwNGJ4blBOUzFLMXQ.png",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-01-08/15629a7e-56c2-4f73-8896-6481eaffdbca.jpeg",
       "priceText": "8,800원",
       "discountRate": 70
     },
