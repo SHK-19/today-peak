@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-21T03:30:07.992Z",
+  "updatedAt": "2026-10-21T09:30:10.005Z",
   "items": [
     {
       "id": "deal-2224998183",
@@ -102,6 +102,15 @@
         "autumn",
         "winter"
       ]
+    },
+    {
+      "id": "sl-105123055",
+      "name": "프로스펙스 액티브 슬개골 보호대, 블랙, 1개",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/FYJZvyWl",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-10-21/30d482df-5b83-4967-b78e-b673626f35a0.jpeg",
+      "priceText": "10,088원",
+      "discountRate": 49
     },
     {
       "id": "sl-1467863751",
@@ -427,7 +436,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,741원",
+      "priceText": "14,730원",
       "discountRate": 18
     },
     {
@@ -793,6 +802,15 @@
         "autumn",
         "winter"
       ]
+    },
+    {
+      "id": "sl-2636581431",
+      "name": "블랙울프 충전식 캡라이트 LED 헤드랜턴, Red, 1개",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/zeO6XtPk",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-27/2ed5296f-05a7-49e0-ab33-76268f59190d.jpeg",
+      "priceText": "9,200원",
+      "discountRate": 58
     },
     {
       "id": "sl-2523779719",
