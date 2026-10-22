@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-21T21:30:07.772Z",
+  "updatedAt": "2026-10-22T03:30:08.218Z",
   "items": [
     {
       "id": "deal-183834725",
@@ -200,8 +200,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,200원",
-      "discountRate": 19,
+      "priceText": "15,900원",
+      "discountRate": 15,
       "seasons": [
         "spring",
         "summer",
@@ -482,8 +482,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/FkzUHGW9",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MzIzNjk4/QUt0MDdUWkYrNXk1MUU1anpudVJuQ3VPUlBtVUlacEhhMWZ2bUxhK0ZIZE4.png",
-      "priceText": "22,890원",
-      "discountRate": 18
+      "priceText": "22,100원",
+      "discountRate": 21
     },
     {
       "id": "sl-2163534637",
@@ -757,8 +757,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/LNHTVX5h",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/OTJhMzFi/QU9hSGpwcndoNGVlakVPTmZuTk9JZmxua1R3OEpHSGw0ekVlc3g2YWNjN0Q.png",
-      "priceText": "13,900원",
-      "discountRate": 30
+      "priceText": "13,400원",
+      "discountRate": 32
     },
     {
       "id": "sl-1568234361",
@@ -1068,6 +1068,18 @@
       ]
     },
     {
+      "id": "sl-2226153335",
+      "name": "껍질째 먹는 세척사과, 16-25과 내외, 3kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/RSFsbEB4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/d289f62f-61d3-4143-b707-8a62b8fc5858.png",
+      "priceText": "11,900원",
+      "discountRate": 73,
+      "seasons": [
+        "autumn"
+      ]
+    },
+    {
       "id": "sl-2227928565",
       "name": "일품자연 대추방울토마토, 로얄과, 2kg, 1개",
       "category": "음식",
@@ -1132,19 +1144,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2Q5OTMy/QUtkYk9XbU80YzAvdGxZNjNldGUwclliNFZqTGxUNGxKR3RXVk5xVjRhdGE.png",
       "priceText": "15,900원",
       "discountRate": 55
-    },
-    {
-      "id": "sl-2626454209",
-      "name": "곶감 호두말이 선물세트, 330g, 20개",
-      "category": "음식",
-      "link": "https://toss.im/_m/zSORm0rm",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-22/dacfa7f5-8961-46f2-9cfb-a698ba86d6b3.png",
-      "priceText": "21,900원",
-      "discountRate": 29,
-      "seasons": [
-        "autumn",
-        "winter"
-      ]
     },
     {
       "id": "sl-9522489",
