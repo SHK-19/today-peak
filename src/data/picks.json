@@ -1,17 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-22T15:30:08.271Z",
+  "updatedAt": "2026-10-22T21:30:07.797Z",
   "items": [
-    {
-      "id": "deal-2431229129",
-      "name": "국내산 세척사과, 2kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/felptu11",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-07/a632e06d-22bc-4d02-a12a-6a532bc5197a.png",
-      "priceText": "7,900원",
-      "discountRate": 68,
-      "dealEndsAt": "2026-10-24T00:00:00+09:00"
-    },
     {
       "id": "deal-2651298397",
       "name": "제주 서귀포 감귤, 특품, 로얄과, 10kg, 1박스",
@@ -20,6 +10,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-31/86a2246c-f034-4d82-b1b7-1fcb60db2dea.png",
       "priceText": "16,140원",
       "discountRate": 76,
+      "dealEndsAt": "2026-10-24T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2431229129",
+      "name": "국내산 세척사과, 2kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/felptu11",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-07/a632e06d-22bc-4d02-a12a-6a532bc5197a.png",
+      "priceText": "7,900원",
+      "discountRate": 68,
       "dealEndsAt": "2026-10-24T00:00:00+09:00"
     },
     {
