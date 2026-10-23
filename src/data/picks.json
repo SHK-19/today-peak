@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-23T03:30:08.075Z",
+  "updatedAt": "2026-10-23T09:30:07.227Z",
   "items": [
     {
       "id": "deal-2651298397",
@@ -10,16 +10,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-31/86a2246c-f034-4d82-b1b7-1fcb60db2dea.png",
       "priceText": "16,140원",
       "discountRate": 76,
-      "dealEndsAt": "2026-10-24T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2431229129",
-      "name": "국내산 세척사과, 2kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/felptu11",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-07/a632e06d-22bc-4d02-a12a-6a532bc5197a.png",
-      "priceText": "7,900원",
-      "discountRate": 68,
       "dealEndsAt": "2026-10-24T00:00:00+09:00"
     },
     {
@@ -710,7 +700,7 @@
     },
     {
       "id": "sl-1384730319",
-      "name": "하늘선물 캡형 물티슈, 100매, 285g, 1개",
+      "name": "하늘선물 캡형 물티슈, 100매, 1개",
       "category": "안전",
       "link": "https://toss.im/_m/nGXDyZRv",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTY4ZjAy/TkpNazVLVWtabk9TV2JadDJaS1pwcG1rNXhsdEdSbEpFTXprbE9ja08yTT0.png",
