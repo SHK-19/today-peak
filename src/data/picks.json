@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-22T21:30:07.797Z",
+  "updatedAt": "2026-10-23T03:30:08.075Z",
   "items": [
     {
       "id": "deal-2651298397",
@@ -30,6 +30,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-24/4deed396-8f66-498c-9755-d0436fef4ce7.jpeg",
       "priceText": "11,600원",
       "discountRate": 35,
+      "dealEndsAt": "2026-10-24T00:00:00+09:00"
+    },
+    {
+      "id": "deal-12832831",
+      "name": "풀무원 샘물 생수, 무라벨, 500ml, 40개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/FlqIOr7m",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-04-20/c9d85db0-c752-46f7-92e2-3e40aa80dc0e.jpeg",
+      "priceText": "6,900원",
+      "discountRate": 61,
       "dealEndsAt": "2026-10-24T00:00:00+09:00"
     },
     {
@@ -443,8 +453,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Lv1LONfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/e8def6ef-db30-4dd2-9f9b-8aa6695cb9bd.jpeg",
-      "priceText": "29,900원",
-      "discountRate": 56
+      "priceText": "28,550원",
+      "discountRate": 58
     },
     {
       "id": "sl-173414675",
@@ -527,8 +537,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/FNmLg3bv",
       "imageUrl": "https://shopping.toss.im/b26/live/product/55815601/b2624db5-e274-4bfd-a48a-8a1176117dee.jpg",
-      "priceText": "14,900원",
-      "discountRate": 37,
+      "priceText": "15,300원",
+      "discountRate": 36,
       "seasons": [
         "spring",
         "summer",
