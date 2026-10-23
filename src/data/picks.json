@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-23T15:30:12.014Z",
+  "updatedAt": "2026-10-23T21:30:07.464Z",
   "items": [
     {
       "id": "deal-109281497",
@@ -40,16 +40,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MWFlMjBj/VytGTmNzelZEdUVOcFIzU01lc2E3aUY2RWF4QWhxRTNjYXg2a0RKUGNXMD0.png",
       "priceText": "28,370원",
       "discountRate": 64,
-      "dealEndsAt": "2026-10-25T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2511369785",
-      "name": "햅푸드 구운계란, 대란, 30구, 2개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/5DsAwYUl",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "12,000원",
-      "discountRate": 69,
       "dealEndsAt": "2026-10-25T00:00:00+09:00"
     },
     {
@@ -345,8 +335,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/lRPzesIe",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
-      "priceText": "11,500원",
-      "discountRate": 45
+      "priceText": "11,000원",
+      "discountRate": 47
     },
     {
       "id": "sl-2274809577",
