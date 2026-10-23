@@ -1,36 +1,106 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-23T09:30:07.227Z",
+  "updatedAt": "2026-10-23T15:30:12.014Z",
   "items": [
     {
-      "id": "deal-2651298397",
-      "name": "제주 서귀포 감귤, 특품, 로얄과, 10kg, 1박스",
+      "id": "deal-109281497",
+      "name": "하루견과 The오리지널, 20g, 100봉",
       "category": "음식",
-      "link": "https://toss.shopping/_m/hHC2xOJD",
+      "link": "https://toss.shopping/_m/bqy2FBGs",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-06-19/4800bbaf-5c16-46fa-ad7c-dce26078088c.jpeg",
+      "priceText": "41,920원",
+      "discountRate": 79,
+      "dealEndsAt": "2026-10-25T00:00:00+09:00"
+    },
+    {
+      "id": "deal-172410971",
+      "name": "엔도르시 구름 키링 스웨이드 백팩 숄더백, 커피, FREE, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/R3U0y5HD",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YmFhYzhh/VXo4MlptcVJ6TTJzWnVzdGt6eXpNM0dKVE14dTUyN05yZFNiTTVWVVpFdz0.png",
+      "priceText": "15,460원",
+      "discountRate": 60,
+      "dealEndsAt": "2026-10-25T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2651298395",
+      "name": "제주 서귀포 감귤, 특품, 소과, 10kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/ZFBjzhFp",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-31/86a2246c-f034-4d82-b1b7-1fcb60db2dea.png",
-      "priceText": "16,140원",
-      "discountRate": 76,
-      "dealEndsAt": "2026-10-24T00:00:00+09:00"
+      "priceText": "16,990원",
+      "discountRate": 74,
+      "dealEndsAt": "2026-10-25T00:00:00+09:00"
     },
     {
-      "id": "deal-2651788481",
-      "name": "마운틴앤필드 다크초콜릿아몬드, 20g, 20개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/v7wq02db",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-24/4deed396-8f66-498c-9755-d0436fef4ce7.jpeg",
-      "priceText": "11,600원",
-      "discountRate": 35,
-      "dealEndsAt": "2026-10-24T00:00:00+09:00"
+      "id": "deal-2122123131",
+      "name": "몸통만 자른 누드오징어 스틱, 150g, 4봉",
+      "category": "장비",
+      "link": "https://toss.shopping/_m/j76YqRGn",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWFlMjBj/VytGTmNzelZEdUVOcFIzU01lc2E3aUY2RWF4QWhxRTNjYXg2a0RKUGNXMD0.png",
+      "priceText": "28,370원",
+      "discountRate": 64,
+      "dealEndsAt": "2026-10-25T00:00:00+09:00"
     },
     {
-      "id": "deal-12832831",
-      "name": "풀무원 샘물 생수, 무라벨, 500ml, 40개",
+      "id": "deal-2511369785",
+      "name": "햅푸드 구운계란, 대란, 30구, 2개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/FlqIOr7m",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-04-20/c9d85db0-c752-46f7-92e2-3e40aa80dc0e.jpeg",
-      "priceText": "6,900원",
-      "discountRate": 61,
-      "dealEndsAt": "2026-10-24T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/5DsAwYUl",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NzRhZWQ5/QU0rWlphMWxqamI5WkQyYVNaSjVpWEQyVWRoeXg4bk01N094enNGTSthZUI.png",
+      "priceText": "12,000원",
+      "discountRate": 69,
+      "dealEndsAt": "2026-10-25T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2656397611",
+      "name": "제주 감귤, 특품, 중과, 5kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/rq4w1Hrh",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-15/4b32b766-a6b7-4f08-ab2d-37c3e350759c.png",
+      "priceText": "10,950원",
+      "discountRate": 80,
+      "dealEndsAt": "2026-10-25T00:00:00+09:00"
+    },
+    {
+      "id": "deal-1112440899",
+      "name": "숨 시그니처 물티슈, 63gsm, 70매, 10팩",
+      "category": "안전",
+      "link": "https://toss.shopping/_m/PJnR6OFf",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZGFhZTVh/QVB1QlhwdlZ0VmpuUzd3YTV2ODBheFpBcGJsR3EzUXladmY4cTFxb1FkYTU.png",
+      "priceText": "6,990원",
+      "discountRate": 53,
+      "dealEndsAt": "2026-10-25T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2625255849",
+      "name": "일양약품 우리가족 멀티비타민 츄어블, 60정, 2개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/nfTfQYNe",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-23/710346bd-e4bc-4303-86ad-bc00c2e54660.png",
+      "priceText": "6,500원",
+      "discountRate": 78,
+      "dealEndsAt": "2026-10-25T00:00:00+09:00"
+    },
+    {
+      "id": "deal-651526161",
+      "name": "스파클 생수, 무라벨, 500ml, 80개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/frKgjPBd",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
+      "priceText": "11,900원",
+      "discountRate": 50,
+      "dealEndsAt": "2026-10-25T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2334877747",
+      "name": "맘스럽 아토클래식 물티슈, 100매입, 20팩",
+      "category": "안전",
+      "link": "https://toss.shopping/_m/dznkAvcb",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-01/cbcba31d-9c3d-4336-b01c-da1112ebe230.jpeg",
+      "priceText": "10,710원",
+      "discountRate": 56,
+      "dealEndsAt": "2026-10-25T00:00:00+09:00"
     },
     {
       "id": "sl-1268069353",
@@ -744,7 +814,8 @@
       "category": "장비",
       "link": "https://toss.im/_m/jkGqPRkd",
       "imageUrl": "https://shopping.toss.im/1b3/live/product/419628951/1b384069-29db-46d4-8eff-e0f0e3c85573.jpg",
-      "priceText": "5,099원",
+      "priceText": "5,077원",
+      "discountRate": 10,
       "seasons": [
         "spring",
         "autumn",
@@ -875,8 +946,8 @@
       "category": "의류",
       "link": "https://toss.im/_m/n16XSMUD",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MTljYjgz/TlVwVE5PdWRucU9LMjl5T0ROU01iSGRqTzBxaXRtTWJDNzBPT05zSjJ1VT0.png",
-      "priceText": "5,608원",
-      "discountRate": 26,
+      "priceText": "5,553원",
+      "discountRate": 27,
       "seasons": [
         "summer"
       ]
