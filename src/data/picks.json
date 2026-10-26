@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-25T21:30:07.401Z",
+  "updatedAt": "2026-10-26T03:30:07.841Z",
   "items": [
     {
       "id": "deal-1964260313",
@@ -453,8 +453,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Lv1LONfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/e8def6ef-db30-4dd2-9f9b-8aa6695cb9bd.jpeg",
-      "priceText": "29,900원",
-      "discountRate": 56
+      "priceText": "28,900원",
+      "discountRate": 58
     },
     {
       "id": "sl-173414675",
