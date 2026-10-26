@@ -1,7 +1,17 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-26T15:30:09.728Z",
+  "updatedAt": "2026-10-26T21:30:07.899Z",
   "items": [
+    {
+      "id": "deal-2633518971",
+      "name": "힘내고 허니너트바, 35g, 36개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/3SfAeyWy",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/21618f07-dec2-4f17-8b9a-f7c962bfe6ac.jpeg",
+      "priceText": "14,800원",
+      "discountRate": 72,
+      "dealEndsAt": "2026-10-28T00:00:00+09:00"
+    },
     {
       "id": "deal-2016940367",
       "name": "올바른 식물성 엑스트라버진 올리브오일 캡슐 100, 30캡슐, 12박스",
@@ -10,16 +20,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/ZjY3OTlm/QUxGTHRjNG15KzZsU3hSVm5EVzhLbk5OTGJVc09XanplYnEwYloxUzFyamE.png",
       "priceText": "27,570원",
       "discountRate": 78,
-      "dealEndsAt": "2026-10-28T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2651609355",
-      "name": "메리플라워 여성 중목 양말 5종, FREE, 10켤레",
-      "category": "의류",
-      "link": "https://toss.shopping/_m/VbITiu92",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/d143c129-bc49-402f-a565-fecdad055eb4.jpeg",
-      "priceText": "8,340원",
-      "discountRate": 58,
       "dealEndsAt": "2026-10-28T00:00:00+09:00"
     },
     {
