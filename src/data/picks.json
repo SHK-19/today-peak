@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-26T03:30:07.841Z",
+  "updatedAt": "2026-10-26T09:30:07.498Z",
   "items": [
     {
       "id": "deal-1964260313",
@@ -210,8 +210,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,900원",
-      "discountRate": 15,
+      "priceText": "15,000원",
+      "discountRate": 20,
       "seasons": [
         "spring",
         "summer",
@@ -235,15 +235,6 @@
       "link": "https://toss.im/_m/f1PrbQv8",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/YTRjYWY4/QVBEei9Qc1AvbnRXL09lSHEvRlJlVStPTnNoMGMrNm5pNC9SZkh6MEVjT1g.png",
       "priceText": "15,900원"
-    },
-    {
-      "id": "sl-83885933",
-      "name": "머거본 달콤한 직화육포, 20g, 10봉지",
-      "category": "음식",
-      "link": "https://toss.im/_m/jnLVK8gc",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/MWNhMTY0/SjFJOFllUEdlOU80clFlR1orTnJHeDFTaGpnTTRjNTBIbUd4bWFWV2VlWT0.png",
-      "priceText": "11,500원",
-      "discountRate": 35
     },
     {
       "id": "sl-1221294259",
@@ -426,7 +417,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,720원",
+      "priceText": "14,710원",
       "discountRate": 18
     },
     {
@@ -1047,7 +1038,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/NWUis65B",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-06-17/ab553aef-85bf-42c8-8935-fe1b3ed02d8e.jpeg",
-      "priceText": "8,980원",
+      "priceText": "8,990원",
       "discountRate": 28,
       "seasons": [
         "summer"
