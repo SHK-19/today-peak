@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-27T15:30:11.666Z",
+  "updatedAt": "2026-10-27T21:30:06.478Z",
   "items": [
     {
       "id": "deal-2583792699",
@@ -33,16 +33,6 @@
       "dealEndsAt": "2026-10-29T00:00:00+09:00"
     },
     {
-      "id": "deal-2621746065",
-      "name": "햇 밤고구마, 한입, 3kg, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/lVmT8Vki",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/43e2546f-426d-469d-ab51-d3fb341f57b4.jpeg",
-      "priceText": "6,100원",
-      "discountRate": 56,
-      "dealEndsAt": "2026-10-29T00:00:00+09:00"
-    },
-    {
       "id": "deal-2425693735",
       "name": "부스터샷 에브리 유기농 레몬즙 스틱, 20g, 14포, 7박스",
       "category": "장비",
@@ -50,6 +40,16 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/bdccb59f-ec4a-444d-92ae-29569c8918c4.jpeg",
       "priceText": "13,200원",
       "discountRate": 49,
+      "dealEndsAt": "2026-10-29T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2621746065",
+      "name": "햇 밤고구마, 한입, 3kg, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/lVmT8Vki",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/43e2546f-426d-469d-ab51-d3fb341f57b4.jpeg",
+      "priceText": "6,100원",
+      "discountRate": 56,
       "dealEndsAt": "2026-10-29T00:00:00+09:00"
     },
     {
