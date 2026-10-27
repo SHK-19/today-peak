@@ -1,15 +1,15 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-27T03:30:07.219Z",
+  "updatedAt": "2026-10-27T09:30:08.744Z",
   "items": [
     {
-      "id": "deal-2633518971",
-      "name": "힘내고 허니너트바, 35g, 36개",
+      "id": "deal-135067259",
+      "name": "레이즈 클래식 미니 감자칩, 42.5g, 32개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/3SfAeyWy",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-11/21618f07-dec2-4f17-8b9a-f7c962bfe6ac.jpeg",
-      "priceText": "14,800원",
-      "discountRate": 72,
+      "link": "https://toss.shopping/_m/jRSpUgps",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NGFjNDM5/QU5PVGt0c3M3R2JHOHprWkpKT1Q5dHRzWkN6bTR4bWJPWmJEOXNkdFBJMDg.png",
+      "priceText": "24,550원",
+      "discountRate": 48,
       "dealEndsAt": "2026-10-28T00:00:00+09:00"
     },
     {
@@ -407,7 +407,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,700원",
+      "priceText": "14,690원",
       "discountRate": 18
     },
     {
@@ -1135,6 +1135,19 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/Y2Q5OTMy/QUtkYk9XbU80YzAvdGxZNjNldGUwclliNFZqTGxUNGxKR3RXVk5xVjRhdGE.png",
       "priceText": "15,900원",
       "discountRate": 55
+    },
+    {
+      "id": "sl-2626454209",
+      "name": "곶감 호두말이 선물세트, 330g, 20개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/zSORm0rm",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-22/dacfa7f5-8961-46f2-9cfb-a698ba86d6b3.png",
+      "priceText": "21,900원",
+      "discountRate": 29,
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
     },
     {
       "id": "sl-9522489",
