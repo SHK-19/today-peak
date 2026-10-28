@@ -1,96 +1,76 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-28T09:30:07.957Z",
+  "updatedAt": "2026-10-28T15:30:09.804Z",
   "items": [
     {
-      "id": "deal-2583792699",
-      "name": "비타민 브라이트닝 앰플, 30ml, 4개",
+      "id": "deal-2551490623",
+      "name": "농장직송 갓 낳은 안심 생계란, 특란 XL, 30구, 2개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/XUCaLHd6",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-06/cf78bac3-0e28-4549-a83f-3db30161b6cd.jpeg",
-      "priceText": "10,200원",
-      "discountRate": 90,
-      "dealEndsAt": "2026-10-29T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/ZGMSuWY",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/ZjE2Njcx/Y2x5Qis5YXJmaFhwUkd6WGJuRlcrejJHeWM0K2xNOXh5MFh5bE1KQmIyRT0.png",
+      "priceText": "17,000원",
+      "discountRate": 35,
+      "dealEndsAt": "2026-10-30T00:00:00+09:00"
     },
     {
-      "id": "deal-12702101",
-      "name": "경남제약 혈당 바나바 유산균 락토, 500mg, 3박스",
+      "id": "deal-25641485",
+      "name": "비에날씬 다이어트 유산균 BNR17, 60캡슐, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/f9tiAgY4",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YzAxZmQ4/UFp1N2gzTnBzWm5POXM1anJSdGVadkhrcEhzem5CcVUyQnh5NUZya3Jacz0.png",
-      "priceText": "12,600원",
+      "link": "https://toss.shopping/_m/LVWdr5oC",
+      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-05/48b5bcb8-6c03-461c-97a9-21f268b1b3f7.jpeg",
+      "priceText": "38,578원",
+      "discountRate": 61,
+      "dealEndsAt": "2026-10-30T00:00:00+09:00"
+    },
+    {
+      "id": "deal-11240263",
+      "name": "김애경 기모 고무장갑, 5개",
+      "category": "의류",
+      "link": "https://toss.shopping/_m/jzQVPuKz",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZTQ2NmYz/UlU2VjZ2THg3ck84eHIwYnJqa0srUVBrNVZtOVFYT25YVHg5UmQwaHRqND0.png",
+      "priceText": "9,505원",
+      "discountRate": 80,
+      "dealEndsAt": "2026-10-30T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2666033871",
+      "name": "제주 노지 조생 감귤, 중대과, 10kg, 1박스",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/JCdx650b",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-10-05/40eae7b0-6e93-433f-b503-d346a2d24bdc.jpeg",
+      "priceText": "11,730원",
+      "discountRate": 76,
+      "dealEndsAt": "2026-10-30T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2155181513",
+      "name": "무설탕 비타민C 캔디, 12가지맛, 1kg, 1개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/HkVkQm51",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-18/ebcb6989-5b28-471f-a096-21755dd423bd.png",
+      "priceText": "10,340원",
+      "discountRate": 58,
+      "dealEndsAt": "2026-10-30T00:00:00+09:00"
+    },
+    {
+      "id": "deal-2662678907",
+      "name": "후디스 소화편한 우유 바나나, 190ml, 24개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/VqivwFu4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-10-13/1705a4aa-a1bb-46a6-a2b5-2b3cd4d07f0d.jpeg",
+      "priceText": "11,370원",
       "discountRate": 66,
-      "dealEndsAt": "2026-10-29T00:00:00+09:00"
+      "dealEndsAt": "2026-10-30T00:00:00+09:00"
     },
     {
-      "id": "deal-7831069",
-      "name": "포항 구룡포 반건조 오징어, 900g 내외, 10마리",
+      "id": "deal-90143353",
+      "name": "풀무원 샘물 생수, 무라벨, 2L, 12개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/VqFQaoc3",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTYyOWI0/WWRtSEJyc0xkbWxMSnZKVHJ1UHJjVFN5cXh3OVd1dVB0TWRlbzB0UkJPdz0.png",
-      "priceText": "21,996원",
-      "discountRate": 47,
-      "dealEndsAt": "2026-10-29T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2425693735",
-      "name": "부스터샷 에브리 유기농 레몬즙 스틱, 20g, 14포, 7박스",
-      "category": "장비",
-      "link": "https://toss.shopping/_m/3eYq9932",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/bdccb59f-ec4a-444d-92ae-29569c8918c4.jpeg",
-      "priceText": "13,200원",
-      "discountRate": 49,
-      "dealEndsAt": "2026-10-29T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2621746065",
-      "name": "햇 밤고구마, 한입, 3kg, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/lVmT8Vki",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/43e2546f-426d-469d-ab51-d3fb341f57b4.jpeg",
-      "priceText": "6,100원",
-      "discountRate": 56,
-      "dealEndsAt": "2026-10-29T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2673105531",
-      "name": "당도선별 제주 감귤, 12.5brix, 중과, 10kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/bbpc3Xd1",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-10-07/0e6c9b61-ce3d-4b9a-b2f7-53c535f5a6cb.png",
-      "priceText": "13,990원",
-      "discountRate": 82,
-      "dealEndsAt": "2026-10-29T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2658864885",
-      "name": "제주 극조생 햇 감귤, 대과, 5kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/bEJJuZLo",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-10-27/76ca8aa8-664b-4cb4-a79d-a8dfc0707879.jpeg",
-      "priceText": "4,920원",
-      "discountRate": 79,
-      "dealEndsAt": "2026-10-29T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2439287011",
-      "name": "베니하루카 꿀고구마, 랜덤과, 10kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/RgAh4ZMz",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-08/eec02df4-319c-445f-8fa0-120396b199fd.png",
-      "priceText": "14,900원",
-      "discountRate": 63,
-      "dealEndsAt": "2026-10-29T00:00:00+09:00"
-    },
-    {
-      "id": "deal-276607675",
-      "name": "쿠잉 베이직 물티슈, 캡형, 100매, 20팩",
-      "category": "안전",
-      "link": "https://toss.shopping/_m/TL9qe7ix",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-17/6deb9970-83e5-434a-9b16-25d50b39cf7a.jpeg",
-      "priceText": "11,600원",
-      "discountRate": 63,
-      "dealEndsAt": "2026-10-29T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/VAcjVr6w",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTVkZmRk/QU9TY2h3MWFQSHljNWNOYWNWdlRaa2U5YjdXemhqd2N6RkMwNlRvajBGYkY.png",
+      "priceText": "4,960원",
+      "discountRate": 53,
+      "dealEndsAt": "2026-10-30T00:00:00+09:00"
     },
     {
       "id": "sl-1268069353",
@@ -151,20 +131,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-10-21/30d482df-5b83-4967-b78e-b673626f35a0.jpeg",
       "priceText": "10,088원",
       "discountRate": 49
-    },
-    {
-      "id": "sl-1467863751",
-      "name": "옴미 마운틴14 등산 자외선차단 벙거지 F14, 다크그린, 59Cm, 1개",
-      "category": "장비",
-      "link": "https://toss.im/_m/1d0lJZbn",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/OWVkN2Iw/SmNpRE1LOHZ1K2ZKQzgwWUNXbnd6a21MbVJoWmE0YkJta25HZklaVE9ZUT0.png",
-      "priceText": "9,300원",
-      "discountRate": 15,
-      "seasons": [
-        "spring",
-        "summer",
-        "autumn"
-      ]
     },
     {
       "id": "sl-721399481",
@@ -533,8 +499,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/FkzUHGW9",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MzIzNjk4/QUt0MDdUWkYrNXk1MUU1anpudVJuQ3VPUlBtVUlacEhhMWZ2bUxhK0ZIZE4.png",
-      "priceText": "19,870원",
-      "discountRate": 29
+      "priceText": "17,720원",
+      "discountRate": 36
     },
     {
       "id": "sl-2163534637",
@@ -1172,8 +1138,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/lVmT8Vki",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-19/43e2546f-426d-469d-ab51-d3fb341f57b4.jpeg",
-      "priceText": "6,100원",
-      "discountRate": 56,
+      "priceText": "6,800원",
+      "discountRate": 51,
       "seasons": [
         "autumn",
         "winter"
