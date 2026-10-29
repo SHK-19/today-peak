@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-29T03:30:08.533Z",
+  "updatedAt": "2026-10-29T09:30:08.531Z",
   "items": [
     {
       "id": "deal-2551490623",
@@ -10,16 +10,6 @@
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/ZjE2Njcx/Y2x5Qis5YXJmaFhwUkd6WGJuRlcrejJHeWM0K2xNOXh5MFh5bE1KQmIyRT0.png",
       "priceText": "17,000원",
       "discountRate": 35,
-      "dealEndsAt": "2026-10-30T00:00:00+09:00"
-    },
-    {
-      "id": "deal-25641485",
-      "name": "비에날씬 다이어트 유산균 BNR17, 60캡슐, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/LVWdr5oC",
-      "imageUrl": "https://shopping.toss.im/live/temp/2025-08-05/48b5bcb8-6c03-461c-97a9-21f268b1b3f7.jpeg",
-      "priceText": "38,578원",
-      "discountRate": 61,
       "dealEndsAt": "2026-10-30T00:00:00+09:00"
     },
     {
@@ -60,16 +50,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-10-13/1705a4aa-a1bb-46a6-a2b5-2b3cd4d07f0d.jpeg",
       "priceText": "11,370원",
       "discountRate": 66,
-      "dealEndsAt": "2026-10-30T00:00:00+09:00"
-    },
-    {
-      "id": "deal-90143353",
-      "name": "풀무원 샘물 생수, 무라벨, 2L, 12개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/VAcjVr6w",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTVkZmRk/QU9TY2h3MWFQSHljNWNOYWNWdlRaa2U5YjdXemhqd2N6RkMwNlRvajBGYkY.png",
-      "priceText": "4,960원",
-      "discountRate": 53,
       "dealEndsAt": "2026-10-30T00:00:00+09:00"
     },
     {
@@ -526,8 +506,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/3pmmoPvi",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
-      "priceText": "9,590원",
-      "discountRate": 20
+      "priceText": "9,250원",
+      "discountRate": 22
     },
     {
       "id": "sl-82144865",
@@ -577,8 +557,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/HX12blfB",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-12/c775957b-aaa8-4b3e-9e00-aabef8c2a89f.jpeg",
-      "priceText": "11,900원",
-      "discountRate": 39
+      "priceText": "13,900원",
+      "discountRate": 29
     },
     {
       "id": "sl-142778727",
