@@ -1,57 +1,7 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-29T09:30:08.531Z",
+  "updatedAt": "2026-10-29T15:30:12.141Z",
   "items": [
-    {
-      "id": "deal-2551490623",
-      "name": "농장직송 갓 낳은 안심 생계란, 특란 XL, 30구, 2개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/ZGMSuWY",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/ZjE2Njcx/Y2x5Qis5YXJmaFhwUkd6WGJuRlcrejJHeWM0K2xNOXh5MFh5bE1KQmIyRT0.png",
-      "priceText": "17,000원",
-      "discountRate": 35,
-      "dealEndsAt": "2026-10-30T00:00:00+09:00"
-    },
-    {
-      "id": "deal-11240263",
-      "name": "김애경 기모 고무장갑, 5개",
-      "category": "의류",
-      "link": "https://toss.shopping/_m/jzQVPuKz",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZTQ2NmYz/UlU2VjZ2THg3ck84eHIwYnJqa0srUVBrNVZtOVFYT25YVHg5UmQwaHRqND0.png",
-      "priceText": "9,505원",
-      "discountRate": 80,
-      "dealEndsAt": "2026-10-30T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2666033871",
-      "name": "제주 노지 조생 감귤, 중대과, 10kg, 1박스",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/JCdx650b",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-10-05/40eae7b0-6e93-433f-b503-d346a2d24bdc.jpeg",
-      "priceText": "11,730원",
-      "discountRate": 76,
-      "dealEndsAt": "2026-10-30T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2155181513",
-      "name": "무설탕 비타민C 캔디, 12가지맛, 1kg, 1개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/HkVkQm51",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-18/ebcb6989-5b28-471f-a096-21755dd423bd.png",
-      "priceText": "10,340원",
-      "discountRate": 58,
-      "dealEndsAt": "2026-10-30T00:00:00+09:00"
-    },
-    {
-      "id": "deal-2662678907",
-      "name": "후디스 소화편한 우유 바나나, 190ml, 24개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/VqivwFu4",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-10-13/1705a4aa-a1bb-46a6-a2b5-2b3cd4d07f0d.jpeg",
-      "priceText": "11,370원",
-      "discountRate": 66,
-      "dealEndsAt": "2026-10-30T00:00:00+09:00"
-    },
     {
       "id": "sl-1268069353",
       "name": "살림살림 고강도 알루미늄 3단조절 등산스틱, 2개",
@@ -221,8 +171,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/Jf0vjY06",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/NmFkNDg1/YTNNaXA1eW1lVUdtR2MrMnYwcjJEc205bTdGMlRrMWp1clVpUHdYQnExST0.png",
-      "priceText": "16,900원",
-      "discountRate": 29
+      "priceText": "12,900원",
+      "discountRate": 46
     },
     {
       "id": "sl-2484194021",
@@ -413,7 +363,7 @@
       "category": "음식",
       "link": "https://toss.im/_m/TIreaACt",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/OTI5NTU4/T2N4bWR1Y1RPTnVXeG9lYzFNeVNjOGNjMmNsNUpLM0pQVHdXTnZUeFpjcz0.png",
-      "priceText": "14,690원",
+      "priceText": "14,680원",
       "discountRate": 18
     },
     {
@@ -479,8 +429,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/FkzUHGW9",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/MzIzNjk4/QUt0MDdUWkYrNXk1MUU1anpudVJuQ3VPUlBtVUlacEhhMWZ2bUxhK0ZIZE4.png",
-      "priceText": "17,720원",
-      "discountRate": 36
+      "priceText": "19,870원",
+      "discountRate": 29
     },
     {
       "id": "sl-2163534637",
@@ -1026,8 +976,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/hXkdlDaA",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/NDFhMjc2/QU5wbkV6NnAxbi9wZmhuVXRydGVOUjVLK0liaGRvWk5adm94cWo4RXdhMVM.png",
-      "priceText": "16,900원",
-      "discountRate": 29
+      "priceText": "13,900원",
+      "discountRate": 42
     },
     {
       "id": "sl-1735847359",
