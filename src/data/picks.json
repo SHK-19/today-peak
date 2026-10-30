@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-10-29T21:30:11.367Z",
+  "updatedAt": "2026-10-30T03:30:12.393Z",
   "items": [
     {
       "id": "sl-1268069353",
@@ -156,8 +156,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/H6eHslQ",
       "imageUrl": "https://shopping.toss.im/live/taca/ai/v2/YzE5ZmQx/QVBhM3dzM2xoaVdTd3dqN0lQNEl3bGorOC80VUE1Y0grMTcyUUFZQkxML2c.png",
-      "priceText": "15,900원",
-      "discountRate": 15,
+      "priceText": "15,000원",
+      "discountRate": 20,
       "seasons": [
         "spring",
         "summer",
@@ -1017,7 +1017,7 @@
     },
     {
       "id": "sl-2226153335",
-      "name": "껍질째 먹는 세척사과, 16-25과 내외, 3kg, 1박스",
+      "name": "프로프룻 껍질째 먹는 세척사과, 3kg, 1박스",
       "category": "음식",
       "link": "https://toss.shopping/_m/RSFsbEB4",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-21/d289f62f-61d3-4143-b707-8a62b8fc5858.png",
