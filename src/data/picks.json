@@ -1,6 +1,6 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-11-04T15:30:10.495Z",
+  "updatedAt": "2026-11-04T21:30:08.793Z",
   "items": [
     {
       "id": "deal-1980071995",
@@ -20,16 +20,6 @@
       "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/fb260732-997d-4519-a401-2569974762b1.jpeg",
       "priceText": "8,790원",
       "discountRate": 44,
-      "dealEndsAt": "2026-11-06T00:00:00+09:00"
-    },
-    {
-      "id": "deal-134185675",
-      "name": "할리스 스테비아 커피믹스, 9.5g, 100개입, 2개",
-      "category": "음식",
-      "link": "https://toss.shopping/_m/5YqTi27n",
-      "imageUrl": "https://shopping.toss.im/live/taca/ai/YTAwOGY3/YVdzNDRkVEx5ejVXdENUU09sUmJOSVZiN01sOWFadGVGcFIwdGVyVW0wQT0.png",
-      "priceText": "25,980원",
-      "discountRate": 57,
       "dealEndsAt": "2026-11-06T00:00:00+09:00"
     },
     {
