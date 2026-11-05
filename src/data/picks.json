@@ -1,26 +1,46 @@
 {
   "_note": "자동 생성: scripts/build-picks.mjs. 고칠 건 picks-curation.txt.",
-  "updatedAt": "2026-11-05T09:30:08.559Z",
+  "updatedAt": "2026-11-05T15:30:09.906Z",
   "items": [
     {
-      "id": "deal-1980071995",
-      "name": "리프레쉬 백진미 오징어, 1kg, 1봉",
+      "id": "deal-108758311",
+      "name": "퍼니트 올인원 이뮨 멀티비타민, 28개입, 1박스",
       "category": "음식",
-      "link": "https://toss.shopping/_m/Vzaslo5q",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-08-14/7daf9aad-1c69-4e91-aa40-8d590501977c.jpeg",
-      "priceText": "18,510원",
-      "discountRate": 65,
-      "dealEndsAt": "2026-11-06T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/tz5wGkY9",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/NjE1MWMy/QUl6bDA1ckVZRmc1MVpiS3JYUlM3bTExMXFadk4zQmFZOVdzTVJJaU5RYXA.png",
+      "priceText": "25,950원",
+      "discountRate": 62,
+      "dealEndsAt": "2026-11-07T00:00:00+09:00"
     },
     {
-      "id": "deal-2476490871",
-      "name": "청우 옛날과자 세트, 왕소라2+고구마2+김맛나2+마늘바게트2+계란과자2, 1세트",
+      "id": "deal-2657232207",
+      "name": "극조생 감귤 햇귤, 로얄과, 5kg, 1개",
       "category": "음식",
-      "link": "https://toss.shopping/_m/NMSa5NI9",
-      "imageUrl": "https://shopping.toss.im/live/temp/2026-07-13/fb260732-997d-4519-a401-2569974762b1.jpeg",
-      "priceText": "8,790원",
-      "discountRate": 44,
-      "dealEndsAt": "2026-11-06T00:00:00+09:00"
+      "link": "https://toss.shopping/_m/nKczBDC8",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-09-16/592d7cb9-6e89-4db8-81ce-9c105ec1c457.png",
+      "priceText": "9,020원",
+      "discountRate": 77,
+      "dealEndsAt": "2026-11-07T00:00:00+09:00"
+    },
+    {
+      "id": "deal-303280721",
+      "name": "페페브루노 엑스트라버진 올리브 오일, 1L, 2개",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/5gLSP2Xy",
+      "imageUrl": "https://shopping.toss.im/live/taca/ai/ZjA2ZGYw/QU9oYzVEKy9zcHczbGZCenlVS1ByTFpBanp5MDcveUxTNVZEK2J5VlVuUzg.png",
+      "priceText": "23,390원",
+      "discountRate": 66,
+      "dealEndsAt": "2026-11-07T00:00:00+09:00"
+    },
+    {
+      "id": "deal-10142851",
+      "name": "스파클 생수 무라벨, 500ml, 40병",
+      "category": "음식",
+      "link": "https://toss.shopping/_m/XBYVcgv4",
+      "imageUrl": "https://shopping.toss.im/live/temp/2026-03-09/1ca62748-4d8c-4131-a992-6f968acf7829.jpeg",
+      "priceText": "5,900원",
+      "discountRate": 50,
+      "dealEndsAt": "2026-11-07T00:00:00+09:00"
     },
     {
       "id": "sl-1268069353",
@@ -467,8 +487,8 @@
       "category": "음식",
       "link": "https://toss.shopping/_m/3pmmoPvi",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-11/7e88d74d-6dc9-49cc-9faa-f470b8181699.jpeg",
-      "priceText": "9,250원",
-      "discountRate": 22
+      "priceText": "9,590원",
+      "discountRate": 20
     },
     {
       "id": "sl-82144865",
@@ -1051,8 +1071,8 @@
       "category": "음식",
       "link": "https://toss.im/_m/nXfGwh6h",
       "imageUrl": "https://shopping.toss.im/live/temp/2026-08-13/9145309c-54a2-460e-993a-e056530abb0c.png",
-      "priceText": "10,900원",
-      "discountRate": 47,
+      "priceText": "9,810원",
+      "discountRate": 53,
       "seasons": [
         "autumn",
         "winter"
